@@ -15,7 +15,7 @@
     "next": "15.1.1",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-share": "^5.1.1"
+    "react-share": "5.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
