@@ -1,0 +1,56 @@
+/* src/app/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  color: #a29bfe;
+  text-decoration: underline;
+}
+
+nav,
+footer {
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+table {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+th {
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+}
+
+td,
+th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 33.3%;
+}
+
+.timeline table {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.timeline table td,
+.timeline table th {
+  border: 1px solid #999;
+  width: 33.3%;
+  padding: 1rem;
+}
