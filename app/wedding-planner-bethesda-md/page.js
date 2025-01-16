@@ -254,7 +254,7 @@ export default async function WeddingPlannerBethesdaMD() {
           <section className="bg-slate-50">
             <div className="max-w-2xl mx-auto py-10 md:py-20 px-6">
               <h2 className="text-3xl md:text-5xl text-center">
-                Monica Makes Planning Weddings in bethesda Easy
+                Monica Makes Planning Weddings in Bethesda Easy
               </h2>
               <div className="my-10">
                 <h4 className="text-2xl md:text-3xl">
@@ -313,7 +313,10 @@ export default async function WeddingPlannerBethesdaMD() {
                 experience turning wedding dreams into reality.
               </p>
               <p className="md:text-xl mb-4">
-                Here’s why couples in Bethesda, MD, and DC love working with us:
+                Here’s why couples in Bethesda,{' '}
+                <Link href="/wedding-planner-bowie-md">Maryland</Link>, and{' '}
+                <Link href="/wedding-planner-washington-dc">DC</Link> love
+                working with us:
               </p>
               <div>
                 <h3 className="font-semibold text-2xl mb-2">
@@ -396,68 +399,45 @@ export default async function WeddingPlannerBethesdaMD() {
             <div className="max-w-3xl mx-auto py-10">
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
-                #1. What are the best wedding venues in bethesda, MD?
+                #1. What is the average cost of a wedding in Bethesda, MD?
               </h3>
               <p className="md:text-xl mb-4">
-                Potomac is home to several stunning venues, from elegant country
-                clubs to scenic estates and outdoor gardens. Popular options
-                include{' '}
-                <a
-                  href="https://www.bolgercenter.com/weddings.html"
-                  target="_blank"
-                >
-                  William F. Bolger Center
-                </a>{' '}
-                ,{' '}
-                <a
-                  href="https://montgomeryparks.org/parks-and-trails/rockwood-manor-park/"
-                  target="_blank"
-                >
-                  Rockwood Manor
-                </a>{' '}
-                , and{' '}
-                <a href="https://tpc.com/potomac/weddings/" target="_blank">
-                  TPC Potomac at Avenel Farm
-                </a>{' '}
-                for a classic country club wedding.
-              </p>
-              <p className="md:text-xl mb-4">
-                If you want to do most of the planning yourself and find your
-                wedding venue and vendors on your own but still want to enjoy
-                your wedding day without worrying about anything, consider
-                hiring Monica Browne Weddings.
+                The cost of a wedding in Bethesda, MD, can vary widely depending
+                on the size, style, and services required. On average, couples
+                spend between{' '}
+                <Link href="/blog/how-much-does-a-100-person-wedding-cost">
+                  $32,000 and $70,000
+                </Link>
+                , with more elaborate weddings exceeding $75,000. We can help
+                you plan a beautiful wedding that fits within your budget while
+                maximizing value and ensuring every detail is perfect.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #2. How far in advance should we book our wedding planner?
               </h3>
               <p className="md:text-xl mb-4">
-                It’s best to book your wedding planner 12–18 months in advance,
-                especially if your wedding falls during peak season (spring or
-                fall). This ensures ample time for planning, vendor selection,
-                and securing your preferred dates.
+                We recommend booking our services as early as possible, ideally
+                12–18 months before your wedding date. This allows us to secure
+                the best vendors and venues and plan every detail to perfection.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #3. Do you help with vendor recommendations in Potomac, MD?
+                #3. Can you accommodate cultural or religious wedding
+                traditions?
               </h3>
               <p className="md:text-xl mb-4">
-                Absolutely! We work with a trusted network of local vendors,
-                from florists and photographers to caterers and DJs, ensuring
-                you have the best team for your wedding.
+                Absolutely! We specialize in incorporating cultural and
+                religious traditions into your wedding, ensuring every detail
+                honors your heritage while creating a cohesive and beautiful
+                celebration.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #4. Do I need a day-of coordinator if my venue has an on-site
-                coordinator?
+                #4. Are you familiar with wedding venues in Bethesda, MD?
               </h3>
               <p className="md:text-xl mb-4">
-                Yes, a venue coordinator typically focuses on the venue’s needs,
-                such as setup and catering. A{' '}
-                <Link href="/blog/wedding-planner-vs-coordinator">
-                  day-of coordinator
-                </Link>
-                , on the other hand, is dedicated to managing your entire event,
-                including vendor coordination, décor setup, and troubleshooting,
-                to ensure your vision is brought to life across all aspects of
-                your wedding.
+                Yes, we have extensive experience working with many popular
+                venues in Bethesda, from elegant ballrooms to charming outdoor
+                spaces. We can help you select a venue that suits your vision
+                and works seamlessly with your plans.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #5 Do you offer day-of coordination services?

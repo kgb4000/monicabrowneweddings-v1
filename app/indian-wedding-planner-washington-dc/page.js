@@ -7,7 +7,7 @@ const calendly =
 
 export const metadata = {
   title:
-    'Indian Wedding Planner Washington DC, MAryland, and Northern Virginia',
+    'Indian Wedding Planner in Washington DC, Maryland, and Northern Virginia',
   description:
     'Exclusive full & partial-service Indian wedding planners in Washington, DC for events of 50 to 1200 guests. Contact us today to plan your dream wedding!',
   alternates: {
@@ -445,18 +445,39 @@ export default function IndianWeddingPlannerDC() {
             <div className="max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-5xl text-center">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
-                #1. What services do you provide as an Indian wedding planner?
+                #1. How Much Does an Indian Wedding Cost in Washington, DC?
               </h3>
               <p className="md:text-xl mb-4">
-                As Indian wedding planners, we provide comprehensive planning,
-                including venue selection, vendor management, decoration
-                detailing, and help with menu curation. We also offer{' '}
-                <Link href="/day-of-wedding-coordinator-washington-dc">
-                  day-of coordination
-                </Link>{' '}
-                and consultation services.
+                The cost of an Indian wedding in Washington, DC, typically
+                ranges from <b>$100,000 to $300,000 or more</b>, depending on
+                the scale of the celebration, number of guests, and level of
+                customization, and the inclusion of traditional ceremonies like
+                the Sangeet, Mehendi, and Baraat..
               </p>
-
+              <p className="md:text-xl mb-4">
+                Major expenses include venues ($10,000–$50,000), catering
+                ($50–$200 per guest), décor and floral arrangements
+                ($14,000–$80,000), outfits and jewelry ($5,000–$50,000),
+                entertainment ($5,000–$30,000), and photography or videography
+                ($10,000–$30,000) for multi-day coverage.
+              </p>
+              <p className="md:text-xl mb-4">
+                Factors such as guest count, multi-day traditional events,
+                customized décor, and peak wedding seasons can significantly
+                affect costs.
+              </p>
+              <p className="md:text-xl mb-4">
+                Budget-friendly strategies like selecting venues that
+                accommodate multiple events, choosing balanced catering
+                packages, and prioritizing impactful décor can help manage
+                expenses.
+              </p>
+              <p className="md:text-xl mb-4">
+                With the guidance of an experienced{' '}
+                <Link href="/about">wedding planner</Link> who understands
+                Indian traditions, you can create a stunning celebration that
+                honors your heritage while staying within budget.
+              </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #2. Do you have experience planning weddings with specific
                 Indian cultural traditions?
