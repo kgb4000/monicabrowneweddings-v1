@@ -8,16 +8,16 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Wedding Planners inBethesda Maryland | Monica Browne Weddings',
+  title: 'Wedding Planners in Bethesda Maryland | Monica Browne Weddings',
   description:
     "Looking for a top ranked wedding planner in Bethesda? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
   alternates: {
-    canonical: 'https://monicabrowneweddings.com/wedding-planner-potomac-md',
+    canonical: 'https://monicabrowneweddings.com/wedding-planner-bethesda-md',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://monicabrowneweddings.com/wedding-planner-potomac-md',
+    url: 'https://monicabrowneweddings.com/wedding-planner-bethesda-md',
     site_name: 'Monica Browne Weddings',
     images: [
       {
@@ -254,7 +254,7 @@ export default async function WeddingPlannerBethesdaMD() {
           <section className="bg-slate-50">
             <div className="max-w-2xl mx-auto py-10 md:py-20 px-6">
               <h2 className="text-3xl md:text-5xl text-center">
-                Monica Makes Planning Weddings in Potomac Easy
+                Monica Makes Planning Weddings in bethesda Easy
               </h2>
               <div className="my-10">
                 <h4 className="text-2xl md:text-3xl">
@@ -305,7 +305,7 @@ export default async function WeddingPlannerBethesdaMD() {
           <section>
             <div className="max-w-2xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                Why Hire Monica for Your Potomac Wedding?
+                Why Hire Monica for Your Bethesda Wedding?
               </h2>
               <p className="md:text-xl mb-4">
                 When you partner with Monica Browne Weddings, you’re entrusting
@@ -313,7 +313,7 @@ export default async function WeddingPlannerBethesdaMD() {
                 experience turning wedding dreams into reality.
               </p>
               <p className="md:text-xl mb-4">
-                Here’s why couples in Potomac, MD, and DC love working with us:
+                Here’s why couples in Bethesda, MD, and DC love working with us:
               </p>
               <div>
                 <h3 className="font-semibold text-2xl mb-2">
@@ -396,7 +396,7 @@ export default async function WeddingPlannerBethesdaMD() {
             <div className="max-w-3xl mx-auto py-10">
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
-                #1. What are the best wedding venues in Potomac, MD?
+                #1. What are the best wedding venues in bethesda, MD?
               </h3>
               <p className="md:text-xl mb-4">
                 Potomac is home to several stunning venues, from elegant country
