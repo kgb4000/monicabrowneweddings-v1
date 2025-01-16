@@ -54,7 +54,7 @@ export default async function WeddingServices() {
                   that fits your needs. Give us a call to learn more about our
                   full-service or or partial planning service.
                 </p>
-                <Link href="/wedding-services/wedding-planner-bowie-md">
+                <Link href="/wedding-planner-bowie-md">
                   <p className="my-8">Read more</p>
                 </Link>
               </div>
@@ -69,7 +69,7 @@ export default async function WeddingServices() {
               />
               <div className="service-info">
                 <h3 className="text-3xl mb-6 font-bold">
-                  Day of Wedding Coordination
+                  Day of Wedding Coordinator
                 </h3>
                 <p className="md:text-xl mb-4">
                   When you have everything else planned and you just need
@@ -78,7 +78,7 @@ export default async function WeddingServices() {
                   Weddings there as your day of wedding coordinator, you will
                   not...
                 </p>
-                <Link href="/wedding-services/day-of-wedding-coordinator-bowie-md">
+                <Link href="/day-of-wedding-coordinator-washington-dc">
                   <p className="my-8">Read more</p>
                 </Link>
               </div>
@@ -87,7 +87,7 @@ export default async function WeddingServices() {
           <div className="max-w-5xl mx-auto px-6 my-8">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <img
-                src="/images/indian-bride.jpg"
+                src="https://res.cloudinary.com/browne-company/image/upload/v1736311019/Monica%20Browne%20Weddings/indian-bride_smaller.jpg"
                 loading="lazy"
                 alt="Indian wedding planner in DC, Mayland, and Northern Virginia."
                 width="472"
@@ -151,7 +151,7 @@ export default async function WeddingServices() {
                   transform any venue into a beautiful place with gorgeous
                   floral designs...
                 </p>
-                <Link href="/wedding-services/wedding-decoration-services">
+                <Link href="/wedding-decoration-services">
                   <p className="my-8">Read more</p>
                 </Link>
               </div>

@@ -4,7 +4,8 @@ import Hero from '@/components/Hero'
 
 import Button from '@/components/Button'
 
-const calendly = 'rtrt'
+const calendly =
+  'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 const getPosts = async () => {
   const response = await fetch(
@@ -37,9 +38,9 @@ const getPosts = async () => {
 }
 
 export const metadata = {
-  title: 'Wedding Planner Washington DC | Monica Browne Weddings',
+  title: 'Wedding Planner in Washington DC | Monica Browne Weddings',
   description:
-    "Looking for a top ranked wedding planner in Washington DC? We'll make your wedding a memorable and enjoyable celebration for everyone! Schedule a call with us today!",
+    "Looking for a top ranked wedding planner in Washington DC? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
   alternates: {
     canonical: 'https://monicabrowneweddings.com/wedding-planner-washington-dc',
   },
@@ -65,10 +66,10 @@ export default async function WeddingPlannerWashingtonDC() {
     <div>
       <Hero
         herotext="Professional Wedding Planner in Washington, DC"
-        heroSubText="We Create Beautiful Weddings For Busy Couples in Washington, DC"
+        heroSubText="We create stunning weddings for busy couples in Washington, DC, blending timeless traditions with modern elegance for a day you’ll cherish forever"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
-        imageUrl="/images/wedding-couple.jpg"
+        imageUrl="/images/KINA1058.jpg"
       />
       <main>
         <div className="container max-w-7xl mx-auto px-6">
@@ -234,28 +235,29 @@ export default async function WeddingPlannerWashingtonDC() {
             </h2>
             <div className="grid grid-cols-2 gap-2 mb-10">
               <Image
-                src="/images/couple-posing-in-dc.jpg"
+                src="/images/KINA0562.jpg"
                 alt="Newly wed couple at Irongate Restaurant in Washington, DC"
                 loading="lazy"
                 width="472"
                 height="708"
               />
-              <img
-                src="/images/couple-posing-in-dc.jpg"
+              <Image
+                src="/images/KINA0531.jpg"
                 alt="Newly wed couple at Irongate Restaurant in Washington, DC"
                 loading="lazy"
                 width="472"
                 height="708"
               />
-              <img
-                src="/images/couple-posing-in-dc.jpg"
+              <Image
+                src="/images/KINA0330.jpg"
                 alt="Newly wed couple at Irongate Restaurant in Washington, DC"
                 loading="lazy"
                 width="472"
                 height="708"
               />
-              <img
-                src="/images/couple-posing-in-dc.jpg"
+
+              <Image
+                src="/images/KINA0406.jpg"
                 alt="Newly wed couple at Irongate Restaurant in Washington, DC"
                 loading="lazy"
                 width="472"
@@ -525,7 +527,7 @@ export default async function WeddingPlannerWashingtonDC() {
                 day-of coordination. Full-service planning covers everything
                 from start to finish, partial planning allows you to get help
                 with specific aspects of your wedding, and{' '}
-                <Link href="day-of-coordination-washington-dc">
+                <Link href="/day-of-wedding-coordinator-washington-dc">
                   day-of coordination
                 </Link>{' '}
                 ensures your wedding day runs smoothly while you relax and

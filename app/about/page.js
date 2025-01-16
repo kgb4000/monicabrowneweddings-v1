@@ -2,7 +2,8 @@ import Link from 'next/link'
 import Hero from '@/components/Hero'
 import Button from '@/components/Button'
 
-const calendly = 'https://calendly.com/mbweddings/30min'
+const calendly =
+  'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
   title: 'About Monica Browne Weddings',
@@ -57,14 +58,14 @@ export default function About() {
               free time to do the essential things you need to do.
             </p>
             <div className="center">
-              <a href="tel:+2406653350">
+              <a href={calendly} rel="noreferrer" target="_blank">
                 <Button
-                  buttonText="Book a Call With Monica"
+                  buttonText="Book a call with Monica"
                   bgColor="bg-purple-500"
                   borderWidth="border-0"
                   textColor="text-white"
                   textSize="md:text-xl"
-                />
+                ></Button>
               </a>
             </div>
           </div>
@@ -144,13 +145,17 @@ export default function About() {
                 plan your dream wedding today!
               </p>
             </div>
-            <Button
-              buttonText="Book My Call Today!"
-              bgColor="bg-purple-500"
-              borderWidth="border-0"
-              textColor="text-white"
-              textSize="md:text-xl"
-            />
+            <div className="center">
+              <a href={calendly} target="_blank">
+                <Button
+                  buttonText="Book a Call With Monica"
+                  bgColor="bg-purple-500"
+                  borderWidth="border-0"
+                  textColor="text-white"
+                  textSize="md:text-xl"
+                />
+              </a>
+            </div>
           </div>
         </section>
         <section>
@@ -275,7 +280,7 @@ export default function About() {
               <p className="md:text-xl mb-4">Book a call and let's talk.</p>
             </div>
             <div className="center">
-              <a href={calendly} rel="noreferrer">
+              <a href={calendly} rel="noreferrer" target="_blank">
                 <Button
                   buttonText="Book a call with Monica"
                   bgColor="bg-purple-500"

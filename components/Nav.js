@@ -3,7 +3,9 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Button from './Button'
+
+const calendly =
+  'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 const navigation = [
   { name: 'Services', href: '/wedding-services' },
@@ -11,8 +13,6 @@ const navigation = [
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ]
-
-const calendly = 'https://calendly.com/mbweddings/30min'
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -22,7 +22,10 @@ export default function Nav() {
       <header className="">
         <nav className="flex items-center justify-between p-4 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="/" className="text-black font-bold no-underline text-sm">
+            <a
+              href="/"
+              className="text-black font-semibold hover:no-underline text-md"
+            >
               Monica Browne Weddings
             </a>
           </div>
@@ -48,7 +51,8 @@ export default function Nav() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
-              href="#"
+              href={calendly}
+              target="_blank"
               className="text-sm/6 font-semibold text-black no-underline"
             >
               <button className="py-2 px-6 rounded-xl bg-purple-500 text-white border-0">
@@ -65,7 +69,7 @@ export default function Nav() {
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="text-black no-underline font-bold">
+              <a href="#" className="text-black hover:no-underline font-bold">
                 <p>Monica Browne Weddings</p>
               </a>
               <button

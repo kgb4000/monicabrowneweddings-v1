@@ -53,6 +53,18 @@ async function getPost(slug) {
   return data.post
 }
 
+export async function generateMetadata({ params }) {
+  const slug = (await params).slug
+  const post = await getPost(slug)
+  return {
+    title: post.title,
+    description: post.description,
+    alternates: {
+      canonical: `https://monicabrowneweddings.com/${post.slug}`,
+    },
+  }
+}
+
 export default async function Page({ params }) {
   const slug = (await params).slug
   const post = await getPost(slug)
@@ -74,13 +86,13 @@ export default async function Page({ params }) {
             <Link href="/about">
               <p className="mx-2 font-bold">{post.author.name}</p>
             </Link>
-            <span>
+            {/* <span>
               {new Date(post.updatedAt).toLocaleDateString('en-us', {
                 year: 'numeric',
                 month: 'short',
                 day: 'numeric',
               })}
-            </span>
+            </span> */}
           </div>
           <p className="text-xl">Be a dear and share:</p>
           <ShareBtn

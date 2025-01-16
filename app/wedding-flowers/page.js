@@ -2,7 +2,8 @@ import Link from 'next/link'
 import Hero from '@/components/Hero'
 import Button from '@/components/Button'
 
-const calendly = 'https://calendly.com/monica-17/monica-browne-weddings-call'
+const calendly =
+  'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
   title: 'Weddidng Florist For Beautiful Wedding Flowers | Monica Browne',

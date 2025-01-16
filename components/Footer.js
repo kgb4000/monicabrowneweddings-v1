@@ -61,30 +61,33 @@ export default function Footer() {
                 <h3 className="text-xl font-bold">Locations</h3>
                 <ul>
                   <li className="py-2">
-                    <Link href="/">Annapolis, MD </Link>
-                  </li>
-                  <li className="py-2">
-                    <Link href="/about">Bethesda, MD</Link>
-                  </li>
-                  <li className="py-2">
-                    <Link href="/wedding-services/wedding-planner-bowie-md">
-                      Bowie, MD
+                    <Link href="/wedding-planner-annapolis-md">
+                      Annapolis, MD{' '}
                     </Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/wedding-gallery">Chevy Chase, MD</Link>
+                    <Link href="/wedding-planner-bethesda-md">
+                      Bethesda, MD
+                    </Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/wedding-gallery">Crofton, MD</Link>
+                    <Link href="/wedding-planner-bowie-md">Bowie, MD</Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/testimonials">Alexandria, VA</Link>
+                    <Link href="/wedding-planner-chevy-chase-md">
+                      Chevy Chase, MD
+                    </Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/blog">Potomac, MD</Link>
+                    <Link href="/wedding-planner-crofton-md">Crofton, MD</Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/contact">Washington, DC</Link>
+                    <Link href="/wedding-planner-potomac-md">Potomac, MD</Link>
+                  </li>
+                  <li className="py-2">
+                    <Link href="/wedding-planner-washington-dc">
+                      Washington, DC
+                    </Link>
                   </li>
                 </ul>
               </div>

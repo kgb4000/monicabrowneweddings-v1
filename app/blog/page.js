@@ -30,7 +30,31 @@ const getPosts = async () => {
   return data.posts
 }
 
-const calendly = 'https://calendly.com/mbweddings/30min'
+export const metadata = {
+  title: "Monica's Blog | Monica Browne Weddings",
+  description:
+    'Wedding Services from Monica Browne Weddings include Full Service Wedding Planning, Day-of Cordination, Wedding Decor, Flowers, and Floral Design.',
+  alternates: {
+    canonical: 'https://monicabrowneweddings.com/blog',
+    openGraph: {
+      type: 'website',
+      locale: 'en_US',
+      url: 'https://monicabrowneweddings.com/blog',
+      site_name: 'Monica Browne Weddings',
+      images: [
+        {
+          url: 'https://res.cloudinary.com/browne-company/image/upload/q_auto/v1631495887/walking-down-aisle_o4wklu.webp',
+          width: 3961,
+          height: 2641,
+          alt: 'Couple just married, walking down the aisle.',
+        },
+      ],
+    },
+  },
+}
+
+const calendly =
+  'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export default async function Posts() {
   const posts = await getPosts()
@@ -45,8 +69,8 @@ export default async function Posts() {
       </div>
       <div className="container max-w-7xl mx-auto px-6">
         <div className="mb-20"></div>
-        <div className="lg:grid grid-cols-3 gap-x-8 justify-between">
-          <ul className="col-span-2 ">
+        <div className="lg:grid grid-cols-3 gap-x-8 justify-between w-full">
+          <ul className="col-span-2">
             {posts.map((post) => (
               <div key={post.slug}>
                 <Link
@@ -81,18 +105,22 @@ export default async function Posts() {
               Hi, I'm Monica with <Link href="/">Monica Browne Weddings</Link>.
               I help busy couples in Maryland and DC plan their dream wedding.
               If you're a busy couple and need help planning your wedding,
-              please don't hesitiate to <a href={calendly}>book a call</a>.
+              please don't hesitiate to{' '}
+              <a href={calendly} target="_blank">
+                book a call
+              </a>
+              .
             </p>
           </div>
         </div>
         <div className="center">
-          <a href="tel:+2402660588">
+          <a href={calendly} target="_blank">
             <Button
-              buttonText="Call Monica (240) 665-3350"
-              borderColor="border-black"
-              borderWidth="border-2"
-              textColor="white"
-              borderStyle="border-solid"
+              buttonText="Book a Call With Monica Today!"
+              bgColor="bg-purple-500"
+              borderWidth="border-0"
+              textColor="text-white"
+              textSize="md:text-xl"
             />
           </a>
         </div>

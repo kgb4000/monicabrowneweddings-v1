@@ -1,5 +1,8 @@
 import Button from './Button'
 
+const calendly =
+  'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
+
 export default function Hero({
   herotext,
   heroSubText,
@@ -27,11 +30,13 @@ export default function Hero({
             </p>
           )}
           {buttonText && (
-            <button
-              className={`mt-10 lg:text-2xl ${textColor} ${borcerColor} border-2 py-6 px-8 rounded-2xl font-bold`}
-            >
-              {buttonText}
-            </button>
+            <a href={calendly} target="_blank">
+              <button
+                className={`mt-10 lg:text-2xl ${textColor} ${borcerColor} border-2 py-6 px-8 rounded-2xl font-bold`}
+              >
+                {buttonText}
+              </button>
+            </a>
           )}
         </div>
       </div>

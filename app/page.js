@@ -1,9 +1,11 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Hero from '@/components/Hero'
 
 import Button from '@/components/Button'
 
-const calendly = 'rtrt'
+const calendly =
+  'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 const getPosts = async () => {
   const response = await fetch(
@@ -53,12 +55,13 @@ export default async function Home() {
               Wedding Planning Services
             </h2>
             <div className="py-10">
-              <div className="pb-4 grid sm:grid-cols-2 gap-8 items-center mb-12">
+              <div className="grid lg:grid-cols-2 gap-8 items-center mb-4">
                 <img
                   src="images/bride-groom-night-photo.webp"
                   loading="lazy"
+                  width="100%"
                   height="auto"
-                  className="pb-4"
+                  className="md:pb-4"
                 />
                 <div className="">
                   <h3 className="text-xl font-bold pb-4">Wedding Planning</h3>
@@ -67,14 +70,11 @@ export default async function Home() {
                     <Link href="/wedding-planner-washington-dc">
                       Washington, DC
                     </Link>
-                    ,{' '}
-                    <Link href="/wedding-services/wedding-planner-bowie-md">
-                      Maryland
-                    </Link>
-                    , and Virginia, is designed to guide you through every step
-                    of your wedding journey. From initial concept creation to
-                    the final farewell, we handle all the details so you can
-                    focus on enjoying your special day.
+                    , <Link href="/wedding-planner-bowie-md">Maryland</Link>,
+                    and Virginia, is designed to guide you through every step of
+                    your wedding journey. From initial concept creation to the
+                    final farewell, we handle all the details so you can focus
+                    on enjoying your special day.
                   </p>
                   <p className="md:text-xl mb-4">
                     We assist with venue selection, vendor management, budget
@@ -82,20 +82,21 @@ export default async function Home() {
                     ensuring your wedding is flawlessly executed and uniquely
                     yours.
                   </p>
-                  <p className="md:text-xl mb-4">
-                    <Link href="/wedding-services/wedding-planner-bowie-md">
-                      Learn more here
-                    </Link>
-                  </p>
+                  <Link
+                    href="/wedding-services/wedding-planner-bowie-md"
+                    className="md:text-xl mb-4"
+                  >
+                    Learn more about wedding planning here.
+                  </Link>
                 </div>
               </div>
-              <div className="pb-4 grid sm:grid-cols-2 gap-8 items-center">
+              <div className="pb-4 grid lg:grid-cols-2 gap-8 items-center">
                 <img
-                  src="images/black-grooms-men.webp"
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1736309718/Monica%20Browne%20Weddings/black-grooms-men_rae1fu.webp"
                   loading="lazy"
                   width="100%"
                   height="auto"
-                  className="pb-4 sm:order-2"
+                  className="pb-4 lg:order-2"
                 />
                 <div className="">
                   <h3 className="text-xl font-bold pb-4">
@@ -107,7 +108,7 @@ export default async function Home() {
                       Washington, DC
                     </Link>{' '}
                     and{' '}
-                    <Link href="/wedding-services/day-of-wedding-coordinator-bowie-md">
+                    <Link href="/day-of-wedding-coordinator-bowie-md">
                       Bowie, MD
                     </Link>{' '}
                     , ensures your wedding day runs seamlessly, just as you
@@ -120,14 +121,15 @@ export default async function Home() {
                     ensure you and your loved ones can relax and enjoy every
                     moment of your special day.
                   </p>
-                  <p className="md:text-xl mb-4">
-                    <Link href="/day-of-wedding-coordinator-washington-dc">
-                      Learn more here
-                    </Link>
-                  </p>
+                  <Link
+                    href="/day-of-wedding-coordinator-washington-dc"
+                    className="md:text-xl mb-4"
+                  >
+                    Learn more about day-of wedding coordination here.
+                  </Link>
                 </div>
               </div>
-              <div className="pb-4 grid sm:grid-cols-2 gap-8 items-center">
+              <div className="pb-4 grid lg:grid-cols-2 gap-8 items-center">
                 <img
                   src="images/wedding-flower-ring.jpg"
                   loading="lazy"
@@ -148,18 +150,18 @@ export default async function Home() {
                     Let us enhance your wedding day with blooms that perfectly
                     reflect your style and theme.
                   </p>
-                  <p className="md:text-xl mb-4">
-                    <Link href="/wedding-flowers">Learn more here</Link>
-                  </p>
+                  <Link href="/wedding-flowers" className="md:text-md mb-4">
+                    Learn more about wedding flowers here.
+                  </Link>
                 </div>
               </div>
-              <div className="pb-4 grid sm:grid-cols-2 gap-8 items-center">
+              <div className="pb-4 grid lg:grid-cols-2 gap-8 items-center">
                 <img
                   src="images/micro-wedding-cover-img.webp"
                   loading="lazy"
                   width="100%"
                   height="auto"
-                  className="pb-4 sm:order-2"
+                  className="pb-4 lg:order-2"
                 />
                 <div>
                   <h3 className="text-xl font-bold pb-4">
@@ -176,12 +178,15 @@ export default async function Home() {
                     small-scale wedding feels just as magical and memorable as a
                     grand affair.
                   </p>
-                  <Link href="/micro-wedding-packages-maryland">
-                    <p className="my-8">Read more</p>
+                  <Link
+                    href="/micro-wedding-packages-maryland"
+                    className="md:text-md mb-4"
+                  >
+                    Learn more about micro weddings here.
                   </Link>
                 </div>
               </div>
-              <div className="pb-4 grid sm:grid-cols-2 gap-8 items-center">
+              <div className="pb-4 grid lg:grid-cols-2 gap-8 items-center">
                 <img
                   src="images/indian-wedding-ceremony-mgm.jpg"
                   loading="lazy"
@@ -204,8 +209,11 @@ export default async function Home() {
                     cuisine, and attire, we handle every detail with precision
                     and care.
                   </p>
-                  <Link href="/indian-wedding-planner-washington-dc">
-                    <p className="my-8">Read more</p>
+                  <Link
+                    href="/indian-wedding-planner-washington-dc"
+                    className="md:text-md mb-4"
+                  >
+                    Learn more about Indian wedding planning here.
                   </Link>
                 </div>
               </div>
@@ -213,13 +221,15 @@ export default async function Home() {
                 Book a 15-minute with Monica and see she can help you plan your
                 wedding celebration
               </p>
-              <Button
-                buttonText="Book Your Call Today!"
-                bgColor="bg-purple-500"
-                borderWidth="border-0"
-                textColor="text-white"
-                textSize="md:text-xl"
-              />
+              <a href={calendly} target="_blank">
+                <Button
+                  buttonText="Book Your Call Today!"
+                  bgColor="bg-purple-500"
+                  borderWidth="border-0"
+                  textColor="text-white"
+                  textSize="md:text-xl"
+                />
+              </a>
             </div>
           </div>
         </section>
@@ -308,10 +318,34 @@ export default async function Home() {
                 Handling All The Details?
               </h2>
               <div className="grid grid-cols-2 gap-2 mb-10">
-                <img src="/images/couple-posing-in-dc.jpg" />
-                <img src="/images/couple-posing-in-dc.jpg" />
-                <img src="/images/couple-posing-in-dc.jpg" />
-                <img src="/images/couple-posing-in-dc.jpg" />
+                <Image
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1736309749/Monica%20Browne%20Weddings/bride-with-flowers_xcqpkf.webp"
+                  alt="Black bride with bouquet."
+                  loading="lazy"
+                  width="472"
+                  height="708"
+                />
+                <Image
+                  src="/images/black-bride-and-groom.webp"
+                  alt="Black bride and groom smiling."
+                  loading="lazy"
+                  width="472"
+                  height="708"
+                />
+                <Image
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1736309659/Monica%20Browne%20Weddings/SierraCharles001_imfsnr.jpg"
+                  alt="Newly wed couple posing at wedding venue.."
+                  loading="lazy"
+                  width="472"
+                  height="708"
+                />
+                <Image
+                  src="https://res.cloudinary.com/browne-company/image/upload/v1736310789/Monica%20Browne%20Weddings/couple-posing-in-dc_qh7vtr.webp"
+                  alt="Newly wed couple posing at wedding venue.."
+                  loading="lazy"
+                  width="472"
+                  height="708"
+                />
               </div>
               <div className="center">
                 <a href={calendly} target="_blank">
@@ -386,23 +420,28 @@ export default async function Home() {
             </h2>
             <div className="py-6">
               <div className="py-2">
-                <h3 className="text-2xl mb-4">#1. Call Monica</h3>
-                <p className="md:text-xl mb-4">
+                <h3 className="text-2xl md:text-3xl">#1. Call Monica</h3>
+                <p className="md:text-xl my-4">
                   Talk with Monica and see how her company can help you bring
                   your vision to life.
                 </p>
               </div>
               <div className="py-2">
-                <h3 className="text-2xl mb-4">#2. Create Your Budget</h3>
-                <p className="md:text-xl mb-4">
-                  Create Your Budget Work out a budget and start planning the
-                  details, like decor, ceremony details, reception details,
-                  guest list, etc.
+                <h3 className="text-2xl md:text-3xl">
+                  #2. Share the Details of Your What You Want
+                </h3>
+                <p className="md:text-xl my-4">
+                  Tell us all about what you want, and we’ll take it from there.
+                  From creating a comprehensive timeline to managing vendor
+                  communications and fine-tuning the logistics, we’ll handle
+                  every detail with care.
                 </p>
               </div>
               <div className="py-2">
-                <h3 className="text-2xl mb-4">#3. Enjoy Your Special Day</h3>
-                <p className="md:text-xl mb-4">
+                <h3 className="text-2xl md:text-3xl">
+                  #3. Enjoy Your Special Day
+                </h3>
+                <p className="md:text-xl my-4">
                   Call Monica and see how she can help make your wedding day a
                   success.
                 </p>
@@ -476,15 +515,24 @@ export default async function Home() {
               services that will help you save time and money and assist in any
               way possible and create your dream wedding.
             </p>
-            <p className="md:text-xl mb-4">See our 5-star reviews.</p>
+            <p className="md:text-xl mb-4">
+              See our{' '}
+              <a
+                href="https://www.google.com/search?q=monica+browne+weddings&oq=monica+browne+weddings&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxiABDIJCAAQRRg7GIAEMgoIARAAGIAEGKIEMgoIAhAAGIAEGKIEMgoIAxAAGIAEGKIEMgYIBBBFGDsyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg3ODQ3ajFqN6gCCLACAQ&sourceid=chrome&ie=UTF-8#mpd=~2535347168599140905/customers/reviews"
+                target="_blank"
+              >
+                5-star reviews
+              </a>{' '}
+              .
+            </p>
             <p className="md:text-xl mb-4">
               When you hire us, you hire an experienced planning company with
               over 15 years in the event industry and someone you can trust.
             </p>
             <p className="md:text-xl mb-4">
-              You get a company with incredible knowledge at your disposal, a
-              credible resource, and a team that will do whatever it takes to
-              ensure your wedding goes off without any issues.
+              You get <Link href="/about">Monica</Link>, an incredible knowledge
+              professional at your disposal, and a team that will do whatever it
+              takes to ensure your wedding goes off without any issues.
             </p>
             <p className="md:text-xl mb-4">
               We are here to help you plan one of the biggest days of your life
@@ -596,14 +644,19 @@ export default async function Home() {
               </h3>
               <p className="md:text-xl mb-4">Yes.</p>
               <p className="md:text-xl mb-4">
-                Even though we are Maryland wedding planners, we offer
-                full-service and partial-service event planning to couples
+                Even though we are based in{' '}
+                <Link href="/wedding-planner-bowie-md">Maryland</Link>, we offer
+                full-service and partial-service event planning to all couples
                 throughout the DMV area.
               </p>
               <p className="md:text-xl mb-4">
-                We have planned weddings in Washington DC and Northern Virginia
-                and can work with you regardless of location. Contact us today
-                to get started planning your dream wedding!
+                We have planned weddings in{' '}
+                <Link href="/wedding-planner-washington-dc">
+                  Washington, DC
+                </Link>{' '}
+                and Northern Virginia and can work with you regardless of
+                location. Book a call today to get started planning your dream
+                wedding!
               </p>
             </div>
             <Button

@@ -2,7 +2,8 @@ import Link from 'next/link'
 import Hero from '@/components/Hero'
 import Button from '@/components/Button'
 
-const calendly = 'https://calendly.com/monica-17/monica-browne-weddings-call'
+const calendly =
+  'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
   title:
@@ -33,8 +34,8 @@ export default function IndianWeddingPlannerDC() {
   return (
     <>
       <Hero
-        herotext="Indian Wedding Planner, Washington, DC"
-        heroSubText="We create beautiful Indian weddings for busy couples in living in Washington, DC"
+        herotext="Premier Indian Wedding Planner for Busy Couples in Washington"
+        heroSubText="We specialize in crafting stunning Indian weddings for busy couples in Washington, DC, blending tradition, elegance, and modern flair to create unforgettable celebrations"
         buttonText="Book A Call With Monica!"
         imageUrl="/images/indian-wedding-ceremony-mgm.jpg"
         textColor="text-white"
@@ -114,9 +115,10 @@ export default function IndianWeddingPlannerDC() {
               <h2 className="text-3xl md:text-5xl mb-8 text-center max-w-3xl mx-auto">
                 Comprehensive Indian Wedding Planning Services
               </h2>
-              <div className="pb-4 grid md:grid-cols-2 gap-8 items-center mb-12">
+              <div className="pb-4 grid md:grid-cols-2 gap-x-10 items-center my-16">
                 <img
-                  src="images/wedding-couple.jpg"
+                  src="images/indian-wedding-ceremony-mgm.jpg"
+                  alt="Indian wedding planner."
                   loading="lazy"
                   height="auto"
                   className="pb-4"
@@ -132,19 +134,16 @@ export default function IndianWeddingPlannerDC() {
                   </p>
                   <p className="md:text-xl mb-4">
                     We assist with selecting the perfect venues for all your
-                    events, coordinating logistics and contracts. Our vendor
-                    management services connect you with trusted professionals
-                    for catering, decor, photography, and entertainment.
-                  </p>
-                  <p className="md:text-xl mb-4">
-                    To bring your vision to life, we design custom themes and
-                    decor while managing guest lists, invitations, and RSVPs.
+                    events, coordinating logistics and contracts. We connect you
+                    with trusted professionals for catering, decor, photography,
+                    and entertainment.
                   </p>
                 </div>
               </div>
-              <div className="pb-4 grid sm:grid-cols-2 gap-8 items-center">
+              <div className="pb-4 grid sm:grid-cols-2 gap-x-10 items-center my-16">
                 <img
-                  src="images/black-grooms-men.webp"
+                  src="images/newly-wed-indian-couple.jpg"
+                  alt="Newly wed Indian couple."
                   loading="lazy"
                   width="100%"
                   height="auto"
@@ -159,10 +158,7 @@ export default function IndianWeddingPlannerDC() {
                     reception, ensuring smooth transitions and flawless
                     execution.
                   </p>
-                  <p className="md:text-xl mb-4">
-                    Entertainment is arranged, including DJs, live music, and
-                    cultural performances, with all technical details managed.
-                  </p>
+
                   <p className="md:text-xl mb-4">
                     For traditional elements, we organize mandaps, ceremonial
                     props, and work with priests or officiants to honor your
@@ -170,9 +166,9 @@ export default function IndianWeddingPlannerDC() {
                   </p>
                 </div>
               </div>
-              <div className="pb-4 grid sm:grid-cols-2 gap-8 items-center">
+              <div className="pb-4 grid sm:grid-cols-2 gap-x-10 items-center my-16">
                 <img
-                  src="images/wedding-flower-ring.jpg"
+                  src="images/groom-at-indian-wedding.jpg"
                   loading="lazy"
                   width="100%"
                   height="auto"
@@ -191,19 +187,11 @@ export default function IndianWeddingPlannerDC() {
                     accommodations while providing full bridal and groom support
                     for wardrobe changes, makeup, and mehendi.
                   </p>
-                  <p className="md:text-xl mb-4">
-                    Our team ensures every detail is managed so you can enjoy
-                    your day.
-                  </p>
-                  <p className="md:text-xl mb-4">
-                    Let us enhance your wedding day with blooms that perfectly
-                    reflect your style and theme.
-                  </p>
                 </div>
               </div>
-              <div className="pb-4 grid sm:grid-cols-2 gap-8 items-center">
+              <div className="pb-4 grid sm:grid-cols-2 gap-x-10 items-center my-16">
                 <img
-                  src="images/micro-wedding-cover-img.webp"
+                  src="images/indian-bride-in-black-bmw.jpg"
                   loading="lazy"
                   width="100%"
                   height="auto"
@@ -225,7 +213,7 @@ export default function IndianWeddingPlannerDC() {
               </div>
               <div className="pb-4 grid sm:grid-cols-2 gap-8 items-center">
                 <img
-                  src="images/indian-wedding-ceremony-mgm.jpg"
+                  src="images/indian-bride-with-parents-smiling.jpg"
                   loading="lazy"
                   width="100%"
                   height="auto"
@@ -235,10 +223,6 @@ export default function IndianWeddingPlannerDC() {
                   <h3 className="text-3xl font-bold pb-4">
                     One-of-a-Kind Wedding Touches
                   </h3>
-                  <p className="text-xl pb-4">
-                    We also offer destination wedding planning, fusion wedding
-                    customization, and personalized wedding favors.
-                  </p>
                   <p className="md:text-xl mb-4">
                     Special moments like surprise performances and unique
                     elements can be added to make your wedding truly
@@ -253,7 +237,7 @@ export default function IndianWeddingPlannerDC() {
               <div className="center">
                 <a href={calendly} target="_blank">
                   <Button
-                    buttonText="Book a Call With Monica"
+                    buttonText="Book a Call With Monica Today!"
                     bgColor="bg-purple-500"
                     borderWidth="border-0"
                     textColor="text-white"
@@ -267,31 +251,42 @@ export default function IndianWeddingPlannerDC() {
         <section className="bg-slate-800">
           <div className="py-10">
             <div className="max-w-3xl mx-auto md:p-20 py-10 px-8 rounded-xl text-white">
-              <h2 className="text-3xl md:text-5xl">How to Get Started</h2>
+              <h2 className="text-3xl md:text-5xl">
+                How to Begin Your Indian Wedding Planning Journey with Monica
+              </h2>
               <div className="my-10">
                 <h4 className="text-2xl md:text-3xl">
-                  1. Book a call with Monica
+                  1. Schedule a Consultation
                 </h4>
                 <p className="md:text-xl my-4">
-                  Book a call with Monica to discuss how she can help as your
-                  day of coordinator.
+                  Start by booking a call with Monica to discuss your unique
+                  needs for your Indian wedding. From multi-day celebrations to
+                  intricate cultural traditions, Monica will guide you on how
+                  her expertise as a day-of coordinator can ensure a flawless
+                  experience.
                 </p>
               </div>
               <div className="my-10">
                 <h4 className="text-2xl md:text-3xl">
-                  2. Tell Monica about your event
+                  2. Share Your Wedding Vision
                 </h4>
                 <p className="md:text-xl my-4">
-                  Let us create a detailed timeline for you, contact your
-                  vendors, and oversee the details of your wedding day.
+                  Tell Monica all about your event, including the ceremonies,
+                  rituals, and vendors involved. We’ll craft a detailed timeline
+                  for each event, manage vendor communications, and oversee
+                  every aspect to honor your cultural traditions and
+                  preferences.
                 </p>
               </div>
               <div>
                 <h4 className="text-2xl md:text-3xl">
-                  3. Enjoy your Wedding Day
+                  3. Celebrate Every Moment
                 </h4>
                 <p className="md:text-xl my-4">
-                  Enjoy your wedding and cherish the moment!
+                  Immerse yourself in the joy of your wedding festivities—from
+                  the vibrant sangeet to the heartfelt pheras—while we handle
+                  the behind-the-scenes details. With Monica coordinating every
+                  step, you can focus on cherishing these unforgettable moments.
                 </p>
                 <div className="center">
                   <a href={calendly} target="_blank">
@@ -302,7 +297,7 @@ export default function IndianWeddingPlannerDC() {
                       textColor="text-white"
                       borderStyle="border-solid"
                       textSize="md:text-2xl"
-                    ></Button>
+                    />
                   </a>
                 </div>
               </div>
@@ -384,12 +379,12 @@ export default function IndianWeddingPlannerDC() {
             </div>
           </section>
           <section>
-            <div className="max-w-3xl mx-auto py-10 md:py-20">
-              <h2 className="text-3xl md:text-5xl text-center mb-8">
+            <div className="max-w-7xl mx-auto py-10 md:py-20">
+              <h2 className="text-3xl md:text-5xl max-w-3xl mx-auto text-center mb-8">
                 Want To Enjoy Your Wedding While a Professional Deals With All
                 the Stress and Logistics?
               </h2>
-              <div className="grid lg:grid-cols-3 gap-2 max-w-3xl mx-auto my-10">
+              <div className="grid lg:grid-cols-3 gap-2 max-w-5xl mx-auto my-10">
                 <img
                   src="/images/wedding-table-centerpiece-design.webp"
                   alt="Wedding table centerpiece design for small wedding."
@@ -447,16 +442,19 @@ export default function IndianWeddingPlannerDC() {
             </div>
           </section>
           <section>
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-5xl text-center">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
                 #1. What services do you provide as an Indian wedding planner?
               </h3>
               <p className="md:text-xl mb-4">
-                As a full-service Indian wedding planner, we provide
-                comprehensive planning, including venue selection, vendor
-                management, decor detailing, and menu curation. We also offer
-                day-of coordination and consultation services.
+                As Indian wedding planners, we provide comprehensive planning,
+                including venue selection, vendor management, decoration
+                detailing, and help with menu curation. We also offer{' '}
+                <Link href="/day-of-wedding-coordinator-washington-dc">
+                  day-of coordination
+                </Link>{' '}
+                and consultation services.
               </p>
 
               <h3 className="text-2xl md:text-3xl my-4">
@@ -465,7 +463,7 @@ export default function IndianWeddingPlannerDC() {
               </h3>
               <p className="md:text-xl mb-4">Yes.</p>
               <p className="md:text-xl mb-4">
-                We have vast experience in planning weddings across a variety of
+                We have vast knowledge in planning weddings across a variety of
                 Indian cultural traditions, including but not limited to
                 Punjabi, Gujarati, South Indian, Bengali, and Marathi weddings.
                 We respect and understand the nuances of different regional and

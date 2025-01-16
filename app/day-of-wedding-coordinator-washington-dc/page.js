@@ -3,7 +3,8 @@ import Hero from '@/components/Hero'
 import Button from '@/components/Button'
 import Image from 'next/image'
 
-const calendly = 'https://calendly.com/monica-17/monica-browne-weddings-call'
+const calendly =
+  'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
   title: 'Day of Wedding Coordinator in Washington DC | Monica Browne Weddings',
@@ -33,8 +34,8 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
   return (
     <>
       <Hero
-        herotext="Day of Wedding Coordinator, Washington, DC"
-        heroSubText="We provide professional day-of wedding coordination services for couples in Washington, DC"
+        herotext="Premier Day of Wedding Coordinator, Washington, DC"
+        heroSubText="We offer expert day-of wedding coordination services for couples in Washington, DC, ensuring your special day is seamless and stress-free"
         buttonText="Book A Call With Monica!"
         imageUrl="/images/wedding-at-irongate-in-washington-dc.jpg"
         textColor="text-white"
@@ -50,7 +51,7 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
                 <p className="md:text-xl mb-4">
                   Monica Browne Weddings offers day-of wedding coordinator
                   services to couples in Washington, DC, and{' '}
-                  <Link href="/wedding-services/day-of-wedding-coordinator-bowie-md">
+                  <Link href="/day-of-wedding-coordinator-bowie-md">
                     Bowie, MD
                   </Link>
                   .
@@ -62,21 +63,21 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
                 </p>
               </div>
               <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
-                <img
+                <Image
                   src="/images/wedding-table-centerpiece-design.webp"
                   alt="Wedding table centerpiece design for small wedding."
                   loading="lazy"
                   width="472"
                   height="708"
                 />
-                <img
+                <Image
                   src="/images/wedding-cake.webp"
                   alt="Wedding cake picture"
                   loading="lazy"
                   width="472"
                   height="708"
                 />
-                <img
+                <Image
                   src="/images/wedding-table-with-cork-centerpiece.webp"
                   alt="Wedding table decorations by Monica Browne Weddings"
                   loading="lazy"
@@ -165,21 +166,21 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
                 width="472"
                 height="708"
               />
-              <img
+              <Image
                 src="/images/couple-posing-in-dc.jpg"
                 alt="Newly wed couple at Irongate Restaurant in Washington, DC"
                 loading="lazy"
                 width="472"
                 height="708"
               />
-              <img
+              <Image
                 src="/images/couple-posing-in-dc.jpg"
                 alt="Newly wed couple at Irongate Restaurant in Washington, DC"
                 loading="lazy"
                 width="472"
                 height="708"
               />
-              <img
+              <Image
                 src="/images/couple-posing-in-dc.jpg"
                 alt="Newly wed couple at Irongate Restaurant in Washington, DC"
                 loading="lazy"
@@ -314,21 +315,21 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
             </div>
           </section>
           <div className="grid lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            <img
+            <Image
               src="/images/wedding-table-centerpiece-design.webp"
               alt="Wedding table centerpiece design for small wedding."
               loading="lazy"
               width="472"
               height="708"
             />
-            <img
+            <Image
               src="/images/wedding-cake.webp"
               alt="Wedding cake picture"
               loading="lazy"
               width="472"
               height="708"
             />
-            <img
+            <Image
               src="/images/wedding-table-with-cork-centerpiece.webp"
               alt="Wedding table decorations by Monica Browne Weddings"
               loading="lazy"
@@ -338,20 +339,14 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
           </div>
           <section>
             <div className="max-w-3xl mx-auto py-10 md:py-20">
-              <h2 className="text-3xl md:text-5xl mb-8">
-                Why Choose Monica Browne Weddings as Your Day of Wedding
-                Coordinator?
+              <h2 className="text-3xl md:text-5xl mb-8 text-center">
+                What We Do as Your Day of Wedding Coordinator
               </h2>
               <p className="md:text-xl mb-4">
-                When you choose Monica Browne Weddings, you’re hiring a
-                professional with over 15 years of experience in the wedding
-                industry.
-              </p>
-              <p className="md:text-xl mb-4">
                 When your wedding is{' '}
-                <span className="underline">eight weeks away</span>, you can
-                count on us to take the reins and handle the following with care
-                and precision:
+                <span className="underline-offset-8">eight weeks away</span>,
+                you can count on us to take the reins and handle the following
+                with care and precision:
               </p>
               <ul className="ml-8 my-10 list-disc">
                 <li className="md:text-xl mb-4">
