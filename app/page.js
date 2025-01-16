@@ -83,7 +83,7 @@ export default async function Home() {
                     yours.
                   </p>
                   <Link
-                    href="/wedding-services/wedding-planner-bowie-md"
+                    href="/wedding-planner-bowie-md"
                     className="md:text-xl mb-4"
                   >
                     Learn more about wedding planning here.
@@ -150,7 +150,7 @@ export default async function Home() {
                     Let us enhance your wedding day with blooms that perfectly
                     reflect your style and theme.
                   </p>
-                  <Link href="/wedding-flowers" className="md:text-md mb-4">
+                  <Link href="/wedding-flowers" className="md:text-xl mb-4">
                     Learn more about wedding flowers here.
                   </Link>
                 </div>
@@ -180,7 +180,7 @@ export default async function Home() {
                   </p>
                   <Link
                     href="/micro-wedding-packages-maryland"
-                    className="md:text-md mb-4"
+                    className="md:text-xl mb-4"
                   >
                     Learn more about micro weddings here.
                   </Link>
@@ -211,7 +211,7 @@ export default async function Home() {
                   </p>
                   <Link
                     href="/indian-wedding-planner-washington-dc"
-                    className="md:text-md mb-4"
+                    className="md:text-xl mb-4"
                   >
                     Learn more about Indian wedding planning here.
                   </Link>
