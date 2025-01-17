@@ -86,7 +86,7 @@ export default async function Home() {
                     href="/wedding-planner-bowie-md"
                     className="md:text-xl mb-4"
                   >
-                    Learn more about wedding planning here.
+                    Learn more about wedding planning.
                   </Link>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default async function Home() {
                     href="/day-of-wedding-coordinator-washington-dc"
                     className="md:text-xl mb-4"
                   >
-                    Learn more about day-of wedding coordination here.
+                    Learn more about day-of wedding coordination.
                   </Link>
                 </div>
               </div>
@@ -151,7 +151,7 @@ export default async function Home() {
                     reflect your style and theme.
                   </p>
                   <Link href="/wedding-flowers" className="md:text-xl mb-4">
-                    Learn more about wedding flowers here.
+                    Learn more about wedding flowers.
                   </Link>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default async function Home() {
                     href="/micro-wedding-packages-maryland"
                     className="md:text-xl mb-4"
                   >
-                    Learn more about micro weddings here.
+                    Learn more about micro weddings.
                   </Link>
                 </div>
               </div>
@@ -213,7 +213,7 @@ export default async function Home() {
                     href="/indian-wedding-planner-washington-dc"
                     className="md:text-xl mb-4"
                   >
-                    Learn more about Indian wedding planning here.
+                    Learn more about Indian wedding planning.
                   </Link>
                 </div>
               </div>

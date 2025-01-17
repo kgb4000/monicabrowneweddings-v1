@@ -67,7 +67,7 @@ export default function WeddingPlannerBowieMD() {
           </div>
         </section>
         <section>
-          <div className="container max-w-5xl mx-auto grid lg:grid-cols-3 gap-2">
+          <div className="container max-w-5xl mx-auto grid lg:grid-cols-3 gap-2 px-6">
             <img
               src="/images/wedding-table-centerpiece-design.webp"
               alt="Wedding table centerpiece design for small wedding."
@@ -92,7 +92,7 @@ export default function WeddingPlannerBowieMD() {
           </div>
         </section>
         <section>
-          <div className="container max-w-3xl mx-auto py-10">
+          <div className="container max-w-3xl mx-auto py-10 px-6">
             <p className="md:text-xl mb-4">
               The team at Monica Browne Weddings specializes in designing,
               implementing, and executing stylish and elegant weddings.
@@ -214,7 +214,7 @@ export default function WeddingPlannerBowieMD() {
               />
             </div>
           </div> */}
-          <div className="max-w-2xl mx-auto py-10">
+          <div className="max-w-2xl mx-auto py-10 px-6">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
               What We Do When We Help You Plan Your Wedding
             </h2>
@@ -414,7 +414,7 @@ export default function WeddingPlannerBowieMD() {
           </a>
         </section>
         <section>
-          <div className="max-w-2xl mx-auto my-10 md:my-20">
+          <div className="max-w-2xl mx-auto my-10 md:my-20 px-6">
             <h2 className="text-3xl md:text-5xl text-center">FAQs</h2>
             <h3 className="text-2xl md:text-3xl my-4">
               #1. Is it worth it to hire a wedding planner?
@@ -464,7 +464,7 @@ export default function WeddingPlannerBowieMD() {
             </p>
           </div>
         </section>
-        <p className="text-xl italic mt-10 text-center max-w-md mx-auto">
+        <p className="text-xl italic mt-10 text-center max-w-md mx-auto px-6">
           Book a 15-minute with Monica and see how she can help you plan your
           wedding today!
         </p>

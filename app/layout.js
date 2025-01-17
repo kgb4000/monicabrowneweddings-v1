@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${playfairDisplay.variable} ${openSans.variable} font-sans`}
     >
-      <body>
+      <body cz-shortcut-listen="true">
         <Nav />
         {children}
         <Footer />

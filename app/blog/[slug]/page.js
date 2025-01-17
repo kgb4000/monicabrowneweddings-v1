@@ -60,7 +60,7 @@ export async function generateMetadata({ params }) {
     title: post.title,
     description: post.description,
     alternates: {
-      canonical: `https://monicabrowneweddings.com/${post.slug}`,
+      canonical: `https://monicabrowneweddings.com/blog/${post.slug}`,
     },
   }
 }

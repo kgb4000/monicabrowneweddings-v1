@@ -76,18 +76,15 @@ export default function WeddingFlowers() {
                 We're proud to help couples in the Annapolis, Bethesda, Chevy
                 Chase, Rockville, Silver Spring, and Washington DC areas.
               </p>
-              <div className="center">
-                <a href={calendly}>
-                  <Button
-                    buttonText="Book a call with Monica"
-                    borderColor="border-black"
-                    borderWidth="border-2"
-                    textColor="text-black"
-                    borderStyle="border-solid"
-                    textSize="lg:text-xl"
-                  ></Button>
-                </a>
-              </div>
+              <a href={calendly} target="_blank">
+                <Button
+                  buttonText="Book Your Call Today!"
+                  bgColor="bg-purple-500"
+                  borderWidth="border-0"
+                  textColor="text-white"
+                  textSize="md:text-xl"
+                />
+              </a>
             </div>
             <div className="my-4">
               <h2 className="text-3xl mb-8">Flower Recommendations</h2>
@@ -164,18 +161,15 @@ export default function WeddingFlowers() {
                 Of course, the groom’s is made extra special and will be in
                 keeping with the style of the bride’s bouquet if desired.{' '}
               </p>
-              <div className="center">
-                <a href={calendly}>
-                  <Button
-                    buttonText="Book a call with Monica"
-                    borderColor="border-black"
-                    borderWidth="border-2"
-                    textColor="text-black"
-                    borderStyle="border-solid"
-                    textSize="lg:text-xl"
-                  ></Button>
-                </a>
-              </div>
+              <a href={calendly} target="_blank">
+                <Button
+                  buttonText="Book Your Call Today!"
+                  bgColor="bg-purple-500"
+                  borderWidth="border-0"
+                  textColor="text-white"
+                  textSize="md:text-xl"
+                />
+              </a>
             </div>
             <div className="my-4">
               <h3 className="text-2xl mb-4">The Wedding Arbor</h3>
@@ -276,15 +270,14 @@ export default function WeddingFlowers() {
                 </ul>
 
                 <div className="center">
-                  <a href={calendly}>
+                  <a href={calendly} target="_blank">
                     <Button
-                      buttonText="Book a call with Monica"
-                      borderColor="border-black"
-                      borderWidth="border-2"
-                      textColor="text-black"
-                      borderStyle="border-solid"
-                      textSize="lg:text-xl"
-                    ></Button>
+                      buttonText="Book Your Call Today!"
+                      bgColor="bg-purple-500"
+                      borderWidth="border-0"
+                      textColor="text-white"
+                      textSize="md:text-xl"
+                    />
                   </a>
                 </div>
               </div>
@@ -358,15 +351,14 @@ export default function WeddingFlowers() {
                   you.
                 </p>
                 <div className="center">
-                  <a href={calendly}>
+                  <a href={calendly} target="_blank">
                     <Button
-                      buttonText="Book a call with Monica"
-                      borderColor="border-black"
-                      borderWidth="border-2"
-                      textColor="text-black"
-                      borderStyle="border-solid"
+                      buttonText="Book Your Call Today!"
+                      bgColor="bg-purple-500"
+                      borderWidth="border-0"
+                      textColor="text-white"
                       textSize="md:text-xl"
-                    ></Button>
+                    />
                   </a>
                 </div>
               </div>
