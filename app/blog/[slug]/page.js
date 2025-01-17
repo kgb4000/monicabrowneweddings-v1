@@ -128,7 +128,7 @@ export default async function Page({ params }) {
                   </Link>
                 ),
                 p: ({ children }) => (
-                  <p className="text-xl leading text-ui-fg-base font-normal my-6 leading-8">
+                  <p className="md:text-xl leading text-ui-fg-base font-normal my-6 leading-8">
                     {children}
                   </p>
                 ),
@@ -138,7 +138,7 @@ export default async function Page({ params }) {
                   </ul>
                 ),
                 li: ({ children }) => (
-                  <li className="text-xl leading-relaxed text-ui-fg-base font-normal lg:my-8">
+                  <li className="md:text-xl leading-relaxed text-ui-fg-base font-normal lg:my-8">
                     {children}
                   </li>
                 ),
@@ -154,10 +154,10 @@ export default async function Page({ params }) {
             />
             <p className="text-xl leading-normal">{post.author.biography}</p>
           </div>
+          <Link href="/blog" className="md:text-xl">
+            Back to blog
+          </Link>
         </div>
-      </section>
-      <section>
-        <div className="container max-w-2xl mx-auto mt-28 px-4"></div>
       </section>
     </>
   )

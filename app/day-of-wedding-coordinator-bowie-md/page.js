@@ -112,7 +112,9 @@ export default function WeddingPlannerBowieMD() {
                 </li>
                 <li className="md:text-xl mb-4">Your wedding decorations</li>
                 <li className="md:text-xl mb-4">Your dance floor</li>
-                <li className="md:text-xl mb-4">Your wedding florist</li>
+                <li className="md:text-xl mb-4">
+                  <Link href="/wedding-flowers">Your wedding florist</Link>
+                </li>
                 <li className="md:text-xl mb-4">
                   Your hairstylist and makeup pro
                 </li>
