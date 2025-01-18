@@ -94,10 +94,8 @@ export default async function WeddingPlannerWashingtonDC() {
                 <p className="md:text-xl mb-4">
                   We take care of your entire event, from planning and design,
                   coordination, selecting flowers,{' '}
-                  <Link href="/wedding-services/wedding-decoration-services">
-                    decorations
-                  </Link>
-                  , and more.
+                  <Link href="/wedding-decoration-services">decorations</Link>,
+                  and more.
                 </p>
               </div>
               <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
@@ -353,9 +351,7 @@ export default async function WeddingPlannerWashingtonDC() {
                 <p className="md:text-xl mb-4">
                   From double-checking everything from{' '}
                   <Link href="/wedding-flowers">flowers</Link> and{' '}
-                  <Link href="/wedding-services/wedding-decoration-services">
-                    decorations
-                  </Link>{' '}
+                  <Link href="/wedding-decoration-services">decorations</Link>{' '}
                   to managing vendor setups, we make sure every detail matches
                   your vision.
                 </p>

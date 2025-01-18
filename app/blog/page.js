@@ -3,7 +3,7 @@ import Button from '@/components/Button'
 import Hero from '@/components/Hero'
 const getPosts = async () => {
   const response = await fetch(
-    'https://api-us-east-1.graphcms.com/v2/cktkjtoxd0dod01z1bc0w41e9/master',
+    'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master',
     {
       method: 'POST',
       headers: {

@@ -5,7 +5,7 @@ import { RichText } from '@graphcms/rich-text-react-renderer'
 
 async function getPost(slug) {
   const res = await fetch(
-    'https://api-us-east-1.graphcms.com/v2/cktkjtoxd0dod01z1bc0w41e9/master',
+    'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master',
     {
       method: 'POST',
       headers: {
