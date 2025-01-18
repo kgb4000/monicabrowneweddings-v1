@@ -110,6 +110,12 @@ export default async function JewishWeddingPlanner() {
               From "Mazel Tov!" to The Last Dance, We’ll Bring Your Jewish
               Wedding Dreams to Life
             </h2>
+            <img
+              src="images/jewish-wedding-planner-washington-dc.png"
+              className="mb-8"
+              loading="lazy"
+              alt="Jewish wedding reception."
+            />
             <p className="md:text-xl mb-4">
               From the moment you say "Yes!" to the final dance at your
               reception, we’re here to ensure every detail is covered with care
@@ -505,7 +511,7 @@ export default async function JewishWeddingPlanner() {
                 The cost of a Jewish wedding in the Washington, DC area can vary
                 widely depending on factors such as the venue, guest count,
                 catering, and specific traditions included. On average, couples
-                can expect to spend between $50,000 and $75,000 for a
+                can expect to spend between <b>$50,000 and $75,000</b> for a
                 well-rounded Jewish wedding in the area. We work closely with
                 you to create a budget that aligns with your vision while
                 maximizing value.
@@ -547,8 +553,8 @@ export default async function JewishWeddingPlanner() {
               </p>
             </div>
             <p className="text-xl italic text-center max-w-md mx-auto">
-              Book a 15-minute call with Monica and see how a day-of wedding
-              coordinator can help you!
+              Book a 15-minute call with Monica and see how a Jewish wedding
+              planner can help you!
             </p>
             <div className="center">
               <a href={calendly} target="_blank">
