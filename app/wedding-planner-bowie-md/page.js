@@ -50,9 +50,11 @@ export default function WeddingPlannerBowieMD() {
               <p className="md:text-xl mb-4">
                 Monica Browne Weddings offers wedding planning services for
                 couples in Maryland and{' '}
-                <Link href="/wedding-planner-washington-dc">DC</Link>. Planning
-                a wedding can be time-consuming, especially when you already
-                have a busy life.
+                <Link href="/wedding-planner-washington-dc">
+                  Washington, DC
+                </Link>
+                . Planning a wedding can be time-consuming, especially when you
+                already have a busy life.
               </p>
               <p className="md:text-xl mb-4">
                 Let us take some of the stress off of you so you can focus on
@@ -103,8 +105,17 @@ export default function WeddingPlannerBowieMD() {
               event for yourself and your loved ones.
             </p>
             <p className="md:text-xl mb-4">
-              We're proud to help couples in the Annapolis, Bethesda, Chevy
-              Chase, Rockville, Silver Spring, and other Washington DC areas.
+              We also take pride in celebrating diversity by helping couples
+              from various cultural backgrounds, including{' '}
+              <Link href="/indian-wedding-planner-washington-dc">
+                Indian couples
+              </Link>{' '}
+              and{' '}
+              <Link href="/jewish-wedding-planner-washington-dc-maryland-virginia">
+                Jewish couples
+              </Link>
+              , create weddings that honor their unique traditions and love
+              stories.
             </p>
             <div className="center">
               <a href={calendly} target="_blank">

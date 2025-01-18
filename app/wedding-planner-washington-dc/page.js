@@ -90,6 +90,28 @@ export default async function WeddingPlannerWashingtonDC() {
                   height="708"
                 />
               </div>
+              <div className="max-w-3xl mx-auto">
+                <p className="md:text-xl mb-4">
+                  We take immense pride in celebrating the rich tapestry of
+                  cultures and traditions by helping couples from diverse
+                  backgrounds, including{' '}
+                  <Link href="/indian-wedding-planner-washington-dc">
+                    Indian
+                  </Link>{' '}
+                  and{' '}
+                  <Link href="/jewish-wedding-planner-washington-dc-maryland-virginia">
+                    Jewish couples
+                  </Link>
+                  , create weddings that beautifully honor their heritage and
+                  personal love stories.
+                </p>
+                <p className="md:text-xl mb-4">
+                  From incorporating meaningful rituals and customs unique to
+                  each culture to blending traditional elements with modern
+                  touches, we work closely with our clients to craft a
+                  celebration that is truly reflective of their identities.
+                </p>
+              </div>
               <p className="text-xl italic mt-10 text-center max-w-md mx-auto">
                 Book a 15-minute with Monica and see how she can help you plan
                 your wedding today!
