@@ -87,6 +87,31 @@ export default async function WeddingServices() {
           <div className="max-w-5xl mx-auto px-6 my-8">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <img
+                src="/images/jewish-wedding-kiddush-cup.jpeg"
+                alt="Kiddush cup."
+                loading="lazy"
+              />
+              <div className="service-info">
+                <h3 className="text-3xl mb-6 font-bold">
+                  Jewish Wedding Planning
+                </h3>
+                <p className="md:text-xl mb-4">
+                  Your dedicated wedding planners at Monica Browne Weddings are
+                  here to make your Jewish wedding truly special. From crafting
+                  a personalized plan that honors your cherished traditions to
+                  helping you design a breathtaking chuppah and selecting
+                  meaningful décor, we’re here to guide you every step of the
+                  way.
+                </p>
+                <Link href="/jewish-wedding-planner-washington-dc-maryland-virginia">
+                  <p className="my-8">Read more</p>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="max-w-5xl mx-auto px-6 my-8">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <img
                 src="https://res.cloudinary.com/browne-company/image/upload/v1736311019/Monica%20Browne%20Weddings/indian-bride_smaller.jpg"
                 loading="lazy"
                 alt="Indian wedding planner in DC, Mayland, and Northern Virginia."

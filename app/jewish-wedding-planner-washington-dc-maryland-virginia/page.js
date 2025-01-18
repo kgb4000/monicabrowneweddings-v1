@@ -8,16 +8,17 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Wedding Planner in Washington DC | Monica Browne Weddings',
+  title: 'Jewish Wedding Planner in Washington DC | Maryland | Virginia',
   description:
-    "Looking for a top ranked wedding planner in Washington DC? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
+    "Looking for jewish Wedding Planner in DC, Maryland or Northern Virginia? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
   alternates: {
-    canonical: 'https://monicabrowneweddings.com/wedding-planner-washington-dc',
+    canonical:
+      'https://monicabrowneweddings.com/jewish-wedding-planner-washington-dc-maryland-virginia',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://monicabrowneweddings.com/wedding-planner-washington-dc',
+    url: 'https://monicabrowneweddings.com/jewish-wedding-planner-washington-dc-maryland-virginia',
     site_name: 'Monica Browne Weddings',
     images: [
       {
@@ -30,15 +31,15 @@ export const metadata = {
   },
 }
 
-export default async function WeddingPlannerWashingtonDC() {
+export default async function JewishWeddingPlanner() {
   return (
     <div>
       <Hero
-        herotext="Professional Wedding Planner in Washington, DC"
-        heroSubText="We create stunning weddings for busy couples in Washington, DC, blending timeless traditions with modern elegance for a day you’ll cherish forever"
+        herotext="Jewish Wedding Planner for Busy Couples in Washington, DC, Maryland, & Northern Virginia"
+        heroSubText="We design unforgettable weddings for Jewish couples, combining cherished traditions with contemporary style to create a celebration that’s uniquely yours"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
-        imageUrl="/images/KINA1058.jpg"
+        imageUrl="/images/jewish-wedding-ceremony.png"
       />
       <main>
         <div className="container max-w-7xl mx-auto px-6">
@@ -46,25 +47,20 @@ export default async function WeddingPlannerWashingtonDC() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Top Wedding Planner For Busy Couples in Washington, DC
+                  Wedding Planner and Day-of Coordinatior For Busy Jewish
+                  Couples in DC, MD, VA
                 </h2>
                 <p className="md:text-xl mb-4">
-                  Monica Browne Weddings offers wedding planning services to
-                  couples in Washington, DC.
+                  At Monica Browne Weddings, we understand that planning a
+                  Jewish wedding is not just about the event itself—it’s about
+                  honoring centuries-old traditions, creating meaningful
+                  connections, and crafting a celebration that reflects your
+                  unique love story.
                 </p>
                 <p className="md:text-xl mb-4">
-                  We focus on making planning your wedding simple and easy, and
-                  also make sure the process is not stressful for you.
-                </p>
-                <p className="md:text-xl mb-4">
-                  Our goal is to make sure that you are happy, and that you
-                  fully celebrate this momentous and historic occasion.
-                </p>
-                <p className="md:text-xl mb-4">
-                  We take care of your entire event, from planning and design,
-                  coordination, selecting flowers,{' '}
-                  <Link href="/wedding-decoration-services">decorations</Link>,
-                  and more.
+                  As experienced wedding planners in the Washington, DC area, we
+                  are here to help you create a beautiful and memorable Jewish
+                  wedding that seamlessly blends tradition with modern elegance.
                 </p>
               </div>
               <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
@@ -111,8 +107,8 @@ export default async function WeddingPlannerWashingtonDC() {
         <section className="bg-slate-800">
           <div className="max-w-3xl mx-auto py-10 md:py-20 text-white px-6">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
-              When You need a Professional Wedding Planner to Take Care of
-              Everything - We Got You
+              From "Mazel Tov!" to The Last Dance, We’ll Bring Your Jewish
+              Wedding Dreams to Life
             </h2>
             <p className="md:text-xl mb-4">
               From the moment you say "Yes!" to the final dance at your
@@ -124,61 +120,69 @@ export default async function WeddingPlannerWashingtonDC() {
             </p>
             <div className="my-10">
               <h3 className="text-2xl mb-2">
-                • Your Vision, Perfectly Crafted
+                • Your Vision, Rooted in Tradition and Personal Style
               </h3>
               <p className="md:text-xl mb-4 ml-4">
-                Every couple has a unique love story, and we’re here to bring
-                yours to life. From the moment we meet, we’ll work closely with
-                you to understand your style, preferences, and dreams. Together,
-                we’ll create a personalized plan that captures your vision and
-                ensures your wedding reflects who you are.
+                Every couple has a unique love story and connection to their
+                faith and traditions. We’ll work closely with you to craft a
+                wedding that honors your Jewish heritage while celebrating your
+                personal style and preferences. From incorporating meaningful
+                rituals like the chuppah and the ketubah signing to ensuring the
+                day reflects your love story, we’ll create a plan that’s as
+                unique as you are.
               </p>
             </div>
             <div className="my-10">
               <h3 className="text-2xl mb-2">
-                • Stress-Free Planning Made Simple
+                • Stress-Free Planning with Cultural Expertise
               </h3>
               <p className="md:text-xl mb-4 ml-4">
-                Planning a wedding involves countless details, but we’re here to
-                handle them all. From managing budgets to coordinating vendors,
-                we take the stress out of the process so you can focus on the
-                joy of your engagement. Rest assured, every aspect will be
-                organized and executed flawlessly.
+                Planning a wedding involves countless details, and Jewish
+                weddings often have additional elements like the ceremony
+                structure, kosher catering, and adherence to religious customs.
+                We’re here to manage it all—ensuring every tradition is upheld
+                while creating a seamless and stress-free experience for you.
+                From vendor coordination to budget management, we’ve got you
+                covered.
               </p>
             </div>
             <div className="my-10">
               <h3 className="text-2xl mb-2">
-                • Picture-Perfect Designs and Décor
+                • Breathtaking Designs Infused with Meaning
               </h3>
               <p className="md:text-xl mb-4 ml-4">
-                Not sure where to start with colors, themes, or{' '}
-                <Link href="/wedding-flowers">floral centerpieces</Link>? That’s
-                our specialty. We’ll guide you through the design process,
-                helping to create a stunning atmosphere that wows your guests
-                and matches your style. From ceremony setups to reception décor,
-                we’ll make your vision a reality.
+                From elegant chuppah designs to stunning décor that complements
+                your chosen theme, we specialize in creating visual elements
+                that are both beautiful and meaningful. Whether it’s
+                incorporating traditional symbols like the Star of David or
+                crafting a modern, stylish celebration, we’ll help design a day
+                that wows your guests and reflects your heritage.
               </p>
             </div>
             <div className="my-10">
               <h3 className="text-2xl mb-2">
-                • Flawless Wedding Day Coordination
+                • Flawless Wedding Day Coordination with Cultural Sensitivity
               </h3>
               <p className="md:text-xl mb-4 ml-4">
-                On your big day, you deserve to be fully present without
-                worrying about the details. We’ll oversee every element, from
-                vendor arrivals to the timeline and last-minute adjustments.
-                With us managing behind the scenes, you can enjoy every moment
-                with your loved ones.
+                On your wedding day, you should be fully present to soak in
+                every moment—from the signing of the ketubah to the Hora dance.
+                We’ll manage the entire day, ensuring every ritual and detail
+                runs smoothly. Our team will coordinate with your officiant,
+                vendors, and family members to make your day truly
+                unforgettable.
               </p>
             </div>
             <div className="my-10">
-              <h3 className="text-2xl mb-2">• Beyond the "I Do's"</h3>
+              <h3 className="text-2xl mb-2">
+                • Support Beyond the "Mazel Tov"
+              </h3>
               <p className="md:text-xl mb-4 ml-4">
-                Our support doesn’t stop at the altar. After the celebration,
-                we’ll handle all the post-wedding logistics, such as returning
-                rentals, final vendor payments, and tying up loose ends. Whether
-                it’s a post-wedding brunch or honeymoon send-off, we’ll ensure
-                the perfect ending to your special day.
+                Our commitment doesn’t end with the final toast. After your
+                celebration, we’ll handle post-wedding details, including
+                returning rentals, finalizing vendor payments, and ensuring any
+                last-minute tasks are completed. Whether you’re hosting a
+                post-wedding brunch or heading off on your honeymoon, we’ll
+                ensure your wedding experience is joyful from start to finish.
               </p>
             </div>
             <div className="center">
@@ -197,8 +201,8 @@ export default async function WeddingPlannerWashingtonDC() {
         <div className="container max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mx-auto  py-10 md:py-20">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
-              Want a wedding day where you can relax while someone else takes
-              care of every little detail?
+              Want a wedding day where you can relax and enjoy every cherished
+              tradition while we handle every detail?
             </h2>
             <div className="grid grid-cols-2 gap-2 mb-10">
               <Image
@@ -231,6 +235,10 @@ export default async function WeddingPlannerWashingtonDC() {
                 height="708"
               />
             </div>
+            <p className="text-xl italic text-center max-w-md mx-auto">
+              Let us help you create a Jewish wedding filled with love,
+              tradition, and unforgettable memories. Mazel Tov!
+            </p>
             <div className="center">
               <a href={calendly} target="_blank">
                 <Button
@@ -244,8 +252,46 @@ export default async function WeddingPlannerWashingtonDC() {
             </div>
           </div>
         </div>
+        <section className="bg-slate-50">
+          <div className="container mx-auto px-4 max-w-7xl py-20">
+            <h2 className="text-5xl text-center mb-10 leading-normal">
+              Testimonials
+            </h2>
+            <div className="max-w-2xl mx-auto">
+              <div>
+                <p className="text-md py-6 px-6 leading-8">
+                  Monica and her team made our wedding amazing! She was our
+                  month of planner and helped us tremendously. I’m positive that
+                  our wedding day wouldn’t have gone as seamlessly as it did if
+                  Monica wasn’t there to manage everything. She went above and
+                  beyond to make our wedding perfect and we don’t have a single
+                  thing we would change about the day. Go ahead and book Monica
+                  right now if you’re contemplating a wedding planner!!
+                </p>
+                <div className="flex flex-row justify-items-center pl-6">
+                  <img
+                    src="images/emily-menge.png"
+                    className="basis-1 rounded-full border-orange-800 border-4"
+                  />
+                  <p className="mt-2 pl-6">Emily Menge</p>
+                </div>
+              </div>
+            </div>
+            <div className="py-10 md:mt-0">
+              <Link href="/testimonials">
+                <Button
+                  buttonText="Read More Testimonials!"
+                  bgColor="bg-purple-500"
+                  borderWidth="border-0"
+                  textColor="text-white"
+                  textSize="md:text-xl"
+                />
+              </Link>
+            </div>
+          </div>
+        </section>
         <div>
-          <section className="bg-slate-50">
+          <section className="bg-slate-100">
             <div className="max-w-2xl mx-auto py-10 md:py-20 px-6">
               <h2 className="text-3xl md:text-5xl text-center">
                 Here's How to Get Started
@@ -255,25 +301,28 @@ export default async function WeddingPlannerWashingtonDC() {
                   1. Book a call with Monica
                 </h4>
                 <p className="md:text-xl my-4">
-                  Book a call with Monica to discuss how she can help as your
-                  day of coordinator.
+                  Schedule a call with Monica to discuss how she can help as
+                  your wedding day coordinator, ensuring every cherished Jewish
+                  tradition is seamlessly included.
                 </p>
               </div>
               <div className="my-10">
                 <h4 className="text-2xl md:text-3xl">
-                  2. Tell Monica about your event
+                  2. Share Your Vision and Traditions
                 </h4>
                 <p className="md:text-xl my-4">
-                  Let us create a detailed timeline for you, contact your
-                  vendors, and oversee the details of your wedding day.
+                  Tell us about your wedding plans, and we’ll craft a detailed
+                  timeline, coordinate with your vendors, and manage every
+                  detail to honor your heritage and preferences.
                 </p>
               </div>
               <div>
                 <h4 className="text-2xl md:text-3xl">
-                  3. Enjoy your Wedding Day
+                  3. Celebrate Your Wedding Day
                 </h4>
                 <p className="md:text-xl my-4">
-                  Enjoy your wedding and cherish the moment!
+                  Relax, enjoy your special day, and immerse yourself in the joy
+                  of your wedding traditions and celebrations!
                 </p>
                 <div className="center">
                   <a href={calendly} target="_blank">
@@ -294,51 +343,49 @@ export default async function WeddingPlannerWashingtonDC() {
           <section>
             <div className="max-w-2xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                Why Hire Monica Browne Weddings as Wedding Planner in DC
+                Why Choose Monica Browne Weddings for Your Jewish Wedding?
               </h2>
               <p className="md:text-xl mb-4">
-                When you choose Monica Browne Weddings, you’re hiring a
-                professional with over 15 years of experience in the wedding
-                industry.
+                Planning a wedding in the DC area comes with its own set of
+                challenges, from finding the perfect venue to coordinating
+                multiple vendors.
               </p>
               <p className="md:text-xl mb-4">
-                Here’s what we bring to your special day:
+                Add to that the deep cultural and religious significance of a
+                Jewish wedding, and it becomes even more important to work with
+                a planner who understands these customs.
+              </p>
+              <p className="md:text-xl mb-4">
+                Here’s why we’re the perfect choice:
               </p>
               <div>
                 <h3 className="font-semibold text-2xl mb-2">
-                  Stress-Free Execution
+                  Expertise in Jewish Wedding Traditions:
                 </h3>
                 <p className="md:text-xl mb-4">
-                  We ensure your event runs smoothly, starting and ending on
-                  time, so you can focus on enjoying your wedding.
+                  From the signing of the Ketubah to the breaking of the glass,
+                  we have extensive experience coordinating every aspect of a
+                  traditional Jewish wedding.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold text-2xl mb-2">
-                  Attention to Detail
+                  Connections with Local Vendors:
                 </h3>
                 <p className="md:text-xl mb-4">
-                  From double-checking everything from{' '}
-                  <Link href="/wedding-flowers">flowers</Link> and{' '}
-                  <Link href="/wedding-decoration-services">decorations</Link>{' '}
-                  to managing vendor setups, we make sure every detail matches
-                  your vision.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-2xl mb-2">Problem Solving</h3>
-                <p className="md:text-xl mb-4">
-                  Unexpected issues? We handle them quickly so you never have to
-                  worry about anything on your wedding day.
+                  We work with Kosher caterers, florists familiar with chuppah
+                  designs, and other vendors who are sensitive to the needs of
+                  Jewish weddings.
                 </p>
               </div>
               <div>
                 <h3 className="font-semibold text-2xl mb-2">
-                  Flawless Coordination
+                  Custom Planning:
                 </h3>
                 <p className="md:text-xl mb-4">
-                  We manage your timeline, communicate with vendors, and oversee
-                  the day’s logistics to keep everything on track.
+                  Whether you’re planning an Orthodox, Conservative, Reform, or
+                  interfaith wedding, we ensure your day is tailored to your
+                  vision while respecting religious customs.
                 </p>
               </div>
               <div className="center">
@@ -379,66 +426,62 @@ export default async function WeddingPlannerWashingtonDC() {
           </div>
           <section>
             <div className="max-w-3xl mx-auto py-10 md:py-20">
-              <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                Why Couples Trust Monica Browne Weddings as Ther Wedding Planner
+              <h2 className="text-3xl md:text-5xl mb-8 text-center max-w-2xl">
+                Key Jewish Wedding Traditions We Honor
               </h2>
               <p className="md:text-xl mb-4">
-                Couples choose us because we know how to handle the details that
-                matter most, especially as your wedding day approaches.
+                A Jewish wedding is rich with symbolism and meaningful rituals.
+                Here are some of the traditions we ensure are flawlessly
+                executed:
               </p>
-              <p className="md:text-xl mb-4">
-                When your big day is just eight weeks away, we step in to manage
-                everything with meticulous care:
-              </p>
-              <ul className="ml-8 my-10 list-disc">
-                <li className="md:text-xl mb-4">
-                  Vendor Management: Review and organize vendor contracts,
-                  confirm payments, and finalize schedules.
-                </li>
-                <li className="md:text-xl mb-4">
-                  Wedding Attire Coordination: Oversee final fittings for you
-                  and your bridal party, ensuring everyone has their attire
-                  ready.
-                </li>
-                <li className="md:text-xl mb-4">
-                  Venue Walkthroughs: Conduct detailed walk-throughs of your
-                  ceremony and reception venues to ensure perfection.
-                </li>
-                <li className="md:text-xl mb-4">
-                  Detailed Wedding Timeline: Create a comprehensive schedule for
-                  the entire day, keeping everyone informed and on track.
-                </li>
-                <li className="md:text-xl mb-4">
-                  Rehearsal Oversight: Supervise and coordinate a two-hour
-                  rehearsal during your wedding week to ensure everything runs
-                  smoothly.
-                </li>
-                <li className="md:text-xl mb-4">
-                  Point of Contact: Serve as the main communication hub for your
-                  bridal party starting on rehearsal day.
-                </li>
-                <li className="md:text-xl mb-4">
-                  Day-of Logistics: Manage every detail on your wedding day,
-                  from vendor arrivals to timeline execution, so you can relax
-                  and enjoy.
-                </li>
-              </ul>
-              <p className="md:text-xl mb-4">
-                A day of wedding coordinator will manage your wedding day when
-                the day arrives.
-              </p>
-              <p className="md:text-xl mb-4">
-                They do not help you plan your wedding like a full service
-                wedding planner.
-              </p>
-              <p className="md:text-xl mb-4">
-                A wedding planner will help you plan your wedding from start to
-                finish.
-              </p>
-              <p className="md:text-xl mb-4">
-                They may start working with you a year or six months before your
-                big day and help you with the initial wedding planning stages.
-              </p>
+              <div>
+                <h3 className="font-semibold text-2xl mb-2">1. The Chuppah:</h3>
+                <p className="md:text-xl mb-4">
+                  A central element of every Jewish wedding, the chuppah
+                  represents the home you will build together. We help design
+                  and coordinate the perfect chuppah, whether you prefer a
+                  traditional cloth canopy or a modern floral design.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-2xl mb-2">
+                  2. Ketubah Signing:
+                </h3>
+                <p className="md:text-xl mb-4">
+                  This beautiful contract outlines your commitment to each
+                  other. We work with calligraphers and artists to create a
+                  stunning Ketubah that doubles as a keepsake.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-2xl mb-2">3. Bedeken:</h3>
+                <p className="md:text-xl mb-4">
+                  The veiling ceremony is a touching moment that signifies love
+                  and respect. We coordinate this tradition to flow seamlessly
+                  into your day.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-2xl mb-2">
+                  4. Seven Blessings:
+                </h3>
+                <p className="md:text-xl mb-4">
+                  Recited during the ceremony, these blessings celebrate love,
+                  joy, and community. We ensure the ceremony includes a
+                  meaningful rendition of this tradition.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-2xl mb-2">
+                  5. Breaking the Glass:
+                </h3>
+                <p className="md:text-xl mb-4">
+                  One of the most iconic moments, breaking the glass symbolizes
+                  the fragility of relationships and the joy of building a life
+                  together. We make sure this moment is unforgettable.
+                </p>
+              </div>
+
               <div className="center">
                 <a href={calendly} target="_blank">
                   <Button
@@ -456,58 +499,40 @@ export default async function WeddingPlannerWashingtonDC() {
             <div className="max-w-3xl mx-auto py-10">
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
-                #1. What does a wedding planner do, and how can you help with my
-                DC wedding?
+                #1. How much does a Jewish wedding cost in DC?
               </h3>
               <p className="md:text-xl mb-4">
-                A wedding planner handles all aspects of your wedding, from
-                budgeting and vendor coordination to designing your dream décor
-                and managing the big day. For Washington, DC weddings, we
-                specialize in navigating local venues, working with trusted
-                vendors, and ensuring your event aligns with your vision and
-                runs smoothly.
-              </p>
-              <p className="md:text-xl mb-4">
-                If you want to do most of the planning yourself and find your
-                wedding venue and vendors on your own but still want to enjoy
-                your wedding day without worrying about anything, consider
-                hiring Monica Browne Weddings.
+                The cost of a Jewish wedding in the Washington, DC area can vary
+                widely depending on factors such as the venue, guest count,
+                catering, and specific traditions included. On average, couples
+                can expect to spend between $50,000 and $75,000 for a
+                well-rounded Jewish wedding in the area. We work closely with
+                you to create a budget that aligns with your vision while
+                maximizing value.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #2. When should I hire a wedding planner for my DC wedding?
+                #2. Can you help with interfaith weddings?
               </h3>
               <p className="md:text-xl mb-4">
-                Ideally, you should hire a wedding planner 12-18 months before
-                your wedding. However, we offer services for all stages of
-                planning, whether you’re just starting or your wedding is only a
-                few weeks away. Our day-of coordination is perfect for couples
-                who’ve done most of the planning but need expert help to execute
-                the final details.
+                Absolutely! We have extensive experience planning interfaith
+                weddings and are sensitive to blending traditions in a way that
+                respects both families.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #3. What types of wedding planning services do you offer?
+                #3. Do you work with specific rabbis or officiants?
               </h3>
               <p className="md:text-xl mb-4">
-                We provide full-service wedding planning, partial planning, and
-                day-of coordination. Full-service planning covers everything
-                from start to finish, partial planning allows you to get help
-                with specific aspects of your wedding, and{' '}
-                <Link href="/day-of-wedding-coordinator-washington-dc">
-                  day-of coordination
-                </Link>{' '}
-                ensures your wedding day runs smoothly while you relax and
-                enjoy.
+                We have relationships with officiants in the DC area and can
+                help you find someone who aligns with your beliefs and
+                preferences.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #4. How much does a wedding planner in Washington, DC typically
-                cost?
+                #4. What is your experience with Kosher catering?
               </h3>
               <p className="md:text-xl mb-4">
-                The cost of a wedding planner in DC varies depending on the
-                level of service you need. Full-service planning is more
-                comprehensive and priced higher, while day-of coordination is
-                more budget-friendly. We offer customizable packages to fit your
-                budget and needs—contact us for a personalized quote!
+                Through our network, we can find the top Kosher caterers in the
+                DC area to ensure your menu meets all dietary requirements
+                without compromising on flavor.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #5 How will you ensure my wedding day goes smoothly?
