@@ -8,17 +8,17 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Jewish Wedding Planner in Washington DC | Maryland | Virginia',
+  title: 'Jewish Wedding Planner For Busy Couples in Maryland | DC | Virginia',
   description:
-    "Looking for jewish Wedding Planner in DC, Maryland or Northern Virginia? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
+    'Need a trusted wedding planner to help plan your Jewish Wedding? We take care of everything while you dance with family and friends. Book a call today!',
   alternates: {
     canonical:
-      'https://monicabrowneweddings.com/jewish-wedding-planner-washington-dc-maryland-virginia',
+      'https://monicabrowneweddings.com/jewish-wedding-planner-maryland-dc-virginia',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://monicabrowneweddings.com/jewish-wedding-planner-washington-dc-maryland-virginia',
+    url: 'https://monicabrowneweddings.com/jewish-wedding-planner-maryland-dc-virginia',
     site_name: 'Monica Browne Weddings',
     images: [
       {
@@ -35,7 +35,7 @@ export default async function JewishWeddingPlanner() {
   return (
     <div>
       <Hero
-        herotext="Jewish Wedding Planner for Busy Couples in Washington, DC, Maryland, & Northern Virginia"
+        herotext="Jewish Wedding Planner for Busy Couples in Maryland, DC, & Northern Virginia"
         heroSubText="We design unforgettable weddings for Jewish couples, combining cherished traditions with contemporary style to create a celebration that’s uniquely yours"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
@@ -48,7 +48,7 @@ export default async function JewishWeddingPlanner() {
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
                   Wedding Planner and Day-of Coordinatior For Busy Jewish
-                  Couples in DC, MD, VA
+                  Couples in MD, DC, and VA
                 </h2>
                 <p className="md:text-xl mb-4">
                   At Monica Browne Weddings, we understand that planning a
@@ -63,7 +63,7 @@ export default async function JewishWeddingPlanner() {
                   wedding that seamlessly blends tradition with modern elegance.
                 </p>
               </div>
-              <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
+              {/* <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
                 <img
                   src="/images/wedding-table-centerpiece-design.webp"
                   alt="Wedding table centerpiece design for small wedding."
@@ -85,7 +85,7 @@ export default async function JewishWeddingPlanner() {
                   width="472"
                   height="708"
                 />
-              </div>
+              </div> */}
               <p className="text-xl italic mt-10 text-center max-w-md mx-auto">
                 Book a 15-minute with Monica and see how she can help you plan
                 your wedding today!
@@ -114,7 +114,7 @@ export default async function JewishWeddingPlanner() {
               src="images/jewish-wedding-planner-washington-dc.png"
               className="mb-8"
               loading="lazy"
-              alt="Jewish wedding reception."
+              alt="Jewish wedding planner."
             />
             <p className="md:text-xl mb-4">
               From the moment you say "Yes!" to the final dance at your
@@ -207,8 +207,8 @@ export default async function JewishWeddingPlanner() {
         <div className="container max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mx-auto  py-10 md:py-20">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
-              Want a wedding day where you can relax and enjoy every cherished
-              tradition while we handle every detail?
+              Want a wedding day where you can enjoy every cherished tradition
+              while someone else handles everything?
             </h2>
             <div className="grid grid-cols-2 gap-2 mb-10">
               <Image
@@ -349,9 +349,9 @@ export default async function JewishWeddingPlanner() {
           <section>
             <div className="max-w-2xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                Why Choose Monica Browne Weddings for Your Jewish Wedding?
+                Why Choose Monica as Your Jewish Wedding Planner?
               </h2>
-              <p className="md:text-xl mb-4">
+              {/* <p className="md:text-xl mb-4">
                 Planning a wedding in the DC area comes with its own set of
                 challenges, from finding the perfect venue to coordinating
                 multiple vendors.
@@ -360,9 +360,9 @@ export default async function JewishWeddingPlanner() {
                 Add to that the deep cultural and religious significance of a
                 Jewish wedding, and it becomes even more important to work with
                 a planner who understands these customs.
-              </p>
+              </p> */}
               <p className="md:text-xl mb-4">
-                Here’s why we’re the perfect choice:
+                Here’s why she's the perfect choice:
               </p>
               <div>
                 <h3 className="font-semibold text-2xl mb-2">
@@ -505,16 +505,15 @@ export default async function JewishWeddingPlanner() {
             <div className="max-w-3xl mx-auto py-10">
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
-                #1. How much does a Jewish wedding cost in DC?
+                #1. How much does a Jewish wedding cost in the DC area?
               </h3>
               <p className="md:text-xl mb-4">
-                The cost of a Jewish wedding in the Washington, DC area can vary
-                widely depending on factors such as the venue, guest count,
-                catering, and specific traditions included. On average, couples
-                can expect to spend between <b>$50,000 and $75,000</b> for a
-                well-rounded Jewish wedding in the area. We work closely with
-                you to create a budget that aligns with your vision while
-                maximizing value.
+                The cost of a Jewish wedding in the DC area can vary widely
+                depending on factors such as the venue, guest count, catering,
+                and specific traditions included. On average, couples can expect
+                to spend between <b>$50,000 and $75,000</b> for a well-rounded
+                Jewish wedding in the area. We work closely with you to create a
+                budget that aligns with your vision while maximizing value.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #2. Can you help with interfaith weddings?

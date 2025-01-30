@@ -9,7 +9,7 @@ export const metadata = {
   title:
     'Indian Wedding Planner in Washington DC, Maryland, and Northern Virginia',
   description:
-    'Exclusive full & partial-service Indian wedding planners in Washington, DC for events of 50 to 1200 guests. Contact us today to plan your dream wedding!',
+    "We're exclusive full-service and partial-service Indian wedding planners in Washington, DC, Maryland and Northern Virginia. Contact us today to start planning your wedding!",
   alternates: {
     canonical:
       'https://monicabrowneweddings.com/indian-wedding-planner-washington-dc',
@@ -34,8 +34,8 @@ export default function IndianWeddingPlannerDC() {
   return (
     <>
       <Hero
-        herotext="Premier Indian Wedding Planner for Busy Couples in Washington"
-        heroSubText="We specialize in crafting stunning Indian weddings for busy couples in Washington, DC, blending tradition, elegance, and modern flair to create unforgettable celebrations"
+        herotext="Premiere Indian Wedding Planner in Washington, DC"
+        heroSubText="We specialize in crafting stunning Indian weddings for busy couples in DC, blending tradition, elegance, and modern flair"
         buttonText="Book A Call With Monica!"
         imageUrl="/images/indian-wedding-ceremony-mgm.jpg"
         textColor="text-white"
@@ -45,7 +45,7 @@ export default function IndianWeddingPlannerDC() {
           <section>
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl lg:text-5xl my-8 text-center leading-normal">
-                Your Trusted Indian Wedding Planner in Washington, DC
+                Exclusive Indian Wedding Planning Services in DC Area
               </h2>
               <p className="md:text-xl mb-4">
                 Monica Browne Weddings is your trusted partner in the
@@ -53,49 +53,47 @@ export default function IndianWeddingPlannerDC() {
                 Indian and South Asian weddings.
               </p>
               <p className="md:text-xl mb-4">
-                With over 20 years of expertise, Monica Browne is passionate
-                about blending cherished traditions with your unique vision to
-                craft a celebration that’s truly unforgettable.
+                With over 20 years of expertise,{' '}
+                <Link href="/about">Monica</Link> is passionate about blending
+                cherished traditions with your unique vision to craft a
+                celebration that’s truly unforgettable.
               </p>
             </div>
-            <div className="grid lg:grid-cols-3 gap-4 my-8">
+            {/* <div className="grid lg:grid-cols-3 gap-4 my-8">
               <img
-                src="/images/wedding-table-centerpiece-design.webp"
+                src="/images/newly-wed-indian-couple-at-the-door.jpg"
                 alt="Wedding table centerpiece design for small wedding."
                 loading="lazy"
                 width="472"
                 height="708"
               />
               <img
-                src="/images/wedding-cake.webp"
-                alt="Wedding cake picture"
+                src="/images/indian-couple-smilingnpm run dev
+                .jpg"
+                alt="Wedding table centerpiece design for small wedding."
                 loading="lazy"
                 width="472"
                 height="708"
               />
               <img
-                src="/images/wedding-table-with-cork-centerpiece.webp"
-                alt="Wedding table decorations by Monica Browne Weddings"
+                src="/images/newly-wed-indian-couple-at-the-door.jpg"
+                alt="Wedding table centerpiece design for small wedding."
                 loading="lazy"
                 width="472"
                 height="708"
               />
-            </div>
+            </div> */}
             <div className="max-w-3xl mx-auto">
               <p className="md:text-xl mb-4">
-                We specialize in honoring the rich cultural heritage of South
-                Asian weddings while highlighting the individuality of each
-                couple.
+                We specialize in honoring the rich cultural heritage of Indian
+                weddings while highlighting the individuality of each couple.
               </p>
+              <p className="md:text-xl mb-4">Not sure where to start?</p>
               <p className="md:text-xl mb-4">
-                From vibrant Sangeet nights to intricate Mehendi and Garba
-                ceremonies, joyful Haldi rituals, and elegant post-wedding
-                brunches, we handle every detail with care and precision,
-                ensuring your entire wedding experience is flawless.
-              </p>
-              <p className="md:text-xl mb-4">
-                Contact us today to begin planning a celebration you and your
-                guests will cherish forever!
+                Our consultation services provide guidance, expertise, and
+                advice to help you navigate your way to a picture-perfect Indian
+                wedding. Contact us today to begin planning a celebration you
+                and your guests will cherish forever!
               </p>
               <div className="center">
                 <a href={calendly} target="_blank">
@@ -118,31 +116,36 @@ export default function IndianWeddingPlannerDC() {
               <div className="pb-4 grid md:grid-cols-2 gap-x-10 items-center my-16">
                 <img
                   src="images/indian-wedding-ceremony-mgm.jpg"
-                  alt="Indian wedding planner."
+                  alt="Indian bride escorted down teh ailse by her sister and cousin."
                   loading="lazy"
                   height="auto"
                   className="pb-4"
                 />
                 <div className="">
                   <h3 className="text-3xl font-bold pb-4">
-                    South Asian Dream Wedding Blueprint
+                    Full-Service Wedding Planning
                   </h3>
                   <p className="md:text-xl mb-4">
-                    We begin with a consultation to understand your vision,
-                    preferences, and budget, creating a detailed plan to keep
-                    everything on track.
+                    Comprehensive management of all wedding events, including
+                    engagement, mehndi,{' '}
+                    <a
+                      href="https://en.wikipedia.org/wiki/Punjabi_wedding_traditions"
+                      target="_blank"
+                    >
+                      sangeet
+                    </a>
+                    , baraat, wedding ceremony, and reception.
                   </p>
                   <p className="md:text-xl mb-4">
-                    We assist with selecting the perfect venues for all your
-                    events, coordinating logistics and contracts. We connect you
-                    with trusted professionals for catering, decor, photography,
-                    and entertainment.
+                    Budget planning and vendor coordination for venues,
+                    catering, décor, photography, entertainment,and end-to-end
+                    event timeline creation and execution.
                   </p>
                 </div>
               </div>
               <div className="pb-4 grid sm:grid-cols-2 gap-x-10 items-center my-16">
                 <img
-                  src="images/newly-wed-indian-couple.jpg"
+                  src="images/indian-wedding-ceremony-with-priest.jpg"
                   alt="Newly wed Indian couple."
                   loading="lazy"
                   width="100%"
@@ -151,18 +154,16 @@ export default function IndianWeddingPlannerDC() {
                 />
                 <div className="">
                   <h3 className="text-3xl font-bold pb-4">
-                    The Ultimate Wedding Week Experience
+                    Cultural and Ritual Coordination
                   </h3>
                   <p className="md:text-xl mb-4">
-                    We coordinate all your events, from the Sangeet to the
-                    reception, ensuring smooth transitions and flawless
-                    execution.
+                    Guidance on traditional Indian wedding rituals specific to
+                    Hindu, Sikh, Muslim, or Christian communities.
                   </p>
-
                   <p className="md:text-xl mb-4">
-                    For traditional elements, we organize mandaps, ceremonial
-                    props, and work with priests or officiants to honor your
-                    customs.
+                    Coordination with priests, pandits, or other religious
+                    officiants. Setup and management of ceremonial elements like
+                    mandap, fire pit, and vidaai arrangements.
                   </p>
                 </div>
               </div>
@@ -175,17 +176,18 @@ export default function IndianWeddingPlannerDC() {
                   className="pb-4"
                 />
                 <div className="">
-                  <h3 className="text-3xl  font-bold pb-4">
-                    The Grand Celebration Coordination
-                  </h3>
+                  <h3 className="text-3xl  font-bold pb-4">Décor and Design</h3>
                   <p className="md:text-xl mb-4">
-                    On your wedding day, we handle timelines, ensuring
-                    everything runs smoothly.
+                    Transform your venue into stunning spaces that reflect your
+                    vision is a key service. This includes designing custom
+                    themes, selecting color schemes, and creating floral
+                    arrangements.
                   </p>
                   <p className="md:text-xl mb-4">
-                    We assist family and guests with transportation and
-                    accommodations while providing full bridal and groom support
-                    for wardrobe changes, makeup, and mehendi.
+                    Create ceremonial structures like the mandap and designing
+                    the stage for the reception. Lighting and ambiance play a
+                    significant role, and this service ensures that every
+                    element enhances the wedding’s aesthetic appeal.
                   </p>
                 </div>
               </div>
@@ -199,15 +201,18 @@ export default function IndianWeddingPlannerDC() {
                 />
                 <div>
                   <h3 className="text-3xl font-bold pb-4">
-                    The Perfect Send-Off Experience
+                    Guest and Logistics Management
                   </h3>
                   <p className="md:text-xl mb-4">
-                    We take care of post-wedding needs, including planning a
-                    farewell brunch and managing final vendor payments.
+                    Your wedding might involve 150 to 300 famlily and guests. We
+                    handle accommodation bookings, transportation arrangements,
+                    and welcome kits for guests. Our services also include
+                    managing RSVPs, coordinating shuttles, and providing
+                    assistance to guests during the events.
                   </p>
                   <p className="md:text-xl mb-4">
-                    From wrapping up logistics to collecting personal items, we
-                    make sure the celebration ends seamlessly and stress-free.
+                    Every logistical detail is addressed to ensure a comfortable
+                    and organized experience for everyone.
                   </p>
                 </div>
               </div>
@@ -221,16 +226,18 @@ export default function IndianWeddingPlannerDC() {
                 />
                 <div className="">
                   <h3 className="text-3xl font-bold pb-4">
-                    One-of-a-Kind Wedding Touches
+                    Entertainment and Catering Coordination
                   </h3>
                   <p className="md:text-xl mb-4">
-                    Special moments like surprise performances and unique
-                    elements can be added to make your wedding truly
-                    unforgettable.
+                    Entertainment and food are integral to Indian weddings. This
+                    service includes arranging traditional music, such as dhol
+                    players or live singers, as well as modern options like
+                    Bollywood DJs and choreographers for sangeet performances.
                   </p>
                   <p className="md:text-xl mb-4">
-                    Our expertise ensures a memorable and stress-free
-                    celebration.
+                    Catering coordination ensures an authentic Indian menu with
+                    options for dietary preferences like vegetarian, vegan,
+                    halal, or Jain.
                   </p>
                 </div>
               </div>
@@ -252,7 +259,8 @@ export default function IndianWeddingPlannerDC() {
           <div className="py-10">
             <div className="max-w-3xl mx-auto md:p-20 py-10 px-8 rounded-xl text-white">
               <h2 className="text-3xl md:text-5xl">
-                How to Begin Your Indian Wedding Planning Journey with Monica
+                Monica Makes Your Indian Wedding Planning Journey Simple and
+                Stress Free
               </h2>
               <div className="my-10">
                 <h4 className="text-2xl md:text-3xl">
@@ -305,8 +313,17 @@ export default function IndianWeddingPlannerDC() {
           </div>
         </section>
         <div className="container max-w-7xl mx-auto px-6 py-10 md:py-20">
-          <div className="grid lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          <div className="grid lg:grid-cols-1 gap-4 max-w-7xl mx-auto">
             <img
+              src="images/indian-bride-with-parents-smiling.jpg"
+              loading="lazy"
+              width="100%"
+              height="auto"
+              className="pb-4"
+              alt="Indian bride with mother and father during ceremony."
+            />
+
+            {/* <img
               src="/images/wedding-table-centerpiece-design.webp"
               alt="Wedding table centerpiece design for small wedding."
               loading="lazy"
@@ -326,7 +343,7 @@ export default function IndianWeddingPlannerDC() {
               loading="lazy"
               width="472"
               height="708"
-            />
+            /> */}
           </div>
           <section>
             <div className="max-w-3xl mx-auto py-10 md:py-20">
@@ -342,7 +359,14 @@ export default function IndianWeddingPlannerDC() {
                 unforgettable:
               </p>
               <p className="md:text-xl mb-4">
-                Check out our 5-star reviews on Google.
+                Check out our{' '}
+                <a
+                  href="https://www.google.com/search?client=firefox-b-1-d&q=monica+browne+weddings#lrd=0x89b7eb901b80745b:0x27f704e516f44ed0,1,,,"
+                  target="_blank"
+                >
+                  5-star reviews
+                </a>{' '}
+                on Google.
               </p>
               <p className="md:text-xl mb-4">
                 We love what we do, and it shows. We're passionate about
@@ -449,8 +473,8 @@ export default function IndianWeddingPlannerDC() {
               </h3>
               <p className="md:text-xl mb-4">
                 The cost of an Indian wedding in Washington, DC, typically
-                ranges from <b>$100,000 to $300,000 or more</b>, depending on
-                the scale of the celebration, number of guests, and level of
+                ranges from <b>$80,000 to $300,000 or more</b>, depending on the
+                scale of the celebration, number of guests, and level of
                 customization, and the inclusion of traditional ceremonies like
                 the Sangeet, Mehendi, and Baraat..
               </p>
@@ -479,16 +503,14 @@ export default function IndianWeddingPlannerDC() {
                 honors your heritage while staying within budget.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #2. Do you have experience planning weddings with specific
-                Indian cultural traditions?
+                #2. What services do you provide as an Indian wedding planner?
               </h3>
               <p className="md:text-xl mb-4">Yes.</p>
               <p className="md:text-xl mb-4">
-                We have vast knowledge in planning weddings across a variety of
-                Indian cultural traditions, including but not limited to
-                Punjabi, Gujarati, South Indian, Bengali, and Marathi weddings.
-                We respect and understand the nuances of different regional and
-                religious traditions.
+                As a full-service Indian wedding planner, we provide
+                comprehensive planning, including venue selection, vendor
+                management, decor detailing, and menu curation. We also offer
+                day-of coordination and consultation services.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #3. Can you assist with pre-wedding ceremonies, such as Sangeet,

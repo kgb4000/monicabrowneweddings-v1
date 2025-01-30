@@ -34,7 +34,7 @@ export default async function WeddingPlannerWashingtonDC() {
   return (
     <div>
       <Hero
-        herotext="Professional Wedding Planner in Washington, DC"
+        herotext="Professional Wedding Planner and Services for Busy Couples in Washington, DC"
         heroSubText="We create stunning weddings for busy couples in Washington, DC, blending timeless traditions with modern elegance for a day you’ll cherish forever"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
@@ -46,7 +46,7 @@ export default async function WeddingPlannerWashingtonDC() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Top Wedding Planner For Busy Couples in Washington, DC
+                  Top Rated Wedding Planning Services in Washington, DC
                 </h2>
                 <p className="md:text-xl mb-4">
                   Monica Browne Weddings offers wedding planning services to
@@ -99,7 +99,7 @@ export default async function WeddingPlannerWashingtonDC() {
                     Indian
                   </Link>{' '}
                   and{' '}
-                  <Link href="/jewish-wedding-planner-washington-dc-maryland-virginia">
+                  <Link href="/jewish-wedding-planner-maryland-dc-virginia">
                     Jewish couples
                   </Link>
                   , create weddings that beautifully honor their heritage and

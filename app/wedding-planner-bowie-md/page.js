@@ -111,7 +111,7 @@ export default function WeddingPlannerBowieMD() {
                 Indian couples
               </Link>{' '}
               and{' '}
-              <Link href="/jewish-wedding-planner-washington-dc-maryland-virginia">
+              <Link href="/jewish-wedding-planner-maryland-dc-virginia">
                 Jewish couples
               </Link>
               , create weddings that honor their unique traditions and love

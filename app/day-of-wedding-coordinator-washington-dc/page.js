@@ -34,7 +34,7 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
   return (
     <>
       <Hero
-        herotext="Premier Day of Wedding Coordinator, Washington, DC"
+        herotext="Premier Day of Wedding Coordinator/Planner in Washington, DC"
         heroSubText="We offer expert day-of wedding coordination services for couples in Washington, DC, ensuring your special day is seamless and stress-free"
         buttonText="Book A Call With Monica!"
         imageUrl="/images/wedding-at-irongate-in-washington-dc.jpg"
@@ -46,15 +46,11 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Professional Day of Wedding Coordinator in Washington, DC
+                  Day of Wedding Coordinator and Planner in Washington, DC
                 </h2>
                 <p className="md:text-xl mb-4">
                   Monica Browne Weddings offers day-of wedding coordinator
-                  services to couples in Washington, DC, and{' '}
-                  <Link href="/day-of-wedding-coordinator-bowie-md">
-                    Bowie, MD
-                  </Link>
-                  .
+                  services to couples in Washington, DC. .
                 </p>
                 <p className="md:text-xl mb-4">
                   When all you need is someone to manage the wedding day for

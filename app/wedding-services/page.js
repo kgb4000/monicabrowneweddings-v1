@@ -103,7 +103,7 @@ export default async function WeddingServices() {
                   meaningful décor, we’re here to guide you every step of the
                   way.
                 </p>
-                <Link href="/jewish-wedding-planner-washington-dc-maryland-virginia">
+                <Link href="/jewish-wedding-planner-maryland-dc-virginia">
                   <p className="my-8">Read more</p>
                 </Link>
               </div>
