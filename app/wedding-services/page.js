@@ -55,7 +55,10 @@ export default async function WeddingServices() {
                   full-service or or partial planning service.
                 </p>
                 <Link href="/wedding-planner-bowie-md">
-                  <p className="my-8">Read more</p>
+                  <p className="my-8">Read more for weddings in Bowie</p>
+                </Link>
+                <Link href="/wedding-planner-washington-dc">
+                  <p className="my-8">Read more for weddings in DC</p>
                 </Link>
               </div>
             </div>
@@ -198,7 +201,7 @@ export default async function WeddingServices() {
                   choose designs around what you like while offering new wedding
                   flower ideas. If you need us to plan...
                 </p>
-                <Link href="/wedding-flowers">
+                <Link href="blog/how-much-do-wedding-flowers-cost-in-dc-maryland-and-virginia">
                   <p className="my-8">Read more</p>
                 </Link>
               </div>

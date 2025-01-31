@@ -133,12 +133,12 @@ export default async function Page({ params }) {
                   </p>
                 ),
                 ul: ({ children }) => (
-                  <ul className="text-xl leading-relaxed text-ui-fg-base font-normal lg:my-5 list-disc mx-10 my-10">
+                  <ul className="leading-relaxed text-ui-fg-base font-normal lg:my-5 list-disc mx-10 mb-10">
                     {children}
                   </ul>
                 ),
                 li: ({ children }) => (
-                  <li className="md:text-xl leading-relaxed text-ui-fg-base font-normal lg:my-8">
+                  <li className="md:text-xl leading text-ui-fg-base font-normal my-6 leading-8">
                     {children}
                   </li>
                 ),

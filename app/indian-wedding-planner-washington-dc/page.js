@@ -7,20 +7,20 @@ const calendly =
 
 export const metadata = {
   title:
-    'Indian Wedding Planner in Washington DC, Maryland, and Northern Virginia',
+    'Indian Wedding Planner for Busy Couples in DC, Maryland, and Northern Virginia',
   description:
-    "We're exclusive full-service and partial-service Indian wedding planners in Washington, DC, Maryland and Northern Virginia. Contact us today to start planning your wedding!",
+    'Indian wedding planners in DC, Maryland and Northern Virginia offering full-service, day-of, and month-of wedding planning. Book a call today!',
   alternates: {
     canonical:
       'https://monicabrowneweddings.com/indian-wedding-planner-washington-dc',
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      url: 'https://monicabrowneweddings.com/indian-wedding-planner-washington-dc',
+      url: 'https://monicabrowneweddings.com/indian-bride.jpg',
       site_name: 'Monica Browne Weddings',
       images: [
         {
-          url: 'https://monicabrowneweddings.com/public/images/wedding-planner-vs-coordinator.webp',
+          url: 'https://monicabrowneweddings.com/public/images/indian-bride.jpg',
           width: 1000,
           height: 1500,
           alt: 'Micro wedding at winery in Maryland.',
@@ -34,8 +34,8 @@ export default function IndianWeddingPlannerDC() {
   return (
     <>
       <Hero
-        herotext="Premiere Indian Wedding Planner in Washington, DC"
-        heroSubText="We specialize in crafting stunning Indian weddings for busy couples in DC, blending tradition, elegance, and modern flair"
+        herotext="Indian Wedding Planner for Busy Couples in DC, Maryland, and Northern Virginia"
+        heroSubText="We specialize in crafting stunning Indian weddings for busy couples in the DC area, blending tradition, elegance, and a modern flair to your special event"
         buttonText="Book A Call With Monica!"
         imageUrl="/images/indian-wedding-ceremony-mgm.jpg"
         textColor="text-white"
@@ -116,14 +116,15 @@ export default function IndianWeddingPlannerDC() {
               <div className="pb-4 grid md:grid-cols-2 gap-x-10 items-center my-16">
                 <img
                   src="images/indian-wedding-ceremony-mgm.jpg"
-                  alt="Indian bride escorted down teh ailse by her sister and cousin."
+                  alt="Indian wedding planner."
                   loading="lazy"
                   height="auto"
                   className="pb-4"
                 />
                 <div className="">
                   <h3 className="text-3xl font-bold pb-4">
-                    Full-Service Wedding Planning
+                    Full Wedding Planning, Day-of Planning, and Month-of
+                    Planning
                   </h3>
                   <p className="md:text-xl mb-4">
                     Comprehensive management of all wedding events, including
@@ -532,7 +533,7 @@ export default function IndianWeddingPlannerDC() {
                 runs as smoothly as possible.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #5 We invited over 200 guests. Can you help with managing the
+                #5. We invited over 200 guests. Can you help with managing the
                 guest list and RSVPs?
               </h3>
               <p className="md:text-xl mb-4">
@@ -544,6 +545,16 @@ export default function IndianWeddingPlannerDC() {
               <p className="md:text-xl italic my-8 text-center max-w-xl mx-auto">
                 Book a 15-minute with Monica and see how she can help you plan
                 your Indian wedding celebration
+              </p>
+              <h3 className="text-2xl md:text-3xl my-4">
+                #6. Do you have references from previous clients or a portfolio
+                of past weddings?
+              </h3>
+              <p className="md:text-xl mb-4">
+                Absolutely! We're proud of our past work and satisfied clients.
+                We're more than happy to share references and a portfolio of
+                weddings we've planned. This gives you a clear understanding of
+                our capabilities and the quality of our services.
               </p>
               <div className="center">
                 <a href={calendly} target="_blank">
