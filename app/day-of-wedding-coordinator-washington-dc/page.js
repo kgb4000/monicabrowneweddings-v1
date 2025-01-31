@@ -9,7 +9,7 @@ const calendly =
 export const metadata = {
   title: 'Day of Wedding Coordinator/Planner for Busy Couples in Washington DC',
   description:
-    'Monica Browne Weddings is a day of wedding coordinator serving Washington, DC. If you want someone you can trust to coordinate your wedding, call us today!',
+    'Day-Of Wedding Coordination | Stress-Free DC Weddings by Monica Browne Weddings.  Enjoy your special day!  Experienced & reliable.  Book a free call now!',
   alternates: {
     canonical:
       'https://monicabrowneweddings.com/day-of-wedding-coordinator-washington-dc',
@@ -429,10 +429,14 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
                 #2. How Much Does a Day-of Coordinator Cost in DC?
               </h3>
               <p className="md:text-xl mb-4">
-                While the national average for a wedding coordinator is between
-                <b>$800 and $1500</b>, the cost of a wedding coordinator in
-                Washington, DC, is between <b>$2300 to $7000</b> depending on
-                the size of the wedding.
+                The cost of an experienced day-of wedding coordinator in the DC
+                area, typically ranges from <b>$2,300 to $7,000</b>, though
+                prices can vary based on wedding size, complexity, and the
+                coordinator's experience. While the national average is lower,
+                DC's market reflects higher costs. Factors influencing price
+                include the scope of services included and the coordinator's
+                expertise. It's wise to research, compare quotes, and secure a
+                detailed contract outlining services and fees before booking.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #3. When is The Best Time To Hire a Day-of Wedding Coordinator?

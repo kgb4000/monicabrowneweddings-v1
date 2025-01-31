@@ -37,10 +37,50 @@ const getPosts = async () => {
   return data.posts
 }
 
+const localBusinessStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Monica Browne Weddings',
+  description:
+    "Monica Browne Weddings is one of the best wedding planners in Maryland, serving couples in DC and Northern Virginia. We offer full-service event planning, partial service event planning, day-of coordination, event design, and floral design services. If you are a busy couple and need help, or if you need some help and guidance, please don't hesitate to reach out to us. You can book a call with us when you are ready.",
+  image:
+    'https://res.cloudinary.com/browne-company/image/upload/q_auto/v1631495887/walking-down-aisle_o4wklu.webp',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '4710 Silverbrook Way',
+    addressLocality: 'Bowie',
+    addressRegion: 'MD',
+    postalCode: '20720',
+    addressCountry: 'US',
+  },
+  url: 'http://monicabrowneweddings.com',
+  telephone: '+1-240-665-3350',
+  openingHours: 'Mo,Tu,We,Th,Fr,Sa 09:00-17:00',
+  geoMidpoint: {
+    latitude: '39.013313',
+    longitude: '-76.776924',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '39.013313',
+    longitude: '-76.776924',
+  },
+  geoRadius: '1000',
+  rating: {
+    ratingValue: '5',
+    ratingCount: '13',
+  },
+  areaServed:
+    'Washington, DC, Bowie, MD, Potomac, MD, Chevy Chase, MD, Bethesda, MD, Northern Virginia',
+}
+
 export default async function Home() {
   const posts = await getPosts()
   return (
     <div>
+      <script type="application/ld+json">
+        {JSON.stringify(localBusinessStructuredData)}
+      </script>
       <Hero
         herotext="Professional Wedding Planning Services For Busy Couples"
         heroSubText="We Create Beautiful Weddings For Busy Couples in Maryland, Washington, DC, and Northern Virginia"

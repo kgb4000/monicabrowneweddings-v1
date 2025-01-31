@@ -45,7 +45,7 @@ export default function IndianWeddingPlannerDC() {
           <section>
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl lg:text-5xl my-8 text-center leading-normal">
-                Exclusive Indian Wedding Planning Services in DC Area
+                Exclusive Indian Wedding Planning Services in the DC Area
               </h2>
               <p className="md:text-xl mb-4">
                 Monica Browne Weddings is your trusted partner in the

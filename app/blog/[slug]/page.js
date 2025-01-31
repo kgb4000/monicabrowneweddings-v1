@@ -69,8 +69,31 @@ export default async function Page({ params }) {
   const slug = (await params).slug
   const post = await getPost(slug)
 
+  const articleStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description,
+    author: {
+      '@type': 'Person',
+      name: 'Monica Browne',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Monica Browne Weddings',
+      logo: {
+        '@type': 'ImageObject',
+        url: post.coverImage.url,
+      },
+    },
+    datePublished: post.updatedAt,
+    image: post.coverImage.url,
+  }
   return (
     <>
+      <script type="application/ld+json">
+        {JSON.stringify(articleStructuredData)}
+      </script>
       <section>
         <div className="container max-w-2xl mx-auto mt-10 px-4">
           <h1 className="text-4xl my-10">{post.title}</h1>
