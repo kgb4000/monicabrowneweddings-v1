@@ -76,7 +76,7 @@ export default async function Page({ params }) {
     description: post.description,
     author: {
       '@type': 'Person',
-      name: 'Monica Browne',
+      name: post.author.name,
     },
     publisher: {
       '@type': 'Organization',

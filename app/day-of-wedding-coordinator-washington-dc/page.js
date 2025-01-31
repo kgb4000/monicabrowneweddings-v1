@@ -30,9 +30,26 @@ export const metadata = {
   },
 }
 
+const serviceStructuredData = {
+  '@context': 'https://schema.org/',
+  '@type': 'Service',
+  serviceType: 'Day of Wedding Coordination',
+  provider: {
+    '@type': 'LocalBusiness',
+    name: 'Monica Browne Weddings',
+  },
+  areaServed: {
+    '@type': 'State',
+    name: 'Washington, DC',
+  },
+}
+
 export default function DayOfWeddingCoordinatorWashingtonDC() {
   return (
     <>
+      <script type="application/ld+json">
+        {JSON.stringify(serviceStructuredData)}
+      </script>
       <Hero
         herotext="Day of Wedding Coordinator/Planner for Busy Couples in Washington, DC"
         heroSubText="We offer expert day-of wedding coordination services for couples in Washington, DC, ensuring your special day is seamless and stress-free"

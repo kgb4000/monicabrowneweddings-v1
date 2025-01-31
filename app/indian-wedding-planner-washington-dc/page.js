@@ -30,9 +30,26 @@ export const metadata = {
   },
 }
 
+const indianWeddingPlanningStructuredData = {
+  '@context': 'https://schema.org/',
+  '@type': 'Service',
+  serviceType: 'Indian Wedding Planner',
+  provider: {
+    '@type': 'LocalBusiness',
+    name: 'Monica Browne Weddings',
+  },
+  areaServed: {
+    '@type': 'State',
+    name: 'Washington, DC',
+  },
+}
+
 export default function IndianWeddingPlannerDC() {
   return (
     <>
+      <script type="application/ld+json">
+        {JSON.stringify(indianWeddingPlanningStructuredData)}
+      </script>
       <Hero
         herotext="Indian Wedding Planner for Busy Couples in DC, Maryland, and Northern Virginia"
         heroSubText="We specialize in crafting stunning Indian weddings for busy couples in the DC area, blending tradition, elegance, and a modern flair to your special event"
