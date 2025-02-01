@@ -38,10 +38,184 @@ const indianWeddingPlanningStructuredData = {
     '@type': 'LocalBusiness',
     name: 'Monica Browne Weddings',
   },
-  areaServed: {
-    '@type': 'State',
-    name: 'Washington, DC',
+  areaServed: [
+    // Use an array for multiple locations or GeoShapes
+    {
+      '@type': 'City',
+      name: 'Washington',
+      addressRegion: 'DC',
+    },
+    {
+      '@type': 'City',
+      name: 'Bowie',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Chevy Chase',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Bethesda',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Rockville',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Burtonsville',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Silver Spring',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Pikesville',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Potomac',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Arlington',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Springfield',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Alexandria',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'McLean',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Great Falls',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Vienna',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Fairfax',
+      addressRegion: 'VA',
+    },
+  ],
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+      ],
+      opens: '09:00',
+      closes: '17:00',
+    },
+  ],
+  url: 'https://monicabrowneweddings.com/indian-wedding-planner-washington-dc',
+  telephone: '+1-240-655-3350',
+  email: 'monica@monicabrowneweddings.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '4710 Silverbrook Way',
+    addressLocality: 'Bowie',
+    addressRegion: 'MD',
+    postalCode: '20720',
   },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '38.9072',
+    longitude: '-77.0369',
+  },
+  priceRange: '$$',
+  // image: 'https://monicabrowneweddings.com/public/images/indian-bride.jpg',
+}
+
+const faqStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How Much Does an Indian Wedding Cost in Washington, DC?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The cost of an Indian wedding in Washington, DC, typically ranges from $80,000 to $300,000 or more, depending on the scale of the celebration, number of guests, and level of customization, and the inclusion of traditional ceremonies like the Sangeet, Mehendi, and Baraat. Major expenses include venues ($10,000–$50,000), catering ($50–$200 per guest), décor and floral arrangements ($14,000–$80,000), outfits and jewelry ($5,000–$50,000), entertainment ($5,000–$30,000), and photography or videography ($10,000–$30,000) for multi-day coverage. Factors such as guest count, multi-day traditional events, customized décor, and peak wedding seasons can significantly affect costs. Budget-friendly strategies like selecting venues that accommodate multiple events, choosing balanced catering packages, and prioritizing impactful décor can help manage expenses. With the guidance of an experienced wedding planner who understands Indian traditions, you can create a stunning celebration that honors your heritage while staying within budget',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What services do you provide as an Indian wedding planner?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. As a full-service Indian wedding planner, we provide comprehensive planning, including venue selection, vendor management, decor detailing, and menu curation. We also offer day-of coordination and consultation services',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can a Wedding Planner Save Me Money?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Some brides consider wedding planners a luxury, but they can save you money in the long run. A good wedding planner will have connections with vendors and be able to get you discounts that you might not be able to get on your own. They will also be able to help you stay within your budget and avoid any last-minute financial surprises.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you assist with pre-wedding ceremonies, such as Sangeet, Mehndi, and Haldi?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Absolutely. We understand the importance of pre-wedding ceremonies in an Indian wedding and can assist in planning and organizing these events as per your cultural traditions and personal preferences.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do you handle last-minute changes or emergencies?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We understand that weddings can be dynamic and changes may come up. We have a highly experienced team capable of handling last-minute adjustments or emergencies, ensuring your wedding runs as smoothly as possible.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'We invited over 200 guests. Can you help with managing the guest list and RSVPs?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, we can. We offer services to manage the guest list, send out invitations, and track RSVPs to ensure you have a clear picture of your guest count and any special requirements they may have.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you have references from previous clients or a portfolio of past weddings?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Absolutely! We're proud of our past work and satisfied clients. We're more than happy to share references and a portfolio of weddings we've planned. This gives you a clear understanding of our capabilities and the quality of our services.",
+      },
+    },
+  ],
 }
 
 export default function IndianWeddingPlannerDC() {
@@ -49,6 +223,9 @@ export default function IndianWeddingPlannerDC() {
     <>
       <script type="application/ld+json">
         {JSON.stringify(indianWeddingPlanningStructuredData)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(faqStructuredData)}
       </script>
       <Hero
         herotext="Indian Wedding Planner for Busy Couples in DC, Maryland, and Northern Virginia"

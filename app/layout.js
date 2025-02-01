@@ -33,9 +33,9 @@ const openSans = Open_Sans({
 
 export const metadata = {
   title:
-    'Wedding Planner Maryland | Exclusive Events by Monica Browne Weddings',
+    'Professional Wedding Planning Services For Busy Couples | Monica Browne Weddings',
   description:
-    "Looking for a wedding planner in Maryland? We'll take care of everything, from finding the perfect venue to finding the best caterers. Call us today!",
+    "Are you a busy couple looking for a wedding planner? We'll take care of everything, from finding the perfect venue to finding the best caterers. Call us today!",
   alternates: {
     canonical: 'https://monicabrowneweddings.com',
   },

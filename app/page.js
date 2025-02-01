@@ -170,12 +170,62 @@ const localBusinessStructuredData = {
   ],
 }
 
+const faqStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How Much Does a Wedding Cost in the Washington DC Area?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Getting married in the Washington DC area (Maryland, DC, and Virginia) can cost $32,000 - $70,000 and up. Most of your costs depend on how much your venue and caterer charge, plus how many guests you invite.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I Plan My Wedding Myself?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Many brides choose to take on planning their big day on their own, thinking they would save money. If you think you have the time to plan your wedding, go for it. It's a lot of work and a lot of time, and you will need some help. You will need the help of family and friends you can trust. If you think you are too busy and may not have the time, consider hiring a wedding planner or a day of wedding coordinator. Read this blog post to see which professional can assist you the best.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can a Wedding Planner Save Me Money?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Some brides consider wedding planners a luxury, but they can save you money in the long run. A good wedding planner will have connections with vendors and be able to get you discounts that you might not be able to get on your own. They will also be able to help you stay within your budget and avoid any last-minute financial surprises.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the Difference Between a Wedding Planner and a Day-of Coordinator?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Wedding planners are professionals that can help you plan every piece of the planning process. This would include planning your ceremony, cocktail hour, and reception. They will help you select the best vendors like DJs, caterers, decorators, transportation providers, and more. A day-of coordinator is a professional that will manage the actual day of your wedding. They become the point of contact for all your vendors, the venue, and all your guests. They keep you out of the loop to have a stress-free wedding day.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do You Plan Weddings in Washington DC and Virginia?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Even though we are based in Maryland, we offer full-service and partial-service event planning to all couples throughout the DMV area. We have planned weddings in Washington, DC and Northern Virginia and can work with you regardless of location. Book a call today to get started planning your dream wedding!',
+      },
+    },
+  ],
+}
+
 export default async function Home() {
   const posts = await getPosts()
   return (
     <div>
       <script type="application/ld+json">
         {JSON.stringify(localBusinessStructuredData)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(faqStructuredData)}
       </script>
       <Hero
         herotext="Professional Wedding Planning Services For Busy Couples"

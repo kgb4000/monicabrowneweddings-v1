@@ -42,11 +42,9 @@ export default function About() {
             {/* <h2 className="text-3xl md:text-5xl text-center mb-8">About Us</h2> */}
             <p className="md:text-xl mb-4" itemProp="description">
               Monica Browne Weddings is a{' '}
-              <Link href="/wedding-services/wedding-planner-bowie-md">
-                wedding planner
-              </Link>{' '}
-              in Bowie, MD that delivers the best and most memorable weddings
-              and events.
+              <Link href="/wedding-planner-bowie-md">wedding planner</Link> in
+              Bowie, MD that delivers the best and most memorable weddings and
+              events.
             </p>
             <p className="md:text-xl mb-4">
               We that a lot of couples in our area don't have a lot of time,

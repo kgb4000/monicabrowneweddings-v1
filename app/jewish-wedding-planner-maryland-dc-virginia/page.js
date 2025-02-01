@@ -31,6 +31,131 @@ export const metadata = {
   },
 }
 
+const jewishWeddingPlanningStructuredData = {
+  '@context': 'https://schema.org/',
+  '@type': 'Service',
+  serviceType: 'Jewish Wedding Planner',
+  provider: {
+    '@type': 'LocalBusiness',
+    name: 'Monica Browne Weddings',
+  },
+  areaServed: [
+    // Use an array for multiple locations or GeoShapes
+    {
+      '@type': 'City',
+      name: 'Washington',
+      addressRegion: 'DC',
+    },
+    {
+      '@type': 'City',
+      name: 'Bowie',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Chevy Chase',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Bethesda',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Rockville',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Burtonsville',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Silver Spring',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Pikesville',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Potomac',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Arlington',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Springfield',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Alexandria',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'McLean',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Great Falls',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Vienna',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Fairfax',
+      addressRegion: 'VA',
+    },
+  ],
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+      ],
+      opens: '09:00',
+      closes: '17:00',
+    },
+  ],
+  url: 'https://monicabrowneweddings.com/indian-wedding-planner-washington-dc',
+  telephone: '+1-240-655-3350',
+  email: 'monica@monicabrowneweddings.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '4710 Silverbrook Way',
+    addressLocality: 'Bowie',
+    addressRegion: 'MD',
+    postalCode: '20720',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '38.9072',
+    longitude: '-77.0369',
+  },
+  priceRange: '$$',
+  // image: 'https://monicabrowneweddings.com/public/images/indian-bride.jpg',
+}
+
 export default async function JewishWeddingPlanner() {
   return (
     <div>

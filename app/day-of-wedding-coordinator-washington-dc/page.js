@@ -102,7 +102,7 @@ const serviceStructuredData = {
           name: 'Day-Of Coordination Package',
           description:
             'Our most popular package for couples who have planned their wedding but need help with final details and on-the-day execution.',
-          price: '2300 - 7000',
+          priceRange: '$$',
           priceCurrency: 'USD',
         },
       },
