@@ -34,14 +34,189 @@ const serviceStructuredData = {
   '@context': 'https://schema.org/',
   '@type': 'Service',
   serviceType: 'Day of Wedding Coordination',
+  description:
+    'Our Day-of Coordination service ensures your wedding day runs smoothly and flawlessly. We handle all the logistics, vendor management, and on-site coordination so you can relax and enjoy your special day.',
   provider: {
     '@type': 'LocalBusiness',
     name: 'Monica Browne Weddings',
+    url: 'https://monicabrowneweddings.com/',
+    telephone: '+1-240-665-3350',
+    email: 'monica@monicabrowneweddings.com',
   },
-  areaServed: {
-    '@type': 'State',
-    name: 'Washington, DC',
+  image:
+    'https://res.cloudinary.com/browne-company/image/upload/q_auto/v1631495887/walking-down-aisle_o4wklu.webp',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '4710 Silverbrook Way',
+    addressLocality: 'Bowie',
+    addressRegion: 'MD',
+    postalCode: '20720',
+    addressCountry: 'US',
   },
+  url: 'https://monicabrowneweddings.com/day-of-wedding-coordinator-washington-dc',
+  telephone: '+1-240-665-3350',
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '39.013313',
+    longitude: '-76.776924',
+  },
+  geoRadius: '1000',
+  areaServed: [
+    // Use an array for multiple locations or GeoShapes
+    {
+      '@type': 'City',
+      name: 'Washington',
+      addressRegion: 'DC',
+    },
+  ],
+
+  rating: {
+    ratingValue: '5',
+    ratingCount: '13',
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+      ],
+      opens: '09:00',
+      closes: '17:00',
+    },
+  ],
+  hasOfferCatalog: {
+    // If you have packages, this is helpful
+    '@type': 'OfferCatalog',
+    name: 'Wedding Packages',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        item: {
+          '@type': 'Offer',
+          name: 'Day-Of Coordination Package',
+          description:
+            'Our most popular package for couples who have planned their wedding but need help with final details and on-the-day execution.',
+          price: '2300 - 7000',
+          priceCurrency: 'USD',
+        },
+      },
+      // Add more packages here as needed
+    ],
+  },
+  review: [
+    // Add reviews if you have them.  Even one or two helps!
+    {
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: 'Kimberley Hooper-Twumasi',
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+      },
+      reviewBody:
+        "Mrs. Browne came as a recommendation from my wedding cake designer and I couldn't be happier. Ms. Browne was prompt, responsive, and incredibly knowledgeable about flowers and design. She kept me updated and sent texts of her selections from the flower market the week of my wedding. She delivered my flowers the day before my event with thorough care instructions and carefully packaged. I would, and have recommended Ms. Browne for additional events and will be using her for my wedding reception in 2022.",
+    },
+    {
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: 'Emily Menge',
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+      },
+      reviewBody:
+        'Monica and her team made our wedding amazing! She was our month of planner and helped us tremendously. I’m positive that our wedding day wouldn’t have gone as seamlessly as it did if Monica wasn’t there to manage everything. She went above and beyond to make our wedding perfect and we don’t have a single thing we would change about the day. Go ahead and book Monica right now if you’re contemplating a wedding planner!!',
+    },
+    {
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: 'Whitney Ames',
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+      },
+      reviewBody:
+        "The best thing I could have done for our daughter's wedding was hire Monica Browne of Monica Brown Weddings to be our Coordinator. A true professional; she is detailed oriented and extremely easy to work with. There are not enough stars to give Monica for a true rating (10 ++++…). She knows exactly what the bride would need and how to go about it. The day of the event, Monica and her team awesome professional. We would highly recommend Monica Browne Weddings!",
+    },
+    {
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: 'Diane',
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+      },
+      reviewBody:
+        'Working with Monica as my wedding planner was one of the best decisions I made. At the time, I lived in Philadelphia while I was planning for my wedding in Washington DC. With Monica’s expertise and experience with wedding planning, I was left stress free on my wedding day. Each month, Monica sent me monthly “to-do lists“ to ensure I remained on task. Thanks to Monica, I was able to find vendors to fit my budget. Once vendors were hired for my big day, Monica remained in constant communication with them to ensure everyone was on the same page. Even though I was no Bridezilla, I definitely had my moments. Through those moments, Monica remained professional at all times and was able to get me back on track. I would definitely recommend Monica’s services to any bride I meet. I am looking forward to working with her in the future when my sister gets married!',
+    },
+    {
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: 'Donna McIntyre',
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+      },
+      reviewBody:
+        'I met Monica in Summer 2008, while I served as a Bridesmaid for my best friend’s wedding. She was able to communicate the wishes of the Bride & Groom, so that things would run smoothly. She comes highly recommended by not only my friend, but to others & has a GREAT Vendor List. Overall, she has a great demeanor & is a pleasure to work with.',
+    },
+    {
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: 'Katrina Edmonds',
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+      },
+      reviewBody:
+        'I am so thankful that I used Monica Browne Weddings for my rooftop wedding in the summer of 2010. It has been 5 years and I still have family and friends tell me how beautiful my wedding day was. I could not have been more pleased at their work. They listened to all my wants and carried them out exactly how I asked them to. They were nice, understanding and very easy to work with. They kept me on track and made the experience enjoyable. I am very particular and I like to be involved in everything however, I was able to let go and have them handle everything. I was not disappointed at all and my day turned out perfect. I could go on and on. I would recommend them over and over again.',
+    },
+    {
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: 'Lisa',
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+      },
+      reviewBody:
+        'Monica made my wedding day a success. I would recommend their services to anyone looking for a group of women that come together professionally to make such an important day amazing!!!!',
+    },
+    {
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: 'Teresa Thomas',
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+      },
+      reviewBody:
+        'Choosing Monica Browne Weddings to meet my needs during one of the most important events in my life was a decision that hosts no regrets. True professionalism, at its best! While planning a wedding can be very stressful and hectic, my experience with Monica Browne Weddings was definitely one that was fun and exciting! All tasks were completed in a very organized manner and with so many things to accomplish, such organization was very important. Monica Browne Weddings also referred me to many vendors that were equally very professional. As a result, my wedding day was truly all that I had dreamed it to be and more! It was at last the vivid reality of all of the planning and decision making done in the prior months. I am so thankful for the memories I now have to cherish for a lifetime. Monica Browne Weddings……..I can’t thank you enough!',
+    },
+    // Add more reviews as needed
+  ],
 }
 
 export default function DayOfWeddingCoordinatorWashingtonDC() {

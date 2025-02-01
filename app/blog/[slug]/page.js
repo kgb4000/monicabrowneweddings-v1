@@ -83,7 +83,7 @@ export default async function Page({ params }) {
       name: 'Monica Browne Weddings',
       logo: {
         '@type': 'ImageObject',
-        url: post.coverImage.url,
+        url: 'https://monicabrowneweddings.com/images/black-ride-and-black-groom.webp',
       },
     },
     datePublished: post.updatedAt,
