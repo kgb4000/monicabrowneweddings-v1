@@ -70,8 +70,104 @@ const localBusinessStructuredData = {
     ratingValue: '5',
     ratingCount: '13',
   },
-  areaServed:
-    'Washington, DC, Bowie, MD, Potomac, MD, Chevy Chase, MD, Bethesda, MD, Northern Virginia',
+  areaServed: [
+    // Use an array for multiple locations or GeoShapes
+    {
+      '@type': 'City',
+      name: 'Washington',
+      addressRegion: 'DC',
+    },
+    {
+      '@type': 'City',
+      name: 'Rockville',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Silver Spring',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Chevy Chase',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Olney',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Bowie',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Bethesda',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Potomac',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Annapolis',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Takoma Park',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Kensington',
+      addressRegion: 'MD',
+    },
+    {
+      '@type': 'City',
+      name: 'Great Falls',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Alexandria',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Arlington',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Springfiled',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Fairfax',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Reston',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Sterling',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Loudoun County',
+      addressRegion: 'VA',
+    },
+  ],
 }
 
 export default async function Home() {
