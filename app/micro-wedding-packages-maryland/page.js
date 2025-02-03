@@ -92,8 +92,11 @@ export default function MicroWeddingPackages() {
                   </p>
                   <p className="md:text-xl mb-4">
                     Unlike a big wedding, these events often focus on quality
-                    over quantity. Some couples save money with a smaller guest
-                    list, less food, and a smaller vendor team.
+                    over quantity.
+                  </p>
+                  <p className="md:text-xl mb-4">
+                    Some couples save money with a smaller guest list, less
+                    food, and a smaller vendor team.
                   </p>
                   <p className="md:text-xl mb-4">
                     Micro weddings can be held at various venues, from
@@ -139,8 +142,14 @@ export default function MicroWeddingPackages() {
                   cost of a wedding
                 </Link>{' '}
                 in the Washington, DC area being where it is, you can spend less
-                by having a small wedding. You can spend less on catering,
-                ceremony and reception decorations, and your venue.
+                by having a small wedding.
+              </p>
+              <p className="md:text-xl mb-4">
+                You can spend less on{' '}
+                <Link href="/blog/how-to-choose-the-right-catering-menu-for-your-dc-wedding">
+                  catering
+                </Link>
+                , ceremony and reception decorations, and your venue.
               </p>
               <p className="md:text-xl mb-4">
                 But a micro wedding doesn't mean less money for every couple.

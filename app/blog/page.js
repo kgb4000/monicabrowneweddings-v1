@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Button from '@/components/Button'
-import Hero from '@/components/Hero'
 const getPosts = async () => {
   const response = await fetch(
     'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master',

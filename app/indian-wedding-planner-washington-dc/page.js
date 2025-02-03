@@ -23,7 +23,7 @@ export const metadata = {
           url: 'https://monicabrowneweddings.com/public/images/indian-bride.jpg',
           width: 1000,
           height: 1500,
-          alt: 'Micro wedding at winery in Maryland.',
+          alt: 'Indian bride at her wedding.',
         },
       ],
     },
@@ -430,9 +430,12 @@ export default function IndianWeddingPlannerDC() {
                     Bollywood DJs and choreographers for sangeet performances.
                   </p>
                   <p className="md:text-xl mb-4">
-                    Catering coordination ensures an authentic Indian menu with
-                    options for dietary preferences like vegetarian, vegan,
-                    halal, or Jain.
+                    <Link href="/blog/how-to-choose-the-right-catering-menu-for-your-dc-wedding">
+                      Catering
+                    </Link>{' '}
+                    coordination ensures an authentic Indian menu with options
+                    for dietary preferences like vegetarian, vegan, halal, or
+                    Jain.
                   </p>
                 </div>
               </div>

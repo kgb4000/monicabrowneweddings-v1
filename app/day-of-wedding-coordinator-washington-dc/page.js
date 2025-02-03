@@ -297,7 +297,7 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
         <section className="bg-slate-800">
           <div className="max-w-3xl mx-auto py-10 md:py-20 text-white px-6">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
-              When All You Need is a Day-of Coordinator for The Day of
+              When All You Need is a Day-of Coordinator for The Day-of
             </h2>
             <p className="md:text-xl mb-4">
               Planning a wedding involves juggling countless details, from
@@ -308,7 +308,11 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
             </p>
             <ul className="ml-8 my-10 list-disc">
               <li className="md:text-xl mb-4">
-                Booked the DJ, caterer, photographer, and videographer.
+                Booked the DJ,{' '}
+                <Link href="/blog/how-to-choose-the-right-catering-menu-for-your-dc-wedding">
+                  caterer
+                </Link>
+                , photographer, and videographer.
               </li>
               <li className="md:text-xl mb-4">
                 Secured your wedding venue and rentals like tables, chairs, and

@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
             <div className="mx-auto lg:grid grid-cols-4 gap 4">
               <div className="py-4">
-                <h3 className="text-xl font-bold">Hours</h3>
+                <p className="text-xl font-bold">Hours</p>
                 <ul>
                   <li className="py-2">Monday: 9:00am - 5:00pm</li>
                   <li className="py-2">Tuesday: 9:00am - 5:00pm</li>
@@ -32,7 +32,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-bold py-4">Menu</h3>
+                <p className="text-xl font-bold py-4">Menu</p>
                 <ul>
                   <li className="py-2">
                     <Link href="/">Home</Link>
@@ -55,7 +55,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="py-4">
-                <h3 className="text-xl font-bold">Locations</h3>
+                <p className="text-xl font-bold">Locations</p>
                 <ul>
                   {/* <li className="py-2">
                     <Link href="/wedding-planner-annapolis-md">
@@ -89,7 +89,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="py-4">
-                <h3 className="text-xl font-bold">Contact</h3>
+                <p className="text-xl font-bold">Contact</p>
                 <p className="py-2">Book A Call</p>
                 <p className="py-2">Email Monica Browne Weddings</p>
                 <p className="py-2">Call (240) 665-3350</p>
