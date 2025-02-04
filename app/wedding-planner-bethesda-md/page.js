@@ -8,7 +8,7 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Wedding Planners in Bethesda Maryland | Monica Browne Weddings',
+  title: 'Wedding Planner in Bethesda Maryland | Monica Browne Weddings',
   description:
     "Looking for a top ranked wedding planner in Bethesda? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
   alternates: {
@@ -34,8 +34,8 @@ export default async function WeddingPlannerBethesdaMD() {
   return (
     <div>
       <Hero
-        herotext="Top Ranked Wedding Planner in Bethesda, Maryland"
-        heroSubText="We Create Beautiful Weddings For Busy Couples in Bethesda"
+        herotext="Wedding Planner for Busy Couples in Bethesda, MD"
+        heroSubText="We specialize in creating stunning, personalized celebrations for busy couples, blending tradition, elegance, and modern flair to reflect your unique love story"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
         imageUrl="/images/newly-married-couple-potomac-md.webp"
