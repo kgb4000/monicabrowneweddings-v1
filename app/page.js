@@ -822,7 +822,12 @@ export default async function Home() {
               <p className="md:text-xl mb-4">
                 They keep you out of the loop to have a stress-free wedding day.
               </p>
-              <p className="md:text-xl mb-4">Read this to learn more.</p>
+              <p className="md:text-xl mb-4">
+                <Link href="/blog/wedding-planner-vs-coordinator">
+                  Read this post
+                </Link>{' '}
+                to learn more.
+              </p>
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl my-2 font-bold">

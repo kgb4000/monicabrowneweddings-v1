@@ -1,23 +1,23 @@
 import Link from 'next/link'
-import Hero from '@/components/Hero'
-import Button from '@/components/Button'
 import Image from 'next/image'
+import Hero from '@/components/Hero'
+
+import Button from '@/components/Button'
 
 const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Day of Wedding Coordinator/Planner for Busy Couples in Washington DC',
+  title: 'Wedding Planner in Alexandria Virgina | Monica Browne Weddings',
   description:
-    'Day-Of Wedding Coordination | Stress-Free DC Weddings by Monica Browne Weddings.  Enjoy your special day!  Experienced & reliable.  Book a free call now!',
+    'Looking for wedding planners in Alexandria Virginia? We are local wedding planning experts that can help plan your day perfect. Schedule a call with us today!',
   alternates: {
-    canonical:
-      'https://monicabrowneweddings.com/day-of-wedding-coordinator-washington-dc',
+    canonical: 'https://monicabrowneweddings.com/wedding-planner-alexandria-va',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://monicabrowneweddings.com/day-of-wedding-coordinator-washington-dc',
+    url: 'https://monicabrowneweddings.com/wedding-planner-alexandria-va',
     site_name: 'Monica Browne Weddings',
     images: [
       {
@@ -53,7 +53,7 @@ const serviceStructuredData = {
     postalCode: '20720',
     addressCountry: 'US',
   },
-  url: 'https://monicabrowneweddings.com/day-of-wedding-coordinator-washington-dc',
+  url: 'https://monicabrowneweddings.com/day-of-wedding-planner-alexandria-va',
   telephone: '+1-240-665-3350',
   geo: {
     '@type': 'GeoCoordinates',
@@ -65,8 +65,33 @@ const serviceStructuredData = {
     // Use an array for multiple locations or GeoShapes
     {
       '@type': 'City',
-      name: 'Washington',
-      addressRegion: 'DC',
+      name: 'Alexandria',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Arlington',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Fairfax',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Springfield',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'Great Falls',
+      addressRegion: 'VA',
+    },
+    {
+      '@type': 'City',
+      name: 'McLean',
+      addressRegion: 'VA',
     },
   ],
 
@@ -219,18 +244,18 @@ const serviceStructuredData = {
   ],
 }
 
-export default function DayOfWeddingCoordinatorWashingtonDC() {
+export default async function WeddingPlannerAlexandriaVa() {
   return (
-    <>
+    <div>
       <script type="application/ld+json">
         {JSON.stringify(serviceStructuredData)}
       </script>
       <Hero
-        herotext="Day of Wedding Coordinator/Planner for Busy Couples in Washington, DC"
-        heroSubText="We offer expert day-of wedding coordination services for couples in Washington, DC, ensuring your special day is seamless and stress-free"
+        herotext="Day-of Wedding Planner for Busy Couples in Alexandria Virginia"
+        heroSubText="We create stunning weddings for busy couples in Alexandria, VA, blending timeless traditions with modern elegance for a day you’ll cherish forever"
         buttonText="Book A Call With Monica!"
-        imageUrl="/images/wedding-at-irongate-in-washington-dc.jpg"
         textColor="text-white"
+        imageUrl="/images/KINA1058.jpg"
       />
       <main>
         <div className="container max-w-7xl mx-auto px-6">
@@ -238,34 +263,42 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Day of Wedding Coordinator and Planner in Washington, DC
+                  Top Rated Day-of Wedding Planning Services in Alexandria, and
+                  Northen Virginia
                 </h2>
                 <p className="md:text-xl mb-4">
-                  Monica Browne Weddings offers day-of wedding coordinator
-                  services to couples in Washington, DC. .
+                  Planning your dream wedding should be an exciting and joyful
+                  experience, not a source of stress. But let's face it,
+                  juggling work, life, and wedding preparations can quickly
+                  become overwhelming. Many couples find themselves short on
+                  time and energy, struggling to bring their vision to life.
+                  Don't let the pressure of planning steal the joy of your
+                  special day.
                 </p>
                 <p className="md:text-xl mb-4">
-                  When all you need is someone to manage the wedding day for
-                  you, give us a call to see why we are one of the top day-of
-                  wedding coordinators in the DC area.
+                  We're a premier event management and wedding planning company
+                  dedicated to creating unforgettable weddings in Alexandria,
+                  VA, and the surrounding Northern Virginia area. Our expert
+                  team takes the reins, managing every detail so you can relax
+                  and savor the journey to "I do."
                 </p>
               </div>
               <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
-                <Image
+                <img
                   src="/images/wedding-table-centerpiece-design.webp"
                   alt="Wedding table centerpiece design for small wedding."
                   loading="lazy"
                   width="472"
                   height="708"
                 />
-                <Image
+                <img
                   src="/images/wedding-cake.webp"
                   alt="Wedding cake picture"
                   loading="lazy"
                   width="472"
                   height="708"
                 />
-                <Image
+                <img
                   src="/images/wedding-table-with-cork-centerpiece.webp"
                   alt="Wedding table decorations by Monica Browne Weddings"
                   loading="lazy"
@@ -275,21 +308,40 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
               </div>
               <div className="max-w-3xl mx-auto">
                 <p className="md:text-xl mb-4">
-                  When all you need is someone to manage the wedding day for
-                  you, give us a call to see why we are one of the top day-of
-                  wedding coordinators in DC.
+                  Whether you envision a grand celebration or an intimate
+                  gathering, we offer tailored services to meet your specific
+                  needs and budget.
                 </p>
-                <div className="center">
-                  <a href={calendly} target="_blank">
-                    <Button
-                      buttonText="Book a Call With Monica"
-                      bgColor="bg-purple-500"
-                      borderWidth="border-0"
-                      textColor="text-white"
-                      textSize="md:text-xl"
-                    />
-                  </a>
-                </div>
+                <p className="md:text-xl mb-4">
+                  Our full-service wedding planning package handles everything
+                  from start to finish, allowing you complete freedom to focus
+                  on what matters most.
+                </p>
+                <p className="md:text-xl mb-4">
+                  For couples who prefer a more hands-on approach, our
+                  partial-service wedding planning option provides customized
+                  support where you need it most.
+                </p>
+                <p className="md:text-xl mb-4">
+                  And if you've already done the groundwork but need a
+                  professional to ensure seamless execution on your big day, our
+                  day-of coordination service is the perfect solution.
+                </p>
+              </div>
+              <p className="text-xl italic mt-10 text-center max-w-md mx-auto">
+                Book a 15-minute with Monica and see how she can help you plan
+                your wedding today!
+              </p>
+              <div className="center">
+                <a href={calendly} target="_blank">
+                  <Button
+                    buttonText="Book a Call With Monica"
+                    bgColor="bg-purple-500"
+                    borderWidth="border-0"
+                    textColor="text-white"
+                    textSize="md:text-xl"
+                  />
+                </a>
               </div>
             </div>
           </section>
@@ -297,39 +349,72 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
         <section className="bg-slate-800">
           <div className="max-w-3xl mx-auto py-10 md:py-20 text-white px-6">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
-              When All You Need is a Day-of Coordinator for The Day-of
+              Alexandria, VA Wedding Planning: Stress-Free "I Do's" Start Here
             </h2>
             <p className="md:text-xl mb-4">
-              Planning a wedding involves juggling countless details, from
-              hiring vendors to organizing logistics.
+              Planning your dream wedding in beautiful Alexandria, VA? From the
+              moment you say "Yes!" to the final dance, we're here to transform
+              your vision into a flawless reality. Let us handle the details so
+              you can cherish every precious moment.
             </p>
-            <p className="md:text-xl mb-4">
-              By the time your big day arrives, you’ve likely already:
-            </p>
-            <ul className="ml-8 my-10 list-disc">
-              <li className="md:text-xl mb-4">
-                Booked the DJ,{' '}
-                <Link href="/blog/how-to-choose-the-right-catering-menu-for-your-dc-wedding">
-                  caterer
-                </Link>
-                , photographer, and videographer.
-              </li>
-              <li className="md:text-xl mb-4">
-                Secured your wedding venue and rentals like tables, chairs, and
-                dance floors.
-              </li>
-              <li className="md:text-xl mb-4">
-                Coordinated with your florist, hairstylist, and makeup artist.
-              </li>
-              <li className="md:text-xl mb-4">
-                Finalized details for your wedding cake, officiant, and getaway
-                car.
-              </li>
-            </ul>
-            <p className="md:text-xl mb-4">
-              As a bride or groom, your wedding day should be about celebrating,
-              not coordinating. That’s where a day-of wedding coordinator comes
-              in.
+            <p className="md:text-xl mb-4">Imagine a wedding where:</p>
+            <div className="my-10">
+              <h3 className="text-2xl mb-2">
+                • Your unique love story shines through
+              </h3>
+              <p className="md:text-xl mb-4 ml-4">
+                We collaborate closely with you to understand your personal
+                style, preferences, and dreams, crafting a bespoke wedding plan
+                that truly reflects who you are as a couple. Your vision is our
+                priority.
+              </p>
+            </div>
+            <div className="my-10">
+              <h3 className="text-2xl mb-2">• Stress melts away</h3>
+              <p className="md:text-xl mb-4 ml-4">
+                Wedding planning can be overwhelming, but it doesn't have to be.
+                We expertly manage every detail, from budget management and
+                vendor coordination to timeline creation and logistics, freeing
+                you to savor your engagement.
+              </p>
+            </div>
+            <div className="my-10">
+              <h3 className="text-2xl mb-2">
+                • Every detail is picture-perfect:
+              </h3>
+              <p className="md:text-xl mb-4 ml-4">
+                Struggling with design choices? Our expertise in wedding
+                aesthetics will guide you. We'll help you curate a stunning
+                atmosphere, from ceremony to reception, ensuring a cohesive and
+                breathtaking experience that wows your guests.
+              </p>
+            </div>
+            <div className="my-10">
+              <h3 className="text-2xl mb-2">
+                • Your wedding day unfolds flawlessly
+              </h3>
+              <p className="md:text-xl mb-4 ml-4">
+                Relax and enjoy every second of your special day knowing we're
+                handling everything behind the scenes. We'll manage vendor
+                arrivals, oversee the timeline, and troubleshoot any last-minute
+                adjustments, allowing you to be fully present with your loved
+                ones.
+              </p>
+            </div>
+            <div className="my-10">
+              <h3 className="text-2xl mb-2">
+                • The celebration continues seamlessly
+              </h3>
+              <p className="md:text-xl mb-4 ml-4">
+                Our support extends beyond the "I do's." We'll manage
+                post-wedding logistics, including rental returns, final vendor
+                payments, and any other loose ends, ensuring a smooth and
+                stress-free conclusion to your celebration.
+              </p>
+            </div>
+            <p className="text-xl italic text-center max-w-md mx-auto">
+              Ready to start planning your dream Alexandria wedding? Book Your
+              Free Call Now
             </p>
             <div className="center">
               <a href={calendly} target="_blank">
@@ -344,42 +429,124 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
             </div>
           </div>
         </section>
+        <section className="bg-slate-50">
+          <div className="container mx-auto px-4 max-w-7xl py-20">
+            <h2 className="text-5xl text-center mb-10 leading-normal">
+              Testimonials
+            </h2>
+            <div className="lg:grid grid-cols-3 gap-6">
+              <div>
+                <p className="text-md py-6 px-6 leading-8">
+                  Mrs. Browne came as a recommendation from my wedding cake
+                  designer and I couldn't be happier. Ms. Browne was prompt,
+                  responsive, and incredibly knowledgeable about flowers and
+                  design. She kept me updated and sent texts of her selections
+                  from the flower market the week of my wedding. She delivered
+                  my flowers the day before my event with thorough care
+                  instructions and carefully packaged. I would, and have
+                  recommended Ms. Browne for additional events and will be using
+                  her for my wedding reception in 2022.
+                </p>
+                <div className="flex flex-row justify-items-center pl-6">
+                  <img
+                    src="images/kimberley-hooper-twumasi.png"
+                    className="basis-1 rounded-full border-orange-800 border-4"
+                  />
+                  <p className="mt-2 pl-6">Kimberley Hooper-Twumasi</p>
+                </div>
+              </div>
+              <div>
+                <p className="text-md py-6 px-6 leading-8">
+                  Monica and her team made our wedding amazing! She was our
+                  month of planner and helped us tremendously. I’m positive that
+                  our wedding day wouldn’t have gone as seamlessly as it did if
+                  Monica wasn’t there to manage everything. She went above and
+                  beyond to make our wedding perfect and we don’t have a single
+                  thing we would change about the day. Go ahead and book Monica
+                  right now if you’re contemplating a wedding planner!!
+                </p>
+                <div className="flex flex-row justify-items-center pl-6">
+                  <img
+                    src="images/emily-menge.png"
+                    className="basis-1 rounded-full border-orange-800 border-4"
+                  />
+                  <p className="mt-2 pl-6">Emily Menge</p>
+                </div>
+              </div>
+              <div>
+                <p className="text-md py-6 px-6 leading-8">
+                  The best thing I could have done for our daughter's wedding
+                  was hire Monica Browne of Monica Brown Weddings to be our
+                  Coordinator. A true professional; she is detailed oriented and
+                  extremely easy to work with. There are not enough stars to
+                  give Monica for a true rating (10 ++++…). She knows exactly
+                  what the bride would need and how to go about it. The day of
+                  the event, Monica and her team awesome professional. We would
+                  highly recommend Monica Browne Weddings!
+                </p>
+                <div className="flex flex-row justify-items-center pl-6">
+                  <img
+                    src="images/whitney-ames.png"
+                    className="basis-1 rounded-full border-orange-800 border-4"
+                  />
+                  <p className="mt-2 pl-6">Whitney Ames</p>
+                </div>
+              </div>
+            </div>
+            <div className="py-10 md:mt-0">
+              <Link href="/testimonials">
+                <Button
+                  buttonText="Read More Testimonials!"
+                  bgColor="bg-purple-500"
+                  borderWidth="border-0"
+                  textColor="text-white"
+                  textSize="md:text-xl"
+                />
+              </Link>
+            </div>
+          </div>
+        </section>
         <div className="container max-w-7xl mx-auto px-6">
           <div className="max-w-3xl mx-auto  py-10 md:py-20">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
-              Want a Wedding Day With No Stress Because Someone Else is Handling
-              All The Details?
+              Imagine: Your perfect wedding, effortlessly planned. We take care
+              of everything, from "Yes" to "I do."
             </h2>
             <div className="grid grid-cols-2 gap-2 mb-10">
               <Image
-                src="/images/couple-posing-in-dc.jpg"
+                src="/images/KINA0562.jpg"
                 alt="Newly wed couple at Irongate Restaurant in Washington, DC"
                 loading="lazy"
                 width="472"
                 height="708"
               />
               <Image
-                src="/images/couple-posing-in-dc.jpg"
+                src="/images/KINA0531.jpg"
                 alt="Newly wed couple at Irongate Restaurant in Washington, DC"
                 loading="lazy"
                 width="472"
                 height="708"
               />
               <Image
-                src="/images/couple-posing-in-dc.jpg"
+                src="/images/KINA0330.jpg"
                 alt="Newly wed couple at Irongate Restaurant in Washington, DC"
                 loading="lazy"
                 width="472"
                 height="708"
               />
+
               <Image
-                src="/images/couple-posing-in-dc.jpg"
+                src="/images/KINA0406.jpg"
                 alt="Newly wed couple at Irongate Restaurant in Washington, DC"
                 loading="lazy"
                 width="472"
                 height="708"
               />
             </div>
+            <p className="text-xl italic text-center max-w-md mx-auto">
+              Short on time? We'll plan your dream wedding while you focus on
+              what matters most.{' '}
+            </p>
             <div className="center">
               <a href={calendly} target="_blank">
                 <Button
@@ -397,32 +564,31 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
           <section className="bg-slate-50">
             <div className="max-w-2xl mx-auto py-10 md:py-20 px-6">
               <h2 className="text-3xl md:text-5xl text-center">
-                Here's How to Get Started
+                Day-of Coordination You Can Trust Starts Here.
               </h2>
+              <p className="md:text-xl my-4">
+                Imagine: A perfectly orchestrated wedding day in Alexandria, VA,
+                where you don't have to lift a finger.
+              </p>
               <div className="my-10">
-                <h4 className="text-2xl md:text-3xl">
-                  1. Book a call with Monica
-                </h4>
+                <h4 className="text-2xl md:text-3xl">1. Connect with Monica</h4>
                 <p className="md:text-xl my-4">
-                  Book a call with Monica to discuss how she can help as your
-                  day of coordinator.
+                  Book a call with Monica to chat about your wedding plans.
                 </p>
               </div>
               <div className="my-10">
-                <h4 className="text-2xl md:text-3xl">
-                  2. Tell Monica about your event
-                </h4>
+                <h4 className="text-2xl md:text-3xl">2. Share Your Vision</h4>
                 <p className="md:text-xl my-4">
-                  Let us create a detailed timeline for you, contact your
-                  vendors, and oversee the details of your wedding day.
+                  We'll create a customized timeline, coordinate with vendors,
+                  and ensure a seamless celebration.
                 </p>
               </div>
               <div>
                 <h4 className="text-2xl md:text-3xl">
-                  3. Enjoy your Wedding Day
+                  3. Enjoy Your Special Day
                 </h4>
                 <p className="md:text-xl my-4">
-                  Enjoy your wedding and cherish the moment!
+                  Focus on celebrating – we've got everything covered.
                 </p>
                 <div className="center">
                   <a href={calendly} target="_blank">
@@ -440,11 +606,10 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
           </section>
         </div>
         <div className="container max-w-5xl mx-auto px-6">
-          <section>
+          {/* <section>
             <div className="max-w-2xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                Why Hire Monica Browne Weddings as Your Day-of Wedding
-                Coordinator in DC
+                Why Hire Monica as Wedding Planner in Alexandria
               </h2>
               <p className="md:text-xl mb-4">
                 When you choose Monica Browne Weddings, you’re hiring a
@@ -470,9 +635,7 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
                 <p className="md:text-xl mb-4">
                   From double-checking everything from{' '}
                   <Link href="/wedding-flowers">flowers</Link> and{' '}
-                  <Link href="/wedding-services/wedding-decoration-services">
-                    decorations
-                  </Link>{' '}
+                  <Link href="/wedding-decoration-services">decorations</Link>{' '}
                   to managing vendor setups, we make sure every detail matches
                   your vision.
                 </p>
@@ -505,23 +668,23 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
                 </a>
               </div>
             </div>
-          </section>
+          </section> */}
           <div className="grid lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            <Image
+            <img
               src="/images/wedding-table-centerpiece-design.webp"
               alt="Wedding table centerpiece design for small wedding."
               loading="lazy"
               width="472"
               height="708"
             />
-            <Image
+            <img
               src="/images/wedding-cake.webp"
               alt="Wedding cake picture"
               loading="lazy"
               width="472"
               height="708"
             />
-            <Image
+            <img
               src="/images/wedding-table-with-cork-centerpiece.webp"
               alt="Wedding table decorations by Monica Browne Weddings"
               loading="lazy"
@@ -532,48 +695,48 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
           <section>
             <div className="max-w-3xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                What We Do as Your Day of Wedding Coordinator
+                Why Couples Trust Monica Browne Weddings as Their Wedding
+                Planner
               </h2>
               <p className="md:text-xl mb-4">
-                When your wedding is{' '}
-                <span className="underline-offset-8">eight weeks away</span>,
-                you can count on us to take the reins and handle the following
-                with care and precision:
+                Couples choose us because we know how to handle the details that
+                matter most, especially as your wedding day approaches.
+              </p>
+              <p className="md:text-xl mb-4">
+                When your big day is just eight weeks away, we step in to manage
+                everything with meticulous care:
               </p>
               <ul className="ml-8 my-10 list-disc">
                 <li className="md:text-xl mb-4">
-                  Review and organize all vendor contracts
+                  Vendor Management: Review and organize vendor contracts,
+                  confirm payments, and finalize schedules.
                 </li>
                 <li className="md:text-xl mb-4">
-                  Confirm all vendor payments and schedules
+                  Wedding Attire Coordination: Oversee final fittings for you
+                  and your bridal party, ensuring everyone has their attire
+                  ready.
                 </li>
                 <li className="md:text-xl mb-4">
-                  Coordinate final fittings for your wedding attire and your
-                  bridal party
+                  Venue Walkthroughs: Conduct detailed walk-throughs of your
+                  ceremony and reception venues to ensure perfection.
                 </li>
                 <li className="md:text-xl mb-4">
-                  Ensure your bridal party has their dresses and tuxedos secured
+                  Detailed Wedding Timeline: Create a comprehensive schedule for
+                  the entire day, keeping everyone informed and on track.
                 </li>
                 <li className="md:text-xl mb-4">
-                  Conduct a walk-through of the ceremony and reception venues
+                  Rehearsal Oversight: Supervise and coordinate a two-hour
+                  rehearsal during your wedding week to ensure everything runs
+                  smoothly.
                 </li>
                 <li className="md:text-xl mb-4">
-                  Craft a comprehensive{' '}
-                  <Link href="/blog/wedding-day-timeline-4pm-ceremony">
-                    wedding timeline{' '}
-                  </Link>
-                  for all participants
+                  Point of Contact: Serve as the main communication hub for your
+                  bridal party starting on rehearsal day.
                 </li>
                 <li className="md:text-xl mb-4">
-                  Supervise and coordinate a two-hour rehearsal the week of your
-                  wedding
-                </li>
-                <li className="md:text-xl mb-4">
-                  Act as the primary point of contact for your bridal party
-                  starting on rehearsal day
-                </li>
-                <li className="md:text-xl mb-4">
-                  Manage and oversee all logistics on your wedding day
+                  Day-of Logistics: Manage every detail on your wedding day,
+                  from vendor arrivals to timeline execution, so you can relax
+                  and enjoy.
                 </li>
               </ul>
               <p className="md:text-xl mb-4">
@@ -607,79 +770,84 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
           </section>
           <section>
             <div className="max-w-3xl mx-auto py-10">
-              <h2 className="text-3xl md:text-5xl text-center">FAQs</h2>
+              <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
-                #1. Why Should I Hire a Day-of Coordinator?
+                #1. How Much Does a Wedding Cost in Alexandria, VA?
               </h3>
               <p className="md:text-xl mb-4">
-                You should consider hiring a day-of wedding coordinator if
-                you're on a budget.
-              </p>
-              <p className="md:text-xl mb-4">
-                If you want to do most of the planning yourself and find your
-                wedding venue and vendors on your own but still want to enjoy
-                your wedding day without worrying about anything, consider
-                hiring Monica Browne Weddings.
-              </p>
-              <h3 className="text-2xl md:text-3xl my-4">
-                #2. How Much Does a Day-of Coordinator Cost in DC?
-              </h3>
-              <p className="md:text-xl mb-4">
-                The cost of an experienced day-of wedding coordinator in the DC
-                area, typically ranges from <b>$2,300 to $7,000</b>, though
-                prices can vary based on wedding size, complexity, and the
-                coordinator's experience. While the national average is lower,
-                DC's market reflects higher costs. Factors influencing price
-                include the scope of services included and the coordinator's
-                expertise. It's wise to research, compare quotes, and secure a
-                detailed contract outlining services and fees before booking.
+                In the DC metro area, at least, a wedding can cost anywhere
+                between{' '}
+                <Link href="/blog/how-much-does-a-100-person-wedding-cost">
+                  $32,000 and $70,000
+                </Link>
+                , but it all depends on what you want to spend. You can have a
+                small wedding and spend $5,000 to $10,000 or $50,000 to
+                $300,000. It depends on what you want to spend. Most of the cost
+                depends on your guest count,{' '}
+                <Link href="/blog/how-to-choose-the-right-catering-menu-for-your-dc-wedding">
+                  catering
+                </Link>
+                , and venue.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #3. When is The Best Time To Hire a Day-of Wedding Coordinator?
+                #2. How Much Does Wedding Planner Cost in Northern VA?
               </h3>
               <p className="md:text-xl mb-4">
-                The best time to hire a day of wedding coordinator is between
-                six to eight weeks before your wedding date.
-              </p>
-              <p className="md:text-xl mb-4">
-                This leaves enough time to read vendor contracts, do a
-                walk-through of the different sites, form a relationship with
-                the other vendors, and sort out any missing details that you may
-                have missed while planning your event.
+                An experienced planner can cost <b>$3,500 - $10,000</b> in our
+                metro area. This price depends on the planner's experience and
+                the size of the event. It also depends on whether it is day-of
+                coordination or a full-service package. A day-of coordinator can
+                cost <b>$2,000 - $5,000</b>, while full planning can cost{' '}
+                <b>$4,000 - $10,000 plus</b>. Call us to get a custom quote for
+                your event.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #4. What is the difference between a wedding planner and day of
-                coordinator?
+                #3. What types of wedding planning services do you offer?
               </h3>
               <p className="md:text-xl mb-4">
-                The primary difference between{' '}
-                <Link href="/wedding-services/wedding-planner-washington-dc">
-                  wedding planner
+                We offer a range of wedding planning services to suit your
+                needs. Our full-service planning package covers every detail
+                from engagement to honeymoon, including budget management,
+                vendor selection, venue scouting, design, and day-of
+                coordination. For couples who have already started planning, our
+                partial planning service provides customized assistance with
+                specific areas where you need help. And finally, our day-of
+                coordination package ensures seamless execution on your wedding
+                day, allowing you to relax and enjoy the celebration while we
+                handle all the logistics.
+              </p>
+              <p className="md:text-xl mb-4">
+                Read{' '}
+                <Link href="/blog/wedding-planner-vs-coordinator">
+                  the difference between a wedding planner and day-of wedding
+                  coordinator
                 </Link>{' '}
-                and a day-of coordinator lies in the scope of their
-                responsibilities and when they get involved.
-              </p>
-              <p className="md:text-xl mb-4">
-                A wedding planner is typically hired during the early stages of
-                planning, taking charge of the entire process from concept to
-                execution.
-              </p>
-              <p className="md:text-xl mb-4">
-                On the other hand, a day-of coordinator is primarily focused on
-                the actual day of the event, ensuring that all aspects run
-                smoothly and according to plan.
+                here.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #5 How many hours does it take to plan a wedding?
+                #4. Do I need a marriage license in Alexandria, VA, and how do I
+                get one?
               </h3>
               <p className="md:text-xl mb-4">
-                On average, planning a wedding can take anywhere from 100 to 150
-                hours, spread over several months or even a year.
+                Yes, you need a marriage license from the Commonwealth of
+                Virginia. Both parties must appear in person at the Clerk of the
+                Circuit Court in the county where the marriage will be performed
+                (in this case, Alexandria). You'll need to provide
+                identification and pay a fee. There is no waiting period in
+                Virginia, so you can typically get your license and marry on the
+                same day. However, the license is only valid for 60 days.
               </p>
+              <h3 className="text-2xl md:text-3xl my-4">
+                #5 What are some popular wedding venues in Alexandria, VA?
+              </h3>
               <p className="md:text-xl mb-4">
-                Factors that influence the planning time include the level of
-                customization, number of guests, location, and the couple's
-                level of involvement in the planning process.
+                Alexandria offers a diverse range of venues, from historic
+                mansions like the Carlyle House and the George Mason Mount
+                Vernon estate, to elegant waterfront locations like the Torpedo
+                Factory Art Center, and charming outdoor spaces like the River
+                Farm. The best choice depends on your style, budget, and guest
+                count. Researching online and visiting potential venues is
+                highly recommended.
               </p>
             </div>
             <p className="text-xl italic text-center max-w-md mx-auto">
@@ -700,6 +868,6 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
           </section>
         </div>
       </main>
-    </>
+    </div>
   )
 }

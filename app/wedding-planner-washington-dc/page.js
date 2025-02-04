@@ -402,7 +402,8 @@ export default async function WeddingPlannerWashingtonDC() {
           <section>
             <div className="max-w-3xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                Why Couples Trust Monica Browne Weddings as Ther Wedding Planner
+                Why Couples Trust Monica Browne Weddings as Their Wedding
+                Planner
               </h2>
               <p className="md:text-xl mb-4">
                 Couples choose us because we know how to handle the details that
@@ -479,7 +480,7 @@ export default async function WeddingPlannerWashingtonDC() {
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
                 #1. What does a wedding planner do, and how can you help with my
-                DC wedding?
+                wedding?
               </h3>
               <p className="md:text-xl mb-4">
                 A wedding planner handles all aspects of your wedding, from
@@ -521,15 +522,20 @@ export default async function WeddingPlannerWashingtonDC() {
                 enjoy.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #4. How much does a wedding planner in Washington, DC typically
-                cost?
+                #4. How much does a day-of wedding planner in DC cost?
               </h3>
               <p className="md:text-xl mb-4">
-                The cost of a wedding planner in DC varies depending on the
-                level of service you need. Full-service planning is more
-                comprehensive and priced higher, while day-of coordination is
-                more budget-friendly. We offer customizable packages to fit your
-                budget and needs—contact us for a personalized quote!
+                In our area, you can expect to invest anywhere from{' '}
+                <b>$3,500 to $10,000+ </b>for a seasoned professional. Several
+                factors influence this range, including the planner's
+                experience, the scale of your wedding, and the scope of services
+                you require. For couples seeking assistance solely on the big
+                day, day-of coordination typically falls between{' '}
+                <b>$2,000 and $5,000</b>. If you're looking for comprehensive
+                support from "yes" to "I do," full-service planning packages
+                generally start around <b>$4,000 and can exceed $10,000</b>{' '}
+                depending on your needs. For a personalized quote tailored to
+                your unique celebration, book a call today.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #5 How will you ensure my wedding day goes smoothly?

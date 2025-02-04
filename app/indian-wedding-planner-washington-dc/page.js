@@ -739,10 +739,6 @@ export default function IndianWeddingPlannerDC() {
                 picture of your guest count and any special requirements they
                 may have.
               </p>
-              <p className="md:text-xl italic my-8 text-center max-w-xl mx-auto">
-                Book a 15-minute with Monica and see how she can help you plan
-                your Indian wedding celebration
-              </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #6. Do you have references from previous clients or a portfolio
                 of past weddings?
@@ -752,6 +748,10 @@ export default function IndianWeddingPlannerDC() {
                 We're more than happy to share references and a portfolio of
                 weddings we've planned. This gives you a clear understanding of
                 our capabilities and the quality of our services.
+              </p>
+              <p className="md:text-xl italic my-8 text-center max-w-xl mx-auto">
+                Book a 15-minute with Monica and see how she can help you plan
+                your Indian wedding celebration
               </p>
               <div className="center">
                 <a href={calendly} target="_blank">
