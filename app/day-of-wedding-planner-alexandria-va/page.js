@@ -8,11 +8,13 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Wedding Planner in Alexandria Virgina | Monica Browne Weddings',
+  title:
+    'Day-of Wedding Planner in Alexandria Virgina | Monica Browne Weddings',
   description:
     'Looking for wedding planners in Alexandria Virginia? We are local wedding planning experts that can help plan your day perfect. Schedule a call with us today!',
   alternates: {
-    canonical: 'https://monicabrowneweddings.com/wedding-planner-alexandria-va',
+    canonical:
+      'https://monicabrowneweddings.com/day-of-wedding-planner-alexandria-va',
   },
   openGraph: {
     type: 'website',
@@ -95,10 +97,6 @@ const serviceStructuredData = {
     },
   ],
 
-  rating: {
-    ratingValue: '5',
-    ratingCount: '13',
-  },
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
@@ -242,6 +240,59 @@ const serviceStructuredData = {
     },
     // Add more reviews as needed
   ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: 5,
+    bestRating: 5,
+    ratingCount: 8,
+  },
+}
+
+const faqStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How Much Does a Wedding Cost in Alexandria, VA?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'In the DC metro area, at least, a wedding can cost anywherebetween, but it all depends on what you want to spend. You can have a small wedding and spend $5,000 to $10,000 or $50,000 to $300,000. It depends on what you want to spend. Most of the cost depends on your guest count, and venue.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How Much Does Wedding Planner Cost in Northern VA?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "An experienced planner can cost $3,500 - $10,000 in our metro area. This price depends on the planner's experience and the size of the event. It also depends on whether it is day-of coordination or a full-service package. A day-of coordinator can cost $2,000 - $5,000, while full planning can cost $4,000 - $10,000 plus. Call us to get a custom quote for your event.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What types of wedding planning services do you offer?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We offer a range of wedding planning services to suit yourneeds. Our full-service planning package covers every detail from engagement to honeymoon, including budget management, vendor selection, venue scouting, design, and day-of coordination. For couples who have already started planning, our partial planning service provides customized assistance with specific areas where you need help. And finally, our day-of coordination package ensures seamless execution on your wedding day, allowing you to relax and enjoy the celebration while we handle all the logistics.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I need a marriage license in Alexandria, VA, and how do I get one?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "Yes, you need a marriage license from the Commonwealth of Virginia. Both parties must appear in person at the Clerk of the Circuit Court in the county where the marriage will be performed (in this case, Alexandria). You'll need to provide identification and pay a fee. There is no waiting period in  Virginia, so you can typically get your license and marry on the same day. However, the license is only valid for 60 days.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What are some popular wedding venues in Alexandria, VA?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Alexandria offers a diverse range of venues, from historic mansions like the Carlyle House and the George Mason Mount Vernon estate, to elegant waterfront locations like the Torpedo Factory Art Center, and charming outdoor spaces like the River Farm. count. Researching online and visiting potential venues is highly recommended.',
+      },
+    },
+  ],
 }
 
 export default async function WeddingPlannerAlexandriaVa() {
@@ -249,6 +300,9 @@ export default async function WeddingPlannerAlexandriaVa() {
     <div>
       <script type="application/ld+json">
         {JSON.stringify(serviceStructuredData)}
+      </script>
+      <script type="application/ld+json">
+        {JSON.stringify(faqStructuredData)}
       </script>
       <Hero
         herotext="Day-of Wedding Planner for Busy Couples in Alexandria Virginia"
