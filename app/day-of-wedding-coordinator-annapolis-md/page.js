@@ -225,8 +225,15 @@ const serviceStructuredData = {
         ratingValue: '5',
       },
     },
+
     // Add more reviews as needed
   ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: 5,
+    bestRating: 5,
+    ratingCount: 8,
+  },
 }
 
 export default function DayOfWeddingCoordinatorWashingtonDC() {
@@ -406,6 +413,83 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
             </div>
           </div>
         </div>
+        <section className="bg-slate-50">
+          <div className="container mx-auto px-4 max-w-7xl py-20">
+            <h2 className="text-5xl text-center mb-10 leading-normal">
+              Testimonials
+            </h2>
+            <div className="lg:grid grid-cols-3 gap-6">
+              <div>
+                <p className="text-md py-6 px-6 leading-8">
+                  Mrs. Browne came as a recommendation from my wedding cake
+                  designer and I couldn't be happier. Ms. Browne was prompt,
+                  responsive, and incredibly knowledgeable about flowers and
+                  design. She kept me updated and sent texts of her selections
+                  from the flower market the week of my wedding. She delivered
+                  my flowers the day before my event with thorough care
+                  instructions and carefully packaged. I would, and have
+                  recommended Ms. Browne for additional events and will be using
+                  her for my wedding reception in 2022.
+                </p>
+                <div className="flex flex-row justify-items-center pl-6">
+                  <img
+                    src="images/kimberley-hooper-twumasi.png"
+                    className="basis-1 rounded-full border-orange-800 border-4"
+                  />
+                  <p className="mt-2 pl-6">Kimberley Hooper-Twumasi</p>
+                </div>
+              </div>
+              <div>
+                <p className="text-md py-6 px-6 leading-8">
+                  Monica and her team made our wedding amazing! She was our
+                  month of planner and helped us tremendously. I’m positive that
+                  our wedding day wouldn’t have gone as seamlessly as it did if
+                  Monica wasn’t there to manage everything. She went above and
+                  beyond to make our wedding perfect and we don’t have a single
+                  thing we would change about the day. Go ahead and book Monica
+                  right now if you’re contemplating a wedding planner!!
+                </p>
+                <div className="flex flex-row justify-items-center pl-6">
+                  <img
+                    src="images/emily-menge.png"
+                    className="basis-1 rounded-full border-orange-800 border-4"
+                  />
+                  <p className="mt-2 pl-6">Emily Menge</p>
+                </div>
+              </div>
+              <div>
+                <p className="text-md py-6 px-6 leading-8">
+                  The best thing I could have done for our daughter's wedding
+                  was hire Monica Browne of Monica Brown Weddings to be our
+                  Coordinator. A true professional; she is detailed oriented and
+                  extremely easy to work with. There are not enough stars to
+                  give Monica for a true rating (10 ++++…). She knows exactly
+                  what the bride would need and how to go about it. The day of
+                  the event, Monica and her team awesome professional. We would
+                  highly recommend Monica Browne Weddings!
+                </p>
+                <div className="flex flex-row justify-items-center pl-6">
+                  <img
+                    src="images/whitney-ames.png"
+                    className="basis-1 rounded-full border-orange-800 border-4"
+                  />
+                  <p className="mt-2 pl-6">Whitney Ames</p>
+                </div>
+              </div>
+            </div>
+            <div className="py-10 md:mt-0">
+              <Link href="/testimonials">
+                <Button
+                  buttonText="Read More Testimonials!"
+                  bgColor="bg-purple-500"
+                  borderWidth="border-0"
+                  textColor="text-white"
+                  textSize="md:text-xl"
+                />
+              </Link>
+            </div>
+          </div>
+        </section>
         <div>
           <section className="bg-slate-50">
             <div className="max-w-2xl mx-auto py-10 md:py-20 px-6">
