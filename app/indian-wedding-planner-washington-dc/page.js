@@ -305,7 +305,7 @@ export default function IndianWeddingPlannerDC() {
           <section>
             <div className="max-w-7xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center max-w-3xl mx-auto">
-                Comprehensive Indian Wedding Planning Services
+                Wedding Planner for Indian Weddings
               </h2>
               <div className="pb-4 grid md:grid-cols-2 gap-x-10 items-center my-16">
                 <img

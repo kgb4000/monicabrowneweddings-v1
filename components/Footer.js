@@ -57,11 +57,11 @@ export default function Footer() {
               <div className="py-4">
                 <p className="text-xl font-bold">Locations</p>
                 <ul>
-                  {/* <li className="py-2">
-                    <Link href="/wedding-planner-annapolis-md">
+                  <li className="py-2">
+                    <Link href="/day-of-wedding-coordinator-annapolis-md">
                       Annapolis, MD{' '}
                     </Link>
-                  </li> */}
+                  </li>
                   <li className="py-2">
                     <Link href="/day-of-wedding-planner-alexandria-va">
                       Alexandria, VA
