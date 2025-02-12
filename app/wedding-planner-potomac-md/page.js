@@ -8,7 +8,7 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Wedding Planner in Potomac Maryland | Monica Browne Weddings',
+  title: 'Day-of | Month-of | Full Service Wedding Planner in Potomac Maryland',
   description:
     "Looking for a top ranked wedding planner in Potomac? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
   alternates: {
@@ -34,7 +34,7 @@ export default async function WeddingPlannerPotomacMD() {
   return (
     <div>
       <Hero
-        herotext="Professional Wedding Planners in Potomac, Maryland"
+        herotext="Wedding Planners for Busy Couples in Potomac, Maryland"
         heroSubText="We Create Beautiful Weddings For Busy Couples in Potomac"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
@@ -79,7 +79,7 @@ export default async function WeddingPlannerPotomacMD() {
               <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
                 <img
                   src="/images/wedding-table-centerpiece-design.webp"
-                  alt="Wedding table centerpiece design for small wedding."
+                  alt="Wedding planner in Potomac, Maryland."
                   loading="lazy"
                   width="472"
                   height="708"
@@ -393,7 +393,7 @@ export default async function WeddingPlannerPotomacMD() {
             />
           </div>
           <section>
-            <div className="max-w-3xl mx-auto py-10">
+            <div className="max-w-2xl mx-auto py-10">
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
                 #1. What are the best wedding venues in Potomac, MD?
