@@ -58,13 +58,13 @@ export default function Footer() {
                 <p className="text-xl font-bold">Locations</p>
                 <ul>
                   <li className="py-2">
-                    <Link href="/day-of-wedding-coordinator-annapolis-md">
-                      Annapolis, MD{' '}
+                    <Link href="/day-of-wedding-planner-alexandria-va">
+                      Alexandria, VA
                     </Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/day-of-wedding-planner-alexandria-va">
-                      Alexandria, VA
+                    <Link href="/day-of-wedding-coordinator-annapolis-md">
+                      Annapolis, MD{' '}
                     </Link>
                   </li>
                   <li className="py-2">
@@ -75,11 +75,11 @@ export default function Footer() {
                   <li className="py-2">
                     <Link href="/wedding-planner-bowie-md">Bowie, MD</Link>
                   </li>
-                  {/* <li className="py-2">
-                    <Link href="/wedding-planner-chevy-chase-md">
+                  <li className="py-2">
+                    <Link href="/wedding-planner-in-chevy-chase-md">
                       Chevy Chase, MD
                     </Link>
-                  </li> */}
+                  </li>
                   {/* <li className="py-2">
                     <Link href="/wedding-planner-crofton-md">Crofton, MD</Link>
                   </li> */}

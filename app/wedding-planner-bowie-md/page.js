@@ -459,7 +459,6 @@ export default function WeddingPlannerBowieMD() {
               They will help you choose your venue, select your vendors, and
               create a timeline for your big day.
             </p>
-            .
             <p className="md:text-xl mb-4">
               On your wedding day, they will ensure everything runs smoothly, so
               you can relax and enjoy yourself.
