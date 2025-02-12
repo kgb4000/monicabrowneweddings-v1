@@ -203,14 +203,45 @@ const serviceStructuredData = {
   ],
 }
 
-export default function DayOfWeddingCoordinatorWashingtonDC() {
+const getPosts = async () => {
+  const response = await fetch(
+    'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        query: `{
+                posts (orderBy: createdAt_DESC, first: 3) {
+                  title
+                  slug
+                  coverImage {
+                    url
+                    width
+                    height
+                  }
+                }
+              }`,
+      }),
+    }
+  )
+
+  const { data } = await response.json()
+
+  return data.posts
+}
+
+export default async function DayOfWeddingCoordinatorWashingtonDC() {
+  const posts = await getPosts()
   return (
     <>
       <script type="application/ld+json">
         {JSON.stringify(serviceStructuredData)}
       </script>
       <Hero
-        herotext="Day of Wedding Coordinator/Planner for Busy Couples in Washington, DC"
+        herotext="Day of Wedding Coordinator for Busy Couples in Washington, DC"
         heroSubText="We offer expert day-of wedding coordination services for couples in Washington, DC, ensuring your special day is seamless and stress-free"
         buttonText="Book A Call With Monica!"
         imageUrl="/images/wedding-at-irongate-in-washington-dc.jpg"
@@ -587,6 +618,46 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
                   />
                 </a>
               </div>
+            </div>
+          </section>
+          <section>
+            <div className="container max-w-3xl mx-auto px-6">
+              <h2 className="text-3xl md:text-5xl text-center mb-10">
+                Latest Post From Monica
+              </h2>
+              <ul>
+                {posts.map((post) => (
+                  <div key={post.slug}>
+                    <Link href={`/blog/${post.slug}`} className="no-underline">
+                      <div className="grid lg:grid-cols-2 gap-8 items-center mb-8 my-6">
+                        <img
+                          src={post.coverImage.url}
+                          alt={post.title}
+                          title={post.title}
+                          loading="lazy"
+                          width={post.coverImage.width}
+                          height={post.coverImage.height}
+                        />
+                        <div className="">
+                          <h3 className="text-2xl lg:py-4 text-black">
+                            {post.title}
+                          </h3>
+                          <p className="my-4">Read more</p>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                ))}
+              </ul>
+              <Link href="/blog">
+                <Button
+                  buttonText="Read and Learn More"
+                  bgColor="bg-purple-500"
+                  borderWidth="border-0"
+                  textColor="text-white"
+                  textSize="md:text-xl"
+                />
+              </Link>
             </div>
           </section>
           <section>
