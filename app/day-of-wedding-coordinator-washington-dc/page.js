@@ -723,8 +723,8 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
                 #3. When is The Best Time To Hire a Day-of Wedding Coordinator?
               </h3>
               <p className="md:text-xl mb-4">
-                The best time to hire a day of wedding coordinator is between
-                six to eight weeks before your wedding date.
+                The best time to hire a day of wedding coordinator is between{' '}
+                <b>six to eight weeks</b> before your wedding date.
               </p>
               <p className="md:text-xl mb-4">
                 This leaves enough time to read vendor contracts, do a
@@ -758,8 +758,9 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
                 #5 How many hours does it take to plan a wedding?
               </h3>
               <p className="md:text-xl mb-4">
-                On average, planning a wedding can take anywhere from 100 to 250
-                hours, spread over several months or even a year.
+                On average, planning a wedding can take anywhere from{' '}
+                <b>100 to 250 hours</b>, spread over several months or even a
+                year.
               </p>
               <p className="md:text-xl mb-4">
                 Factors that influence the planning time include the level of
