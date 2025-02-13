@@ -9,7 +9,7 @@ const calendly =
 
 export const metadata = {
   title:
-    'Day-of | Full Service | Month-of Wedding Planner in Chevy Chase Maryland',
+    'Wedding Planners in Chevy Chase, MD, for Sophisticated & Romantic Weddings',
   description:
     'Looking for a wedding planner in Chevy Chase because you need some help? Call Monica Browne Weddings. We can help you plan the wedding of your dreams.',
   alternates: {
@@ -36,7 +36,7 @@ export default async function WeddingPlannerChevyChaseMD() {
   return (
     <div>
       <Hero
-        herotext="Wedding Planners in Chevy Chase, Maryland"
+        herotext="Wedding Planners in Chevy Chase, MD, for Sophisticated & Romantic Weddings"
         heroSubText="We Create Beautiful Weddings For Busy Couples Getting Married in Chevy Chase"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
