@@ -8,7 +8,7 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Day-of | Month-of | Full Service Wedding Planner in Potomac Maryland',
+  title: 'Wedding Planner in Potomac Maryland for Picture-Perfect Celebrations',
   description:
     "Looking for a top ranked wedding planner in Potomac? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
   alternates: {
@@ -34,7 +34,7 @@ export default async function WeddingPlannerPotomacMD() {
   return (
     <div>
       <Hero
-        herotext="Wedding Planners for Busy Couples in Potomac, Maryland"
+        herotext="Wedding Planner in Potomac, Maryland for Picture-Perfect Celebrations"
         heroSubText="We Create Beautiful Weddings For Busy Couples in Potomac"
         buttonText="Book A Call With Monica!"
         textColor="text-white"

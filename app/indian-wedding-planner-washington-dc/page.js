@@ -7,9 +7,9 @@ const calendly =
 
 export const metadata = {
   title:
-    'Indian Wedding Planner for Busy Couples in DC, Maryland, and Northern Virginia',
+    'Indian Wedding Planner in Washington DC, for Seamless & Stunning Celebrations',
   description:
-    'Indian wedding planners in DC, Maryland and Northern Virginia offering full-service, day-of, and month-of wedding planning. Book a call today!',
+    'Indian wedding planners in  Washington DC, offering full-service, day-of, and month-of wedding planning. Book a call today!',
   alternates: {
     canonical:
       'https://monicabrowneweddings.com/indian-wedding-planner-washington-dc',
@@ -209,10 +209,10 @@ const faqStructuredData = {
     },
     {
       '@type': 'Question',
-      name: 'Do you have references from previous clients or a portfolio of past weddings?',
+      name: 'How much does an Indian wedding planner cost?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Absolutely! We're proud of our past work and satisfied clients. We're more than happy to share references and a portfolio of weddings we've planned. This gives you a clear understanding of our capabilities and the quality of our services.",
+        text: 'An Indian wedding planner cost varies based on factors such as the size of the wedding, number of events, location, and level of service required.For full-service planning, which includes managing multiple ceremonies, vendor coordination, décor design, and logistics, prices typically range from $7,000 to $25,000+, depending on complexity. If you need month-of coordination, costs usually start around$7,000 to $15,000, while day-of coordination services range from $4,500 to $7,000. Indian weddings require extensive planning due to multiple events like the Sangeet, Mehndi, Baraat, and Reception, which can impact overall pricing.',
       },
     },
   ],
@@ -228,7 +228,7 @@ export default function IndianWeddingPlannerDC() {
         {JSON.stringify(faqStructuredData)}
       </script>
       <Hero
-        herotext="Indian Wedding Planner for Busy Couples in DC, Maryland, and Northern Virginia"
+        herotext="Indian Wedding Planner in Washington DC, for Seamless & Stunning Celebrations"
         heroSubText="We specialize in crafting stunning Indian weddings for busy couples in the DC area, blending tradition, elegance, and a modern flair to your special event"
         buttonText="Book A Call With Monica!"
         imageUrl="/images/indian-wedding-ceremony-mgm.jpg"
@@ -239,7 +239,8 @@ export default function IndianWeddingPlannerDC() {
           <section>
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl lg:text-5xl my-8 text-center leading-normal">
-                Exclusive Indian Wedding Planning Services in the DC Area
+                Indian Wedding Planning Services in Washington, DC for
+                Culturally Inspired Celebrations
               </h2>
               <p className="md:text-xl mb-4">
                 Monica Browne Weddings is your trusted partner in the
@@ -286,8 +287,11 @@ export default function IndianWeddingPlannerDC() {
               <p className="md:text-xl mb-4">
                 Our consultation services provide guidance, expertise, and
                 advice to help you navigate your way to a picture-perfect Indian
-                wedding. Contact us today to begin planning a celebration you
-                and your guests will cherish forever!
+                wedding.
+              </p>
+              <p className="md:text-xl mb-4">
+                Contact us today to begin planning a celebration you and your
+                guests will cherish forever!
               </p>
               <div className="center">
                 <a href={calendly} target="_blank">
@@ -305,7 +309,7 @@ export default function IndianWeddingPlannerDC() {
           <section>
             <div className="max-w-7xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center max-w-3xl mx-auto">
-                Wedding Planner for Indian Weddings
+                Premiere Wedding Planning Services for Indian Weddings
               </h2>
               <div className="pb-4 grid md:grid-cols-2 gap-x-10 items-center my-16">
                 <img
@@ -457,19 +461,17 @@ export default function IndianWeddingPlannerDC() {
           <div className="py-10">
             <div className="max-w-3xl mx-auto md:p-20 py-10 px-8 rounded-xl text-white">
               <h2 className="text-3xl md:text-5xl">
-                Monica Makes Your Indian Wedding Planning Journey Simple and
-                Stress Free
+                Simple and Stress Free Wedding Planning
               </h2>
               <div className="my-10">
                 <h4 className="text-2xl md:text-3xl">
                   1. Schedule a Consultation
                 </h4>
                 <p className="md:text-xl my-4">
-                  Start by booking a call with Monica to discuss your unique
-                  needs for your Indian wedding. From multi-day celebrations to
-                  intricate cultural traditions, Monica will guide you on how
-                  her expertise as a day-of coordinator can ensure a flawless
-                  experience.
+                  Start by booking a call with Monica to discuss your needs for
+                  your Indian wedding. Monica will guide you on how her
+                  expertise as a professional wedding planner can ensure a
+                  flawless experience.
                 </p>
               </div>
               <div className="my-10">
@@ -480,8 +482,7 @@ export default function IndianWeddingPlannerDC() {
                   Tell Monica all about your event, including the ceremonies,
                   rituals, and vendors involved. We’ll craft a detailed timeline
                   for each event, manage vendor communications, and oversee
-                  every aspect to honor your cultural traditions and
-                  preferences.
+                  every aspect to honor your cultural traditions.
                 </p>
               </div>
               <div>
@@ -489,10 +490,9 @@ export default function IndianWeddingPlannerDC() {
                   3. Celebrate Every Moment
                 </h4>
                 <p className="md:text-xl my-4">
-                  Immerse yourself in the joy of your wedding festivities—from
-                  the vibrant sangeet to the heartfelt pheras—while we handle
-                  the behind-the-scenes details. With Monica coordinating every
-                  step, you can focus on cherishing these unforgettable moments.
+                  We handle all the behind-the-scenes details so that you can
+                  enjoy yourself. With Monica coordinating every step, you can
+                  focus on cherishing these unforgettable moments.
                 </p>
                 <div className="center">
                   <a href={calendly} target="_blank">
@@ -606,24 +606,24 @@ export default function IndianWeddingPlannerDC() {
                 Want To Enjoy Your Wedding While a Professional Deals With All
                 the Stress and Logistics?
               </h2>
-              <div className="grid lg:grid-cols-3 gap-2 max-w-5xl mx-auto my-10">
+              <div className="grid sm:grid-cols-3 gap-2 max-w-5xl mx-auto my-10">
                 <img
-                  src="/images/wedding-table-centerpiece-design.webp"
-                  alt="Wedding table centerpiece design for small wedding."
+                  src="/images/indian-couple-smiling.jpg"
+                  alt="Indian newlywed couple smiling."
                   loading="lazy"
                   width="472"
                   height="708"
                 />
                 <img
-                  src="/images/wedding-cake.webp"
-                  alt="Wedding cake picture"
+                  src="/images/indian-bride.jpg"
+                  alt="Indian bride at wedding."
                   loading="lazy"
                   width="472"
                   height="708"
                 />
                 <img
-                  src="/images/wedding-table-with-cork-centerpiece.webp"
-                  alt="Wedding table decorations by Monica Browne Weddings"
+                  src="/images/indian-groom-with-friends.jpg"
+                  alt="Indian groom with friends at wedding."
                   loading="lazy"
                   width="472"
                   height="708"
@@ -674,14 +674,15 @@ export default function IndianWeddingPlannerDC() {
                 ranges from <b>$80,000 to $300,000 or more</b>, depending on the
                 scale of the celebration, number of guests, and level of
                 customization, and the inclusion of traditional ceremonies like
-                the Sangeet, Mehendi, and Baraat..
+                the Sangeet, Mehendi, and Baraat.
               </p>
               <p className="md:text-xl mb-4">
-                Major expenses include venues ($10,000–$50,000), catering
-                ($50–$200 per guest), décor and floral arrangements
-                ($14,000–$80,000), outfits and jewelry ($5,000–$50,000),
-                entertainment ($5,000–$30,000), and photography or videography
-                ($10,000–$30,000) for multi-day coverage.
+                Major expenses include venues <b>($10,000–$50,000)</b>, catering
+                <b>($50–$200 per guest)</b>, décor and floral arrangements
+                <b>($14,000–$80,000)</b>, outfits and jewelry{' '}
+                <b>($5,000–$50,000)</b>, entertainment <b>($5,000–$30,000)</b>,
+                and photography or videography
+                <b>($10,000–$30,000)</b> for multi-day coverage.
               </p>
               <p className="md:text-xl mb-4">
                 Factors such as guest count, multi-day traditional events,
@@ -699,6 +700,30 @@ export default function IndianWeddingPlannerDC() {
                 <Link href="/about">wedding planner</Link> who understands
                 Indian traditions, you can create a stunning celebration that
                 honors your heritage while staying within budget.
+              </p>
+              <h3 className="text-2xl md:text-3xl my-4">
+                #2. How much does an Indian wedding planner cost?
+              </h3>
+              <p className="md:text-xl mb-4">
+                An Indian wedding planner cost varies based on factors such as
+                the size of the wedding, number of events, location, and level
+                of service required.
+              </p>
+              <p className="md:text-xl mb-4">
+                For full-service planning, which includes managing multiple
+                ceremonies, vendor coordination, décor design, and logistics,
+                prices typically range from <b>$7,000 to $25,000+</b>, depending
+                on complexity.
+              </p>
+              <p className="md:text-xl mb-4">
+                If you need month-of coordination, costs usually start around
+                <b> $7,000 to $15,000</b>, while day-of coordination services
+                range from <b>$4,500 to $7,000</b>.
+              </p>
+              <p className="md:text-xl mb-4">
+                Indian weddings require extensive planning due to multiple
+                events like the Sangeet, Mehndi, Baraat, and Reception, which
+                can impact overall pricing.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #2. What services do you provide as an Indian wedding planner?
@@ -739,7 +764,7 @@ export default function IndianWeddingPlannerDC() {
                 picture of your guest count and any special requirements they
                 may have.
               </p>
-              <h3 className="text-2xl md:text-3xl my-4">
+              {/* <h3 className="text-2xl md:text-3xl my-4">
                 #6. Do you have references from previous clients or a portfolio
                 of past weddings?
               </h3>
@@ -748,7 +773,7 @@ export default function IndianWeddingPlannerDC() {
                 We're more than happy to share references and a portfolio of
                 weddings we've planned. This gives you a clear understanding of
                 our capabilities and the quality of our services.
-              </p>
+              </p> */}
               <p className="md:text-xl italic my-8 text-center max-w-xl mx-auto">
                 Book a 15-minute with Monica and see how she can help you plan
                 your Indian wedding celebration

@@ -8,7 +8,7 @@ const calendly =
 
 export const metadata = {
   title:
-    'Day of Wedding Coordinator: Wedding Planning for Busy Couples in Annapolis, MD',
+    'Day of Wedding Coordinator in Annapolis, MD, for a Flawless Wedding Experience',
   description:
     'Looking for a day-of wedding coordinator in Annapolis? We are local wedding planning experts that can make you special day flawless. Book a call today!',
   alternates: {
@@ -135,22 +135,66 @@ const serviceStructuredData = {
       // Add more packages here as needed
     ],
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: 5,
-    bestRating: 5,
-    ratingCount: 8,
-  },
 }
 
-export default function DayOfWeddingCoordinatorWashingtonDC() {
+const faqStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What exactly does a Day-of Coordinator do?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "A Day-of Coordinator steps in to manage all the logistics and details of your wedding day, allowing you to relax and enjoy the celebration.While you've likely handled the major planning, we take over the on-site coordination, vendor management, timeline execution, and problem-solving, ensuring everything runs smoothly according to your vision. We're your point of contact on the day, handling any last-minute issues and ensuring a stress-free experience.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What services do you provide as an Indian wedding planner?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. As a full-service Indian wedding planner, we provide comprehensive planning, including venue selection, vendor management, decor detailing, and menu curation. We also offer day-of coordination and consultation services',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How Much Does a Day-of Coordinator Cost in Annapolis?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "The cost of a Day-of Coordinator in Annapolis can vary depending on several factors, including the size and complexity of your wedding, the specific services you require, and the experience level of the coordinator. Generally, you can expect to invest anywhere from $2300 to $7000 for professional Day-of Coordination services in the Annapolis area. We offer customizable packages to fit different needs and budgets, so the best way to get an accurate quote is to contact us for a free consultation. We'd be happy to discuss your wedding plans and provide you with a personalized proposal.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: "What's the difference between a Day-of Coordinator and a full wedding planner?",
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "A full wedding planner is involved in the entire wedding planning process, from budgeting and vendor selection to design and execution. A Day-of Coordinator focuses solely on the logistics and management of the wedding day itself. We step in closer to the wedding date to finalize details and ensure everything unfolds seamlessly. Think of it this way: you've planned the party, and we're there to make sure it's a smashing success.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do you work with Annapolis wedding venues?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "We'ere from Annapolis, and we have experience , and we're familiar with the unique layouts, vendor requirements, and logistical considerations of many local establishments. While we're happy to work at any venue, our experience in Annapolis can be a valuable asset in ensuring a smooth and successful wedding day.",
+      },
+    },
+  ],
+}
+
+export default function dayOfWeddingCoordinatorAnnapolisMD() {
   return (
     <>
       <script type="application/ld+json">
         {JSON.stringify(serviceStructuredData)}
       </script>
+      <script type="application/ld+json">
+        {JSON.stringify(faqStructuredData)}
+      </script>
       <Hero
-        herotext="Day of Wedding Coordinator for Busy Couples in Annapolis, MD"
+        herotext="Day of Wedding Coordinator in Annapolis, MD for a Flawless Wedding Experience"
         heroSubText="We offer expert day-of wedding coordination services for couples in Annapolis, ensuring your special day is seamless and stress-free"
         buttonText="Book A Call With Monica!"
         imageUrl="/images/wedding-at-irongate-in-washington-dc.jpg"
@@ -162,7 +206,8 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Day of Wedding Coordinator and Planner in Annapolis, Maryland
+                  Day of and Month-of Wedding Coordinator in Annapolis, MD, for
+                  a Seamless & Stunning Celebration
                 </h2>
                 <p className="md:text-xl mb-4">
                   Planning your dream wedding in beautiful Annapolis?
@@ -640,7 +685,7 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
               </p>
               <p className="md:text-xl mb-4">
                 Generally, you can expect to invest anywhere from{' '}
-                <span className="font-bold">$2500 to $7000</span> for
+                <span className="font-bold">$2300 to $7000</span> for
                 professional Day-of Coordination services in the Annapolis area.
               </p>
               <p className="md:text-xl mb-4">
@@ -680,29 +725,6 @@ export default function DayOfWeddingCoordinatorWashingtonDC() {
                 we're happy to work at any venue, our experience in Annapolis
                 can be a valuable asset in ensuring a smooth and successful
                 wedding day.
-              </p>
-              <h3 className="text-2xl md:text-3xl my-4">
-                #5 How many hours does it take to plan a wedding?
-              </h3>
-              <p className="md:text-xl mb-4">
-                The truth is, the number of hours it takes to plan a wedding
-                varies significantly depending on several factors.
-              </p>
-              <p className="md:text-xl mb-4">
-                These include the size and complexity of the wedding, the
-                couple's personal preferences and how involved they want to be,
-                whether they're DIYing elements or hiring professionals, and
-                even their organizational skills.
-              </p>
-              <p className="md:text-xl mb-4">
-                Some couples might spend hundreds of hours, while others who are
-                more decisive and delegate effectively might spend considerably
-                less.
-              </p>
-              <p className="md:text-xl mb-4">
-                It's safe to say that wedding planning is a significant time
-                commitment, but breaking it down into smaller tasks and setting
-                realistic timelines can make it more manageable.
               </p>
             </div>
             <p className="text-xl italic text-center max-w-md mx-auto">

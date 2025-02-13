@@ -80,9 +80,11 @@ export default function Footer() {
                       Chevy Chase, MD
                     </Link>
                   </li>
-                  {/* <li className="py-2">
-                    <Link href="/wedding-planner-crofton-md">Crofton, MD</Link>
-                  </li> */}
+                  <li className="py-2">
+                    <Link href="/wedding-planner-in-great-falls-va">
+                      Great Falls, VA
+                    </Link>
+                  </li>
                   <li className="py-2">
                     <Link href="/wedding-planner-potomac-md">Potomac, MD</Link>
                   </li>

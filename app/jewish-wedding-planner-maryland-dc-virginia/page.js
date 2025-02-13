@@ -172,7 +172,7 @@ export default async function JewishWeddingPlanner() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Wedding Planner and Day-of Coordinatior For Busy Jewish
+                  Day-of & Month-of Wedding Coordinatior Services For Jewish
                   Couples in MD, DC, and VA
                 </h2>
                 <p className="md:text-xl mb-4">
@@ -637,8 +637,7 @@ export default async function JewishWeddingPlanner() {
                 depending on factors such as the venue, guest count, catering,
                 and specific traditions included. On average, couples can expect
                 to spend between <b>$50,000 and $75,000</b> for a well-rounded
-                Jewish wedding in the area. We work closely with you to create a
-                budget that aligns with your vision while maximizing value.
+                Jewish wedding.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #2. Can you help with interfaith weddings?

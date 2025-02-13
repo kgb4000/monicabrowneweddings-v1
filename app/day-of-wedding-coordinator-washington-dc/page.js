@@ -7,7 +7,8 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Day of Wedding Coordinator/Planner for Busy Couples in Washington DC',
+  title:
+    'Day of Wedding Coordinator in DC, for Flawless Wedding Day Coordination',
   description:
     'Day-Of Wedding Coordination | Stress-Free DC Weddings by Monica Browne Weddings.  Enjoy your special day!  Experienced & reliable.  Book a free call now!',
   alternates: {
@@ -109,98 +110,6 @@ const serviceStructuredData = {
       // Add more packages here as needed
     ],
   },
-  review: [
-    // Add reviews if you have them.  Even one or two helps!
-    {
-      '@type': 'Review',
-      author: {
-        '@type': 'Person',
-        name: 'Kimberley Hooper-Twumasi',
-      },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-      },
-    },
-    {
-      '@type': 'Review',
-      author: {
-        '@type': 'Person',
-        name: 'Emily Menge',
-      },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-      },
-    },
-    {
-      '@type': 'Review',
-      author: {
-        '@type': 'Person',
-        name: 'Whitney Ames',
-      },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-      },
-    },
-    {
-      '@type': 'Review',
-      author: {
-        '@type': 'Person',
-        name: 'Diane',
-      },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-      },
-    },
-    {
-      '@type': 'Review',
-      author: {
-        '@type': 'Person',
-        name: 'Donna McIntyre',
-      },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-      },
-    },
-    {
-      '@type': 'Review',
-      author: {
-        '@type': 'Person',
-        name: 'Katrina Edmonds',
-      },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-      },
-    },
-    {
-      '@type': 'Review',
-      author: {
-        '@type': 'Person',
-        name: 'Lisa',
-      },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-      },
-    },
-    {
-      '@type': 'Review',
-      author: {
-        '@type': 'Person',
-        name: 'Teresa Thomas',
-      },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-      },
-    },
-    // Add more reviews as needed
-  ],
 }
 
 const getPosts = async () => {
@@ -233,15 +142,65 @@ const getPosts = async () => {
   return data.posts
 }
 
+const faqStructuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Why Should I Hire a Day-of Coordinator?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "You should consider hiring a day-of wedding coordinator if you're on a budget. If you want to do most of the planning yourself and find your wedding venue and vendors on your own but still want to enjoy your wedding day without worrying about anything, consider hiring Monica Browne Weddings.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How Much Does a Day-of Coordinator Cost in DC?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "The cost of an experienced day-of wedding coordinator in the DC area, typically ranges from $2,300 to $7,000, though prices can vary based on wedding size, complexity, and the coordinator's experience. While the national average is lower, DC's market reflects higher costs. Factors influencing price include the scope of services included and the coordinator's expertise. It's wise to research, compare quotes, and secure a detailed contract outlining services and fees before booking.",
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'When is The Best Time To Hire a Day-of Wedding Coordinator?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The best time to hire a day of wedding coordinator is between six to eight weeks before your wedding date. This leaves enough time to read vendor contracts, do a walk-through of the different sites, form a relationship with the other vendors, and sort out any missing details that you may have missed while planning your event.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the difference between a wedding planner and day of coordinator?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The primary difference between wedding planner and a day-of coordinator lies in the scope of their responsibilities and when they get involved. A wedding planner is typically hired during the early stages of planning, taking charge of the entire process from concept to execution. On the other hand, a day-of coordinator is primarily focused on the actual day of the event, ensuring that all aspects run smoothly and according to plan.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How many hours does it take to plan a wedding?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: "On average, planning a wedding can take anywhere from 100 to 250 hours, spread over several months or even a year. Factors that influence the planning time include the level of customization, number of guests, location, and the couple's level of involvement in the planning process.",
+      },
+    },
+  ],
+}
+
 export default async function DayOfWeddingCoordinatorWashingtonDC() {
   const posts = await getPosts()
   return (
     <>
       <script type="application/ld+json">
+        {JSON.stringify(faqStructuredData)}
+      </script>
+      <script type="application/ld+json">
         {JSON.stringify(serviceStructuredData)}
       </script>
       <Hero
-        herotext="Day of Wedding Coordinator for Busy Couples in Washington, DC"
+        herotext="Day-of Wedding Coordinator in Washington, DC, for Flawless Wedding Day Coordination"
         heroSubText="We offer expert day-of wedding coordination services for couples in Washington, DC, ensuring your special day is seamless and stress-free"
         buttonText="Book A Call With Monica!"
         imageUrl="/images/wedding-at-irongate-in-washington-dc.jpg"
@@ -253,7 +212,8 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Day of Wedding Coordinator and Planner in Washington, DC
+                  Day of Wedding Coordinator in DC for Stress-Free Wedding
+                  Coordination
                 </h2>
                 <p className="md:text-xl mb-4">
                   Monica Browne Weddings offers day-of wedding coordinator
@@ -267,8 +227,8 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
               </div>
               <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
                 <Image
-                  src="/images/wedding-table-centerpiece-design.webp"
-                  alt="Wedding table centerpiece design for small wedding."
+                  src="/images/bride-with-flowers.webp"
+                  alt="Day-of wedding coordinator in Washington, DC."
                   loading="lazy"
                   width="472"
                   height="708"
@@ -315,37 +275,84 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
               When All You Need is a Day-of Coordinator for The Day-of
             </h2>
             <p className="md:text-xl mb-4">
-              Planning a wedding involves juggling countless details, from
-              hiring vendors to organizing logistics.
+              Your wedding is one of the most important days of your life, and
+              every detail should be just as you’ve envisioned. From the initial
+              planning stages to the final farewell, we’re here to make the
+              process effortless and enjoyable.
             </p>
-            <p className="md:text-xl mb-4">
-              By the time your big day arrives, you’ve likely already:
-            </p>
-            <ul className="ml-8 my-10 list-disc">
-              <li className="md:text-xl mb-4">
-                Booked the DJ,{' '}
-                <Link href="/blog/how-to-choose-the-right-catering-menu-for-your-dc-wedding">
-                  caterer
-                </Link>
-                , photographer, and videographer.
-              </li>
-              <li className="md:text-xl mb-4">
-                Secured your wedding venue and rentals like tables, chairs, and
-                dance floors.
-              </li>
-              <li className="md:text-xl mb-4">
-                Coordinated with your florist, hairstylist, and makeup artist.
-              </li>
-              <li className="md:text-xl mb-4">
-                Finalized details for your wedding cake, officiant, and getaway
-                car.
-              </li>
-            </ul>
-            <p className="md:text-xl mb-4">
-              As a bride or groom, your wedding day should be about celebrating,
-              not coordinating. That’s where a day-of wedding coordinator comes
-              in.
-            </p>
+            <div className="my-10">
+              <h3 className="text-2xl mb-2">
+                • Bringing Your Dream Wedding to Life
+              </h3>
+              <p className="md:text-xl mb-4 ml-4">
+                Your wedding should be a reflection of your love story, and
+                we’re here to make that happen. From the very first
+                consultation, we take the time to understand your vision,
+                personal style, and unique preferences. Whether you envision a
+                classic, modern, or culturally inspired celebration, we tailor
+                every detail to create a wedding that feels authentically you.
+              </p>
+            </div>
+            <div className="my-10">
+              <h3 className="text-2xl mb-2">
+                • Premiere Day-Of Wedding Coordination
+              </h3>
+              <p className="md:text-xl mb-4 ml-4">
+                Your wedding day should be about love, laughter, and making
+                memories—not dealing with logistics. As your day-of wedding
+                planner, we take charge of all the moving parts, ensuring
+                everything runs on time and according to plan. From vendor
+                check-ins and timeline management to handling unexpected
+                challenges, we oversee every detail behind the scenes so you can
+                be fully present and enjoy every moment. With our expert
+                coordination, your wedding day will be smooth, stress-free, and
+                unforgettable.
+              </p>
+            </div>
+            <div className="my-10">
+              <h3 className="text-2xl mb-2">
+                • Seamless Month-Of Wedding Planning
+              </h3>
+              <p className="md:text-xl mb-4 ml-4">
+                If you’ve handled most of the planning but need a professional
+                to tie up the loose ends, our month-of wedding planner services
+                in Great Falls are designed for you. We step in about four to
+                six weeks before your big day, reviewing contracts, confirming
+                timelines, and coordinating with vendors to ensure everything is
+                in place. Our goal is to eliminate any last-minute stress,
+                giving you the confidence that your wedding will be executed
+                flawlessly while you focus on enjoying the excitement leading up
+                to your special day.
+              </p>
+            </div>
+            <div className="my-10">
+              <h3 className="text-2xl mb-2">
+                • Elegant Designs That Capture Your Style
+              </h3>
+              <p className="md:text-xl mb-4 ml-4">
+                Creating a beautiful wedding begins with thoughtful design. We
+                assist with everything from color palettes and floral
+                arrangements to table settings and lighting, crafting a
+                breathtaking ambiance that leaves a lasting impression. Whether
+                you need inspiration or have a clear vision in mind, we’ll bring
+                your wedding aesthetic to life with stunning decor and flawless
+                execution.
+              </p>
+            </div>
+            <div className="my-10">
+              <h3 className="text-2xl mb-2">
+                • Support Beyond the Celebration
+              </h3>
+              <p className="md:text-xl mb-4 ml-4">
+                The wedding may end, but our services don’t stop there. We take
+                care of the final touches, such as vendor payments, rental
+                returns, and post-wedding celebrations, so you can seamlessly
+                transition into newlywed life. Whether it’s coordinating a
+                farewell brunch or ensuring all details are wrapped up, we’re
+                here to make sure your wedding journey is smooth from start to
+                finish.
+              </p>
+            </div>
             <div className="center">
               <a href={calendly} target="_blank">
                 <Button
@@ -354,6 +361,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
                   borderWidth="border-2"
                   textColor="text-white"
                   borderStyle="border-solid"
+                  textSize="md:text-xl"
                 />
               </a>
             </div>
@@ -547,7 +555,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
           <section>
             <div className="max-w-3xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                What We Do as Your Day of Wedding Coordinator
+                What We Do as Your Day-of Wedding Coordinator
               </h2>
               <p className="md:text-xl mb-4">
                 When your wedding is{' '}
@@ -555,57 +563,79 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
                 you can count on us to take the reins and handle the following
                 with care and precision:
               </p>
-              <ul className="ml-8 my-10 list-disc">
-                <li className="md:text-xl mb-4">
-                  Review and organize all vendor contracts
-                </li>
-                <li className="md:text-xl mb-4">
-                  Confirm all vendor payments and schedules
-                </li>
-                <li className="md:text-xl mb-4">
-                  Coordinate final fittings for your wedding attire and your
-                  bridal party
-                </li>
-                <li className="md:text-xl mb-4">
-                  Ensure your bridal party has their dresses and tuxedos secured
-                </li>
-                <li className="md:text-xl mb-4">
-                  Conduct a walk-through of the ceremony and reception venues
-                </li>
-                <li className="md:text-xl mb-4">
-                  Craft a comprehensive{' '}
-                  <Link href="/blog/wedding-day-timeline-4pm-ceremony">
-                    wedding timeline{' '}
-                  </Link>
-                  for all participants
-                </li>
-                <li className="md:text-xl mb-4">
-                  Supervise and coordinate a two-hour rehearsal the week of your
-                  wedding
-                </li>
-                <li className="md:text-xl mb-4">
-                  Act as the primary point of contact for your bridal party
-                  starting on rehearsal day
-                </li>
-                <li className="md:text-xl mb-4">
-                  Manage and oversee all logistics on your wedding day
-                </li>
-              </ul>
               <p className="md:text-xl mb-4">
-                A day of wedding coordinator will manage your wedding day when
-                the day arrives.
+                <b>Final Timeline Management –</b> Ensure all events, from the
+                ceremony to the reception, run according to the pre-planned{' '}
+                <Link href="/blog/wedding-day-timeline-4pm-ceremony">
+                  timeline
+                </Link>
+                .
               </p>
               <p className="md:text-xl mb-4">
-                They do not help you plan your wedding like a full service
-                wedding planner.
+                <b>Vendor Coordination –</b> Confirm arrival times, oversee
+                setup, and act as the main point of contact for all vendors.
               </p>
               <p className="md:text-xl mb-4">
-                A wedding planner will help you plan your wedding from start to
-                finish.
+                <b>Bridal Party Assistance –</b> Help the bride, groom, and
+                wedding party stay on schedule and address any last-minute
+                needs.
               </p>
               <p className="md:text-xl mb-4">
-                They may start working with you a year or six months before your
-                big day and help you with the initial wedding planning stages.
+                <b>Vendor Coordination –</b> Confirm arrival times, oversee
+                setup, and act as the main point of contact for all vendors.
+              </p>
+              <p className="md:text-xl mb-4">
+                <b>Guest Coordination –</b> Assist guests with seating, provide
+                directions, and address any questions to ensure a smooth
+                experience.
+              </p>
+              <p className="md:text-xl mb-4">
+                <b>Ceremony Coordination –</b> Organize the processional and
+                recessional, cue musicians or DJs, and coordinate with the
+                officiant for a seamless ceremony.
+              </p>
+              <p className="md:text-xl mb-4">
+                <b>Reception Oversight –</b> Ensure smooth transitions between
+                events such as the grand entrance, first dance, speeches, dinner
+                service, and cake cutting.
+              </p>
+              <p className="md:text-xl mb-4">
+                <b>Vendor Coordination –</b> Confirm arrival times, oversee
+                setup, and act as the main point of contact for all vendors.
+              </p>
+              <p className="md:text-xl mb-4">
+                <b>Troubleshooting Issues –</b> Handle unexpected situations
+                like missing items, weather changes, or last-minute vendor
+                adjustments.
+              </p>
+              <p className="md:text-xl mb-4">
+                <b>Emergency Kit Readiness –</b> Provide essentials such as
+                safety pins, sewing kits, stain removers, breath mints, and
+                band-aids for any last-minute fixes.
+              </p>
+              <p className="md:text-xl mb-4">
+                <b>Manage Wedding Day Logistics –</b> Ensure transportation,
+                accommodations, and any special requests are properly
+                coordinated.
+              </p>
+              <p className="md:text-xl mb-4">
+                <b>Gift & Personal Item Management –</b> Keep track of gifts,
+                personal belongings, and ensure everything is packed and
+                delivered to the appropriate place.
+              </p>
+              <p className="md:text-xl mb-4">
+                <b>End-of-Night Wrap-Up –</b> Oversee cleanup, ensure rental
+                items are returned, and confirm vendors have completed their
+                tasks before closing out the venue.
+              </p>
+              <p className="md:text-xl mb-4">
+                <b>Keep the Couple Stress-Free –</b> Allow the couple to fully
+                enjoy their wedding day without worrying about logistics, vendor
+                coordination, or minor issues.
+              </p>
+              <p className="text-xl italic text-center max-w-md mx-auto">
+                Book a 15-minute call with Monica and see how a day-of wedding
+                coordinator can help you!
               </p>
               <div className="center">
                 <a href={calendly} target="_blank">
@@ -728,7 +758,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
                 #5 How many hours does it take to plan a wedding?
               </h3>
               <p className="md:text-xl mb-4">
-                On average, planning a wedding can take anywhere from 100 to 150
+                On average, planning a wedding can take anywhere from 100 to 250
                 hours, spread over several months or even a year.
               </p>
               <p className="md:text-xl mb-4">

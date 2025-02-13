@@ -9,9 +9,9 @@ const calendly =
 
 export const metadata = {
   title:
-    'Day-of Wedding Planner in Alexandria Virgina | Monica Browne Weddings',
+    'Day-of Wedding Planner in Alexandria, VA, for Couples Who Want a Perfect Day',
   description:
-    'Looking for wedding planners in Alexandria Virginia? We are local wedding planning experts that can help plan your day perfect. Schedule a call with us today!',
+    'Looking for a wedding planner in Alexandria, VA? We are local wedding planning experts that can help plan your perfect day. Schedule a call with us today!',
   alternates: {
     canonical:
       'https://monicabrowneweddings.com/day-of-wedding-planner-alexandria-va',
@@ -132,12 +132,6 @@ const serviceStructuredData = {
       // Add more packages here as needed
     ],
   },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: 5,
-    bestRating: 5,
-    ratingCount: 8,
-  },
 }
 
 const faqStructuredData = {
@@ -197,7 +191,7 @@ export default async function WeddingPlannerAlexandriaVa() {
         {JSON.stringify(faqStructuredData)}
       </script>
       <Hero
-        herotext="Day-of Wedding Planner for Busy Couples in Alexandria Virginia"
+        herotext="Day-of Wedding Planner in Alexandria, VA, for Couples Who Want a Perfect Day"
         heroSubText="We create stunning weddings for busy couples in Alexandria, VA, blending timeless traditions with modern elegance for a day you’ll cherish forever"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
@@ -212,7 +206,7 @@ export default async function WeddingPlannerAlexandriaVa() {
                   Top Rated Day-of Wedding Planning Services in Alexandria, and
                   Northen Virginia
                 </h2>
-                <p className="md:text-xl mb-4">
+                {/* <p className="md:text-xl mb-4">
                   Planning your dream wedding should be an exciting and joyful
                   experience, not a source of stress. But let's face it,
                   juggling work, life, and wedding preparations can quickly
@@ -220,13 +214,20 @@ export default async function WeddingPlannerAlexandriaVa() {
                   time and energy, struggling to bring their vision to life.
                   Don't let the pressure of planning steal the joy of your
                   special day.
-                </p>
+                </p> */}
                 <p className="md:text-xl mb-4">
                   We're a premier event management and wedding planning company
                   dedicated to creating unforgettable weddings in Alexandria,
-                  VA, and the surrounding Northern Virginia area. Our expert
-                  team takes the reins, managing every detail so you can relax
-                  and savor the journey to "I do."
+                  VA, and the surrounding Northern Virginia area.
+                </p>
+                <p className="md:text-xl mb-4">
+                  Our expert team takes the reins, managing every detail so you
+                  can relax and savor the journey to "I do."
+                </p>
+                <p className="md:text-xl mb-4">
+                  Whether you envision a grand celebration or an intimate
+                  gathering, we offer tailored services to meet your specific
+                  needs and budget.
                 </p>
               </div>
               <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
@@ -253,11 +254,6 @@ export default async function WeddingPlannerAlexandriaVa() {
                 />
               </div>
               <div className="max-w-3xl mx-auto">
-                <p className="md:text-xl mb-4">
-                  Whether you envision a grand celebration or an intimate
-                  gathering, we offer tailored services to meet your specific
-                  needs and budget.
-                </p>
                 <p className="md:text-xl mb-4">
                   Our full-service wedding planning package handles everything
                   from start to finish, allowing you complete freedom to focus

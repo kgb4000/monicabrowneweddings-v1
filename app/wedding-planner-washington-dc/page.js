@@ -8,7 +8,8 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Wedding Planner in Washington DC | Monica Browne Weddings',
+  title:
+    'Wedding Planner in Washington, DC, for Couples Who Want an Unforgettable Day',
   description:
     "Looking for a top ranked wedding planner in Washington DC? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
   alternates: {
@@ -41,16 +42,16 @@ const getPosts = async () => {
       },
       body: JSON.stringify({
         query: `{
-                posts (orderBy: createdAt_DESC, first: 3) {
-                  title
-                  slug
-                  coverImage {
-                    url
-                    width
-                    height
-                  }
-                }
-              }`,
+          posts (orderBy: createdAt_DESC, first: 3) {
+            title
+            slug
+            coverImage {
+              url
+              width
+              height
+            }
+          }
+        }`,
       }),
     }
   )
@@ -60,12 +61,12 @@ const getPosts = async () => {
   return data.posts
 }
 
-export default async function WeddingPlannerWashingtonDC() {
+export default async function weddingPlannerWashingtonDC() {
   const posts = await getPosts()
   return (
     <div>
       <Hero
-        herotext="Professional Wedding Planner and Services for Busy Couples in Washington, DC"
+        herotext="Wedding Planner in Washington, DC, for Couples Who Want an Unforgettable Day"
         heroSubText="We create stunning weddings for busy couples in Washington, DC, blending timeless traditions with modern elegance for a day you’ll cherish forever"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
@@ -225,7 +226,7 @@ export default async function WeddingPlannerWashingtonDC() {
               </p>
             </div>
             <div className="my-10">
-              <h3 className="text-2xl mb-2">• Beyond the "I Do's"</h3>
+              <h3 className="text-2xl mb-2">• Beyond the "I Do's</h3>
               <p className="md:text-xl mb-4 ml-4">
                 Our support doesn’t stop at the altar. After the celebration,
                 we’ll handle all the post-wedding logistics, such as returning
@@ -347,7 +348,7 @@ export default async function WeddingPlannerWashingtonDC() {
           <section>
             <div className="max-w-2xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                Why Hire Monica Browne Weddings as Wedding Planner in DC
+                Why Hire Monica Browne Weddings as Your DC Wedding Planner
               </h2>
               <p className="md:text-xl mb-4">
                 When you choose Monica Browne Weddings, you’re hiring a
@@ -552,7 +553,31 @@ export default async function WeddingPlannerWashingtonDC() {
             <div className="max-w-3xl mx-auto py-10">
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
-                #1. What does a wedding planner do, and how can you help with my
+                #1. How much does a day-of wedding planner in DC cost?
+              </h3>
+              <p className="md:text-xl mb-4">
+                In our area, you can expect to invest anywhere from{' '}
+                <b>$3,500 to $10,000+ </b>for a seasoned professional. Several
+                factors influence this range, including the planner's
+                experience, the scale of your wedding, and the scope of services
+                you require.
+              </p>
+              <p className="md:text-xl mb-4">
+                For couples seeking assistance solely on the big day,{' '}
+                <Link href="/day-of-wedding-coordinator-washington-dc">
+                  day-of coordination
+                </Link>{' '}
+                typically falls between <b>$2,300 and $7,000</b>.
+              </p>
+              <p className="md:text-xl mb-4">
+                If you're looking for comprehensive support from "yes" to "I
+                do," full-service planning packages generally start around{' '}
+                <b>$4,000 and can exceed $10,000</b> depending on your needs.
+                For a personalized quote tailored to your unique celebration,
+                book a call today.
+              </p>
+              <h3 className="text-2xl md:text-3xl my-4">
+                #2. What does a wedding planner do, and how can you help with my
                 wedding?
               </h3>
               <p className="md:text-xl mb-4">
@@ -570,18 +595,18 @@ export default async function WeddingPlannerWashingtonDC() {
                 hiring Monica Browne Weddings.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #2. When should I hire a wedding planner for my DC wedding?
+                #3. When should I hire a wedding planner for my DC wedding?
               </h3>
               <p className="md:text-xl mb-4">
-                Ideally, you should hire a wedding planner 12-18 months before
-                your wedding. However, we offer services for all stages of
-                planning, whether you’re just starting or your wedding is only a
-                few weeks away. Our day-of coordination is perfect for couples
-                who’ve done most of the planning but need expert help to execute
-                the final details.
+                Ideally, you should hire a wedding planner <b>12-18 months</b>{' '}
+                before your wedding. However, we offer services for all stages
+                of planning, whether you’re just starting or your wedding is
+                only a few weeks away. Our day-of coordination is perfect for
+                couples who’ve done most of the planning but need expert help to
+                execute the final details.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #3. What types of wedding planning services do you offer?
+                #4. What types of wedding planning services do you offer?
               </h3>
               <p className="md:text-xl mb-4">
                 We provide full-service wedding planning, partial planning, and
@@ -593,22 +618,6 @@ export default async function WeddingPlannerWashingtonDC() {
                 </Link>{' '}
                 ensures your wedding day runs smoothly while you relax and
                 enjoy.
-              </p>
-              <h3 className="text-2xl md:text-3xl my-4">
-                #4. How much does a day-of wedding planner in DC cost?
-              </h3>
-              <p className="md:text-xl mb-4">
-                In our area, you can expect to invest anywhere from{' '}
-                <b>$3,500 to $10,000+ </b>for a seasoned professional. Several
-                factors influence this range, including the planner's
-                experience, the scale of your wedding, and the scope of services
-                you require. For couples seeking assistance solely on the big
-                day, day-of coordination typically falls between{' '}
-                <b>$2,000 and $5,000</b>. If you're looking for comprehensive
-                support from "yes" to "I do," full-service planning packages
-                generally start around <b>$4,000 and can exceed $10,000</b>{' '}
-                depending on your needs. For a personalized quote tailored to
-                your unique celebration, book a call today.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #5 How will you ensure my wedding day goes smoothly?

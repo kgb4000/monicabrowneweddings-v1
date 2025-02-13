@@ -8,9 +8,9 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Wedding Planner in Bethesda Maryland | Monica Browne Weddings',
+  title: 'Wedding Planner in Bethesda for Elegant & Timeless Celebrations',
   description:
-    "Looking for a top ranked wedding planner in Bethesda? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
+    "Looking for a top ranked wedding planner in Bethesda, MD? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
   alternates: {
     canonical: 'https://monicabrowneweddings.com/wedding-planner-bethesda-md',
   },
@@ -34,8 +34,8 @@ export default async function WeddingPlannerBethesdaMD() {
   return (
     <div>
       <Hero
-        herotext="Wedding Planner for Busy Couples in Bethesda, MD"
-        heroSubText="We specialize in creating stunning, personalized celebrations for busy couples, blending tradition, elegance, and modern flair to reflect your unique love story"
+        herotext="Wedding Planner in Bethesda for Elegant & Timeless Celebrations"
+        heroSubText="We plan beautiful weddings in Bethesda for couples who want a perfect blend of sophistication, charm, and personalized details for a truly magical celebration"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
         imageUrl="/images/newly-married-couple-potomac-md.webp"
@@ -46,7 +46,8 @@ export default async function WeddingPlannerBethesdaMD() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Top Wedding Planner For Busy Couples in Bethesda, MD
+                  A Wedding Planner in Bethesda to Bring Your Dream Wedding to
+                  Life
                 </h2>
                 <p className="md:text-xl mb-4">
                   Even though you may not know where to start planning your
