@@ -7,8 +7,7 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title:
-    'Day of Wedding Coordinator in DC, for Flawless Wedding Day Coordination',
+  title: 'Day of Wedding Planner in DC, for Flawless Wedding Day Coordination',
   description:
     'Day-Of Wedding Coordination | Stress-Free DC Weddings by Monica Browne Weddings.  Enjoy your special day!  Experienced & reliable.  Book a free call now!',
   alternates: {
@@ -123,16 +122,16 @@ const getPosts = async () => {
       },
       body: JSON.stringify({
         query: `{
-                posts (orderBy: createdAt_DESC, first: 3) {
-                  title
-                  slug
-                  coverImage {
-                    url
-                    width
-                    height
-                  }
-                }
-              }`,
+          posts (orderBy: createdAt_DESC, first: 3) {
+            title
+            slug
+            coverImage {
+              url
+              width
+              height
+            }
+          }
+        }`,
       }),
     }
   )
@@ -200,7 +199,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
         {JSON.stringify(serviceStructuredData)}
       </script>
       <Hero
-        herotext="Day-of Wedding Coordinator in Washington, DC, for Flawless Wedding Day Coordination"
+        herotext="Day-of Wedding Planner in Washington, DC, for Flawless Wedding Day Coordination"
         heroSubText="We offer expert day-of wedding coordination services for couples in Washington, DC, ensuring your special day is seamless and stress-free"
         buttonText="Book A Call With Monica!"
         imageUrl="/images/wedding-at-irongate-in-washington-dc.jpg"
@@ -212,7 +211,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Day of Wedding Coordinator in DC for Stress-Free Wedding
+                  Day of Wedding Planner in DC for Stress-Free Wedding
                   Coordination
                 </h2>
                 <p className="md:text-xl mb-4">
@@ -272,7 +271,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
         <section className="bg-slate-800">
           <div className="max-w-3xl mx-auto py-10 md:py-20 text-white px-6">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
-              When All You Need is a Day-of Coordinator for The Day-of
+              When All You Need is a Day-of Planner for The Day-of
             </h2>
             <p className="md:text-xl mb-4">
               Your wedding is one of the most important days of your life, and
@@ -555,7 +554,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
           <section>
             <div className="max-w-3xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                What We Do as Your Day-of Wedding Coordinator
+                What We Do as Your Day-of Wedding Planner
               </h2>
               <p className="md:text-xl mb-4">
                 When your wedding is{' '}
@@ -563,76 +562,78 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
                 you can count on us to take the reins and handle the following
                 with care and precision:
               </p>
-              <p className="md:text-xl mb-4">
-                <b>Final Timeline Management –</b> Ensure all events, from the
-                ceremony to the reception, run according to the pre-planned{' '}
-                <Link href="/blog/wedding-day-timeline-4pm-ceremony">
-                  timeline
-                </Link>
-                .
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Vendor Coordination –</b> Confirm arrival times, oversee
-                setup, and act as the main point of contact for all vendors.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Bridal Party Assistance –</b> Help the bride, groom, and
-                wedding party stay on schedule and address any last-minute
-                needs.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Vendor Coordination –</b> Confirm arrival times, oversee
-                setup, and act as the main point of contact for all vendors.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Guest Coordination –</b> Assist guests with seating, provide
-                directions, and address any questions to ensure a smooth
-                experience.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Ceremony Coordination –</b> Organize the processional and
-                recessional, cue musicians or DJs, and coordinate with the
-                officiant for a seamless ceremony.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Reception Oversight –</b> Ensure smooth transitions between
-                events such as the grand entrance, first dance, speeches, dinner
-                service, and cake cutting.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Vendor Coordination –</b> Confirm arrival times, oversee
-                setup, and act as the main point of contact for all vendors.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Troubleshooting Issues –</b> Handle unexpected situations
-                like missing items, weather changes, or last-minute vendor
-                adjustments.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Emergency Kit Readiness –</b> Provide essentials such as
-                safety pins, sewing kits, stain removers, breath mints, and
-                band-aids for any last-minute fixes.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Manage Wedding Day Logistics –</b> Ensure transportation,
-                accommodations, and any special requests are properly
-                coordinated.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Gift & Personal Item Management –</b> Keep track of gifts,
-                personal belongings, and ensure everything is packed and
-                delivered to the appropriate place.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>End-of-Night Wrap-Up –</b> Oversee cleanup, ensure rental
-                items are returned, and confirm vendors have completed their
-                tasks before closing out the venue.
-              </p>
-              <p className="md:text-xl mb-4">
-                <b>Keep the Couple Stress-Free –</b> Allow the couple to fully
-                enjoy their wedding day without worrying about logistics, vendor
-                coordination, or minor issues.
-              </p>
+              <div className="mb-10">
+                <p className="md:text-xl mb-4">
+                  <b>Final Timeline Management –</b> Ensure all events, from the
+                  ceremony to the reception, run according to the pre-planned{' '}
+                  <Link href="/blog/wedding-day-timeline-4pm-ceremony">
+                    timeline
+                  </Link>
+                  .
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Vendor Coordination –</b> Confirm arrival times, oversee
+                  setup, and act as the main point of contact for all vendors.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Bridal Party Assistance –</b> Help the bride, groom, and
+                  wedding party stay on schedule and address any last-minute
+                  needs.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Vendor Coordination –</b> Confirm arrival times, oversee
+                  setup, and act as the main point of contact for all vendors.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Guest Coordination –</b> Assist guests with seating,
+                  provide directions, and address any questions to ensure a
+                  smooth experience.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Ceremony Coordination –</b> Organize the processional and
+                  recessional, cue musicians or DJs, and coordinate with the
+                  officiant for a seamless ceremony.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Reception Oversight –</b> Ensure smooth transitions between
+                  events such as the grand entrance, first dance, speeches,
+                  dinner service, and cake cutting.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Vendor Coordination –</b> Confirm arrival times, oversee
+                  setup, and act as the main point of contact for all vendors.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Troubleshooting Issues –</b> Handle unexpected situations
+                  like missing items, weather changes, or last-minute vendor
+                  adjustments.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Emergency Kit Readiness –</b> Provide essentials such as
+                  safety pins, sewing kits, stain removers, breath mints, and
+                  band-aids for any last-minute fixes.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Manage Wedding Day Logistics –</b> Ensure transportation,
+                  accommodations, and any special requests are properly
+                  coordinated.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Gift & Personal Item Management –</b> Keep track of gifts,
+                  personal belongings, and ensure everything is packed and
+                  delivered to the appropriate place.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>End-of-Night Wrap-Up –</b> Oversee cleanup, ensure rental
+                  items are returned, and confirm vendors have completed their
+                  tasks before closing out the venue.
+                </p>
+                <p className="md:text-xl mb-4">
+                  <b>Keep the Couple Stress-Free –</b> Allow you to fully enjoy
+                  their wedding day without worrying about logistics, vendor
+                  coordination, or minor issues.
+                </p>
+              </div>
               <p className="text-xl italic text-center max-w-md mx-auto">
                 Book a 15-minute call with Monica and see how a day-of wedding
                 coordinator can help you!
@@ -694,7 +695,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
             <div className="max-w-3xl mx-auto py-10">
               <h2 className="text-3xl md:text-5xl text-center">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
-                #1. Why Should I Hire a Day-of Coordinator?
+                #1. Why Should I Hire a Day-of Planner?
               </h3>
               <p className="md:text-xl mb-4">
                 You should consider hiring a day-of wedding coordinator if
