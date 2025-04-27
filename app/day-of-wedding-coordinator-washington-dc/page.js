@@ -708,7 +708,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
                 hiring Monica Browne Weddings.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #2. How Much Does a Day-of Coordinator Cost in DC?
+                #2. How Much Does a Day-of Wedding Coordinator Cost in DC?
               </h3>
               <p className="md:text-xl mb-4">
                 The cost of an experienced day-of wedding coordinator in the DC

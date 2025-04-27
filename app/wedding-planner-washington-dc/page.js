@@ -131,10 +131,8 @@ export default async function weddingPlannerWashingtonDC() {
                     Indian
                   </Link>{' '}
                   and{' '}
-                  <Link href="/jewish-wedding-planner-maryland-dc-virginia">
-                    Jewish couples
-                  </Link>
-                  , create weddings that beautifully honor their heritage and
+                  <Link href="/jewish-wedding-planner-dc">Jewish couples</Link>,
+                  create weddings that beautifully honor their heritage and
                   personal love stories.
                 </p>
                 <p className="md:text-xl mb-4">

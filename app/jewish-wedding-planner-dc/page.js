@@ -8,17 +8,16 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title: 'Jewish Wedding Planner For Busy Couples in Maryland | DC | Virginia',
+  title: 'Jewish Wedding Planner For Busy Couples in DC',
   description:
     'Need a trusted wedding planner to help plan your Jewish Wedding? We take care of everything while you dance with family and friends. Book a call today!',
   alternates: {
-    canonical:
-      'https://monicabrowneweddings.com/jewish-wedding-planner-maryland-dc-virginia',
+    canonical: 'https://monicabrowneweddings.com/jewish-wedding-planner-dc',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://monicabrowneweddings.com/jewish-wedding-planner-maryland-dc-virginia',
+    url: 'https://monicabrowneweddings.com/jewish-wedding-planner-dc',
     site_name: 'Monica Browne Weddings',
     images: [
       {
@@ -160,7 +159,7 @@ export default async function JewishWeddingPlanner() {
   return (
     <div>
       <Hero
-        herotext="Jewish Wedding Planner for Busy Couples in Maryland, DC, & Northern Virginia"
+        herotext="Jewish Wedding Planner in DC for Busy Couples"
         heroSubText="We design unforgettable weddings for Jewish couples, combining cherished traditions with contemporary style to create a celebration that’s uniquely yours"
         buttonText="Book A Call With Monica!"
         textColor="text-white"

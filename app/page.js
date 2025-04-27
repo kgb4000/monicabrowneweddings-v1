@@ -606,16 +606,16 @@ export default async function Home() {
             </h2>
             <div className="py-6">
               <div className="py-2">
-                <h3 className="text-2xl md:text-3xl">#1. Call Monica</h3>
+                <p className="text-2xl md:text-3xl">#1. Call Monica</p>
                 <p className="md:text-xl my-4">
                   Talk with Monica and see how her company can help you bring
                   your vision to life.
                 </p>
               </div>
               <div className="py-2">
-                <h3 className="text-2xl md:text-3xl">
+                <p className="text-2xl md:text-3xl">
                   #2. Share the Details of Your What You Want
-                </h3>
+                </p>
                 <p className="md:text-xl my-4">
                   Tell us all about what you want, and we’ll take it from there.
                   From creating a comprehensive timeline to managing vendor
@@ -624,9 +624,9 @@ export default async function Home() {
                 </p>
               </div>
               <div className="py-2">
-                <h3 className="text-2xl md:text-3xl">
+                <p className="text-2xl md:text-3xl">
                   #3. Enjoy Your Special Day
-                </h3>
+                </p>
                 <p className="md:text-xl my-4">
                   Call Monica and see how she can help make your wedding day a
                   success.
@@ -684,55 +684,67 @@ export default async function Home() {
           </div>
         </section>
         <section className="bg-slate-50">
-          <div className="container mx-auto px-4 max-w-xl py-10 md:py-20">
-            <h2 className="text-3xl md:text-5xl text-center mb-10">
-              Why Hire Monica as Your Wedding Planner?
-            </h2>
-            <p className="md:text-xl mb-4">
-              Monica Browne Weddings is one of the top Maryland wedding
-              planners.
-            </p>
-            <p className="md:text-xl mb-4">
-              No, we are not in the Washington Post or Martha Stewart Weddings,
-              and that's not our focus.
-            </p>
-            <p className="md:text-xl mb-4">
-              Our only focus is to provide our clients with wedding planning
-              services that will help you save time and money and assist in any
-              way possible and create your dream wedding.
-            </p>
-            <p className="md:text-xl mb-4">
-              See our{' '}
-              <a
-                href="https://www.google.com/search?q=monica+browne+weddings&oq=monica+browne+weddings&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxiABDIJCAAQRRg7GIAEMgoIARAAGIAEGKIEMgoIAhAAGIAEGKIEMgoIAxAAGIAEGKIEMgYIBBBFGDsyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg3ODQ3ajFqN6gCCLACAQ&sourceid=chrome&ie=UTF-8#mpd=~2535347168599140905/customers/reviews"
-                target="_blank"
-              >
-                5-star reviews
-              </a>{' '}
-              .
-            </p>
-            <p className="md:text-xl mb-4">
-              When you hire us, you hire an experienced planning company with
-              over 15 years in the event industry and someone you can trust.
-            </p>
-            <p className="md:text-xl mb-4">
-              You get <Link href="/about">Monica</Link>, an incredible knowledge
-              professional at your disposal, and a team that will do whatever it
-              takes to ensure your wedding goes off without any issues.
-            </p>
-            <p className="md:text-xl mb-4">
-              We are here to help you plan one of the biggest days of your life
-              and make sure you enjoy every moment. You can count on us to be
-              there every step of the way, and we look forward to working with
-              you.
-            </p>
-            <Button
-              buttonText="Call Monica Today!"
-              bgColor="bg-purple-500"
-              borderWidth="border-0"
-              textColor="text-white"
-              textSize="md:text-xl"
-            />
+          <div className="container max-w-5xl mx-auto gap-x-10 grid lg:grid-cols-2 items-center py-10 lg:py-20 px-6">
+            <div className="mb-10 lg:mb-0">
+              <Image
+                src="https://res.cloudinary.com/browne-company/image/upload/v1736309749/Monica%20Browne%20Weddings/bride-with-flowers_xcqpkf.webp"
+                alt="Black bride with bouquet."
+                loading="lazy"
+                width="472"
+                height="708"
+              />
+            </div>
+            <div className="container mx-auto px-4 max-w-xl">
+              <h2 className="text-3xl md:text-5xl text-center lg:text-left mb-10">
+                Why Hire Monica as Your Wedding Planner?
+              </h2>
+              <p className="md:text-xl mb-4">
+                Monica Browne Weddings is one of the top Maryland wedding
+                planners.
+              </p>
+              <p className="md:text-xl mb-4">
+                No, we are not in the Washington Post or Martha Stewart
+                Weddings, and that's not our focus.
+              </p>
+              <p className="md:text-xl mb-4">
+                Our only focus is to provide our clients with wedding planning
+                services that will help you save time and money and assist in
+                any way possible and create your dream wedding.
+              </p>
+              <p className="md:text-xl mb-4">
+                See our{' '}
+                <a
+                  href="https://www.google.com/search?q=monica+browne+weddings&oq=monica+browne+weddings&gs_lcrp=EgZjaHJvbWUqCQgAEEUYOxiABDIJCAAQRRg7GIAEMgoIARAAGIAEGKIEMgoIAhAAGIAEGKIEMgoIAxAAGIAEGKIEMgYIBBBFGDsyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg3ODQ3ajFqN6gCCLACAQ&sourceid=chrome&ie=UTF-8#mpd=~2535347168599140905/customers/reviews"
+                  target="_blank"
+                >
+                  5-star reviews
+                </a>{' '}
+                .
+              </p>
+              <p className="md:text-xl mb-4">
+                When you hire us, you hire an experienced planning company with
+                over 15 years in the event industry and someone you can trust.
+              </p>
+              <p className="md:text-xl mb-4">
+                You get <Link href="/about">Monica</Link>, an incredible
+                knowledge professional at your disposal, and a team that will do
+                whatever it takes to ensure your wedding goes off without any
+                issues.
+              </p>
+              {/* <p className="md:text-xl mb-4">
+                We are here to help you plan one of the biggest days of your
+                life and make sure you enjoy every moment. You can count on us
+                to be there every step of the way, and we look forward to
+                working with you.
+              </p> */}
+              <Button
+                buttonText="Call Monica Today!"
+                bgColor="bg-purple-500"
+                borderWidth="border-0"
+                textColor="text-white"
+                textSize="md:text-xl"
+              />
+            </div>
           </div>
         </section>
         <section>

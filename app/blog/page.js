@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Button from '@/components/Button'
+
 const getPosts = async () => {
   const response = await fetch(
     'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master',
@@ -11,21 +12,22 @@ const getPosts = async () => {
       },
       body: JSON.stringify({
         query: `{
-          posts(orderBy: createdAt_DESC, first: 100) {
-            title
-            slug
-            coverImage {
-              url
-              width
-              height
-            }
-          }
-        }`,
+                posts (orderBy: createdAt_DESC, first: 16) {
+                  title
+                  slug
+                  coverImage {
+                    url
+                    width
+                    height
+                  }
+                }
+              }`,
       }),
     }
   )
 
   const { data } = await response.json()
+
   return data.posts
 }
 

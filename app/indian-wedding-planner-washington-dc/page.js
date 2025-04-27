@@ -6,8 +6,7 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 export const metadata = {
-  title:
-    'Indian Wedding Planner in Washington DC, for Seamless & Stunning Celebrations',
+  title: 'Indian Wedding Planner in DC, for Stunning Celebrations',
   description:
     'Indian wedding planners in  Washington DC, offering full-service, day-of, and month-of wedding planning. Book a call today!',
   alternates: {
@@ -161,7 +160,7 @@ const faqStructuredData = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'How Much Does an Indian Wedding Cost in Washington, DC?',
+      name: 'How Much Does an Indian Wedding in Washington, DC Cost?',
       acceptedAnswer: {
         '@type': 'Answer',
         text: 'The cost of an Indian wedding in Washington, DC, typically ranges from $80,000 to $300,000 or more, depending on the scale of the celebration, number of guests, and level of customization, and the inclusion of traditional ceremonies like the Sangeet, Mehendi, and Baraat. Major expenses include venues ($10,000–$50,000), catering ($50–$200 per guest), décor and floral arrangements ($14,000–$80,000), outfits and jewelry ($5,000–$50,000), entertainment ($5,000–$30,000), and photography or videography ($10,000–$30,000) for multi-day coverage. Factors such as guest count, multi-day traditional events, customized décor, and peak wedding seasons can significantly affect costs. Budget-friendly strategies like selecting venues that accommodate multiple events, choosing balanced catering packages, and prioritizing impactful décor can help manage expenses. With the guidance of an experienced wedding planner who understands Indian traditions, you can create a stunning celebration that honors your heritage while staying within budget',
@@ -228,7 +227,7 @@ export default function IndianWeddingPlannerDC() {
         {JSON.stringify(faqStructuredData)}
       </script>
       <Hero
-        herotext="Indian Wedding Planner in Washington DC, for Seamless & Stunning Celebrations"
+        herotext="Indian Wedding Planner in DC, for Seamless & Stunning Celebrations"
         heroSubText="We specialize in crafting stunning Indian weddings for busy couples in the DC area, blending tradition, elegance, and a modern flair to your special event"
         buttonText="Book A Call With Monica!"
         imageUrl="/images/indian-wedding-ceremony-mgm.jpg"
@@ -667,7 +666,7 @@ export default function IndianWeddingPlannerDC() {
             <div className="max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-5xl text-center">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
-                #1. How Much Does an Indian Wedding Cost in Washington, DC?
+                #1. How Much Does an Indian Wedding in Washington, DC Cost?
               </h3>
               <p className="md:text-xl mb-4">
                 The cost of an Indian wedding in Washington, DC, typically

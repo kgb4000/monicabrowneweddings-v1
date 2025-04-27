@@ -7,7 +7,9 @@ export default function Footer() {
         <section className="bg-slate-50 md:py-20 py-10 mt-10 md:mt-20">
           <div className="container mx-auto max-w-7xl px-4">
             <div>
-              <h2 className="text-2xl py-4">Monica Browne Weddings</h2>
+              <h2 className="text-2xl py-4">
+                Book Monica Browne Weddings Today!
+              </h2>
               <p className="text-[1rem] pb-6 max-w-3xl">
                 Monica Browne Weddings is one of the best wedding planners in
                 Maryland, serving couples in DC and Northern Virginia. We offer
