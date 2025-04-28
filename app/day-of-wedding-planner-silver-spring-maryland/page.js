@@ -201,7 +201,7 @@ export default async function WeddingPlannerSilverSpringMD() {
           </div>
         </section>
         <div className="container max-w-7xl mx-auto px-6">
-          <div className="max-w-3xl mx-auto  py-10 md:py-20">
+          <div className="max-w-5xl mx-auto  py-10 md:py-20">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
               Want to envision a stress-free wedding day where you can fully
               relax, while a professional handles the details?
@@ -368,7 +368,9 @@ export default async function WeddingPlannerSilverSpringMD() {
               </div>
             </div>
           </section>
-          <div className="grid lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+        </div>
+        <div className="container max-w-5xl mx-auto mb-4">
+          <div className="grid lg:grid-cols-3 gap-4 mx-auto">
             <img
               src="/images/wedding-table-centerpiece-design.webp"
               alt="Wedding table centerpiece design for small wedding."
@@ -391,6 +393,8 @@ export default async function WeddingPlannerSilverSpringMD() {
               height="708"
             />
           </div>
+        </div>
+        <div className="container max-w-5xl mx-auto mb-4">
           <section>
             <div className="max-w-3xl mx-auto py-10">
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
