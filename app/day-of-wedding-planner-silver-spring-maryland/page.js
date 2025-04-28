@@ -369,7 +369,7 @@ export default async function WeddingPlannerSilverSpringMD() {
             </div>
           </section>
         </div>
-        <div className="container max-w-5xl mx-auto mb-4">
+        <div className="container max-w-5xl mx-auto mb-4 px-6">
           <div className="grid lg:grid-cols-3 gap-4 mx-auto">
             <img
               src="/images/wedding-table-centerpiece-design.webp"
@@ -394,7 +394,7 @@ export default async function WeddingPlannerSilverSpringMD() {
             />
           </div>
         </div>
-        <div className="container max-w-5xl mx-auto mb-4">
+        <div className="container max-w-5xl mx-auto mb-4 px-6">
           <section>
             <div className="max-w-3xl mx-auto py-10">
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
