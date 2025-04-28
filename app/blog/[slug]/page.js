@@ -117,11 +117,11 @@ export default async function Page({ params }) {
               })}
             </span> */}
           </div>
-          <p className="text-xl">Be a dear and share:</p>
+          <p className="text-xl py-2">Be a dear and share:</p>
           <ShareBtn
             shareLink={`https://monicabrowneweddings.com/blog/${post.slug}`}
           />
-          <article>
+          <article className=" py-4">
             <RichText
               content={post.content.json}
               renderers={{

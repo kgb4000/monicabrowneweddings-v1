@@ -122,16 +122,16 @@ const getPosts = async () => {
       },
       body: JSON.stringify({
         query: `{
-          posts (orderBy: createdAt_DESC, first: 3) {
-            title
-            slug
-            coverImage {
-              url
-              width
-              height
-            }
-          }
-        }`,
+                posts (orderBy: createdAt_DESC, first: 3) {
+                  title
+                  slug
+                  coverImage {
+                    url
+                    width
+                    height
+                  }
+                }
+              }`,
       }),
     }
   )
@@ -269,7 +269,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
           </section>
         </div>
         <section className="bg-slate-800">
-          <div className="max-w-3xl mx-auto py-10 md:py-20 text-white px-6">
+          <div className="max-w-3xl mx-auto py-10 md:py-20 text-white">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
               When All You Need is a Day-of Planner for The Day-of
             </h2>
@@ -461,7 +461,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
             </div>
           </section>
         </div>
-        <div className="container max-w-5xl mx-auto px-6">
+        <div className="container max-w-5xl mx-auto">
           <section>
             <div className="max-w-2xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
@@ -528,7 +528,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
               </div>
             </div>
           </section>
-          <div className="grid lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          <div className="grid lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
             <Image
               src="/images/wedding-table-centerpiece-design.webp"
               alt="Wedding table centerpiece design for small wedding."

@@ -91,6 +91,11 @@ export default function Footer() {
                     <Link href="/wedding-planner-potomac-md">Potomac, MD</Link>
                   </li>
                   <li className="py-2">
+                    <Link href="/day-of-wedding-planner-silver-spring-maryland">
+                      Silver Spring, MD
+                    </Link>
+                  </li>
+                  <li className="py-2">
                     <Link href="/wedding-planner-washington-dc">
                       Washington, DC
                     </Link>
