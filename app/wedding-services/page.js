@@ -133,7 +133,7 @@ export default async function WeddingServices() {
                   is meticulously planned, from the vibrant sangeet night to the
                   grand baraat procession.
                 </p>
-                <Link href="/indian-wedding-planner-washington-dc">
+                <Link href="/indian-wedding-planner">
                   <p className="my-8">Read more</p>
                 </Link>
               </div>

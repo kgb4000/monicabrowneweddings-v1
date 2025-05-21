@@ -107,10 +107,7 @@ export default function WeddingPlannerBowieMD() {
             <p className="md:text-xl mb-4">
               We also take pride in celebrating diversity by helping couples
               from various cultural backgrounds, including{' '}
-              <Link href="/indian-wedding-planner-washington-dc">
-                Indian couples
-              </Link>{' '}
-              and{' '}
+              <Link href="/indian-wedding-planner">Indian couples</Link> and{' '}
               <Link href="/jewish-wedding-planner-maryland-dc-virginia">
                 Jewish couples
               </Link>

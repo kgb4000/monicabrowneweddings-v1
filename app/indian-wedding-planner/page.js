@@ -10,8 +10,7 @@ export const metadata = {
   description:
     'Indian wedding planners in  Washington DC, offering full-service, day-of, and month-of wedding planning. Book a call today!',
   alternates: {
-    canonical:
-      'https://monicabrowneweddings.com/indian-wedding-planner-washington-dc',
+    canonical: 'https://monicabrowneweddings.com/indian-wedding-planner',
     openGraph: {
       type: 'website',
       locale: 'en_US',
