@@ -127,7 +127,10 @@ export default async function weddingPlannerWashingtonDC() {
                   We take immense pride in celebrating the rich tapestry of
                   cultures and traditions by helping couples from diverse
                   backgrounds, including{' '}
-                  <Link href="/indian-wedding-planner">Indian</Link> and{' '}
+                  <Link href="/indian-wedding-planner-washington-dc">
+                    Indian
+                  </Link>{' '}
+                  and{' '}
                   <Link href="/jewish-wedding-planner-dc">Jewish couples</Link>,
                   create weddings that beautifully honor their heritage and
                   personal love stories.
