@@ -396,7 +396,7 @@ export default async function Home() {
                     and care.
                   </p>
                   <Link
-                    href="/indian-wedding-planner"
+                    href="/indian-wedding-planner-washington-dc"
                     className="md:text-xl mb-4"
                   >
                     Learn more about Indian wedding planning.

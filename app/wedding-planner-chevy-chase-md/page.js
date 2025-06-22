@@ -14,7 +14,7 @@ export const metadata = {
     'Looking for a wedding planner in Chevy Chase because you need some help? Call Monica Browne Weddings. We can help you plan the wedding of your dreams.',
   alternates: {
     canonical:
-      'https://monicabrowneweddings.com/wedding-planner-in-chevy-chase-md',
+      'https://monicabrowneweddings.com/wedding-planner-chevy-chase-md',
   },
   openGraph: {
     type: 'website',
