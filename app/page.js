@@ -269,10 +269,10 @@ export default async function Home() {
                     yours.
                   </p>
                   <Link
-                    href="/wedding-planner-bowie-md"
+                    href="/blog/dc-wedding-planning-services"
                     className="md:text-xl mb-4"
                   >
-                    Learn more about wedding planning.
+                    Learn more about wedding planning services here.
                   </Link>
                 </div>
               </div>
@@ -547,58 +547,6 @@ export default async function Home() {
             </div>
           </div>
         </section>
-        {/* <section>
-          <div className="container mx-auto py-10 md:py-20 max-w-5xl">
-            <div>
-              <div className="lg:grid grid-cols-2 gap-x-10 items-center">
-                <img
-                  src="images/couple-posing-in-dc.jpg"
-                  loading="lazy"
-                  width="100%"
-                  height="auto"
-                  className="pb-4 hidden lg:block rounded-lg"
-                />
-                <div className="">
-                  <h2 className="text-3xl font-bold py-6 text-center md:text-left">
-                    Planning Your Wedding Can Take a Lot of Time & Energy
-                  </h2>
-                  <ul className="md:text-xl py-4 list-disc ml-8">
-                    <li className="md:text-xl mb-4">
-                      Time searching for the right venue
-                    </li>
-                    <li className="md:text-xl mb-4">
-                      Time reading and reviewing vendor contracts
-                    </li>
-                    <li className="md:text-xl mb-4">
-                      Time creating and managing your budget
-                    </li>
-                    <li className="md:text-xl mb-4">
-                      Keeping organized and making timely decisions
-                    </li>
-                    <li className="md:text-xl mb-4">
-                      Time creating your timeline, seating charts, and arranging
-                      hotels for guests
-                    </li>
-                    <li className="md:text-xl mb-4">
-                      Time finding a person you can trust
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <p className="md:text-xl italic max-w-xl text-center mx-auto py-8">
-              Book a call with Monica and see how she can help you plan the
-              wedding you always wanted!
-            </p>
-            <Button
-              buttonText="Book My Call With Monica!"
-              bgColor="bg-purple-500"
-              borderWidth="border-0"
-              textColor="text-white"
-              textSize="md:text-xl"
-            />
-          </div>
-        </section> */}
         <section className="bg-slate-800 text-white">
           <div className="container mx-auto px-6 max-w-xl py-20">
             <h2 className="text-3xl md:text-5xl text-center mb-4 leading-normal">

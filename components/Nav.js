@@ -8,7 +8,7 @@ const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
 const navigation = [
-  { name: 'Services', href: '/wedding-services' },
+  { name: 'Services', href: '/blog/dc-wedding-planning-services' },
   { name: 'Blog', href: '/blog' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },

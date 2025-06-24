@@ -47,11 +47,14 @@ export default async function weddingPlannerWashingtonDC() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Top Rated Wedding Planning Services in Washington, DC
+                  Top Rated DC Wedding Planner for Busy Washington Couples
                 </h2>
                 <p className="md:text-xl mb-4">
-                  Monica Browne Weddings offers wedding planning services to
-                  couples in Washington, DC.
+                  Monica Browne Weddings offers{' '}
+                  <Link href="/blog/dc-wedding-planning-services">
+                    wedding planning services
+                  </Link>{' '}
+                  to couples in Washington, DC.
                 </p>
                 <p className="md:text-xl mb-4">
                   We focus on making planning your wedding simple and easy, and
@@ -410,7 +413,7 @@ export default async function weddingPlannerWashingtonDC() {
               </p>
               <p className="md:text-xl mb-4">
                 When your big day is just eight weeks away, we step in to manage
-                everything with meticulous care:
+                everything with care:
               </p>
               <ul className="ml-8 my-10 list-disc">
                 <li className="md:text-xl mb-4">
@@ -480,11 +483,11 @@ export default async function weddingPlannerWashingtonDC() {
             <div className="max-w-3xl mx-auto py-10">
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
-                #1. How much does a day-of wedding planner in DC cost?
+                #1. How much does a wedding planner in DC cost?
               </h3>
               <p className="md:text-xl mb-4">
                 In our area, you can expect to invest anywhere from{' '}
-                <b>$3,500 to $10,000+ </b>for a seasoned professional. Several
+                <b>$2,300 to $15,000+ </b>for a seasoned professional. Several
                 factors influence this range, including the planner's
                 experience, the scale of your wedding, and the scope of services
                 you require.
@@ -499,7 +502,9 @@ export default async function weddingPlannerWashingtonDC() {
               <p className="md:text-xl mb-4">
                 If you're looking for comprehensive support from "yes" to "I
                 do," full-service planning packages generally start around{' '}
-                <b>$4,000 and can exceed $10,000</b> depending on your needs.
+                <b>$7,000 and can exceed $15,000</b> depending on your needs.
+              </p>
+              <p className="md:text-xl mb-4">
                 For a personalized quote tailored to your unique celebration,
                 book a call today.
               </p>
@@ -510,10 +515,11 @@ export default async function weddingPlannerWashingtonDC() {
               <p className="md:text-xl mb-4">
                 A wedding planner handles all aspects of your wedding, from
                 budgeting and vendor coordination to designing your dream décor
-                and managing the big day. For Washington, DC weddings, we
-                specialize in navigating local venues, working with trusted
-                vendors, and ensuring your event aligns with your vision and
-                runs smoothly.
+                and managing the big day.
+              </p>
+              <p className="md:text-xl mb-4">
+                For Washington, DC weddings, we work with trusted vendors, and
+                ensure your event aligns with your vision.
               </p>
               <p className="md:text-xl mb-4">
                 If you want to do most of the planning yourself and find your

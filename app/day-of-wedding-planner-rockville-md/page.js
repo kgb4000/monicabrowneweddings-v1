@@ -58,9 +58,9 @@ export default async function WeddingPlannerRockvilleMD() {
                 <p className="md:text-xl mb-4">
                   While you've handled the foundational planning, we step in to
                   expertly guide and execute every detail on your special day in
-                  Silver Spring. Our support ensures a seamless event, allowing
-                  you to relax and fully enjoy your celebration without the
-                  stress of managing logistics.
+                  Rockville. Our support ensures a seamless event, allowing you
+                  to relax and fully enjoy your celebration without the stress
+                  of managing logistics.
                 </p>
                 <p className="md:text-xl mb-4">
                   We meticulously oversee the coordination of your vendors, the
@@ -83,7 +83,7 @@ export default async function WeddingPlannerRockvilleMD() {
               <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
                 <img
                   src="/images/wedding-table-centerpiece-design.webp"
-                  alt="Wedding planner Silver Spring, MD."
+                  alt="Wedding planner Rockville, MD."
                   loading="lazy"
                   width="472"
                   height="708"
@@ -150,8 +150,8 @@ export default async function WeddingPlannerRockvilleMD() {
                 The wedding day should be about celebrating your love in Silver
                 Spring, not managing logistics. We’ll seamlessly coordinate all
                 the intricate details – from vendor arrivals and setups at your
-                Silver Spring venue to adhering to your carefully planned
-                timeline – allowing you to fully savor every precious moment.
+                Rockville venue to adhering to your carefully planned timeline –
+                allowing you to fully savor every precious moment.
               </p>
             </div>
             <div className="my-10">
@@ -162,8 +162,8 @@ export default async function WeddingPlannerRockvilleMD() {
                 You've thoughtfully selected your décor, floral arrangements,
                 and every element that reflects your style. Our day-of
                 coordination ensures these details are flawlessly implemented
-                and beautifully presented at your Silver Spring celebration,
-                leaving a lasting impression on your guests.
+                and beautifully presented at your Rockville celebration, leaving
+                a lasting impression on your guests.
               </p>
             </div>
             <div className="my-10">
@@ -181,9 +181,9 @@ export default async function WeddingPlannerRockvilleMD() {
             <div className="my-10">
               <h3 className="text-2xl mb-2">• Flawless Wrap-Up:</h3>
               <p className="md:text-xl mb-4 ml-4">
-                Even as the celebration in Silver Spring concludes, we’ll ensure
-                a smooth wrap-up, overseeing vendor departures and addressing
-                any immediate post-event logistics, allowing you to begin your
+                Even as the celebration in Rockville concludes, we’ll ensure a
+                smooth wrap-up, overseeing vendor departures and addressing any
+                immediate post-event logistics, allowing you to begin your
                 married life without any lingering concerns.
               </p>
             </div>
@@ -271,8 +271,8 @@ export default async function WeddingPlannerRockvilleMD() {
                   2. Outline Your Vision, We'll Execute It:
                 </p>
                 <p className="md:text-xl my-4">
-                  Share the details of your Silver Spring wedding. We'll take
-                  charge of creating a detailed timeline, managing vendor
+                  Share the details of your Rockville wedding. We'll take charge
+                  of creating a detailed timeline, managing vendor
                   communication, and perfecting all the logistics.
                 </p>
               </div>
@@ -432,7 +432,7 @@ export default async function WeddingPlannerRockvilleMD() {
                 unforgettable event.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #4. Are you familiar with wedding venues in Silver Spring, MD?
+                #4. Are you familiar with wedding venues in Rockville, MD?
               </h3>
               <p className="md:text-xl mb-4">
                 Yes! We have extensive experience with a wide range of Silver

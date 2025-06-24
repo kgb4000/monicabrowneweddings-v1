@@ -107,7 +107,7 @@ export default async function Page({ params }) {
               />
             </Link>
             <Link href="/about">
-              <p className="mx-2 font-bold">{post.author.name}</p>
+              <p className="mx-4 font-bold">{post.author.name}</p>
             </Link>
             {/* <span>
               {new Date(post.updatedAt).toLocaleDateString('en-us', {

@@ -41,10 +41,11 @@ export default function About() {
           <div className="container max-w-3xl mx-auto px-6 py-10 md:py-20">
             {/* <h2 className="text-3xl md:text-5xl text-center mb-8">About Us</h2> */}
             <p className="md:text-xl mb-4" itemProp="description">
-              Monica Browne Weddings is a{' '}
-              <Link href="/wedding-planner-bowie-md">wedding planner</Link> in
-              Bowie, MD that delivers the best and most memorable weddings and
-              events.
+              Monica Browne Weddings is a wedding planner in Bowie, MD
+              delivering wedding planning services in{' '}
+              <Link href="/wedding-planner-bowie-md">Bowie</Link>,{' '}
+              <Link href="/blog/dc-wedding-planning-services">DC</Link>, and
+              Northern Virginia.
             </p>
             <p className="md:text-xl mb-4">
               We that a lot of couples in our area don't have a lot of time,
@@ -95,11 +96,11 @@ export default function About() {
               </p>
               <p className="md:text-xl mb-4">
                 Our{' '}
-                <Link href="/wedding-services/wedding-planner-bowie-md">
-                  wedding planning
+                <Link href="/blog/dc-wedding-planning-services">
+                  wedding planning services
                 </Link>{' '}
-                services can give you the freedom and flexibility to plan your
-                event and maintain your busy lifestyle.
+                can give you the freedom and flexibility to plan your event and
+                maintain your busy lifestyle.
               </p>
               <p className="md:text-xl mb-4">
                 We also give you helpful tips and suggestions, which will save

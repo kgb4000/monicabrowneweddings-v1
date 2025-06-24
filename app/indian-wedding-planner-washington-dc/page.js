@@ -252,30 +252,6 @@ export default function IndianWeddingPlannerDC() {
                 celebration that’s truly unforgettable.
               </p>
             </div>
-            {/* <div className="grid lg:grid-cols-3 gap-4 my-8">
-              <img
-                src="/images/newly-wed-indian-couple-at-the-door.jpg"
-                alt="Wedding table centerpiece design for small wedding."
-                loading="lazy"
-                width="472"
-                height="708"
-              />
-              <img
-                src="/images/indian-couple-smilingnpm run dev
-                .jpg"
-                alt="Wedding table centerpiece design for small wedding."
-                loading="lazy"
-                width="472"
-                height="708"
-              />
-              <img
-                src="/images/newly-wed-indian-couple-at-the-door.jpg"
-                alt="Wedding table centerpiece design for small wedding."
-                loading="lazy"
-                width="472"
-                height="708"
-              />
-            </div> */}
             <div className="max-w-3xl mx-auto">
               <p className="md:text-xl mb-4">
                 We specialize in honoring the rich cultural heritage of Indian
@@ -283,9 +259,12 @@ export default function IndianWeddingPlannerDC() {
               </p>
               <p className="md:text-xl mb-4">Not sure where to start?</p>
               <p className="md:text-xl mb-4">
-                Our consultation services provide guidance, expertise, and
-                advice to help you navigate your way to a picture-perfect Indian
-                wedding.
+                Our{' '}
+                <Link href="/blog/dc-wedding-planning-services">
+                  wedding planning services
+                </Link>{' '}
+                provide guidance, expertise, and advice to help you navigate
+                your way to a picture-perfect Indian wedding.
               </p>
               <p className="md:text-xl mb-4">
                 Contact us today to begin planning a celebration you and your
