@@ -42,7 +42,7 @@ const localBusinessStructuredData = {
   '@type': 'LocalBusiness',
   name: 'Monica Browne Weddings',
   description:
-    "Monica Browne Weddings is one of the best wedding planners in Maryland, serving couples in DC and Northern Virginia. We offer full-service event planning, partial service event planning, day-of coordination, event design, and floral design services. If you are a busy couple and need help, or if you need some help and guidance, please don't hesitate to reach out to us. You can book a call with us when you are ready.",
+    "Monica Browne Weddings is one of the best wedding planners in Washington, DC, Maryland and Northern Virginia. We offer full-service event planning, partial service event planning, day-of coordination, event design, and floral design services. If you are a busy couple and need help, or if you need some help and guidance, please don't hesitate to reach out to us. You can book a call with us when you are ready.",
   image:
     'https://res.cloudinary.com/browne-company/image/upload/q_auto/v1631495887/walking-down-aisle_o4wklu.webp',
   address: {
