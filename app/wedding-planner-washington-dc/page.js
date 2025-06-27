@@ -488,8 +488,11 @@ export default async function weddingPlannerWashingtonDC() {
               </h3>
               <p className="md:text-xl mb-4">
                 In our area, you can expect to invest anywhere from{' '}
-                <b>$2,300 to $15,000+ </b>for a seasoned professional. Several
-                factors influence this range, including the planner's
+                <b>$7,000 to $15,000+ </b>for a{' '}
+                <Link href="/blog/dc-full-service-wedding-planner">
+                  full-service wedding planner
+                </Link>
+                . Several factors influence this range, including the planner's
                 experience, the scale of your wedding, and the scope of services
                 you require.
               </p>
