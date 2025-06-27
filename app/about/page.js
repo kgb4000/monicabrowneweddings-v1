@@ -44,8 +44,10 @@ export default function About() {
               Monica Browne Weddings is a wedding planner in Bowie, MD
               delivering wedding planning services in{' '}
               <Link href="/wedding-planner-bowie-md">Bowie</Link>,{' '}
-              <Link href="/blog/dc-wedding-planning-services">DC</Link>, and
-              Northern Virginia.
+              <Link href="/blog/dc-wedding-planning-services">
+                Washington, DC
+              </Link>
+              , and Northern Virginia.
             </p>
             <p className="md:text-xl mb-4">
               We that a lot of couples in our area don't have a lot of time,

@@ -10,15 +10,15 @@ export const metadata = {
   title:
     'Wedding Planner For Busy Couples in Fort Washington, Maryland | Monica Browne Weddings',
   description:
-    "Looking for a wedding planner in Bowie, MD? We'll take care of everything, from finding the perfect venue to finding the best caterers. Call us today!",
+    "Looking for a wedding planner in Fort Washington, MD? We'll take care of everything, from finding the perfect venue to finding the best caterers. Call us today!",
   alternate: {
     canonical:
-      'https://monicabrowneweddings.com/wedding-services/wedding-planner-bowie-md',
+      'https://monicabrowneweddings.com/wedding-planner-fort-washington-md',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://monicabrowneweddings.com/wedding-services/wedding-planner-bowie-md',
+    url: 'https://monicabrowneweddings.com/wedding-planner-fort-washington-md',
     site_name: 'Monica Browne Weddings',
     images: [
       {
@@ -31,7 +31,7 @@ export const metadata = {
   },
 }
 
-export default function WeddingPlannerBowieMD() {
+export default function WeddingPlannerFortWashingtonMD() {
   return (
     <>
       <Hero
@@ -54,8 +54,9 @@ export default function WeddingPlannerBowieMD() {
               </p>
               <p className="md:text-xl mb-4">
                 At Monica Browne Weddings, we get it. We offer comprehensive
-                wedding planning services for couples in Fort Washington,
-                Maryland, and the surrounding{' '}
+                wedding planning services for couples in Fort Washington,{' '}
+                <Link href="/wedding-planner-bowie-md">Bowie</Link>, and the
+                surrounding{' '}
                 <Link href="/wedding-planner-washington-dc">
                   Washington, DC
                 </Link>{' '}
@@ -289,8 +290,9 @@ export default function WeddingPlannerBowieMD() {
             </h3>
             <p className="md:text-xl mb-4">
               The cost of a wedding planner in Fort Washington, MD, can start
-              from around $2,300 - $7,000 for day-of coordination and go upwards
-              of $7,000-$15,000+ for comprehensive full-service planning.
+              from around<b>$2,300 - $7,000</b> for <b>day-of coordination</b>{' '}
+              and go upwards of <b>$7,000-$15,000+</b> for comprehensive
+              <b>full-service wedding planning</b>.
             </p>
             <h3 className="text-2xl md:text-3xl my-4 font-bold">
               #2. What is a normal budget allocation for a wedding planner?
@@ -315,8 +317,11 @@ export default function WeddingPlannerBowieMD() {
               couples in Fort Washington?
             </h3>
             <p className="md:text-xl mb-4">
-              Monica Browne Weddings offers a range of services tailored to take
-              the pressure off busy couples.
+              Monica Browne Weddings offers a range of{' '}
+              <Link href="/blog/dc-wedding-planning-services">
+                wedding planning services
+              </Link>{' '}
+              tailored to take the pressure off busy couples.
             </p>
             <p className="md:text-xl mb-4">
               This includes: full-service wedding planning from concept to

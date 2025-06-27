@@ -9,7 +9,7 @@ const calendly =
 
 export const metadata = {
   title:
-    'Wedding Planner in Washington, DC, for Couples Who Want an Unforgettable Day',
+    'Washington, DC, Wedding Planner for Couples Who Want an Unforgettable Day',
   description:
     "Looking for a top ranked wedding planner in Washington DC? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
   alternates: {
@@ -35,7 +35,7 @@ export default async function weddingPlannerWashingtonDC() {
   return (
     <div>
       <Hero
-        herotext="Wedding Planner in Washington, DC, for Couples Who Want an Unforgettable Day"
+        herotext="Washington, DC Wedding Planner for Couples Who Want an Unforgettable Day"
         heroSubText="We create stunning weddings for busy couples in Washington, DC, blending timeless traditions with modern elegance for a day you’ll cherish forever"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
@@ -47,7 +47,8 @@ export default async function weddingPlannerWashingtonDC() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Top Rated DC Wedding Planner for Busy Washington Couples
+                  Top Rated Washington, DC Wedding Coordinator for Busy
+                  Washington Couples
                 </h2>
                 <p className="md:text-xl mb-4">
                   Monica Browne Weddings offers{' '}
@@ -135,7 +136,7 @@ export default async function weddingPlannerWashingtonDC() {
         <section className="bg-slate-800">
           <div className="max-w-3xl mx-auto py-10 md:py-20 text-white px-6">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
-              When You need a Professional Wedding Planner to Take Care of
+              When You need a Professional DC Wedding Planner to Take Care of
               Everything - We Got You
             </h2>
             <p className="md:text-xl mb-4">
@@ -318,7 +319,7 @@ export default async function weddingPlannerWashingtonDC() {
           <section>
             <div className="max-w-2xl mx-auto py-10 md:py-20">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                Why Hire Monica Browne Weddings as Your DC Wedding Planner
+                Why Hire Monica Browne Weddings as Your DC Wedding Coordinator
               </h2>
               <p className="md:text-xl mb-4">
                 When you choose Monica Browne Weddings, you’re hiring a
