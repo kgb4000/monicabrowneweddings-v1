@@ -18,7 +18,7 @@ const getPosts = async () => {
       },
       body: JSON.stringify({
         query: `{
-                posts (orderBy: createdAt_DESC, first: 3) {
+                posts (stage: PUBLISHED, orderBy: createdAt_DESC, first: 3) {
                   title
                   slug
                   coverImage {
