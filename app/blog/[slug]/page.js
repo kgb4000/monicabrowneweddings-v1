@@ -168,7 +168,7 @@ export default async function Page({ params }) {
               }}
             />
           </article>
-          <div className="my-20 border-4 border-solid border-slate-50 p-8">
+          <div className="my-4 border-4 border-solid border-slate-50 p-8">
             <img
               src={post.author.image.url}
               className="w-[5rem] my-6"
