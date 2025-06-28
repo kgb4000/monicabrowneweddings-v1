@@ -35,7 +35,7 @@ export default async function weddingPlannerWashingtonDC() {
   return (
     <div>
       <Hero
-        herotext="Wedding Planner in Washington, DC for Couples Who Want an Unforgettable Day"
+        herotext="Washington, DC Wedding Planner, for Couples Who Want an Unforgettable Day"
         heroSubText="We create stunning weddings for busy couples in Washington, DC, blending timeless traditions with modern elegance for a day you’ll cherish forever"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
