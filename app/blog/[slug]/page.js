@@ -104,6 +104,8 @@ export default async function Page({ params }) {
                 className="w-[5rem] rounded-full border-3 border-black m-0"
                 alt={post.author.name}
                 title={post.author.name}
+                width={post.author.image.width}
+                height={post.author.image.height}
               />
             </Link>
             <Link href="/about">
@@ -174,6 +176,8 @@ export default async function Page({ params }) {
               className="w-[5rem] my-6"
               alt={post.author.name}
               title={post.author.name}
+              width={post.author.image.width}
+              height={post.author.image.height}
             />
             <p className="text-xl leading-normal">{post.author.biography}</p>
           </div>
