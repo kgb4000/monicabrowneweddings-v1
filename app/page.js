@@ -232,7 +232,7 @@ export default async function Home() {
         heroSubText="We Create Beautiful Weddings For Busy Couples in Maryland, Washington, DC, and Northern Virginia"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
-        imageUrl="/images/wedding-couple.jpg"
+        imageUrl="/images/wedding-couple.webp"
       />
       <main>
         <section>
@@ -283,6 +283,7 @@ export default async function Home() {
                   width="100%"
                   height="auto"
                   className="pb-4 lg:order-2"
+                  alt="Newlywed couple at night."
                 />
                 <div className="">
                   <h3 className="text-xl font-bold pb-4">
@@ -317,11 +318,12 @@ export default async function Home() {
               </div>
               <div className="pb-4 grid lg:grid-cols-2 gap-8 items-center">
                 <img
-                  src="images/wedding-flower-ring.jpg"
+                  src="images/wedding-flower-ring.webp"
                   loading="lazy"
                   width="100%"
                   height="auto"
                   className="pb-4"
+                  alt="Picture of black groom with groomsmen at wedding venue in Maryland."
                 />
                 <div className="">
                   <h3 className="text-xl font-bold pb-4">Wedding Flowers</h3>
@@ -348,6 +350,7 @@ export default async function Home() {
                   width="100%"
                   height="auto"
                   className="pb-4 lg:order-2"
+                  alt="Photo of flower arch in a hotel ballroom in Gaithersburg, Maryland."
                 />
                 <div>
                   <h3 className="text-xl font-bold pb-4">
@@ -374,11 +377,12 @@ export default async function Home() {
               </div>
               <div className="pb-4 grid lg:grid-cols-2 gap-8 items-center">
                 <img
-                  src="images/indian-wedding-ceremony-mgm.jpg"
+                  src="images/indian-wedding-ceremony-mgm.webp"
                   loading="lazy"
                   width="100%"
                   height="auto"
                   className="pb-4"
+                  alt="Indian bride walking down the isle at her wedding at the MGM Grand at National Harbor in Oxon Hill, Maryland."
                 />
                 <div className="">
                   <h3 className="text-xl font-bold pb-4">
@@ -441,6 +445,8 @@ export default async function Home() {
                   <img
                     src="images/kimberley-hooper-twumasi.png"
                     className="basis-1 rounded-full border-orange-800 border-4"
+                    loading="lazy"
+                    alt="Kimberley Hooper-Twumasi"
                   />
                   <p className="mt-2 pl-6">Kimberley Hooper-Twumasi</p>
                 </div>
@@ -459,6 +465,8 @@ export default async function Home() {
                   <img
                     src="images/emily-menge.png"
                     className="basis-1 rounded-full border-orange-800 border-4"
+                    loading="lazy"
+                    alt="Emily Menge"
                   />
                   <p className="mt-2 pl-6">Emily Menge</p>
                 </div>
@@ -478,6 +486,8 @@ export default async function Home() {
                   <img
                     src="images/whitney-ames.png"
                     className="basis-1 rounded-full border-orange-800 border-4"
+                    loading="lazy"
+                    alt="Whitney Ames"
                   />
                   <p className="mt-2 pl-6">Whitney Ames</p>
                 </div>
@@ -520,14 +530,14 @@ export default async function Home() {
                 />
                 <Image
                   src="https://res.cloudinary.com/browne-company/image/upload/v1736309659/Monica%20Browne%20Weddings/SierraCharles001_imfsnr.jpg"
-                  alt="Newly wed couple posing at wedding venue.."
+                  alt="Newly wed couple looking at each other for photo shoot."
                   loading="lazy"
                   width="472"
                   height="708"
                 />
                 <Image
                   src="https://res.cloudinary.com/browne-company/image/upload/v1736310789/Monica%20Browne%20Weddings/couple-posing-in-dc_qh7vtr.webp"
-                  alt="Newly wed couple posing at wedding venue.."
+                  alt="Newly wed couple posing at wedding venue in Washington, DC."
                   loading="lazy"
                   width="472"
                   height="708"

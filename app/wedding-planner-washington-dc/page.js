@@ -39,7 +39,7 @@ export default async function weddingPlannerWashingtonDC() {
         heroSubText="We create stunning weddings for busy couples in Washington, DC, blending timeless traditions with modern elegance for a day you’ll cherish forever"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
-        imageUrl="/images/KINA1058.jpg"
+        imageUrl="/images/newly-wed-couple-in-washington-dc.webp"
       />
       <main>
         <div className="container max-w-7xl mx-auto px-6">
