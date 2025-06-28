@@ -12,7 +12,7 @@ export default function Footer() {
               </h2>
               <p className="text-[1rem] pb-6 max-w-3xl">
                 Monica Browne Weddings is one of the best wedding planners in
-                Maryland, serving couples in DC and Northern Virginia. We offer
+                Washington, DC, Maryland, and Northern Virginia. We offer
                 full-service event planning, partial service event planning,
                 day-of coordination, wedding decoration services, and floral
                 design services. If you are a busy couple and need help, or if
@@ -21,7 +21,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="mx-auto lg:grid grid-cols-4 gap 4">
-              <div className="py-4">
+              {/* <div className="py-4">
                 <p className="text-xl font-bold">Hours</p>
                 <ul>
                   <li className="py-2">Monday: 9:00am - 5:00pm</li>
@@ -32,7 +32,7 @@ export default function Footer() {
                   <li className="py-2">Saturday: 9:00am - 5:00pm</li>
                   <li className="py-2">Sunday: Closed</li>
                 </ul>
-              </div>
+              </div> */}
               <div>
                 <p className="text-xl font-bold py-4">Menu</p>
                 <ul>

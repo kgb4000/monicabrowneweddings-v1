@@ -229,7 +229,7 @@ export default async function Home() {
       </script>
       <Hero
         herotext="Professional Wedding Planning Services For Busy Couples"
-        heroSubText="We Create Beautiful Weddings For Busy Couples in Maryland, Washington, DC, and Northern Virginia"
+        heroSubText="We Create Beautiful Weddings For Busy Couples in Washington, DC, Maryland and Northern Virginia"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
         imageUrl="/images/wedding-couple.webp"

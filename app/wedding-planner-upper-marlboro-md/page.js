@@ -36,7 +36,7 @@ export default async function WeddingPlannerUpperMarlboroMD() {
   return (
     <div>
       <Hero
-        herotext="Wedding Planner in Upper Marlboro, MD | Designing Distinctive & Memorable Weddings"
+        herotext="Wedding Planner in Upper Marlboro, MD | Elevating Every Moment of Your Wedding"
         heroSubText="Transforming your wedding dreams into a truly unforgettable, stress-free reality"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
