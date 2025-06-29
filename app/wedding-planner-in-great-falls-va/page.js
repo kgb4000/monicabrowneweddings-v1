@@ -208,11 +208,8 @@ export default async function weddingPlannerGreatFallsVA() {
                   <Link href="/indian-wedding-planner-washington-dc">
                     Indian
                   </Link>{' '}
-                  ,{' '}
-                  <Link href="/jewish-wedding-planner-maryland-dc-virginia">
-                    Jewish
-                  </Link>
-                  , and multicultural backgrounds.
+                  , <Link href="/jewish-wedding-planner-dc">Jewish</Link>, and
+                  multicultural backgrounds.
                 </p>
                 <p className="md:text-xl mb-4">
                   Whether you want to incorporate traditional elements or blend
