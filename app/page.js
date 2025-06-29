@@ -243,7 +243,7 @@ export default async function Home() {
             <div className="py-10">
               <div className="grid lg:grid-cols-2 gap-8 items-center mb-4">
                 <img
-                  src="images/bride-groom-night-photo.webp"
+                  src="/images/bride-groom-night-photo.webp"
                   loading="lazy"
                   width="100%"
                   height="auto"

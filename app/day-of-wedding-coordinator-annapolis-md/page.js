@@ -283,11 +283,7 @@ export default function dayOfWeddingCoordinatorAnnapolisMD() {
                 Secured your dream Annapolis wedding venue.
               </li>
               <li className="md:text-xl mb-4">
-                Booked essential vendors: DJ,{' '}
-                <Link href="/blog/how-to-choose-the-right-catering-menu-for-your-dc-wedding">
-                  caterer
-                </Link>
-                , photographer, videographer.
+                Booked essential vendors: DJ, cater, photographer, videographer.
               </li>
               <li className="md:text-xl mb-4">
                 Coordinated with your florist, hairstylist, and makeup artist.
@@ -520,9 +516,7 @@ export default function dayOfWeddingCoordinatorAnnapolisMD() {
                 <p className="md:text-xl mb-4">
                   From double-checking everything from{' '}
                   <Link href="/wedding-flowers">flowers</Link> and{' '}
-                  <Link href="/wedding-services/wedding-decoration-services">
-                    decorations
-                  </Link>{' '}
+                  <Link href="/wedding-decoration-services">decorations</Link>{' '}
                   to managing vendor setups, we make sure every detail matches
                   your vision.
                 </p>

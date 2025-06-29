@@ -725,11 +725,7 @@ export default async function WeddingPlannerAlexandriaVa() {
                 , but it all depends on what you want to spend. You can have a
                 small wedding and spend $5,000 to $10,000 or $50,000 to
                 $300,000. It depends on what you want to spend. Most of the cost
-                depends on your guest count,{' '}
-                <Link href="/blog/how-to-choose-the-right-catering-menu-for-your-dc-wedding">
-                  catering
-                </Link>
-                , and venue.
+                depends on your guest count, catering , and venue.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #2. How Much Does Wedding Planner Cost in Northern VA?

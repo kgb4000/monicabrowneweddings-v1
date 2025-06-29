@@ -492,9 +492,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
                 <p className="md:text-xl mb-4">
                   From double-checking everything from{' '}
                   <Link href="/wedding-flowers">flowers</Link> and{' '}
-                  <Link href="/wedding-services/wedding-decoration-services">
-                    decorations
-                  </Link>{' '}
+                  <Link href="/wedding-decoration-services">decorations</Link>{' '}
                   to managing vendor setups, we make sure every detail matches
                   your vision.
                 </p>
@@ -739,7 +737,7 @@ export default async function DayOfWeddingCoordinatorWashingtonDC() {
               </h3>
               <p className="md:text-xl mb-4">
                 The primary difference between{' '}
-                <Link href="/wedding-services/wedding-planner-washington-dc">
+                <Link href="/wedding-planner-washington-dc">
                   wedding planner
                 </Link>{' '}
                 and a day-of coordinator lies in the scope of their

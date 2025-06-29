@@ -11,13 +11,12 @@ export const metadata = {
   description:
     "Looking for a wedding planner in Bowie, MD? We'll take care of everything, from finding the perfect venue to finding the best caterers. Call us today!",
   alternate: {
-    canonical:
-      'https://monicabrowneweddings.com/wedding-services/wedding-planner-bowie-md',
+    canonical: 'https://monicabrowneweddings.com/wedding-planner-bowie-md',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://monicabrowneweddings.com/wedding-services/wedding-planner-bowie-md',
+    url: 'https://monicabrowneweddings.com/wedding-planner-bowie-md',
     site_name: 'Monica Browne Weddings',
     images: [
       {

@@ -8,10 +8,10 @@ const calendly =
 
 export const metadata = {
   title:
-    'Wedding Planner For Busy Couples in Fort Washington, Maryland | Monica Browne Weddings',
+    'Wedding Planning in Fort Washington: Expert Planners for Your Busy Schedule',
   description:
-    "Looking for a wedding planner in Fort Washington, MD? We'll take care of everything, from finding the perfect venue to finding the best caterers. Call us today!",
-  alternate: {
+    "Looking for a wedding planner in Fort Washington, MD? We'll take care of everything, from finding the perfect venue, best caterers, and more. Book a call!",
+  alternates: {
     canonical:
       'https://monicabrowneweddings.com/wedding-planner-fort-washington-md',
   },

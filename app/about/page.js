@@ -9,7 +9,10 @@ export const metadata = {
   title: 'About Monica Browne Weddings',
   description:
     'Monica Browne Weddings is a wedding planning company dedicated to hepling busy couples plan their dream wedding.',
-  canonical: 'https://monicabrowneweddings.com/about',
+  alternates: {
+    canonical: 'https://monicabrowneweddings.com/about',
+  },
+
   openGraph: {
     type: 'website',
     locale: 'en_US',

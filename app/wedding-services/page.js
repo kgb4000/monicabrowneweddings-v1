@@ -7,7 +7,9 @@ export const metadata = {
   title: 'Wedding Services | Monica Browne Weddings',
   description:
     'Wedding Services from Monica Browne Weddings include Full Service Wedding Planning, Day-of Cordination, Wedding Decor, Flowers, and Floral Design.',
-  canonical: 'https://monicabrowneweddings.com/wedding-services',
+  alternates: {
+    canonical: 'https://monicabrowneweddings.com/wedding-services',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

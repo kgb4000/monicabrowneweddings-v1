@@ -9,8 +9,11 @@ export const metadata = {
   title: 'Day of Wedding Coordinator in Bowie | Monica Browne Weddings',
   description:
     'Monica Browne Weddings is a day of wedding coordinator serving Bowie, MD. If you want someone you can trust to coordinate your wedding, call us today!',
-  canonical:
-    'https://monicabrowneweddings.com/day-of-wedding-coordinator-bowie-md',
+  alternates: {
+    canonical:
+      'https://monicabrowneweddings.com/day-of-wedding-coordinator-bowie-md',
+  },
+
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -31,7 +34,7 @@ export default function WeddingPlannerBowieMD() {
   return (
     <>
       <Hero
-        herotext="Professional Day of Wedding Coordinator in Bowie, Maryland"
+        herotext="Day of Wedding Coordinator in Bowie, Maryland"
         heroSubText="We provide professional day-of wedding coordination services for couples in Bowie, Maryland."
         buttonText="Book A Call Today!"
         textColor="text-white"
@@ -417,7 +420,7 @@ export default function WeddingPlannerBowieMD() {
             </div>
           </section>
           <section>
-            <div className="max-w-3xl mx-auto my-10 md:my-20">
+            <div className="max-w-2xl mx-auto my-10 md:my-20">
               <h2 className="text-3xl md:text-5xl text-center">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
                 #1. Why Should I Consider Hiring a Day-of Coordinator?

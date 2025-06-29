@@ -9,7 +9,9 @@ export const metadata = {
   title: 'Testimonials from Clients That Love Us | Monica Browne Weddings',
   description:
     'These are just some of the testimonials that we received from our happily married couples.Book a call today!',
-  canonical: 'https://monicabrowneweddings.com/testimonials',
+  alternates: {
+    canonical: 'https://monicabrowneweddings.com/testimonials',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

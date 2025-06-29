@@ -14,12 +14,12 @@ export const metadata = {
     "Looking for a professional wedding planner in Upper Marlboro? We'll make your wedding a memorable and enjoyable celebration for everyone! Book a call today!",
   alternates: {
     canonical:
-      'https://monicabrowneweddings.com/day-of-wedding-planner-upper marlboro-md',
+      'https://monicabrowneweddings.com/wedding-planner-upper marlboro-md',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://monicabrowneweddings.com/day-of-wedding-planner-upper marlboro-md',
+    url: 'https://monicabrowneweddings.com/wedding-planner-upper marlboro-md',
     site_name: 'Monica Browne Weddings',
     images: [
       {

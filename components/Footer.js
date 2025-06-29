@@ -78,7 +78,7 @@ export default function Footer() {
                     <Link href="/wedding-planner-bowie-md">Bowie, MD</Link>
                   </li>
                   <li className="py-2">
-                    <Link href="/wedding-planner-in-chevy-chase-md">
+                    <Link href="/wedding-planner-chevy-chase-md">
                       Chevy Chase, MD
                     </Link>
                   </li>
