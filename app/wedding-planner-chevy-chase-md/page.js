@@ -79,21 +79,21 @@ export default async function WeddingPlannerChevyChaseMD() {
                 </div>
               </div>
               <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
-                <img
+                <Image
                   src="/images/wedding-table-centerpiece-design.webp"
                   alt="Wedding table centerpiece design for small wedding."
                   loading="lazy"
                   width="472"
                   height="708"
                 />
-                <img
+                <Image
                   src="/images/wedding-cake.webp"
                   alt="Wedding cake picture"
                   loading="lazy"
                   width="472"
                   height="708"
                 />
-                <img
+                <Image
                   src="/images/wedding-table-with-cork-centerpiece.webp"
                   alt="Wedding table decorations by Monica Browne Weddings"
                   loading="lazy"
@@ -372,21 +372,21 @@ export default async function WeddingPlannerChevyChaseMD() {
             </div>
           </section>
           <div className="grid lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            <img
+            <Image
               src="/images/wedding-table-centerpiece-design.webp"
               alt="Wedding table centerpiece design for small wedding."
               loading="lazy"
               width="472"
               height="708"
             />
-            <img
+            <Image
               src="/images/wedding-cake.webp"
               alt="Wedding cake picture"
               loading="lazy"
               width="472"
               height="708"
             />
-            <img
+            <Image
               src="/images/wedding-table-with-cork-centerpiece.webp"
               alt="Wedding table decorations by Monica Browne Weddings"
               loading="lazy"
