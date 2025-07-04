@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Hero from '@/components/Hero'
 import Button from '@/components/Button'
+import Image from 'next/image'
 
 const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
@@ -117,6 +118,91 @@ export default function WeddingPlannerBowieMD() {
               <a href={calendly} target="_blank">
                 <Button
                   buttonText="Book a Call With Monica"
+                  bgColor="bg-purple-500"
+                  borderWidth="border-0"
+                  textColor="text-white"
+                  textSize="md:text-xl"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="container max-w-7xl mx-auto px-6 my-20 ">
+            <h2 className="text-3xl lg:text-5xl my-14 text-center">
+              Our Bowie Wedding Planning Services
+            </h2>
+            <div className="grid lg:grid-cols-3 gap-10">
+              <div>
+                <Image
+                  src="/images/KINA0531.jpg"
+                  alt="Full-service wedding planning."
+                  loading="lazy"
+                  width="472"
+                  height="708"
+                />
+                <h3 className="text-center my-4 text-2xl font-bold">
+                  Full-Service Wedding Planning
+                </h3>
+                <p className="md:text-xl">
+                  Our most comprehensive offering, covering every detail from
+                  concept to execution. Ideal for busy couples seeking a
+                  completely stress-free experience.
+                </p>
+                <p className="md:text-xl text-center my-4">
+                  <Link href="/wedding-services/full-service-wedding-planning">
+                    Learn more about Full Service Wedding Planning
+                  </Link>
+                </p>
+              </div>
+              <div>
+                <Image
+                  src="/images/KINA0669.jpg"
+                  alt="Partial-service wedding planning."
+                  loading="lazy"
+                  width="472"
+                  height="708"
+                />
+                <h3 className="text-center my-4 text-2xl font-bold">
+                  Partial Wedding Planning
+                </h3>
+                <p className="md:text-xl">
+                  Perfect for coules who have started planning but need expert
+                  guidance and support for specific elements or the final
+                  stages.
+                </p>
+                {/* <p className="md:text-xl text-center my-4">
+                  <Link href="/blog/dc-full-service-wedding-planner">
+                    Learn more here
+                  </Link>
+                </p> */}
+              </div>
+              <div>
+                <Image
+                  src="/images/KINA0531.jpg"
+                  alt="Day-of wedding coordination."
+                  loading="lazy"
+                  width="472"
+                  height="708"
+                />
+                <h3 className="text-center my-4 text-2xl font-bold">
+                  Day-Of Wedding Coordination
+                </h3>
+                <p className="md:text-xl">
+                  For couples who have planned everything but want professional
+                  oversight on their wedding day to ensure seamless execution.
+                </p>
+                <p className="md:text-xl text-center my-4">
+                  <Link href="/day-of-wedding-coordinator-bowie-md">
+                    Learn more here
+                  </Link>
+                </p>
+              </div>
+            </div>
+            <div className="center mt-20">
+              <a href="/blog/dc-wedding-planning-services" target="_blank">
+                <Button
+                  buttonText="Learn about more our DC wedding services"
                   bgColor="bg-purple-500"
                   borderWidth="border-0"
                   textColor="text-white"

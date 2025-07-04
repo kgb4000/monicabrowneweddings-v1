@@ -9,9 +9,9 @@ const calendly =
 
 export const metadata = {
   title:
-    'Washington DC Wedding Planner - Effortless & Elegant | Monica Browne Weddings',
+    'Washington, DC Wedding Planner, for Couples Who Want an Unforgettable Day',
   description:
-    'Experience a seamless, elegant wedding in Washington DC. Monica Browne Weddings handles every detail, ensuring your DC wedding vision comes to life.',
+    'Searching for a DC wedding planner? Monica Browne Weddings handles every detail, ensuring your wedding vision comes to life.',
   alternates: {
     canonical: 'https://monicabrowneweddings.com/wedding-planner-washington-dc',
   },

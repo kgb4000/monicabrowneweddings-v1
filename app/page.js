@@ -250,17 +250,15 @@ export default async function Home() {
                   className="md:pb-4"
                 />
                 <div className="">
-                  <h3 className="text-xl font-bold pb-4">Wedding Planning</h3>
+                  <h3 className="text-xl font-bold pb-4">
+                    Full-Service Wedding Planning
+                  </h3>
                   <p className="md:text-xl mb-4">
-                    Our full-service wedding planning in{' '}
-                    <Link href="/wedding-planner-washington-dc">
-                      Washington, DC
-                    </Link>
-                    , <Link href="/wedding-planner-bowie-md">Maryland</Link>,
-                    and Virginia, is designed to guide you through every step of
-                    your wedding journey. From initial concept creation to the
-                    final farewell, we handle all the details so you can focus
-                    on enjoying your special day.
+                    Our full-service wedding planning in Washington, DC ,
+                    Maryland, and Virginia, is designed to guide you through
+                    every step of your wedding journey. From initial concept
+                    creation to the final farewell, we handle all the details so
+                    you can focus on enjoying your special day.
                   </p>
                   <p className="md:text-xl mb-4">
                     We assist with venue selection, vendor management, budget
@@ -269,10 +267,10 @@ export default async function Home() {
                     yours.
                   </p>
                   <Link
-                    href="/blog/dc-wedding-planning-services"
-                    className="md:text-xl mb-4"
+                    href="/wedding-services/full-service-wedding-planning"
+                    className="md:text-xl mb-4 font-bold"
                   >
-                    Learn more about wedding planning services here.
+                    Learn more about Full Service Wedding Planning here.
                   </Link>
                 </div>
               </div>
@@ -695,13 +693,17 @@ export default async function Home() {
                 to be there every step of the way, and we look forward to
                 working with you.
               </p> */}
-              <Button
-                buttonText="Call Monica Today!"
-                bgColor="bg-purple-500"
-                borderWidth="border-0"
-                textColor="text-white"
-                textSize="md:text-xl"
-              />
+              <div className="center">
+                <a href={calendly} target="_blank">
+                  <Button
+                    buttonText="Call Monica Today!"
+                    bgColor="bg-purple-500"
+                    borderWidth="border-0"
+                    textColor="text-white"
+                    textSize="md:text-xl"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -746,8 +748,8 @@ export default async function Home() {
               <p className="md:text-xl mb-4">
                 If you think you are too busy and may not have the time,
                 consider hiring a{' '}
-                <Link href="/wedding-planner-washington-dc">
-                  wedding planner
+                <Link href="/wedding-services/full-service-wedding-planning">
+                  full-service wedding planner
                 </Link>{' '}
                 or a{' '}
                 <Link href="/day-of-wedding-coordinator-washington-dc">
@@ -806,7 +808,7 @@ export default async function Home() {
               <p className="md:text-xl mb-4">Yes.</p>
               <p className="md:text-xl mb-4">
                 Even though we are based in{' '}
-                <Link href="/wedding-planner-bowie-md">Maryland</Link>, we offer
+                <Link href="/wedding-planner-bowie-md">Bowie</Link>, we offer
                 full-service and partial-service event planning to all couples
                 throughout the DMV area.
               </p>
@@ -820,13 +822,105 @@ export default async function Home() {
                 wedding!
               </p>
             </div>
-            <Button
-              buttonText="Book My Call With Monica Today!"
-              bgColor="bg-purple-500"
-              borderWidth="border-0"
-              textColor="text-white"
-              textSize="md:text-xl"
-            />
+            <div className="center">
+              <a href={calendly} target="_blank">
+                <Button
+                  buttonText="Book a Call With Monica"
+                  bgColor="bg-purple-500"
+                  borderWidth="border-0"
+                  textColor="text-white"
+                  textSize="md:text-xl"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section className="bg-slate-800 text-white">
+          <div className="container mx-auto px-4 max-w-7xl py-10 md:py-20">
+            <h2 className="text-3xl md:text-5xl text-center mb-10">
+              Service Areas
+            </h2>
+            <p className="md:text-xl mb-4 text-center max-w-2xl mx-auto">
+              We specialize in wedding planning services in these cities around
+              the Washington, DC, Maryland, Virginia metropolitan area (DMV)
+            </p>
+            <div className="grid grid-cols-3 gap-10 text-center my-10">
+              <div>
+                <p className="md:text-xl mb-4">
+                  <Link href="/day-of-wedding-planner-alexandria-va">
+                    Alexandria, VA
+                  </Link>
+                </p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/day-of-wedding-coordinator-annapolis-md">
+                    Annapolis, MD
+                  </Link>
+                </p>
+                <p className="md:text-xl mb-4">Bethesda, MD</p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/wedding-planner-bowie-md">Bowie, MD</Link>
+                </p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/wedding-planner-chevy-chase-md">
+                    Chevy Chase, MD
+                  </Link>
+                </p>
+                <p className="md:text-xl mb-4">Columbia, MD</p>
+              </div>
+              <div>
+                <p className="md:text-xl mb-4">Crofton MD</p>
+                <p className="md:text-xl mb-4">Fairfax, VA</p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/wedding-planner-fort-washington-md">
+                    Fort Washington, MD
+                  </Link>
+                </p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/wedding-planner-in-great-falls-va">
+                    Great Falls, VA
+                  </Link>
+                </p>
+                <p className="md:text-xl mb-4">Olney, MD</p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/wedding-planner-potomac-md">Potomac, MD</Link>
+                </p>
+              </div>
+              <div>
+                <p className="md:text-xl mb-4">Reston, VA</p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/day-of-wedding-planner-rockville-md">
+                    Rockville, MD
+                  </Link>
+                </p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/day-of-wedding-planner-silver-spring-maryland">
+                    Silver Spring, MD
+                  </Link>
+                </p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/wedding-planner-upper-marlboro-md">
+                    Upper Marlboro, MD
+                  </Link>
+                </p>
+                <p className="md:text-xl mb-4">Waldorf, MD</p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/wedding-planner-washington-dc">
+                    Washington, DC
+                  </Link>
+                </p>
+              </div>
+            </div>
+            <div className="center">
+              <a href={calendly} target="_blank">
+                <Button
+                  buttonText="Book a Call With Monica"
+                  bgColor="bg-purple-500"
+                  borderWidth="border-0"
+                  textColor="text-white"
+                  textSize="md:text-xl"
+                />
+              </a>
+            </div>
           </div>
         </section>
       </main>

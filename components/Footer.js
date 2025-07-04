@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <section className="bg-slate-50 md:py-20 py-10 mt-10 md:mt-20">
+        <section className="bg-slate-50 md:py-20 py-10">
           <div className="container mx-auto max-w-7xl px-4">
             <div>
               <h2 className="text-2xl py-4">
@@ -56,7 +56,7 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
-              <div className="py-4">
+              {/* <div className="py-4">
                 <p className="text-xl font-bold">Locations</p>
                 <ul>
                   <li className="py-2">
@@ -116,7 +116,7 @@ export default function Footer() {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
               <div className="py-4">
                 <p className="text-xl font-bold">Contact</p>
                 <p className="py-2">Book A Call</p>

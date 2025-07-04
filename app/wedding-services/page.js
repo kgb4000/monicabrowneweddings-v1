@@ -49,18 +49,17 @@ export default async function WeddingServices() {
                 loading="lazy"
               />
               <div>
-                <h3 className="text-3xl mb-6 font-bold">Wedding Planning</h3>
+                <h3 className="text-3xl mb-6 font-bold">
+                  Full Service Wedding Planning
+                </h3>
                 <p className="md:text-xl mb-4">
                   We're proud to offer couples full-service wedding planning.
                   Whatever you need, we're happy to create a customized package
                   that fits your needs. Give us a call to learn more about our
                   full-service or or partial planning service.
                 </p>
-                <Link href="/wedding-planner-bowie-md">
-                  <p className="my-8">Read more for weddings in Bowie</p>
-                </Link>
-                <Link href="/wedding-planner-washington-dc">
-                  <p className="my-8">Read more for weddings in DC</p>
+                <Link href="/wedding-services/full-service-wedding-planning">
+                  <p className="my-8 font-bold">Full Service Weding Planning</p>
                 </Link>
               </div>
             </div>
@@ -84,7 +83,7 @@ export default async function WeddingServices() {
                   not...
                 </p>
                 <Link href="/day-of-wedding-coordinator-washington-dc">
-                  <p className="my-8">Read more</p>
+                  <p className="my-8 font-bold">Day of Wedding Planning</p>
                 </Link>
               </div>
             </div>
