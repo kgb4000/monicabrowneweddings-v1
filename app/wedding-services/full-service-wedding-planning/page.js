@@ -757,9 +757,12 @@ export default async function fullServiceWeddingPlanning() {
                 In the wider DMV (D.C., Maryland, Virginia) area, the cost for
                 full-service wedding planning generally ranges from{' '}
                 <b>$7,000 to $25,000+</b>, with many couples investing between
-                <b>$9,000 and $15,000</b> for comprehensive services. This range
-                reflects the extensive support and expertise provided from
-                concept to execution.
+                <b>$3,500 and $9,000</b> for{' '}
+                <Link href="/wedding-services/partial-wedding-planning">
+                  partial planning
+                </Link>{' '}
+                services. This range reflects the extensive support and
+                expertise provided from concept to execution.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #3. Do you work with specific budgets, or is there a minimum?

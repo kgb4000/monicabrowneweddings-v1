@@ -186,11 +186,11 @@ export default async function weddingPlannerWashingtonDC() {
                   guidance and support for specific elements or the final
                   stages.
                 </p>
-                {/* <p className="md:text-xl text-center my-4">
-                  <Link href="/blog/dc-full-service-wedding-planner">
+                <p className="md:text-xl text-center my-4">
+                  <Link href="/wedding-services/partial-wedding-planning">
                     Learn more here
                   </Link>
-                </p> */}
+                </p>
               </div>
               <div>
                 <Image

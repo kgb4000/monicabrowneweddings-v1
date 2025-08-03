@@ -10,7 +10,7 @@ const calendly =
 export const metadata = {
   title:
     'Partial Wedding Planning Services| Your Dream Day, Flawlessly Executed',
-  description: `Professional coordination for the final months - perfect for couples who've started planning but need expert help bringing it all together. Get your free consultation!`,
+  description: `Partial wedding planning - perfect for couples who've started planning but need expert help bringing it all together. Get your free consultation!`,
   alternates: {
     canonical:
       'https://monicabrowneweddings.com/wedding-services/partial-wedding-planning',

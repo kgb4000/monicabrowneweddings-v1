@@ -47,19 +47,17 @@ export default async function weddingPlannerWaldorfMD() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Leading Waldorf Wedding Planner and Coordinator for Fabulous
-                  Wedding Celebrations
+                  Waldorf Wedding Planner for Fabulous Wedding Celebrations
                 </h2>
                 <p className="md:text-xl mb-4">
                   We're recognized as a premier wedding planner and coordinator
-                  in Waldorf, MD, specifically dedicated to transforming the
-                  planning process into an effortless and genuinely enjoyable
-                  experience for busy couples.
+                  in Maryland, dedicated to making the planning process a
+                  genuinely enjoyable experience for busy couples.
                 </p>
                 <p className="md:text-xl mb-4">
-                  Our primary objective is to empower you to fully savor every
-                  cherished moment of your extraordinary day, secure in the
-                  knowledge that every intricate detail is meticulously managed.
+                  Our goal is to empower you to fully enjoy every moment of your
+                  wedding day, knowing that every small detail is taken care of
+                  and managed.
                 </p>
               </div>
               <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
@@ -88,8 +86,8 @@ export default async function weddingPlannerWaldorfMD() {
               </div>
               <div className="max-w-3xl mx-auto">
                 <p className="md:text-xl mb-4">
-                  From our very first conversation, we commit ourselves to
-                  seeing your distinct vision.
+                  From our first conversation, we commit ourselves to brining
+                  your vision into reality.
                 </p>
                 <p className="md:text-xl mb-4">
                   This involves thorough planning and design, precise day-of
@@ -170,6 +168,11 @@ export default async function weddingPlannerWaldorfMD() {
                   preparations but need expert guidance and professional support
                   for specific elements.
                 </p>
+                <p className="md:text-xl text-center my-4">
+                  <Link href="/wedding-services/partial-wedding-planning">
+                    Learn more here
+                  </Link>
+                </p>
               </div>
               <div>
                 <Image
@@ -196,7 +199,7 @@ export default async function weddingPlannerWaldorfMD() {
             <div className="center mt-20">
               <a href="/blog/dc-wedding-planning-services" target="_blank">
                 <Button
-                  buttonText="Learn about more our DC wedding services"
+                  buttonText="Learn about more our wedding planning services"
                   bgColor="bg-purple-500"
                   borderWidth="border-0"
                   textColor="text-white"
