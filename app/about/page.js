@@ -191,6 +191,11 @@ export default function About() {
                   Organize your wedding rehearsal and communicate with your
                   wedding party
                 </li>
+                <li className="md:text-xl mb-4">
+                  <Link href="/wedding-services/partial-wedding-planning">
+                    Partial wedding planning
+                  </Link>
+                </li>
               </ul>
               <ul className="ml-8 list-disc my-4">
                 <li className="md:text-xl mb-4">

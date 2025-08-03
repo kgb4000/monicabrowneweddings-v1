@@ -553,61 +553,67 @@ export default async function weddingPlannerWashingtonDC() {
             <div className="">
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
-                #1. What is the typical timeline for full-service wedding
+                #1. What's the difference between partial planning and day-of
+                coordination?
+              </h3>
+              <p className="md:text-xl mb-4">
+                Partial planning starts 4-6 months before your wedding and
+                includes vendor management, timeline creation, design
+                refinement, and budget finalization leading up to your day.
+                Day-of coordination typically begins just 2-4 weeks before and
+                focuses primarily on executing your existing plans. With partial
+                planning, we actively help shape and coordinate your final
+                planning phases, not just manage what's already set.
+              </p>
+              <h3 className="text-2xl md:text-3xl my-4">
+                #2. How much does partial wedding planning cost in the DC area?
+              </h3>
+              <p className="md:text-xl mb-4">
+                Our partial wedding planning services typically range from{' '}
+                <b>$4,500 to $6,500</b> for most DC area weddings. The final
+                cost depends on your wedding size, number of vendors requiring
+                coordination, venue complexity, and timeline. For example, a
+                100-guest wedding with 6-8 vendors might be <b>$4,800</b>, while
+                a 200-guest celebration with multiple venues and 12+ vendors
+                could
+                <b>be $6,200</b>. We provide a detailed breakdown during our
+                consultation so you know exactly what's included and can budget
+                accordingly.
+              </p>
+              <h3 className="text-2xl md:text-3xl my-4">
+                #3. What if our budget is tight - can we customize partial
+                planning services?
+              </h3>
+              <p className="md:text-xl mb-4">
+                Yes, we can adjust our services based on your budget and
+                specific needs. Some couples need full vendor coordination,
+                while others just need day-of management and timeline creation.
+                During our consultation, we'll discuss which aspects of partial
+                planning would be most valuable for your situation and create a
+                customized package.
+              </p>
+              <h3 className="text-2xl md:text-3xl my-4">
+                #4. How involved will we be once we hire you for partial
                 planning?
               </h3>
               <p className="md:text-xl mb-4">
-                We recommend starting full-service planning anywhere from 12 to
-                18 months before your desired wedding date. This allows ample
-                time for vendor selection, design development, and securing your
-                preferred dates. However, we're experienced in planning weddings
-                on shorter timelines too, so don't hesitate to reach out even if
-                your date is closer!
+                You'll stay as involved as you want to be. We handle the vendor
+                coordination and logistical details, but we always keep you
+                informed and ask for your input on important decisions. Think of
+                it as having a project manager - we manage the day-to-day tasks
+                but you maintain final approval on everything affecting your
+                vision.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
-                #2. How much does full-service wedding planning cost?
+                #5 What happens if we need more help than partial planning
+                provides?
               </h3>
               <p className="md:text-xl mb-4">
-                In the wider DMV (D.C., Maryland, Virginia) area, the cost for
-                full-service wedding planning generally ranges from{' '}
-                <b>$7,000 to $25,000+</b>, with many couples investing between
-                <b>$9,000 and $15,000</b> for comprehensive services. This range
-                reflects the extensive support and expertise provided from
-                concept to execution.
-              </p>
-              <h3 className="text-2xl md:text-3xl my-4">
-                #3. Do you work with specific budgets, or is there a minimum?
-              </h3>
-              <p className="md:text-xl mb-4">
-                We work with a diverse range of budgets and believe beautiful
-                weddings can be created at various price points. During our
-                initial consultation, we'll discuss your financial comfort zone
-                and help you understand how to best allocate your resources to
-                achieve your vision. Our aim is always to provide maximum value
-                and transparency.
-              </p>
-              <h3 className="text-2xl md:text-3xl my-4">
-                #4. How do you select your vendors, and can we bring our own?
-              </h3>
-              <p className="md:text-xl mb-4">
-                We pride ourselves on our network of trusted, professional, and
-                reliable wedding vendors in Mitchellville and the surrounding
-                areas. Our recommendations are based on proven quality,
-                professionalism, and their ability to align with your specific
-                style and budget. While we highly recommend our vetted partners,
-                we're certainly open to working with vendors you may already
-                have in mind, provided they meet our standards of excellence.
-              </p>
-              <h3 className="text-2xl md:text-3xl my-4">
-                #5 Is full-service planning only for large, elaborate weddings?
-              </h3>
-              <p className="md:text-xl mb-4">
-                Not at all! While we excel at producing grand celebrations,
-                full-service planning is equally valuable for intimate weddings
-                and micro-weddings. The benefit isn't just about the size of the
-                event, but about the level of support and peace of mind you
-                receive. If you want a stress-free experience, regardless of
-                guest count, full-service is for you.
+                We're flexible and can add services as needed. If you realize
+                you need help with additional vendors, design elements, or guest
+                coordination, we can expand our services. We can also recommend
+                whether upgrading to full-service planning might be more
+                cost-effective if your needs grow significantly.
               </p>
             </div>
             <p className="text-xl italic text-center max-w-md mx-auto">

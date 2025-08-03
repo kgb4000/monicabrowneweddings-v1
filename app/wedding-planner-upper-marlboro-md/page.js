@@ -233,14 +233,6 @@ export default async function WeddingPlannerUpperMarlboroMD() {
                 height="708"
               />
               <div className="max-w-2xl mx-auto">
-                <p className="md:text-xl mb-4">
-                  Here’s why couples in{' '}
-                  <Link href="/wedding-planner-bowie-md">Bowie</Link> and{' '}
-                  <Link href="/day-of-wedding-coordinator-washington-dc">
-                    DC
-                  </Link>{' '}
-                  trust us with their special day:
-                </p>
                 <div>
                   <h3 className="font-semibold text-2xl mb-2">
                     Seamless Planning and Execution
