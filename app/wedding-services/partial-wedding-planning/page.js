@@ -560,10 +560,13 @@ export default async function weddingPlannerWashingtonDC() {
                 Partial planning starts 4-6 months before your wedding and
                 includes vendor management, timeline creation, design
                 refinement, and budget finalization leading up to your day.
-                Day-of coordination typically begins just 2-4 weeks before and
-                focuses primarily on executing your existing plans. With partial
-                planning, we actively help shape and coordinate your final
-                planning phases, not just manage what's already set.
+                <Link href="/day-of-wedding-coordinator-washington-dc">
+                  Day-of coordination
+                </Link>{' '}
+                typically begins just 2-4 weeks before and focuses primarily on
+                executing your existing plans. With partial planning, we
+                actively help shape and coordinate your final planning phases,
+                not just manage what's already set.
               </p>
               <h3 className="text-2xl md:text-3xl my-4">
                 #2. How much does partial wedding planning cost in the DC area?
