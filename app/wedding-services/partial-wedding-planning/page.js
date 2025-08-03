@@ -10,10 +10,10 @@ const calendly =
 export const metadata = {
   title:
     'Partial Wedding Planning Services| Your Dream Day, Flawlessly Executed',
-  description:
-    'Relax and enjoy your engagement! Our full-service wedding planning covers every detail for your perfect day in Mitchellville, MD. Get your free consultation!',
+  description: `Professional coordination for the final months - perfect for couples who've started planning but need expert help bringing it all together. Get your free consultation!`,
   alternates: {
-    canonical: 'https://monicabrowneweddings.com/wedding-planner-washington-dc',
+    canonical:
+      'https://monicabrowneweddings.com/wedding-services/partial-wedding-planning',
   },
   openGraph: {
     type: 'website',
@@ -35,8 +35,8 @@ export default async function weddingPlannerWashingtonDC() {
   return (
     <div>
       <Hero
-        herotext="Full-Service Wedding Planning for Busy Couples in the DMV"
-        heroSubText="We create stunning weddings for busy couples in Washington, DC, blending timeless traditions with modern elegance for a day you’ll cherish forever"
+        herotext="Partial Wedding Planning Services for Couples in D.C, Maryland, and Virginia"
+        heroSubText="When you just need a wedding planning expert  to pull it all together, so you can full enjoy your wedding day"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
         imageUrl="/images/newly-wed-couple-in-washington-dc.webp"
@@ -47,21 +47,17 @@ export default async function weddingPlannerWashingtonDC() {
             <div className="py-10 md:py-20">
               <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl lg:text-5xl my-8 text-center">
-                  Top Rated Full-Service Wedding Planner for Busy Couples
+                  Partial Wedding Planning Services for Couples in the D.C.
+                  Metro Area
                 </h2>
                 <p className="md:text-xl mb-4">
-                  Are you dreaming of a wedding day that unfolds seamlessly,
-                  reflecting your unique love story without the stress of
-                  endless planning?
+                  You've done the big decisions - venue, dress, vendors - but
+                  now you're feeling overwhelmed as your wedding day approaches.
                 </p>
                 <p className="md:text-xl mb-4">
-                  At Monca Browne Weddings, we make that dream a reality.
-                </p>
-                <p className="md:text-xl mb-4">
-                  Our full-service wedding planning is designed to handle every
-                  intricate detail, from the grand vision to the tiniest
-                  flourish, ensuring you can truly savor your engagement and
-                  celebrate your special day without a single worry.
+                  Our partial planning service steps in 4-6 months before your
+                  wedding to coordinate details, manage vendors, and ensure
+                  flawless execution.
                 </p>
               </div>
               <div className="grid grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
@@ -123,16 +119,21 @@ export default async function weddingPlannerWashingtonDC() {
           <div className="container max-w-5xl mx-auto px-6">
             <div className="max-w-3xl mx-auto py-10 md:py-20 text-white px-6">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                Why Choose Full-Service Wedding Planning?
+                What is Partial Wedding Planning?
               </h2>
               <p className="md:text-xl mb-4">
-                Planning a wedding is often described as one of life's most
-                exciting, yet most demanding, projects.
+                You've tackled the big decisions - booked your venue, found your
+                dress, selected key vendors - but now the details are piling up
+                and your wedding date is getting closer.
+              </p>
+              <p className="md:text-xl mb-4">Sound familiar?</p>
+              <p className="md:text-xl mb-4">
+                Our partial planning service steps in during those crucial final
+                4-6 months to take the coordination burden off your shoulders.
               </p>
               <p className="md:text-xl mb-4">
-                From securing the perfect wedding venue to curating a dream team
-                of vendors and managing wedding timelines, the sheer volume of
-                decisions and tasks can quickly become overwhelming.
+                We work with what you've already planned, fill in any gaps, and
+                make sure everything runs smoothly on your actual wedding day.
               </p>
             </div>
           </div>
@@ -162,110 +163,10 @@ export default async function weddingPlannerWashingtonDC() {
           <div className="container max-w-5xl mx-auto px-6">
             <div className="max-w-3xl mx-auto py-10 md:py-20 text-white px-6">
               <p className="md:text-xl mb-4">
-                Many couples find themselves grappling with:
+                Think of us as your professional project managers who specialize
+                in weddings. You keep the creative control you want while we
+                handle the logistics that can drive you crazy.
               </p>
-              <div className="my-10">
-                <h3 className="text-2xl mb-2">Overwhelm and stress:</h3>
-                <p className="md:text-xl mb-4">
-                  Juggling full-time jobs, personal lives, and hundreds of
-                  wedding decisions can quickly lead to burnout.
-                </p>
-              </div>
-              <div className="my-10">
-                <h3 className="text-2xl mb-2">Time constraints:</h3>
-                <p className="md:text-xl mb-4">
-                  Researching, vetting, and meeting with vendors is incredibly
-                  time-consuming.
-                </p>
-              </div>
-              <div className="my-10">
-                <h3 className="text-2xl mb-2">Budget anxieties:</h3>
-                <p className="md:text-xl mb-4">
-                  Keeping track of every expense and making sure you're getting
-                  the best value can be daunting.
-                </p>
-              </div>
-              <div className="my-10">
-                <h3 className="text-2xl mb-2">Lack of expertise:</h3>
-                <p className="md:text-xl mb-4">
-                  Navigating contracts, wedding etiquette, and unforeseen
-                  challenges requires specialized knowledge.
-                </p>
-              </div>
-              <div className="my-10">
-                <h3 className="text-2xl mb-2">The desire for perfection:</h3>
-                <p className="md:text-xl mb-4">
-                  You want your day to be flawless, but aren't sure how to
-                  achieve it on your own.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-4 max-w-5xl mx-auto px-6">
-            <Image
-              src="/images/KINA0562.jpg"
-              alt="Newly wed couple at Irongate Restaurant in Washington, DC"
-              loading="lazy"
-              width="472"
-              height="708"
-            />
-            <Image
-              src="/images/KINA0406.jpg"
-              alt="Newly wed couple at Irongate Restaurant in Washington, DC"
-              loading="lazy"
-              width="472"
-              height="708"
-            />
-            <Image
-              src="/images/KINA0531.jpg"
-              alt="Newly wed couple at Irongate Restaurant in Washington, DC"
-              loading="lazy"
-              width="472"
-              height="708"
-            />
-          </div>
-          <div className="container max-w-5xl mx-auto px-6">
-            <div className="max-w-3xl mx-auto py-10 md:py-20 text-white px-6">
-              <div className="my-4">
-                <p className="md:text-xl mb-4">
-                  This is where full-service wedding planning becomes your
-                  ultimate solution.
-                </p>
-                <p className="md:text-xl mb-4">
-                  Imagine shedding all those worries and instead, simply
-                  enjoying the journey to your "I do."
-                </p>
-                <p className="md:text-xl mb-4">
-                  With Monica Browne Weddings, you're not just hiring a planner;
-                  you're gaining a dedicated partner, an expert guide, and a
-                  trusted confidante committed to bringing your unique vision to
-                  life.
-                </p>
-                <p className="md:text-xl mb-4">
-                  Your engagement should be a time of joy and anticipation, not
-                  stress.
-                </p>
-                <p className="md:text-xl mb-4">
-                  Our approach means we handle every facet of your wedding,
-                  allowing you to focus on what truly matters: celebrating your
-                  love and creating unforgettable memories.
-                </p>
-                <p className="md:text-xl mb-4">
-                  Let us take the reins so you can relax and truly cherish every
-                  moment leading up to and on your extraordinary day.
-                </p>
-              </div>
-              <div className="center">
-                <a href={calendly} target="_blank">
-                  <Button
-                    buttonText="Book a Call With Monica"
-                    borderColor="border-white"
-                    borderWidth="border-2"
-                    textColor="text-white"
-                    borderStyle="border-solid"
-                  />
-                </a>
-              </div>
             </div>
           </div>
         </section>
@@ -273,122 +174,90 @@ export default async function weddingPlannerWashingtonDC() {
           <div className="container max-w-5xl mx-auto px-6">
             <div className="max-w-3xl mx-auto py-10 md:py-20 px-6">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                What Our Full-Service Wedding Planning Service Includes
+                What's Included in Your Partial Wedding Planning Service
               </h2>
-              <p className="md:text-xl mb-4">
-                Our full-service wedding planning is designed to be full
-                service.
-              </p>
-              <p className="md:text-xl mb-4">
-                From the moment you say "yes" to the final dance, we're with you
-                every step of the way, meticulously managing each detail to
-                ensure a seamless and joyful experience.
-              </p>
-              <p className="md:text-xl mb-4">
-                Here is a detailed look at what you get:
-              </p>
               <div className="my-10">
                 <h3 className="text-2xl mb-2">
-                  #1. Initial Consultation & Visioning:
+                  #1. Vendor Management & Communication:
                 </h3>
                 <p className="md:text-xl mb-4">
-                  We'll start with an in-depth conversation to understand your
-                  unique love story, your wildest dreams for your wedding day,
-                  budget parameters, and absolute must-haves. We'll then help
-                  you translate these ideas into a cohesive wedding concept,
-                  developing mood boards and design inspirations that truly
-                  reflect your style.
+                  We become the primary contact for all your vendors, handling
+                  contracts, payments, and timeline coordination. No more
+                  juggling emails from your photographer, caterer, florist, and
+                  DJ - we manage all those conversations and keep everyone on
+                  the same page.
                 </p>
               </div>
               <div className="my-10">
                 <h3 className="text-2xl mb-2">
-                  #2. Comprehensive Budget Management:
+                  #2. Detailed Day-of Timeline Creation:
                 </h3>
                 <p className="md:text-xl mb-4">
-                  We'll create a realistic and detailed wedding budget that
-                  aligns with your financial goals, then meticulously track all
-                  expenses, payments, and deposits. Our goal is to maximize your
-                  investment and ensure there are no unwelcome surprises.
+                  We create hour-by-hour schedules for your wedding day,
+                  including setup times, vendor arrivals, ceremony processional,
+                  reception timeline, and breakdown. Everyone gets their
+                  personalized timeline so they know exactly when and where to
+                  be.
                 </p>
               </div>
               <div className="my-10">
                 <h3 className="text-2xl mb-2">
-                  Expert Vendor Curation & Management:
+                  #3. Design Review & Final Touches:
                 </h3>
                 <p className="md:text-xl mb-4">
-                  Leveraging our extensive network of trusted professionals in
-                  Mitchellville and beyond, we'll recommend and secure the
-                  best-fit vendors for your vision and budget. This includes
-                  everything from the perfect wedding venue and caterer to your
-                  photographer, florist, entertainment, officiant, hair and
-                  makeup artists, and more. We'll handle all contract
-                  negotiations, communications, and logistical coordination with
-                  each vendor.
-                </p>
-              </div>
-              <div className="my-10">
-                <h3 className="text-2xl mb-2">Exquisite Design & Styling:</h3>
-                <p className="md:text-xl mb-4">
-                  This is where your wedding truly comes to life! We'll develop
-                  a cohesive wedding design that encompasses your color palette,
-                  theme, lighting, floral arrangements, decor elements, and
-                  table settings. We'll also create detailed floor plans and
-                  layout designs to ensure optimal flow and aesthetics for your
-                  celebration.
+                  We review your overall design plan to ensure everything works
+                  together - from your ceremony decor to reception centerpieces.
+                  If something feels off or incomplete, we help you refine it.
+                  We also coordinate final details like linens, lighting, and
+                  room layouts with your venue.
                 </p>
               </div>
               <div className="my-10">
                 <h3 className="text-2xl mb-2">
-                  Detailed Timeline Creation & Management:
+                  #4. Guest Experience Planning:
                 </h3>
                 <p className="md:text-xl mb-4">
-                  We'll craft a comprehensive master wedding timeline leading up
-                  to your big day, complete with reminders for key milestones.
-                  For the wedding day itself, we'll develop a meticulously
-                  detailed day-of timeline for all vendors and the wedding
-                  party, ensuring everything runs smoothly and on schedule.
+                  We help coordinate hotel blocks, transportation logistics,
+                  welcome bags, and guest communication. We also manage your
+                  final headcount and work with your caterer on seating
+                  arrangements and special dietary needs.
                 </p>
               </div>
               <div className="my-10">
-                <h3 className="text-2xl mb-2">Etiquette & Advisement:</h3>
+                <h3 className="text-2xl mb-2">#5. Rehearsal Coordination:</h3>
                 <p className="md:text-xl mb-4">
-                  Navigating wedding traditions, guest lists, invitation
-                  wording, and gift registry etiquette can be complex. We're
-                  here to provide expert guidance and advice on all aspects of
-                  wedding protocol, ensuring every decision feels right for you.
-                </p>
-              </div>
-              <div className="my-10">
-                <h3 className="text-2xl mb-2">Guest Experience & Logistics:</h3>
-                <p className="md:text-xl mb-4">
-                  We'll help coordinate essential guest services, such as
-                  securing hotel room blocks for out-of-town guests, arranging
-                  transportation logistics if needed, and managing your RSVP
-                  tracking. If you're considering welcome bags, we can assist
-                  with assembly and distribution.
+                  We run your ceremony rehearsal, making sure your wedding party
+                  knows where to stand, when to walk, and what to expect. This
+                  eliminates confusion and nerves on your actual wedding day.
                 </p>
               </div>
               <div className="my-10">
                 <h3 className="text-2xl mb-2">
-                  Rehearsal Dinner Coordination:
+                  #6. Complete Day-of Coordination:
                 </h3>
                 <p className="md:text-xl mb-4">
-                  Beyond the wedding day, we can assist with the planning and
-                  coordination of your rehearsal dinner, ensuring a seamless
-                  kickoff to your wedding weekend.
+                  On your wedding day, our team arrives early to oversee vendor
+                  setup, manage the timeline, coordinate your wedding party,
+                  handle any problems that come up, and make sure you can focus
+                  on celebrating instead of worrying about logistics.
+                </p>
+              </div>
+              <div className="my-10">
+                <h3 className="text-2xl mb-2">#7. Budget Finalization:</h3>
+                <p className="md:text-xl mb-4">
+                  We help you organize final vendor payments, track any
+                  remaining expenses, and make sure you stay within your budget
+                  during these final months when costs can quickly add up.
                 </p>
               </div>
               <div className="my-10">
                 <h3 className="text-2xl mb-2">
-                  Flawless Day-Of Wedding Coordination:
+                  #8. Emergency Problem Solving:
                 </h3>
                 <p className="md:text-xl mb-4">
-                  This is the culmination of all our hard work! On your wedding
-                  day, our team will be on-site from start to finish, acting as
-                  the central point of contact for all vendors and handling any
-                  unforeseen issues. We'll oversee setup, manage the timeline,
-                  cue important moments, coordinate the bridal party, and ensure
-                  a smooth, stress-free celebration for you and your loved ones.
+                  Weather issues, vendor problems, last-minute changes - we
+                  handle whatever comes up so you don't have to stress about it.
+                  Our job is to solve problems before they affect your day.
                 </p>
               </div>
               <div className="center">
@@ -408,7 +277,7 @@ export default async function weddingPlannerWashingtonDC() {
         <div className="container max-w-7xl mx-auto px-6 my-20">
           <section>
             <h2 className="text-3xl md:text-5xl mb-4 text-center max-w-2xl mx-auto">
-              Why Hire Us For Full Service Wedding Planning
+              Why Choose Monica Browne Weddings for Partial Planning
             </h2>
             <div className="grid lg:grid-cols-2 gap-10 items-center lg:my-10">
               <Image
@@ -421,70 +290,54 @@ export default async function weddingPlannerWashingtonDC() {
               <div className="max-w-2xl mx-auto">
                 <div>
                   <h3 className="font-semibold text-2xl mb-2">
-                    Experience & Local Expertise:
+                    Local DC Area Expertise:
                   </h3>
                   <p className="md:text-xl mb-4">
-                    We're not just planners; we're seasoned experts with years
-                    of experience bringing dream weddings to life. Our deep
-                    knowledge of Mitchellville, MD, and the surrounding areas
-                    means we have invaluable insights into local venues, hidden
-                    gems, and the best ways to navigate the unique aspects of
-                    planning an event in this region. We understand the flow of
-                    local events and have established relationships with
-                    top-tier vendors right here in our community.
+                    We know the venues, vendors, and logistics specific to
+                    Washington DC, Maryland, and Virginia. We understand permit
+                    requirements, venue restrictions, and local vendor
+                    capabilities.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-2xl mb-2">
-                    Unrivaled Vendor Network:
+                    Flexible Approach:
                   </h3>
                   <p className="md:text-xl mb-4">
-                    Over the years, we've cultivated strong, trusted
-                    relationships with the most reputable and talented wedding
-                    vendors in the DMV area. From exceptional photographers and
-                    florists to gourmet caterers and captivating entertainment,
-                    we connect you with professionals who consistently deliver
-                    excellence and align perfectly with your style and budget.
+                    We adapt to work with any vendors you've already selected,
+                    regardless of whether we've worked with them before. We're
+                    not trying to replace your choices - we're here to
+                    coordinate them.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-2xl mb-2">
-                    A Personalized & Collaborative Approach:
+                    Proven Systems:
                   </h3>
                   <p className="md:text-xl mb-4">
-                    Your wedding should be a reflection of your unique love
-                    story, not a template. We pride ourselves on a highly
-                    personalized approach, taking the time to truly listen to
-                    your vision, preferences, and concerns. We see ourselves as
-                    an extension of your team, working collaboratively with you
-                    every step of the way to ensure your personality shines
-                    through in every detail.
+                    We use tried-and-tested timeline templates, vendor
+                    communication processes, and day-of coordination methods
+                    that prevent common wedding day problems.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-2xl mb-2">
-                    Attention to Detail:
+                    Calm Under Pressure:
                   </h3>
                   <p className="md:text-xl mb-4">
-                    We live for the details. From the initial concept
-                    development to the final moments of your reception, our team
-                    is relentlessly focused on precision. We anticipate
-                    potential challenges before they arise, leaving no stone
-                    unturned to ensure every element of your day is executed
-                    flawlessly, just as you envisioned.
+                    When something goes wrong (and something always does), we
+                    handle it quickly and quietly so you never know there was an
+                    issue.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-2xl mb-2">
-                    Transparent Communication & Peace of Mind:
+                    Personal Attention:
                   </h3>
                   <p className="md:text-xl mb-4">
-                    We believe in open, honest, and proactive communication.
-                    You'll always be informed, updated, and confident in the
-                    planning process. Our goal is to alleviate your stress,
-                    allowing you to relax and truly enjoy your engagement,
-                    knowing that every aspect is expertly managed and under
-                    control.
+                    You're not just another wedding on our calendar. We take
+                    time to understand your specific vision and priorities, then
+                    make sure those come through on your wedding day.
                   </p>
                 </div>
               </div>
@@ -506,70 +359,44 @@ export default async function weddingPlannerWashingtonDC() {
           <div className="container max-w-5xl mx-auto px-6">
             <div className="max-w-3xl mx-auto py-10 md:py-20 px-6">
               <h2 className="text-3xl md:text-5xl mb-8 text-center">
-                Who Benefits Most from Full-Service Wedding Planning?
+                Who Benefits Most from Partial Planning Wedding Services?
               </h2>
-              <p className="md:text-xl mb-4">
-                If any of these describe you, full-service planning is likely
-                your ideal solution:
-              </p>
               <div className="my-10">
-                <h3 className="text-2xl mb-2">
-                  Busy Professionals & Demanding Schedules:
-                </h3>
+                <h3 className="text-2xl mb-2">DIY Couples Who Hit a Wall:</h3>
                 <p className="md:text-xl mb-4">
-                  If your careers leave you with limited free time, coordinating
-                  hundreds of wedding details can feel impossible. We step in as
-                  your dedicated project managers, handling all the research,
-                  communication, and logistics, freeing you to focus on your
-                  work and personal life.
+                  You loved planning initially but now feel overwhelmed by all
+                  the moving pieces as your date approaches.
                 </p>
               </div>
               <div className="my-10">
                 <h3 className="text-2xl mb-2">
-                  Couples Desiring a Highly Personalized & Unique Event:
+                  Couples with Vendor Relationships Already Established:
                 </h3>
                 <p className="md:text-xl mb-4">
-                  You have a distinct vision for your day, but aren't sure how
-                  to bring it all together. Our full-service approach allows us
-                  to delve deep into your style and preferences, curating every
-                  element to reflect your personality and create a truly
-                  one-of-a-kind celebration.
+                  You've booked most of your key vendors but need someone to
+                  coordinate between them and manage day-of logistics.
                 </p>
               </div>
               <div className="my-10">
-                <h3 className="text-2xl mb-2">
-                  Those Planning a Destination Wedding:
-                </h3>
+                <h3 className="text-2xl mb-2">Long-Distance Planners:</h3>
                 <p className="md:text-xl mb-4">
-                  If you're not local to Mitchellville, MD, or if you're
-                  planning your wedding from out of state, managing vendors and
-                  logistics from a distance is incredibly challenging. We act as
-                  your on-the-ground team, ensuring seamless coordination and
-                  execution without the need for constant travel.
+                  You've planned you wedding from out of state from but need
+                  someone local to handle final details and day-of coordination
+                  in the DC area.
                 </p>
               </div>
               <div className="my-10">
-                <h3 className="text-2xl mb-2">
-                  Couples Who Want a Truly Stress-Free Engagement:
-                </h3>
+                <h3 className="text-2xl mb-2">Budget-Conscious Couples:</h3>
                 <p className="md:text-xl mb-4">
-                  Your engagement should be a joyful time of anticipation, not
-                  anxiety. If the thought of endless spreadsheets, vendor
-                  negotiations, and timelines fills you with dread, full-service
-                  planning allows you to fully enjoy this special period,
-                  knowing every detail is expertly handled.
+                  You want professional coordination without the higher cost of
+                  full-service planning from the beginning.
                 </p>
               </div>
               <div className="my-10">
-                <h3 className="text-2xl mb-2">
-                  Detailed Timeline Creation & Management:
-                </h3>
+                <h3 className="text-2xl mb-2">Control-Oriented Planners:</h3>
                 <p className="md:text-xl mb-4">
-                  We'll craft a comprehensive master wedding timeline leading up
-                  to your big day, complete with reminders for key milestones.
-                  For the wedding day itself, we'll develop a meticulously
-                  detailed day-of timeline for all vendors and the wedding
-                  party, ensuring everything runs smoothly and on schedule.
+                  You want to maintain decision-making control but recognize you
+                  need professional help executing everything smoothly.
                 </p>
               </div>
               <div className="my-10">
@@ -586,21 +413,13 @@ export default async function weddingPlannerWashingtonDC() {
               </div>
               <div className="my-10">
                 <h3 className="text-2xl mb-2">
-                  Couples with Complex Logistics or Multiple Events:
+                  Couples Who Want to Enjoy Their Wedding Day:
                 </h3>
                 <p className="md:text-xl mb-4">
-                  If your wedding involves multiple locations, intricate
-                  transportation, or a series of weekend events (like a welcome
-                  party, rehearsal dinner, and brunch), our full-service
-                  planning ensures every piece fits together flawlessly.
+                  You want to be present and enjoy your celebration instead of
+                  managing vendors and timelines.
                 </p>
               </div>
-              <p className="md:text-xl mb-4">
-                Full-service planning is for any couple who prioritizes peace of
-                mind, desires a well planned and beautifully executed wedding,
-                and wants to genuinely enjoy every moment of their engagement
-                and wedding day.
-              </p>
               <div className="center">
                 <a href={calendly} target="_blank">
                   <Button

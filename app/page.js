@@ -270,7 +270,7 @@ export default async function Home() {
                     href="/wedding-services/full-service-wedding-planning"
                     className="md:text-xl mb-4 font-bold"
                   >
-                    Learn more about Full Service Wedding Planning here.
+                    Learn about Full Service Wedding Planning
                   </Link>
                 </div>
               </div>
@@ -308,9 +308,9 @@ export default async function Home() {
                   </p>
                   <Link
                     href="/day-of-wedding-coordinator-washington-dc"
-                    className="md:text-xl mb-4"
+                    className="md:text-xl mb-4 font-bold"
                   >
-                    Learn more about day-of wedding coordination.
+                    Learn about Day-of Wedding Coordination
                   </Link>
                 </div>
               </div>
@@ -336,8 +336,11 @@ export default async function Home() {
                     Let us enhance your wedding day with blooms that perfectly
                     reflect your style and theme.
                   </p>
-                  <Link href="/wedding-flowers" className="md:text-xl mb-4">
-                    Learn more about wedding flowers.
+                  <Link
+                    href="/wedding-flowers"
+                    className="md:text-xl mb-4 font-bold"
+                  >
+                    Learn about Wedding Flowers
                   </Link>
                 </div>
               </div>
@@ -348,11 +351,11 @@ export default async function Home() {
                   width="100%"
                   height="auto"
                   className="pb-4 lg:order-2"
-                  alt="Photo of flower arch in a hotel ballroom in Gaithersburg, Maryland."
+                  alt="Photo of small wedding at a vineyard."
                 />
                 <div>
                   <h3 className="text-xl font-bold pb-4">
-                    Micro Wedding Planning
+                    Small Wedding Planning
                   </h3>
                   <p className="md:text-xl mb-4">
                     Our micro wedding planning service is perfect for couples
@@ -366,10 +369,10 @@ export default async function Home() {
                     grand affair.
                   </p>
                   <Link
-                    href="/micro-wedding-packages-maryland"
-                    className="md:text-xl mb-4"
+                    href="/wedding-services/small-wedding-planning"
+                    className="md:text-xl mb-4 font-bold"
                   >
-                    Learn more about micro weddings.
+                    Learn about Small Wedding Planning
                   </Link>
                 </div>
               </div>
@@ -399,9 +402,9 @@ export default async function Home() {
                   </p>
                   <Link
                     href="/indian-wedding-planner-washington-dc"
-                    className="md:text-xl mb-4"
+                    className="md:text-xl mb-4 font-bold"
                   >
-                    Learn more about Indian wedding planning.
+                    Learn about Indian Wedding Planning
                   </Link>
                 </div>
               </div>
@@ -902,7 +905,9 @@ export default async function Home() {
                     Upper Marlboro, MD
                   </Link>
                 </p>
-                <p className="md:text-xl mb-4">Waldorf, MD</p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/wedding-planner-waldorf-md">Waldorf, MD</Link>
+                </p>
                 <p className="md:text-xl mb-4">
                   <Link href="/wedding-planner-washington-dc">
                     Washington, DC

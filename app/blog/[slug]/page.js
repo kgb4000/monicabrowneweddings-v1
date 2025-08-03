@@ -95,7 +95,7 @@ export default async function Page({ params }) {
         {JSON.stringify(articleStructuredData)}
       </script>
       <section>
-        <div className="container max-w-2xl mx-auto mt-10 px-4">
+        <div className="container max-w-2xl mx-auto my-10 px-4">
           <h1 className="text-4xl my-10">{post.title}</h1>
           <div className="mb-2 flex items-center">
             <Link href="/about" passHref>

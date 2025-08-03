@@ -63,21 +63,21 @@ export default async function WeddingPlannerUpperMarlboroMD() {
                 </p>
               </div>
               <div className="grid lg:grid-cols-3 gap-4 my-8 max-w-5xl mx-auto">
-                <img
+                <Image
                   src="/images/wedding-table-centerpiece-design.webp"
                   alt="Wedding planner Upper Marlboro, MD."
                   loading="lazy"
                   width="472"
                   height="708"
                 />
-                <img
+                <Image
                   src="/images/wedding-cake.webp"
                   alt="Wedding cake picture"
                   loading="lazy"
                   width="472"
                   height="708"
                 />
-                <img
+                <Image
                   src="/images/wedding-table-with-cork-centerpiece.webp"
                   alt="Wedding table decorations by Monica Browne Weddings"
                   loading="lazy"
@@ -122,7 +122,7 @@ export default async function WeddingPlannerUpperMarlboroMD() {
             </div>
           </section>
         </div>
-        <div className="container max-w-7xl mx-auto px-6">
+        <div className="container max-w-5xl mx-auto px-6">
           <div className="max-w-5xl mx-auto  py-10 md:py-20">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
               Want a stress-free wedding day?
@@ -219,12 +219,12 @@ export default async function WeddingPlannerUpperMarlboroMD() {
             </div>
           </section>
         </div>
-        <div className="container max-w-5xl mx-auto px-6 mt-20">
-          <section>
+        <section>
+          <div className="container max-w-5xl mx-auto px-6 my-20">
             <h2 className="text-3xl md:text-5xl mb-8 text-center">
               Why Should Couples in Upper Marlboro Hire Monica Browne Weddings?
             </h2>
-            <div className="lg:grid grid-cols-2 gap-10 items-top">
+            <div className="lg:grid grid-cols-2 gap-10 items-center">
               <Image
                 src="/images/sierra-and-charles.jpg"
                 alt="Beautiful newlywed bride."
@@ -232,7 +232,7 @@ export default async function WeddingPlannerUpperMarlboroMD() {
                 width="472"
                 height="708"
               />
-              <div className="max-w-2xl mx-auto py-10 md:py-20">
+              <div className="max-w-2xl mx-auto">
                 <p className="md:text-xl mb-4">
                   Here’s why couples in{' '}
                   <Link href="/wedding-planner-bowie-md">Bowie</Link> and{' '}
@@ -303,25 +303,25 @@ export default async function WeddingPlannerUpperMarlboroMD() {
                 </div>
               </div>
             </div>
-          </section>
-        </div>
-        <div className="container max-w-5xl mx-auto mb-4 px-6">
+          </div>
+        </section>
+        <div className="container max-w-7xl mx-auto my-10 px-6">
           <div className="grid lg:grid-cols-3 gap-4 mx-auto">
-            <img
+            <Image
               src="/images/wedding-table-centerpiece-design.webp"
               alt="Wedding table centerpiece design for small wedding."
               loading="lazy"
               width="472"
               height="708"
             />
-            <img
+            <Image
               src="/images/wedding-cake.webp"
               alt="Wedding cake picture"
               loading="lazy"
               width="472"
               height="708"
             />
-            <img
+            <Image
               src="/images/wedding-table-with-cork-centerpiece.webp"
               alt="Wedding table decorations by Monica Browne Weddings"
               loading="lazy"
@@ -330,8 +330,8 @@ export default async function WeddingPlannerUpperMarlboroMD() {
             />
           </div>
         </div>
-        <div className="container max-w-5xl mx-auto mb-4 px-6">
-          <section>
+        <section>
+          <div className="container max-w-5xl mx-auto my-10 px-6">
             <div className="max-w-3xl mx-auto py-10">
               <h2 className="text-3xl md:text-5xl text-center mb-10">FAQs</h2>
               <h3 className="text-2xl md:text-3xl my-4">
@@ -413,8 +413,8 @@ export default async function WeddingPlannerUpperMarlboroMD() {
                 />
               </a>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </main>
     </div>
   )

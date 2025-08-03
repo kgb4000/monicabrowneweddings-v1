@@ -50,7 +50,7 @@ export default async function WeddingServices() {
               />
               <div>
                 <h3 className="text-3xl mb-6 font-bold">
-                  Full Service Wedding Planning
+                  Full-Service Wedding Planning
                 </h3>
                 <p className="md:text-xl mb-4">
                   We're proud to offer couples full-service wedding planning.
@@ -59,7 +59,9 @@ export default async function WeddingServices() {
                   full-service or or partial planning service.
                 </p>
                 <Link href="/wedding-services/full-service-wedding-planning">
-                  <p className="my-8 font-bold">Full Service Weding Planning</p>
+                  <p className="my-8 font-bold">
+                    Full-Service Wedding Planning
+                  </p>
                 </Link>
               </div>
             </div>
@@ -73,7 +75,7 @@ export default async function WeddingServices() {
               />
               <div className="service-info">
                 <h3 className="text-3xl mb-6 font-bold">
-                  Day of Wedding Coordinator
+                  Day-of Wedding Coordinator
                 </h3>
                 <p className="md:text-xl mb-4">
                   When you have everything else planned and you just need
@@ -83,12 +85,12 @@ export default async function WeddingServices() {
                   not...
                 </p>
                 <Link href="/day-of-wedding-coordinator-washington-dc">
-                  <p className="my-8 font-bold">Day of Wedding Planning</p>
+                  <p className="my-8 font-bold">Day-of Wedding Planning</p>
                 </Link>
               </div>
             </div>
           </div>
-          <div className="max-w-5xl mx-auto px-6 my-8">
+          {/* <div className="max-w-5xl mx-auto px-6 my-8">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <img
                 src="/images/jewish-wedding-kiddush-cup.jpeg"
@@ -112,7 +114,7 @@ export default async function WeddingServices() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="max-w-5xl mx-auto px-6 my-8">
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <img
@@ -135,7 +137,7 @@ export default async function WeddingServices() {
                   grand baraat procession.
                 </p>
                 <Link href="/indian-wedding-planner-washington-dc">
-                  <p className="my-8">Read more</p>
+                  <p className="my-8 font-bold">Indian Wedding Planning</p>
                 </Link>
               </div>
             </div>
@@ -148,16 +150,18 @@ export default async function WeddingServices() {
                 loading="lazy"
               />
               <div className="service-info">
-                <h3 className="text-3xl mb-6 font-bold">Micro Weddings</h3>
+                <h3 className="text-3xl mb-6 font-bold">
+                  Small Wedding Planning
+                </h3>
                 <p className="md:text-xl mb-4">
                   Are you looking to have a small, intimate ceremony but don't
-                  want to sacrifice quality? If so, a micro wedding package may
-                  be just what you're looking for. A micro wedding package
-                  offers all the amenities of a traditional wedding but on a
-                  much smaller scale...
+                  want to sacrifice quality? If so, a small wedding may be just
+                  what you're looking for. Having a micro wedding offers all the
+                  amenities of a traditional wedding but on a much smaller
+                  scale...
                 </p>
-                <Link href="/micro-wedding-packages-maryland">
-                  <p className="my-8">Read more</p>
+                <Link href="/wedding-services/small-wedding-planning">
+                  <p className="my-8 font-bold">Small Wedding Planning</p>
                 </Link>
               </div>
             </div>
@@ -181,7 +185,7 @@ export default async function WeddingServices() {
                   floral designs...
                 </p>
                 <Link href="/wedding-decoration-services">
-                  <p className="my-8">Read more</p>
+                  <p className="my-8 font-bold">Wedding Décor and Design</p>
                 </Link>
               </div>
             </div>
@@ -203,7 +207,7 @@ export default async function WeddingServices() {
                   flower ideas. If you need us to plan...
                 </p>
                 <Link href="blog/how-much-do-wedding-flowers-cost-in-dc-maryland-and-virginia">
-                  <p className="my-8">Read more</p>
+                  <p className="my-8 font-bold">Wedding Flowers</p>
                 </Link>
               </div>
             </div>

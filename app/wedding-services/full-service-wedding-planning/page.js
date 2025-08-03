@@ -11,14 +11,15 @@ export const metadata = {
   title:
     'Full-Service Wedding Planning | Your Dream Day, Flawlessly Executed by Monica Browne Weddings',
   description:
-    'Relax and enjoy your engagement! Our full-service wedding planning covers every detail for your perfect day in Mitchellville, MD. Get your free consultation!',
+    'Relax and enjoy your engagement! Our full-service wedding planning covers every detail for your perfect wedding day. Get your free consultation!',
   alternates: {
-    canonical: 'https://monicabrowneweddings.com/full-service-wedding-planning',
+    canonical:
+      'https://monicabrowneweddings.com/wedding-services/full-service-wedding-planning',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://monicabrowneweddings.com/full-service-wedding-planning',
+    url: 'https://monicabrowneweddings.com/wedding-services/full-service-wedding-planning',
     site_name: 'Monica Browne Weddings',
     images: [
       {

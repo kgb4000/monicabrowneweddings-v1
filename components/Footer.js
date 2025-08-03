@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <section className="bg-slate-50 md:py-20 py-10">
+        <section className="bg-slate-50 md:py-20 py-20">
           <div className="container mx-auto max-w-7xl px-4">
             <div>
               <h2 className="text-2xl py-4">
@@ -13,11 +13,11 @@ export default function Footer() {
               <p className="text-[1rem] pb-6 max-w-3xl">
                 Monica Browne Weddings is one of the best wedding planners in
                 Washington, DC, Maryland, and Northern Virginia. We offer
-                full-service event planning, partial service event planning,
-                day-of coordination, wedding decoration services, and floral
-                design services. If you are a busy couple and need help, or if
-                you need some help and guidance, please don't hesitate to reach
-                out to us. You can book a call with us when you are ready.
+                full-service wedding planning, partial-service planning, day-of
+                coordination, wedding decoration services, and floral design
+                services. If you are a busy couple and need help, or if you need
+                some help and guidance, please don't hesitate to reach out to
+                us. You can book a call with us when you are ready.
               </p>
             </div>
             <div className="mx-auto lg:grid grid-cols-4 gap 4">

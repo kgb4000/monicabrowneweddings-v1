@@ -295,14 +295,14 @@ export default function WeddingFlowers() {
                   what we can to help. It always amazes us how kind and generous
                   our clients are with their feedback and experiences.
                 </p>
-                <p className="text-xl pb-4">
+                {/* <p className="text-xl pb-4">
                   See our gallery of wedding photos from some of our happy
                   couples{' '}
                   <Link href="/wedding-gallery" passHref>
                     here
                   </Link>
                   .
-                </p>
+                </p> */}
                 <p className="text-xl pb-4">
                   Read testimonials from some of our valued clients{' '}
                   <Link href="/testimonials" passHref>

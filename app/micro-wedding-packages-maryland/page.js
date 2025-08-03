@@ -145,11 +145,8 @@ export default function MicroWeddingPackages() {
                 by having a small wedding.
               </p>
               <p className="md:text-xl mb-4">
-                You can spend less on{' '}
-                <Link href="/blog/how-to-choose-the-right-catering-menu-for-your-dc-wedding">
-                  catering
-                </Link>
-                , ceremony and reception decorations, and your venue.
+                You can spend less on catering, ceremony and reception
+                decorations, and your venue.
               </p>
               <p className="md:text-xl mb-4">
                 But a micro wedding doesn't mean less money for every couple.
@@ -373,11 +370,8 @@ export default function MicroWeddingPackages() {
                     <h3 className="text-2xl md:text-3xl my-4">#3. Vendors</h3>
                     <p className="md:text-xl mb-4">
                       Research and book vendors essential to your micro
-                      weddings, such as a photographer, caterer,{' '}
-                      <Link href="/wedding-services/wedding-flowers" passHref>
-                        florist
-                      </Link>
-                      , and musician. You may also need to rent chairs, tables,
+                      weddings, such as a photographer, caterer, florist, and
+                      musician. You may also need to rent chairs, tables,
                       linens, and other decor items.
                     </p>
                   </div>

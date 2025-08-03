@@ -170,10 +170,16 @@ export default function About() {
             <div>
               <ul className="ml-8 list-disc my-4">
                 <li className="md:text-xl mb-4">
-                  Help prepare a budget and manage it
+                  Help prepare and manage your wedding budget
                 </li>
                 <li className="md:text-xl mb-4">
                   Keep you organized to cut stress
+                </li>
+                <li className="md:text-xl mb-4">
+                  <Link href="/wedding-services/full-service-wedding-planning">
+                    Full-service wedding planning
+                  </Link>
+                  .
                 </li>
                 <li className="md:text-xl mb-4">
                   Help research and choose venues and vendors
@@ -192,11 +198,6 @@ export default function About() {
                 </li>
                 <li className="md:text-xl mb-4">
                   Communicate with your wedding party and guests
-                </li>
-                <li className="md:text-xl mb-4">
-                  <Link href="/wedding-services/wedding-decoration-services">
-                    Wedding decorations
-                  </Link>
                 </li>
                 <li className="md:text-xl mb-4">
                   Handle problems that may come up

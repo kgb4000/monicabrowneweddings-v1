@@ -121,7 +121,7 @@ export default function ContactForm() {
         <h1 className="text-5xl md:text-7xl font-bold text-center">Contact</h1>
       </div>
       <main>
-        <div className="max-w-2xl mx-auto px-6">
+        <div className="max-w-2xl mx-auto px-6 mb-10">
           <p className="my-4">
             Call:{' '}
             <a itemProp="telephone" href="tel:240-665-3350">
