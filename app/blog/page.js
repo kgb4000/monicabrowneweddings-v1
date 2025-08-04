@@ -2,17 +2,16 @@ import Link from 'next/link'
 import Button from '@/components/Button'
 
 const getPosts = async () => {
-  const response = await fetch(
-    'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master',
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify({
-        query: `{
-                posts (stage: PUBLISHED, orderBy: createdAt_DESC) {
+  const response = await fetch(process.env.CONTENT_API, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+    body: JSON.stringify({
+      query: `{
+                posts (orderBy: publishedAt_DESC) {
+                  publishedAt
                   title
                   slug
                   coverImage {
@@ -22,13 +21,17 @@ const getPosts = async () => {
                   }
                 }
               }`,
-      }),
-    }
-  )
+    }),
+    next: { revalidate: 3600 },
+  })
+
+  if (!response.ok) {
+    console.error('[getPosts] Failed to fetch:', await response.text())
+    return []
+  }
 
   const { data } = await response.json()
-
-  return data.posts
+  return data.posts || []
 }
 
 export const metadata = {

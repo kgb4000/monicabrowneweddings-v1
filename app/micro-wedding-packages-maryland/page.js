@@ -393,15 +393,9 @@ export default function MicroWeddingPackages() {
                   <div>
                     <h3 className="text-2xl md:text-3xl my-4">#6. Decor</h3>
                     <p className="md:text-xl mb-4">
-                      Decide on the type of{' '}
-                      <Link
-                        href="/wedding-services/wedding-decor-services"
-                        passHref
-                      >
-                        wedding decor
-                      </Link>{' '}
-                      you want, including flowers, lighting, and other decor
-                      elements that can help create the desired atmosphere.
+                      Decide on the type of wedding decor you want, including
+                      flowers, lighting, and other decor elements that can help
+                      create the desired atmosphere.
                     </p>
                   </div>
                   <div>
