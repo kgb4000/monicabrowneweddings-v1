@@ -2,14 +2,16 @@ import Link from 'next/link'
 import Button from '@/components/Button'
 
 const getPosts = async () => {
-  const response = await fetch(process.env.CONTENT_API, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-    body: JSON.stringify({
-      query: `{
+  const response = await fetch(
+    "'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master'",
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        query: `{
                 posts (stage: PUBLISHED, orderBy: createdAt_DESC) {
                   publishedAt
                   title
@@ -21,9 +23,10 @@ const getPosts = async () => {
                   }
                 }
               }`,
-    }),
-    next: { revalidate: 3600 },
-  })
+      }),
+      next: { revalidate: 3600 },
+    }
+  )
 
   if (!response.ok) {
     console.error('[getPosts] Failed to fetch:', await response.text())

@@ -4,14 +4,16 @@ import ShareBtn from '@/components/ShareBtn'
 import { RichText } from '@graphcms/rich-text-react-renderer'
 
 async function getPost(slug) {
-  const res = await fetch(process.env.CONTENT_API, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    },
-    body: JSON.stringify({
-      query: `
+  const res = await fetch(
+    'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        query: `
         query Post($slug: String!) {
                 post(where: {slug: $slug}) {
                   title
@@ -41,11 +43,12 @@ async function getPost(slug) {
                   }
                 }
             }`,
-      variables: {
-        slug: slug,
-      },
-    }),
-  })
+        variables: {
+          slug: slug,
+        },
+      }),
+    }
+  )
   const { data } = await res.json()
   return data.post
 }
