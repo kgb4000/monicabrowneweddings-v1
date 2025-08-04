@@ -859,7 +859,9 @@ export default async function Home() {
                     Annapolis, MD
                   </Link>
                 </p>
-                <p className="md:text-xl mb-4">Bethesda, MD</p>
+                <p className="md:text-xl mb-4">
+                  <Link href="/wedding-planner-bethesda-md">Bethesda, MD</Link>
+                </p>
                 <p className="md:text-xl mb-4">
                   <Link href="/wedding-planner-bowie-md">Bowie, MD</Link>
                 </p>
