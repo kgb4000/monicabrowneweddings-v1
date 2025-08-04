@@ -3,7 +3,7 @@ import Button from '@/components/Button'
 
 const getPosts = async () => {
   const response = await fetch(
-    "'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master'",
+    'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master',
     {
       method: 'POST',
       headers: {
