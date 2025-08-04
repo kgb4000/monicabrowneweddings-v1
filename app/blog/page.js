@@ -10,7 +10,7 @@ const getPosts = async () => {
     },
     body: JSON.stringify({
       query: `{
-                posts (orderBy: publishedAt_DESC) {
+                posts (stage: PUBLISHED, orderBy: createdAt_DESC) {
                   publishedAt
                   title
                   slug
