@@ -48,6 +48,7 @@ export default function RootLayout({ children }) {
       className={`${playfairDisplay.variable} ${openSans.variable} font-sans`}
     >
       <body cz-shortcut-listen="true">
+        <meta name="msvalidate.01" content="7633ECA178DAC900E1A1F1A3D96C2718" />
         <Nav />
         {children}
         <Footer />
