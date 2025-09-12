@@ -53,6 +53,35 @@ async function getPost(slug) {
   return data.post
 }
 
+async function getAllPosts() {
+  const res = await fetch(
+    'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        query: `{
+          posts (stage: PUBLISHED) {
+            slug
+          }
+        }`,
+      }),
+    }
+  )
+  const { data } = await res.json()
+  return data.posts || []
+}
+
+export async function generateStaticParams() {
+  const posts = await getAllPosts()
+  return posts.map((post) => ({
+    slug: post.slug,
+  }))
+}
+
 export async function generateMetadata({ params }) {
   const slug = (await params).slug
   const post = await getPost(slug)

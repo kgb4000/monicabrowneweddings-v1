@@ -12,7 +12,7 @@ const getPosts = async () => {
       },
       body: JSON.stringify({
         query: `{
-                posts (stage: PUBLISHED, orderBy: createdAt_DESC) {
+                posts (stage: PUBLISHED, orderBy: publishedAt_DESC) {
                   publishedAt
                   title
                   slug
@@ -24,7 +24,7 @@ const getPosts = async () => {
                 }
               }`,
       }),
-      next: { revalidate: 3600 },
+      next: { revalidate: 60 },
     }
   )
 

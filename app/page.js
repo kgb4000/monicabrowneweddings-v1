@@ -18,9 +18,10 @@ const getPosts = async () => {
       },
       body: JSON.stringify({
         query: `{
-                posts (stage: PUBLISHED, orderBy: createdAt_DESC, first: 3) {
+                posts (stage: PUBLISHED, orderBy: publishedAt_DESC, first: 3) {
                   title
                   slug
+                  publishedAt
                   coverImage {
                     url
                     width
@@ -32,9 +33,13 @@ const getPosts = async () => {
     }
   )
 
-  const { data } = await response.json()
+  if (!response.ok) {
+    console.error('[getPosts] Failed to fetch:', await response.text())
+    return []
+  }
 
-  return data.posts
+  const { data } = await response.json()
+  return data.posts || []
 }
 
 const localBusinessStructuredData = {
