@@ -20,6 +20,7 @@ const getPosts = async () => {
                     url
                     width
                     height
+                    altText
                   }
                 }
               }`,
@@ -88,7 +89,7 @@ export default async function Posts() {
                     <img
                       className="mb-6"
                       src={post.coverImage.url}
-                      alt={post.title}
+                      alt={post.coverImage.altText}
                       title={post.title}
                       loading="lazy"
                       width={post.coverImage.width}
@@ -107,6 +108,7 @@ export default async function Posts() {
             <img
               src="https://res.cloudinary.com/browne-company/image/upload/q_auto/v1631816208/monica_cqphqb.jpg"
               className="mb-4"
+              alt="Monica Browne, wedding planner and owner of Monica Browne Weddings"
             />
             <p>
               Hi, I'm Monica with <Link href="/">Monica Browne Weddings</Link>.

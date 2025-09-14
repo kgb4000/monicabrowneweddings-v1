@@ -206,7 +206,7 @@ export default async function WeddingServices() {
                   choose designs around what you like while offering new wedding
                   flower ideas. If you need us to plan...
                 </p>
-                <Link href="blog/how-much-do-wedding-flowers-cost-in-dc-maryland-and-virginia">
+                <Link href="/blog/how-much-do-wedding-flowers-cost-in-dc-maryland-and-virginia">
                   <p className="my-8 font-bold">Wedding Flowers</p>
                 </Link>
               </div>

@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import ShareBtn from '@/components/ShareBtn'
+import Image from 'next/image'
 
 import { RichText } from '@graphcms/rich-text-react-renderer'
 
@@ -26,7 +27,7 @@ async function getPost(slug) {
                     url
                     width
                     height
-                    alt
+                    altText
                   }
                   content {
                     json
@@ -37,7 +38,7 @@ async function getPost(slug) {
                     url
                     height
                     width
-                    alt
+                    altText
                     }
                     biography
                   }
@@ -50,7 +51,7 @@ async function getPost(slug) {
     }
   )
   const { data } = await res.json()
-  return data.post
+  return data?.post || null
 }
 
 async function getAllPosts() {
@@ -85,6 +86,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const slug = (await params).slug
   const post = await getPost(slug)
+
+  if (!post) {
+    return {
+      title: 'Post Not Found | Monica Browne Weddings',
+      description: 'The requested blog post could not be found.',
+    }
+  }
+
   return {
     title: post.title,
     description: post.description,
@@ -97,6 +106,18 @@ export async function generateMetadata({ params }) {
 export default async function Page({ params }) {
   const slug = (await params).slug
   const post = await getPost(slug)
+
+  if (!post) {
+    return (
+      <div className="container max-w-2xl mx-auto my-10 px-4">
+        <h1 className="text-4xl my-10">Post Not Found</h1>
+        <p className="text-xl">The requested blog post could not be found.</p>
+        <Link href="/blog" className="md:text-xl text-purple-500 underline">
+          Back to blog
+        </Link>
+      </div>
+    )
+  }
 
   const articleStructuredData = {
     '@context': 'https://schema.org',
@@ -131,7 +152,7 @@ export default async function Page({ params }) {
               <img
                 src={post.author.image.url}
                 className="w-[5rem] rounded-full border-3 border-black m-0"
-                alt={post.author.name}
+                alt={post.author.image.altText || post.author.name}
                 title={post.author.name}
                 width={post.author.image.width}
                 height={post.author.image.height}
@@ -196,6 +217,15 @@ export default async function Page({ params }) {
                     {children}
                   </li>
                 ),
+                img: ({ src, altText, height, width }) => (
+                  <Image
+                    src={src}
+                    alt={altText || 'Blog post image'}
+                    height={height}
+                    width={width}
+                    objectFit="cover"
+                  />
+                ),
               }}
             />
           </article>
@@ -203,7 +233,7 @@ export default async function Page({ params }) {
             <img
               src={post.author.image.url}
               className="w-[5rem] my-6"
-              alt={post.author.name}
+              alt={post.author.image.altText || post.author.name}
               title={post.author.name}
               width={post.author.image.width}
               height={post.author.image.height}
