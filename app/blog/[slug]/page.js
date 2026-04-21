@@ -4,6 +4,11 @@ import Image from 'next/image'
 
 import { RichText } from '@graphcms/rich-text-react-renderer'
 
+// Prevents </script> injection from CMS content breaking out of the JSON-LD block
+function jsonLd(data) {
+  return JSON.stringify(data).replace(/</g, '\\u003c')
+}
+
 async function getPost(slug) {
   const res = await fetch(
     'https://us-east-1.cdn.hygraph.com/content/cktkjtoxd0dod01z1bc0w41e9/master',
@@ -94,13 +99,83 @@ export async function generateMetadata({ params }) {
     }
   }
 
+  const url = `https://monicabrowneweddings.com/blog/${post.slug}`
+  const imageUrl = post.coverImage?.url
+
   return {
     title: post.title,
     description: post.description,
+    authors: [{ name: post.author?.name || 'Monica Browne' }],
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-snippet': -1,
+        'max-image-preview': 'large',
+        'max-video-preview': -1,
+      },
+    },
     alternates: {
-      canonical: `https://monicabrowneweddings.com/blog/${post.slug}`,
+      canonical: url,
+    },
+    openGraph: {
+      type: 'article',
+      url,
+      title: post.title,
+      description: post.description,
+      images: imageUrl ? [{ url: imageUrl }] : [],
+      publishedTime: post.date || post.updatedAt,
+      modifiedTime: post.updatedAt,
+      authors: [post.author?.name || 'Monica Browne'],
+      section: 'Wedding Planning',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.description,
+      images: imageUrl ? [imageUrl] : [],
     },
   }
+}
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': 'https://monicabrowneweddings.com',
+  name: 'Monica Browne Weddings',
+  image: 'https://monicabrowneweddings.com/logo.png',
+  url: 'https://monicabrowneweddings.com',
+  telephone: '+12406653350',
+  priceRange: '$$$',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Bowie',
+    addressRegion: 'MD',
+    postalCode: '20720',
+    addressCountry: 'US',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 38.9429,
+    longitude: -76.7308,
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Washington, DC' },
+    { '@type': 'State', name: 'Maryland' },
+    { '@type': 'State', name: 'Virginia' },
+  ],
+  description:
+    'Full-service wedding planning, day-of coordination, wedding decoration services, and floral design for couples in Washington DC, Maryland, and Northern Virginia.',
+  founder: { '@type': 'Person', name: 'Monica Browne' },
+  serviceType: [
+    'Full-Service Wedding Planning',
+    'Day-of Wedding Coordination',
+    'Partial Wedding Planning',
+    'Wedding Decoration Services',
+    'Wedding Floral Design',
+  ],
 }
 
 export default async function Page({ params }) {
@@ -119,31 +194,82 @@ export default async function Page({ params }) {
     )
   }
 
-  const articleStructuredData = {
+  const pageUrl = `https://monicabrowneweddings.com/blog/${post.slug}`
+
+  const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
     description: post.description,
+    image: post.coverImage?.url,
+    datePublished: post.date || post.updatedAt,
+    dateModified: post.updatedAt,
     author: {
       '@type': 'Person',
-      name: post.author.name,
+      name: post.author?.name || 'Monica Browne',
+      url: 'https://monicabrowneweddings.com/about',
+      jobTitle: 'Wedding Planner and Creative Director',
+      worksFor: {
+        '@type': 'Organization',
+        name: 'Monica Browne Weddings',
+      },
     },
     publisher: {
       '@type': 'Organization',
       name: 'Monica Browne Weddings',
       logo: {
         '@type': 'ImageObject',
-        url: post.coverImage.url,
+        url: 'https://monicabrowneweddings.com/logo.png',
       },
     },
-    datePublished: post.updatedAt,
-    image: post.coverImage.url,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': pageUrl,
+    },
   }
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://monicabrowneweddings.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Blog',
+        item: 'https://monicabrowneweddings.com/blog',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: post.title,
+        item: pageUrl,
+      },
+    ],
+  }
+
   return (
     <>
-      <script type="application/ld+json">
-        {JSON.stringify(articleStructuredData)}
-      </script>
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: jsonLd(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: jsonLd(localBusinessSchema) }}
+      />
       <section>
         <div className="container max-w-2xl mx-auto my-10 px-4">
           <h1 className="text-4xl my-10">{post.title}</h1>
@@ -161,19 +287,10 @@ export default async function Page({ params }) {
             <Link href="/about">
               <p className="mx-4 font-bold">{post.author.name}</p>
             </Link>
-            {/* <span>
-              {new Date(post.updatedAt).toLocaleDateString('en-us', {
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric',
-              })}
-            </span> */}
           </div>
           <p className="text-xl py-2">Be a dear and share:</p>
-          <ShareBtn
-            shareLink={`https://monicabrowneweddings.com/blog/${post.slug}`}
-          />
-          <article className=" py-4">
+          <ShareBtn shareLink={pageUrl} />
+          <article className="py-4">
             <RichText
               content={post.content.json}
               renderers={{
