@@ -193,7 +193,7 @@ export default async function Page({ params }) {
   if (!post) {
     return (
       <div className="container max-w-2xl mx-auto my-10 px-4">
-        <h1 className="text-4xl my-10">Post Not Found</h1>
+        <h1 className="text-2xl md:text-4xl my-10 font-bold">Post Not Found</h1>
         <p className="text-xl">The requested blog post could not be found.</p>
         <Link href="/blog" className="md:text-xl text-purple-500 underline">
           Back to blog
@@ -280,7 +280,7 @@ export default async function Page({ params }) {
       />
       <section>
         <div className="container max-w-2xl mx-auto my-10 px-4">
-          <h1 className="text-4xl my-10">{post.title}</h1>
+          <h1 className="text-2xl md:text-4xl my-10 font-bold leading-snug">{post.title}</h1>
           <div className="mb-2 flex items-center">
             <Link href="/about" passHref>
               <Image
