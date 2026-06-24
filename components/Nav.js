@@ -2,14 +2,37 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import {
+  Dialog,
+  DialogPanel,
+  Popover,
+  PopoverButton,
+  PopoverPanel,
+} from '@headlessui/react'
+import {
+  Bars3Icon,
+  XMarkIcon,
+  ChevronDownIcon,
+} from '@heroicons/react/24/outline'
 
 const calendly =
   'https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne?'
 
+const services = [
+  { name: 'All Services', href: '/wedding-services' },
+  {
+    name: 'Full-Service Wedding Planning',
+    href: '/wedding-services/full-service-wedding-planning',
+  },
+  {
+    name: 'Day-of Coordinator',
+    href: '/day-of-wedding-coordinator-washington-dc',
+  },
+  { name: 'Wedding Flowers', href: '/wedding-flowers' },
+  { name: 'Small Weddings', href: '/wedding-services/small-wedding-planning' },
+]
+
 const navigation = [
-  { name: 'Services', href: '/wedding-services' },
   { name: 'Blog', href: '/blog' },
   { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
@@ -17,6 +40,7 @@ const navigation = [
 
 export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [servicesOpen, setServicesOpen] = useState(false)
 
   return (
     <div className="bg-white">
@@ -40,7 +64,33 @@ export default function Nav() {
               <Bars3Icon aria-hidden="true" className="size-6" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          <div className="hidden lg:flex lg:gap-x-12 items-center">
+            <Popover className="relative">
+              <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 no-underline bg-transparent border-0 cursor-pointer p-0 outline-none">
+                Services
+                <ChevronDownIcon
+                  aria-hidden="true"
+                  className="size-4 text-gray-500"
+                />
+              </PopoverButton>
+              <PopoverPanel
+                anchor={{ to: 'bottom start', gap: 12 }}
+                className="z-50 w-56 rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5 p-1"
+              >
+                {({ close }) =>
+                  services.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      onClick={() => close()}
+                      className="block rounded-lg px-4 py-2 text-sm font-semibold text-gray-900 hover:bg-gray-50 no-underline"
+                    >
+                      {item.name}
+                    </Link>
+                  ))
+                }
+              </PopoverPanel>
+            </Popover>
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -85,6 +135,31 @@ export default function Nav() {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
+                  <button
+                    type="button"
+                    onClick={() => setServicesOpen((v) => !v)}
+                    className="-mx-3 flex w-full items-center justify-between rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 bg-transparent border-0 cursor-pointer"
+                  >
+                    Services
+                    <ChevronDownIcon
+                      aria-hidden="true"
+                      className={`size-5 text-gray-500 transition-transform ${servicesOpen ? 'rotate-180' : ''}`}
+                    />
+                  </button>
+                  {servicesOpen && (
+                    <div className="pl-4 space-y-1">
+                      {services.map((item) => (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className="-mx-3 block rounded-lg px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-gray-50 no-underline"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                   {navigation.map((item) => (
                     <Link
                       key={item.name}

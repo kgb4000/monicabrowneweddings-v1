@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import ShareBtn from '@/components/ShareBtn'
 import Image from 'next/image'
+import AudioPlayer from '@/components/AudioPlayer'
 
 import { RichText } from '@graphcms/rich-text-react-renderer'
 
@@ -34,6 +35,10 @@ async function getPost(slug) {
                     height
                     altText
                   }
+                  quickAnswer
+                  audio {
+                    url
+                  }
                   content {
                     json
                   }
@@ -55,8 +60,11 @@ async function getPost(slug) {
       }),
     }
   )
-  const { data } = await res.json()
-  return data?.post || null
+  const json = await res.json()
+  if (json.errors) {
+    console.error('[getPost] GraphQL errors:', JSON.stringify(json.errors))
+  }
+  return json.data?.post || null
 }
 
 async function getAllPosts() {
@@ -275,7 +283,7 @@ export default async function Page({ params }) {
           <h1 className="text-4xl my-10">{post.title}</h1>
           <div className="mb-2 flex items-center">
             <Link href="/about" passHref>
-              <img
+              <Image
                 src={post.author.image.url}
                 className="w-[5rem] rounded-full border-3 border-black m-0"
                 alt={post.author.image.altText || post.author.name}
@@ -290,29 +298,36 @@ export default async function Page({ params }) {
           </div>
           <p className="text-xl py-2">Be a dear and share:</p>
           <ShareBtn shareLink={pageUrl} />
+          {post.audio?.url && <AudioPlayer src={post.audio.url} />}
+          {post.quickAnswer && (
+            <div className="my-6 rounded-xl border-l-4 border-purple-500 bg-purple-50 px-6 py-5">
+              <p className="text-xs font-bold uppercase tracking-widest text-purple-600 mb-2">Quick Answer</p>
+              <p className="text-base md:text-lg leading-relaxed text-gray-800">{post.quickAnswer}</p>
+            </div>
+          )}
           <article className="py-4">
             <RichText
               content={post.content.json}
               renderers={{
                 h2: ({ children }) => (
-                  <h2 className="text-2xl lg:text-4xl leading-relaxed text-ui-fg-base font-normal lg:my-5">
+                  <h2 className="text-2xl lg:text-4xl font-bold leading-snug mt-10 mb-4">
                     {children}
                   </h2>
                 ),
                 h3: ({ children }) => (
-                  <h3 className="text-xl lg:text-3xl leading-relaxed text-ui-fg-base font-normal lg:my-5">
+                  <h3 className="text-xl lg:text-3xl font-bold leading-snug mt-8 mb-3">
                     {children}
                   </h3>
                 ),
                 h4: ({ children }) => (
-                  <h4 className="text-xl lg:text-3xl leading-relaxed text-ui-fg-base font-normal lg:my-5">
+                  <h4 className="text-lg lg:text-2xl font-semibold leading-snug mt-6 mb-2">
                     {children}
                   </h4>
                 ),
                 a: ({ children, href, openInNewTab }) => (
                   <Link
                     href={href}
-                    className="#a29bfe underline"
+                    className="text-purple-600 underline"
                     target={openInNewTab ? '_blank' : '_self'}
                     rel="noreferrer"
                   >
@@ -320,17 +335,22 @@ export default async function Page({ params }) {
                   </Link>
                 ),
                 p: ({ children }) => (
-                  <p className="md:text-xl leading text-ui-fg-base font-normal my-6 leading-8">
+                  <p className="text-base md:text-lg leading-relaxed my-5 text-gray-800">
                     {children}
                   </p>
                 ),
                 ul: ({ children }) => (
-                  <ul className="leading-relaxed text-ui-fg-base font-normal lg:my-5 list-disc mx-10 mb-10">
+                  <ul className="list-disc pl-8 my-5 space-y-2">
                     {children}
                   </ul>
                 ),
+                ol: ({ children }) => (
+                  <ol className="list-decimal pl-8 my-5 space-y-2">
+                    {children}
+                  </ol>
+                ),
                 li: ({ children }) => (
-                  <li className="md:text-xl leading text-ui-fg-base font-normal my-6 leading-8">
+                  <li className="text-base md:text-lg leading-relaxed text-gray-800">
                     {children}
                   </li>
                 ),
@@ -343,11 +363,16 @@ export default async function Page({ params }) {
                     objectFit="cover"
                   />
                 ),
+                table: ({ children }) => (
+                  <div className="table-wrapper">
+                    <table>{children}</table>
+                  </div>
+                ),
               }}
             />
           </article>
           <div className="my-4 border-4 border-solid border-slate-50 p-8">
-            <img
+            <Image
               src={post.author.image.url}
               className="w-[5rem] my-6"
               alt={post.author.image.altText || post.author.name}
