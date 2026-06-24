@@ -3,29 +3,6 @@
 import { useState } from 'react'
 import Button from '@/components/Button'
 
-export const metadata = {
-  title: 'Contact | Monica Browne Weddings',
-  description:
-    "If you're a busy couple planning your wedding and you think you may need help, please contact us.",
-  alternate: {
-    canonical: 'https://monicabrowneweddings.com/contact',
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://monicabrowneweddings.com/contact',
-    site_name: 'Monica Browne Weddings',
-    images: [
-      {
-        url: 'https://monicabrowneweddings.com/public/images/wedding-planner-vs-coordinator.webp',
-        width: 1000,
-        height: 1500,
-        alt: 'Micro wedding at winery in Maryland.',
-      },
-    ],
-  },
-}
-
 export default function ContactForm() {
   const [status, setStatus] = useState({
     submitted: false,
@@ -57,7 +34,7 @@ export default function ContactForm() {
     })
   }
 
-  const isEnabled = inputs.email.length && inputs.firstName > 0
+  const isEnabled = inputs.email.length > 0 && inputs.firstName.length > 0
 
   const handleResponse = (status, msg) => {
     if (status === 200) {
@@ -104,8 +81,6 @@ export default function ContactForm() {
       date: inputs.date,
       message: inputs.message,
     })
-
-    console.log(body)
 
     const res = await fetch(endpoint, {
       method: 'POST',
@@ -158,8 +133,8 @@ export default function ContactForm() {
               <label htmlFor="phone">My phone number is *</label>
               <input
                 id="phone"
-                type="text"
-                maxLength="10"
+                type="tel"
+                maxLength="14"
                 placeholder="(202) 222-2222"
                 value={inputs.phone}
                 onChange={handleOnChange}
@@ -188,7 +163,7 @@ export default function ContactForm() {
               </div>
               <Button
                 type="submit"
-                disabled={status.submitting || isEnabled}
+                disabled={status.submitting || !isEnabled}
                 borderColor="border-black"
                 borderWidth="border-2"
                 textColor="white"

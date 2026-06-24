@@ -30,9 +30,69 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Wedding Planner Bowie MD', item: 'https://monicabrowneweddings.com/wedding-planner-bowie-md' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://monicabrowneweddings.com/wedding-planner-bowie-md#service',
+      name: 'Wedding Planner in Bowie, Maryland',
+      serviceType: 'Wedding Planning',
+      description: 'Full-service wedding planning and day-of coordination for couples in Bowie, Maryland and the surrounding Prince George\'s County area.',
+      provider: { '@id': 'https://monicabrowneweddings.com' },
+      areaServed: { '@type': 'City', name: 'Bowie', addressRegion: 'MD' },
+      offers: {
+        '@type': 'Offer',
+        priceRange: '$4,500–$10,000+',
+        priceCurrency: 'USD',
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Is it worth it to hire a wedding planner?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Whether or not you should hire a wedding planner depends on your specific needs. If you have a large, complicated wedding, it may be worth it to hire a wedding planner to handle everything for you. If you have a smaller, simpler wedding, you may not need all the services a full-service planner offers — in that case, a day-of coordinator can be a cost-effective alternative.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What can I expect from a full-service wedding planner?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'When you hire a full-service wedding planner, you can expect them to be involved in every aspect of your wedding planning. They will help you choose your venue, select your vendors, and create a timeline for your big day. On your wedding day, they will ensure everything runs smoothly so you can relax and enjoy yourself.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the average cost of a full-service wedding planner in Bowie, MD?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'The average cost of a full-service wedding planner in the Bowie, MD area ranges from $4,500 to $10,000. The exact cost depends on the size and complexity of your wedding, as well as the location and services you require.',
+          },
+        },
+      ],
+    },
+  ],
+}
+
 export default function WeddingPlannerBowieMD() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Hero
         herotext="Wedding Planner For Busy Couples in Bowie, Maryland"
         heroSubText="We design unforgettable weddings for busy couples in Bowie, MD, turning your vision into a flawless and beautifully crafted celebration"
@@ -262,10 +322,10 @@ export default function WeddingPlannerBowieMD() {
                 Handling All The Details?
               </h2>
               <div className="grid grid-cols-2 gap-2 mb-10">
-                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736311733/Monica%20Browne%20Weddings/bride-at-wedding_umiq78.webp" />
-                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309743/Monica%20Browne%20Weddings/bride-groom-serious-love_moyugv.webp" />
-                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309709/Monica%20Browne%20Weddings/black-bride-and-groom_etu7gf.webp" />
-                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309793/Monica%20Browne%20Weddings/happy-bride-and-groom_jawncb.webp" />
+                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736311733/Monica%20Browne%20Weddings/bride-at-wedding_umiq78.webp" alt="Bride at her wedding in Bowie, Maryland" width="472" height="472" loading="lazy" />
+                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309743/Monica%20Browne%20Weddings/bride-groom-serious-love_moyugv.webp" alt="Bride and groom at their Bowie wedding" width="472" height="472" loading="lazy" />
+                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309709/Monica%20Browne%20Weddings/black-bride-and-groom_etu7gf.webp" alt="Couple on their wedding day in Maryland" width="472" height="472" loading="lazy" />
+                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309793/Monica%20Browne%20Weddings/happy-bride-and-groom_jawncb.webp" alt="Happy bride and groom at their Maryland wedding" width="472" height="472" loading="lazy" />
               </div>
               <a href={calendly} target="_blank">
                 <Button

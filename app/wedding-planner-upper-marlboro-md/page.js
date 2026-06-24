@@ -32,9 +32,63 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Wedding Planner Upper Marlboro MD', item: 'https://monicabrowneweddings.com/wedding-planner-upper-marlboro-md' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://monicabrowneweddings.com/wedding-planner-upper-marlboro-md#service',
+      name: 'Wedding Planner in Upper Marlboro, Maryland',
+      serviceType: 'Wedding Planning',
+      description: 'Full-service wedding planning and day-of coordination for couples in Upper Marlboro, MD.',
+      provider: { '@id': 'https://monicabrowneweddings.com' },
+      areaServed: { '@type': 'City', name: 'Upper Marlboro', addressRegion: 'MD' },
+      offers: { '@type': 'Offer', priceRange: '$7,000–$25,000+', priceCurrency: 'USD' },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is the average cost of a wedding in Upper Marlboro, MD?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The cost of a wedding in Upper Marlboro, MD, can vary significantly based on your guest count, desired style, and chosen services. On average, couples typically spend anywhere from $32,000 to $70,000, with more elaborate celebrations often exceeding $75,000.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How far in advance should we book our wedding planner in Upper Marlboro?',
+          acceptedAnswer: { '@type': 'Answer', text: 'We highly recommend securing your wedding planner as early as possible — ideally 12 to 18 months before your wedding date. Booking in advance allows us ample time to secure your preferred venues and vendors and meticulously craft every element of your special day.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you accommodate cultural or religious wedding traditions?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Absolutely! We specialize in respectfully incorporating diverse cultural and religious traditions into your wedding celebration. Our team works closely with you to ensure every detail honors your heritage, creating a beautiful, cohesive, and unforgettable event.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Are you familiar with wedding venues in Upper Marlboro, MD?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we are! We possess extensive experience with a wide array of wedding venues in Upper Marlboro, MD, ranging from grand ballrooms and elegant estates to charming outdoor settings and unique event spaces.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you offer day-of coordination services in Upper Marlboro?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we do! Our expert day-of coordination services are designed to ensure your wedding day unfolds flawlessly from beginning to end. We manage every logistical detail — creating and overseeing a detailed timeline, coordinating all vendors, handling setup and breakdown, and swiftly resolving any last-minute issues.' },
+        },
+      ],
+    },
+  ],
+}
+
 export default async function WeddingPlannerUpperMarlboroMD() {
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Hero
         herotext="Wedding Planner in Upper Marlboro, MD | Elevating Every Moment of Your Wedding"
         heroSubText="Transforming your wedding dreams into a truly unforgettable, stress-free reality"

@@ -32,9 +32,90 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Wedding Services', item: 'https://monicabrowneweddings.com/wedding-services' },
+        { '@type': 'ListItem', position: 3, name: 'Full-Service Wedding Planning', item: 'https://monicabrowneweddings.com/wedding-services/full-service-wedding-planning' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://monicabrowneweddings.com/wedding-services/full-service-wedding-planning#service',
+      name: 'Full-Service Wedding Planning',
+      serviceType: 'Wedding Planning',
+      description: 'Complete end-to-end wedding planning covering vendor selection, budget management, design, timeline coordination, and full day-of execution for couples in Washington DC, Maryland, and Northern Virginia.',
+      provider: { '@id': 'https://monicabrowneweddings.com' },
+      areaServed: [
+        { '@type': 'State', name: 'Maryland' },
+        { '@type': 'State', name: 'Virginia' },
+        { '@type': 'City', name: 'Washington', addressRegion: 'DC' },
+      ],
+      offers: {
+        '@type': 'Offer',
+        priceRange: '$7,000–$25,000+',
+        priceCurrency: 'USD',
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is the typical timeline for full-service wedding planning?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We recommend starting full-service planning anywhere from 12 to 18 months before your desired wedding date. This allows ample time for vendor selection, design development, and securing your preferred dates. However, we\'re experienced in planning weddings on shorter timelines too, so don\'t hesitate to reach out even if your date is closer!',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How much does full-service wedding planning cost?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'In the wider DMV (DC, Maryland, Virginia) area, the cost for full-service wedding planning generally ranges from $7,000 to $25,000+, with many couples investing between $3,000 and $7,000 for partial planning services.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you work with specific budgets, or is there a minimum?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We work with a diverse range of budgets and believe beautiful weddings can be created at various price points. During our initial consultation, we\'ll discuss your financial comfort zone and help you understand how to best allocate your resources to achieve your vision.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How do you select your vendors, and can we bring our own?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We pride ourselves on our network of trusted, professional, and reliable wedding vendors across DC, Maryland, and Virginia. Our recommendations are based on proven quality, professionalism, and their ability to align with your specific style and budget. While we highly recommend our vetted partners, we\'re certainly open to working with vendors you may already have in mind, provided they meet our standards of excellence.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is full-service planning only for large, elaborate weddings?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Not at all! While we excel at producing grand celebrations, full-service planning is equally valuable for intimate weddings and micro-weddings. The benefit isn\'t just about the size of the event, but about the level of support and peace of mind you receive.',
+          },
+        },
+      ],
+    },
+  ],
+}
+
 export default async function fullServiceWeddingPlanning() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Hero
         herotext="Full-Service Wedding Planning for Busy Couples in the DMV"
         heroSubText="We create stunning weddings for busy couples in Washington, DC, blending timeless traditions with modern elegance for a day you’ll cherish forever"
@@ -757,7 +838,7 @@ export default async function fullServiceWeddingPlanning() {
                 In the wider DMV (D.C., Maryland, Virginia) area, the cost for
                 full-service wedding planning generally ranges from{' '}
                 <b>$7,000 to $25,000+</b>, with many couples investing between
-                <b>$3,500 and $9,000</b> for{' '}
+                <b>$3,000 and $7,000</b> for{' '}
                 <Link href="/wedding-services/partial-wedding-planning">
                   partial planning
                 </Link>{' '}

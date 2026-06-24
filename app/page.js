@@ -44,7 +44,8 @@ const getPosts = async () => {
 
 const localBusinessStructuredData = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': 'ProfessionalService',
+  '@id': 'https://monicabrowneweddings.com',
   name: 'Monica Browne Weddings',
   description:
     "Monica Browne Weddings is one of the best wedding planners in Washington, DC, Maryland and Northern Virginia. We offer full-service event planning, partial service event planning, day-of coordination, event design, and floral design services. If you are a busy couple and need help, or if you need some help and guidance, please don't hesitate to reach out to us. You can book a call with us when you are ready.",
@@ -58,23 +59,27 @@ const localBusinessStructuredData = {
     postalCode: '20720',
     addressCountry: 'US',
   },
-  url: 'http://monicabrowneweddings.com',
-  telephone: '+1-240-665-3350',
+  url: 'https://monicabrowneweddings.com',
+  telephone: '+12406653350',
   openingHours: 'Mo,Tu,We,Th,Fr,Sa 09:00-17:00',
-  geoMidpoint: {
-    latitude: '39.013313',
-    longitude: '-76.776924',
+  foundingDate: '2004',
+  founder: {
+    '@type': 'Person',
+    name: 'Monica Browne',
   },
   geo: {
     '@type': 'GeoCoordinates',
     latitude: '39.013313',
     longitude: '-76.776924',
   },
-  geoRadius: '1000',
-  rating: {
+  aggregateRating: {
+    '@type': 'AggregateRating',
     ratingValue: '5',
     ratingCount: '13',
+    bestRating: '5',
+    worstRating: '1',
   },
+  priceRange: '$$$',
   areaServed: [
     // Use an array for multiple locations or GeoShapes
     {
@@ -233,12 +238,21 @@ export default async function Home() {
         {JSON.stringify(faqStructuredData)}
       </script>
       <Hero
-        herotext="Professional Wedding Planning Services For Busy Couples"
-        heroSubText="We Create Beautiful Weddings For Busy Couples in Washington, DC, Maryland and Northern Virginia"
+        herotext="Your Dream Wedding, Without the Stress"
+        heroSubText="Full-Service Wedding Planning & Day-of Coordination in Washington DC, Maryland & Northern Virginia"
         buttonText="Book A Call With Monica!"
         textColor="text-white"
         imageUrl="/images/wedding-couple.webp"
       />
+      <div className="bg-stone-50 border-b border-stone-200">
+        <div className="max-w-4xl mx-auto px-6 py-4 flex flex-wrap justify-center items-center gap-x-8 gap-y-2 text-sm md:text-base text-stone-600 font-medium">
+          <span>&#11088; 5-Star Rated</span>
+          <span className="hidden sm:inline text-stone-300">|</span>
+          <span>20+ Years Experience</span>
+          <span className="hidden sm:inline text-stone-300">|</span>
+          <span>Washington DC &nbsp;&middot;&nbsp; Maryland &nbsp;&middot;&nbsp; Virginia</span>
+        </div>
+      </div>
       <main>
         <section>
           <div className="container mx-auto max-w-7xl px-6 py-8 md:py-20">

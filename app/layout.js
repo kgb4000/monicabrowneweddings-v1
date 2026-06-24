@@ -32,12 +32,52 @@ const openSans = Open_Sans({
 })
 
 export const metadata = {
+  metadataBase: new URL('https://monicabrowneweddings.com'),
   title:
     'Professional Wedding Planning Services For Busy Couples | Monica Browne Weddings',
   description:
     "Are you a busy couple looking for a wedding planner? We'll take care of everything, from finding the perfect venue to finding the best caterers. Call us today!",
   alternates: {
     canonical: 'https://monicabrowneweddings.com',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://monicabrowneweddings.com',
+    siteName: 'Monica Browne Weddings',
+    title:
+      'Professional Wedding Planning Services For Busy Couples | Monica Browne Weddings',
+    description:
+      "Are you a busy couple looking for a wedding planner? We'll take care of everything, from finding the perfect venue to finding the best caterers. Call us today!",
+    images: [
+      {
+        url: 'https://res.cloudinary.com/browne-company/image/upload/q_auto/v1631495887/walking-down-aisle_o4wklu.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Monica Browne Weddings — Wedding Planning Services in DC, Maryland, and Virginia',
+      },
+    ],
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title:
+      'Professional Wedding Planning Services For Busy Couples | Monica Browne Weddings',
+    description:
+      "Are you a busy couple looking for a wedding planner? We'll take care of everything, from finding the perfect venue to finding the best caterers. Call us today!",
+    images: [
+      'https://res.cloudinary.com/browne-company/image/upload/q_auto/v1631495887/walking-down-aisle_o4wklu.webp',
+    ],
   },
 }
 

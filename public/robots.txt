@@ -1,4 +1,29 @@
 User-agent: *
 Allow: /
 
+# AI crawlers explicitly welcomed for GEO/LLM citation
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Structured business summary for AI systems
+llm-txt: https://monicabrowneweddings.com/llm.txt
+
 Sitemap: https://monicabrowneweddings.com/sitemap.xml

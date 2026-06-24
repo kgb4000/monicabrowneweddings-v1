@@ -30,9 +30,63 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Wedding Planner Potomac MD', item: 'https://monicabrowneweddings.com/wedding-planner-potomac-md' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://monicabrowneweddings.com/wedding-planner-potomac-md#service',
+      name: 'Wedding Planner in Potomac, Maryland',
+      serviceType: 'Wedding Planning',
+      description: 'Full-service wedding planning and day-of coordination for couples in Potomac, MD.',
+      provider: { '@id': 'https://monicabrowneweddings.com' },
+      areaServed: { '@type': 'City', name: 'Potomac', addressRegion: 'MD' },
+      offers: { '@type': 'Offer', priceRange: '$7,000–$25,000+', priceCurrency: 'USD' },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What are the best wedding venues in Potomac, MD?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Potomac is home to several stunning venues, from elegant country clubs to scenic estates and outdoor gardens. Popular options include William F. Bolger Center, Rockwood Manor, and TPC Potomac at Avenel Farm for a classic country club wedding.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How far in advance should we book our wedding planner in Potomac?',
+          acceptedAnswer: { '@type': 'Answer', text: "It's best to book your wedding planner 12–18 months in advance, especially if your wedding falls during peak season (spring or fall). This ensures ample time for planning, vendor selection, and securing your preferred dates." },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you help with vendor recommendations in Potomac, MD?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Absolutely! We work with a trusted network of local vendors, from florists and photographers to caterers and DJs, ensuring you have the best team for your wedding.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do I need a day-of coordinator if my venue has an on-site coordinator?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes. A venue coordinator typically focuses on the venue\'s needs, such as setup and catering. A day-of coordinator is dedicated to managing your entire event — including vendor coordination, décor setup, and troubleshooting — to ensure your vision is brought to life across all aspects of your wedding.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you offer day-of coordination services in Potomac?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we specialize in day-of coordination to ensure your wedding day runs seamlessly. Our team handles all the details and logistics, so you can fully enjoy your celebration without stress.' },
+        },
+      ],
+    },
+  ],
+}
+
 export default async function WeddingPlannerPotomacMD() {
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Hero
         herotext="Wedding Planner in Potomac, Maryland for Picture-Perfect Celebrations"
         heroSubText="We Create Beautiful Weddings For Busy Couples in Potomac"

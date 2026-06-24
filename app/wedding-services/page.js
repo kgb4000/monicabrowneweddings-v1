@@ -6,7 +6,7 @@ import Button from '@/components/Button'
 export const metadata = {
   title: 'Wedding Services | Monica Browne Weddings',
   description:
-    'Wedding Services from Monica Browne Weddings include Full Service Wedding Planning, Day-of Cordination, Wedding Decor, Flowers, and Floral Design.',
+    'Wedding Services from Monica Browne Weddings include Full Service Wedding Planning, Day-of Coordination, Wedding Decor, Flowers, and Floral Design.',
   alternates: {
     canonical: 'https://monicabrowneweddings.com/wedding-services',
   },
@@ -26,9 +26,23 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Wedding Services', item: 'https://monicabrowneweddings.com/wedding-services' },
+      ],
+    },
+  ],
+}
+
 export default async function WeddingServices() {
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <main>
         <Hero
           herotext="Wedding Planning Services"
@@ -79,7 +93,7 @@ export default async function WeddingServices() {
                 </h3>
                 <p className="md:text-xl mb-4">
                   When you have everything else planned and you just need
-                  someone to help you coordinate eveything on the day of your
+                  someone to help you coordinate everything on the day of your
                   wedding, call Monica browne Weddings. With Monica Browne
                   Weddings there as your day of wedding coordinator, you will
                   not...
@@ -120,7 +134,7 @@ export default async function WeddingServices() {
               <img
                 src="https://res.cloudinary.com/browne-company/image/upload/v1736311019/Monica%20Browne%20Weddings/indian-bride_smaller.jpg"
                 loading="lazy"
-                alt="Indian wedding planner in DC, Mayland, and Northern Virginia."
+                alt="Indian wedding planner in DC, Maryland, and Northern Virginia."
                 width="472"
                 height="708"
               />
@@ -234,7 +248,7 @@ export default async function WeddingServices() {
             </div>
           </div> */}
           <div className="center">
-            <a href="tel:+2402660588">
+            <a href="tel:+12406653350">
               <Button
                 buttonText="Call Monica (240) 665-3350"
                 bgColor="bg-purple-500"

@@ -8,7 +8,7 @@ const calendly =
 export const metadata = {
   title: 'About Monica Browne Weddings',
   description:
-    'Monica Browne Weddings is a wedding planning company dedicated to hepling busy couples plan their dream wedding.',
+    'Monica Browne Weddings is a wedding planning company dedicated to helping busy couples plan their dream wedding.',
   alternates: {
     canonical: 'https://monicabrowneweddings.com/about',
   },

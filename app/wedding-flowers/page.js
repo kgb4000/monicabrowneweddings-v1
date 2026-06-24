@@ -26,9 +26,36 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Wedding Flowers', item: 'https://monicabrowneweddings.com/wedding-flowers' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://monicabrowneweddings.com/wedding-flowers#service',
+      name: 'Wedding Flowers & Floral Design',
+      serviceType: 'Wedding Floral Design',
+      description: 'Custom wedding floral design including bridal bouquets, centerpieces, boutonnieres, ceremony arch florals, and full floral styling for weddings in DC, Maryland, and Virginia.',
+      provider: { '@id': 'https://monicabrowneweddings.com' },
+      areaServed: [
+        { '@type': 'State', name: 'Maryland' },
+        { '@type': 'State', name: 'Virginia' },
+        { '@type': 'City', name: 'Washington', addressRegion: 'DC' },
+      ],
+    },
+  ],
+}
+
 export default function WeddingFlowers() {
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Hero
         herotext="Wedding Flowers and Floral Design"
         heroSubText="We create beautiful and unique floral experiences for your wedding"

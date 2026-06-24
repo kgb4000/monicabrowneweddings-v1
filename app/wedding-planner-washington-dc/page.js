@@ -31,9 +31,85 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Washington DC Wedding Planner', item: 'https://monicabrowneweddings.com/wedding-planner-washington-dc' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://monicabrowneweddings.com/wedding-planner-washington-dc#service',
+      name: 'Wedding Planner in Washington DC',
+      serviceType: 'Wedding Planning',
+      description: 'Full-service wedding planning and day-of coordination for couples in Washington, DC. Monica Browne Weddings handles every detail from venue and vendor selection to day-of execution.',
+      provider: { '@id': 'https://monicabrowneweddings.com' },
+      areaServed: { '@type': 'City', name: 'Washington', addressRegion: 'DC' },
+      offers: {
+        '@type': 'Offer',
+        priceRange: '$7,000–$25,000+',
+        priceCurrency: 'USD',
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'How much does a DC wedding planner cost?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'In the DC area, you can expect to invest anywhere from $7,000 to $15,000+ for a full-service wedding planner. Day-of coordination typically falls between $2,300 and $7,000. For a personalized quote, book a free 15-minute call.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What does a DC wedding planner do, and how can you help with my wedding?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A wedding planner handles all aspects of your wedding, from budgeting and vendor coordination to designing your dream décor and managing the big day. For Washington DC weddings, we work with trusted local vendors and ensure your event aligns with your vision.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'When should I hire a DC wedding planner?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Ideally, you should hire a wedding planner 12–18 months before your wedding. However, we offer services for all stages of planning, whether you\'re just starting or your wedding is only a few weeks away.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What types of wedding planning services do you offer?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We provide full-service wedding planning, partial planning, and day-of coordination. Full-service planning covers everything from start to finish, partial planning allows you to get help with specific aspects, and day-of coordination ensures your wedding day runs smoothly while you relax and enjoy.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How will you ensure my wedding day goes smoothly?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We create a detailed wedding day timeline, confirm all vendor schedules, conduct a venue walkthrough, and coordinate a rehearsal before the wedding. On the big day, we manage logistics, troubleshoot any issues, and serve as the primary contact for vendors and your wedding party.',
+          },
+        },
+      ],
+    },
+  ],
+}
+
 export default async function weddingPlannerWashingtonDC() {
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Hero
         herotext="Washington, DC Wedding Planner, for Couples Who Want an Unforgettable Day"
         heroSubText="We create stunning weddings for busy couples in Washington, DC, blending timeless traditions with modern elegance for a day you’ll cherish forever"

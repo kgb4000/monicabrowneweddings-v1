@@ -31,9 +31,63 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Wedding Planner Fort Washington MD', item: 'https://monicabrowneweddings.com/wedding-planner-fort-washington-md' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://monicabrowneweddings.com/wedding-planner-fort-washington-md#service',
+      name: 'Wedding Planner in Fort Washington, Maryland',
+      serviceType: 'Wedding Planning',
+      description: 'Full-service wedding planning and day-of coordination for couples in Fort Washington, MD.',
+      provider: { '@id': 'https://monicabrowneweddings.com' },
+      areaServed: { '@type': 'City', name: 'Fort Washington', addressRegion: 'MD' },
+      offers: { '@type': 'Offer', priceRange: '$7,000–$15,000+', priceCurrency: 'USD' },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What are typical wedding planner prices in Fort Washington, MD?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The cost of a wedding planner in Fort Washington, MD, can start from around $2,300–$7,000 for day-of coordination and go upwards of $7,000–$15,000+ for comprehensive full-service wedding planning.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is a normal budget allocation for a wedding planner?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Generally, couples allocate about 10–15% of their total wedding budget to their wedding planner. For busy couples, investing in a planner can often save money and time in the long run by helping you make smart vendor choices, negotiate contracts, and avoid costly mistakes.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'What services does Monica Browne Weddings offer for busy couples in Fort Washington?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Monica Browne Weddings offers full-service wedding planning from concept to execution, partial planning, vendor selection and management, budget creation and tracking, timeline development, design conceptualization, rehearsal coordination, and seamless day-of management.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do I really need a wedding planner if my venue has a coordinator?',
+          acceptedAnswer: { '@type': 'Answer', text: "While many venues offer an on-site coordinator, their role is primarily to manage the venue's operations. We work exclusively for you — overseeing all vendors, managing your comprehensive timeline, handling unforeseen issues, and ensuring your entire vision comes together seamlessly." },
+        },
+        {
+          '@type': 'Question',
+          name: 'How far in advance should I book a wedding planner in Fort Washington?',
+          acceptedAnswer: { '@type': 'Answer', text: 'We recommend booking your wedding planner as soon as possible after you get engaged, ideally 12–18 months before your wedding date. However, we also accommodate shorter timelines based on availability.' },
+        },
+      ],
+    },
+  ],
+}
+
 export default function WeddingPlannerFortWashingtonMD() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Hero
         herotext="Wedding Planning in Fort Washington: Expert Planners for Your Busy Schedule"
         heroSubText="We turning your vision into a flawless, beautifully crafted celebration you'll actually get to enjoy"
@@ -196,10 +250,10 @@ export default function WeddingPlannerFortWashingtonMD() {
                 Handling All The Details?
               </h2>
               <div className="grid grid-cols-2 gap-2 mb-10">
-                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736311733/Monica%20Browne%20Weddings/bride-at-wedding_umiq78.webp" />
-                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309743/Monica%20Browne%20Weddings/bride-groom-serious-love_moyugv.webp" />
-                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309709/Monica%20Browne%20Weddings/black-bride-and-groom_etu7gf.webp" />
-                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309793/Monica%20Browne%20Weddings/happy-bride-and-groom_jawncb.webp" />
+                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736311733/Monica%20Browne%20Weddings/bride-at-wedding_umiq78.webp" alt="Bride at her wedding in Fort Washington, Maryland" width="472" height="472" loading="lazy" />
+                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309743/Monica%20Browne%20Weddings/bride-groom-serious-love_moyugv.webp" alt="Bride and groom at their Fort Washington wedding" width="472" height="472" loading="lazy" />
+                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309709/Monica%20Browne%20Weddings/black-bride-and-groom_etu7gf.webp" alt="Couple on their wedding day in Maryland" width="472" height="472" loading="lazy" />
+                <img src="https://res.cloudinary.com/browne-company/image/upload/v1736309793/Monica%20Browne%20Weddings/happy-bride-and-groom_jawncb.webp" alt="Happy bride and groom at their Maryland wedding" width="472" height="472" loading="lazy" />
               </div>
               <a href={calendly} target="_blank">
                 <Button

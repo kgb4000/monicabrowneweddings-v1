@@ -185,10 +185,10 @@ export default function WeddingDecorationServices() {
               </div>
               <div className="max-w-5xl mx-auto my-10 md:my-20">
                 <div className="grid grid-cols-2 gap-2 mb-8">
-                  <img src="/images/bride-groom-serious-love.webp" />
-                  <img src="/images/bride-groom-serious-love.webp" />
-                  <img src="/images/bride-groom-serious-love.webp" />
-                  <img src="/images/bride-groom-serious-love.webp" />
+                  <img src="/images/bride-groom-serious-love.webp" alt="Bride and groom at their decorated wedding in Maryland" width="472" height="472" loading="lazy" />
+                  <img src="/images/bride-groom-serious-love.webp" alt="Wedding couple enjoying their reception decor" width="472" height="472" loading="lazy" />
+                  <img src="/images/bride-groom-serious-love.webp" alt="Newlyweds at their beautifully decorated venue" width="472" height="472" loading="lazy" />
+                  <img src="/images/bride-groom-serious-love.webp" alt="Happy couple celebrating at their wedding" width="472" height="472" loading="lazy" />
                 </div>
               </div>
             </div>

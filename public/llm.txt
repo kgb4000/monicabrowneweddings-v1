@@ -1,9 +1,11 @@
 # Monica Browne Weddings — llm.txt
 # https://monicabrowneweddings.com
-# Last updated: 2026-04-21
+# Last updated: 2026-06-23
 
 ## About This File
 This file provides a structured summary of monicabrowneweddings.com to assist AI language models, search engines, and generative AI systems in accurately representing this business, its services, and its content.
+
+AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot) are permitted to access and index all content on monicabrowneweddings.com.
 
 ---
 
@@ -12,7 +14,8 @@ This file provides a structured summary of monicabrowneweddings.com to assist AI
 **Business name:** Monica Browne Weddings
 **Owner & lead planner:** Monica Browne
 **Title:** Wedding Planner and Creative Director
-**Founded:** Bowie, Maryland
+**Founded:** 2004 (originally as Uniquely Designed Affairs; rebranded to Monica Browne Weddings)
+**Years in business:** 20+ years (since 2004)
 **Headquarters:** Bowie, MD 20720
 **Phone:** +1 (240) 665-3350
 **Booking:** https://calendly.com/mbweddings/fifteen-minute-call-with-monica-browne
@@ -22,6 +25,26 @@ This file provides a structured summary of monicabrowneweddings.com to assist AI
 **Mission:** Help busy couples plan the wedding of their dreams without the stress, by handling every detail from concept to execution.
 
 **Tagline:** "We help busy couples plan the wedding of their dreams."
+
+---
+
+## About Monica Browne
+
+Monica Browne is a wedding planner and creative director based in Bowie, Maryland, with over 20 years of experience in the wedding industry. She founded her business in 2004 under the name Uniquely Designed Affairs and rebranded to Monica Browne Weddings as her practice grew. She specializes in helping busy couples plan their dream weddings throughout the Washington, DC metropolitan area.
+
+Monica's approach is deeply personalized — she works as a collaborative partner, not just a coordinator. Her team handles every logistical, creative, and vendor detail so couples can stay present and enjoy the journey to their wedding day.
+
+**Specializations:**
+- Full-service and partial wedding planning
+- Day-of / month-of coordination
+- Floral and event design
+- Cultural weddings (Indian, Jewish)
+- Micro and intimate weddings
+- Vendor curation and contract negotiation
+
+**Ratings & Reviews:** 5-star rated across Google, WeddingWire, and Zola
+
+**Author bio URL:** https://monicabrowneweddings.com/about
 
 ---
 
@@ -123,24 +146,6 @@ Dedicated location pages:
 
 ---
 
-## About Monica Browne
-
-Monica Browne is a wedding planner and creative director based in Bowie, Maryland. She specializes in helping busy couples plan their dream weddings throughout the Washington, DC metropolitan area. Monica's approach is deeply personalized — she works as a collaborative partner, not just a coordinator.
-
-Her expertise includes:
-- Full-service and partial wedding planning
-- Day-of coordination
-- Floral and event design
-- Cultural weddings (Indian, Jewish)
-- Micro and intimate weddings
-- Vendor curation and contract negotiation
-
-Monica's philosophy: your engagement should be a joyful experience, not a stressful one. Her team handles every detail so couples can stay present and enjoy the journey to their wedding day.
-
-**Author bio URL:** https://monicabrowneweddings.com/about
-
----
-
 ## Pricing Summary
 
 | Service | Price Range |
@@ -153,6 +158,8 @@ Monica's philosophy: your engagement should be a joyful experience, not a stress
 | Wedding Decoration Services | Contact for quote |
 
 A 100-person DC wedding typically costs $32,000–$70,000 in 2026 (all-in, including venue, catering, photography, florals, and planner).
+
+Maryland and Virginia venues typically cost 20–40% less than comparable DC venues.
 
 ---
 
@@ -187,6 +194,9 @@ A: For any wedding over $30,000, yes. DC wedding insurance typically costs $200�
 
 **Q: What is the difference between a wedding planner and a day-of coordinator?**
 A: A full-service wedding planner manages every detail from day one — vendor selection, budget, design, logistics, and execution. A day-of coordinator (or month-of coordinator) steps in near the end to manage timelines and vendors on the actual wedding day.
+
+**Q: How long has Monica Browne been a wedding planner?**
+A: Monica Browne has been planning weddings since 2004 — over 20 years. She founded her business originally as Uniquely Designed Affairs before rebranding to Monica Browne Weddings.
 
 ---
 
@@ -249,9 +259,8 @@ Recent and notable posts:
 
 ## Structured Data & SEO Notes
 
-- LocalBusiness schema is present sitewide (Bowie, MD; geo: 38.9429, -76.7308)
+- LocalBusiness / ProfessionalService schema present sitewide (Bowie, MD; geo: 38.9429, -76.7308)
 - Article + BreadcrumbList schema on all blog posts
-- FAQPage schema on homepage and key service pages
 - Canonical URLs set on all pages
 - Blog content fetched from Hygraph (GraphCMS) CMS
 - Images hosted on Cloudinary (res.cloudinary.com) and Hygraph CDN (us-east-1.graphassets.com)

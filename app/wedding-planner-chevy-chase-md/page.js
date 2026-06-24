@@ -32,9 +32,58 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Wedding Planner Chevy Chase MD', item: 'https://monicabrowneweddings.com/wedding-planner-chevy-chase-md' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://monicabrowneweddings.com/wedding-planner-chevy-chase-md#service',
+      name: 'Wedding Planner in Chevy Chase, Maryland',
+      serviceType: 'Wedding Planning',
+      description: 'Full-service wedding planning and day-of coordination for couples in Chevy Chase, MD.',
+      provider: { '@id': 'https://monicabrowneweddings.com' },
+      areaServed: { '@type': 'City', name: 'Chevy Chase', addressRegion: 'MD' },
+      offers: { '@type': 'Offer', priceRange: '$7,000–$25,000+', priceCurrency: 'USD' },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is the average cost of a wedding in Chevy Chase, MD?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The cost of a wedding in Chevy Chase can vary widely depending on the size, style, and services required. On average, couples spend between $32,000 and $70,000, with more elaborate weddings exceeding $90,000.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How much does a day-of wedding coordinator cost in Chevy Chase?',
+          acceptedAnswer: { '@type': 'Answer', text: 'In Chevy Chase, MD, a day-of wedding coordinator typically costs between $2,500 and $7,000. Day-of coordinators actually start their involvement a few weeks before the wedding — reviewing contracts, creating detailed timelines, and handling all final vendor communication.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Is it worth it to hire a wedding planner in Chevy Chase?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Absolutely! In a dynamic area like Chevy Chase, a wedding planner is worth their weight in gold. They bring invaluable expertise in vendor management, budget allocation, design, and logistics, ensuring your wedding vision comes to life seamlessly while saving you time and reducing stress.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How many hours does it take to plan a wedding?',
+          acceptedAnswer: { '@type': 'Answer', text: 'On average, couples can spend between 100 and 250 hours on the entire planning process. The time commitment varies depending on the wedding\'s size, style, and the couple\'s DIY involvement.' },
+        },
+      ],
+    },
+  ],
+}
+
 export default async function WeddingPlannerChevyChaseMD() {
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Hero
         herotext="Wedding Planners in Chevy Chase, MD, for Sophisticated & Romantic Weddings"
         heroSubText="We Create Beautiful Weddings For Busy Couples Getting Married in Chevy Chase"

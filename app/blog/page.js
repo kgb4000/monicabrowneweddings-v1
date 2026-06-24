@@ -41,7 +41,7 @@ const getPosts = async () => {
 export const metadata = {
   title: "Monica's Blog | Monica Browne Weddings",
   description:
-    'Wedding Services from Monica Browne Weddings include Full Service Wedding Planning, Day-of Cordination, Wedding Decor, Flowers, and Floral Design.',
+    'Wedding Services from Monica Browne Weddings include Full Service Wedding Planning, Day-of Coordination, Wedding Decor, Flowers, and Floral Design.',
   alternates: {
     canonical: 'https://monicabrowneweddings.com/blog',
     openGraph: {

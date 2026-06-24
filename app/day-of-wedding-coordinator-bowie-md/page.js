@@ -30,9 +30,63 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Day-of Wedding Coordinator Bowie MD', item: 'https://monicabrowneweddings.com/day-of-wedding-coordinator-bowie-md' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://monicabrowneweddings.com/day-of-wedding-coordinator-bowie-md#service',
+      name: 'Day-of Wedding Coordinator in Bowie, Maryland',
+      serviceType: 'Day-of Wedding Coordination',
+      description: 'Professional day-of wedding coordination for couples in Bowie, MD. Monica Browne Weddings manages vendors, timelines, and logistics so you can enjoy your wedding day stress-free.',
+      provider: { '@id': 'https://monicabrowneweddings.com' },
+      areaServed: { '@type': 'City', name: 'Bowie', addressRegion: 'MD' },
+      offers: { '@type': 'Offer', priceRange: '$2,500–$5,000', priceCurrency: 'USD' },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Why should I consider hiring a day-of coordinator in Bowie?',
+          acceptedAnswer: { '@type': 'Answer', text: 'You should consider hiring a day-of wedding coordinator if you want to do most of the planning yourself but still want to enjoy your wedding day without worrying about anything. A day-of coordinator manages vendors, timelines, and logistics so you can be fully present.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How much does a day-of coordinator cost in Bowie, MD?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The cost of a wedding coordinator in Bowie is between $2,500 and $5,000 depending on the size of the wedding.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'When is the best time to hire a day-of wedding coordinator?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The best time to hire a day-of wedding coordinator is between six to eight weeks before your wedding date. This leaves enough time to read vendor contracts, do a walk-through of the different sites, form a relationship with the other vendors, and sort out any missing details.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the difference between a wedding planner and a day-of coordinator?',
+          acceptedAnswer: { '@type': 'Answer', text: 'A wedding planner is typically hired during the early stages of planning, taking charge of the entire process from concept to execution. A day-of coordinator is primarily focused on the actual wedding day, ensuring that all aspects run smoothly and according to plan.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How many hours does it take to plan a wedding?',
+          acceptedAnswer: { '@type': 'Answer', text: 'On average, planning a wedding can take anywhere from 100 to 150 hours, spread over several months or even a year. Factors include the level of customization, number of guests, location, and the couple\'s level of involvement.' },
+        },
+      ],
+    },
+  ],
+}
+
 export default function WeddingPlannerBowieMD() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Hero
         herotext="Day of Wedding Coordinator in Bowie, Maryland"
         heroSubText="We provide professional day-of wedding coordination services for couples in Bowie, Maryland."
@@ -175,10 +229,10 @@ export default function WeddingPlannerBowieMD() {
                 Handling it For You?
               </h2>
               <div className="grid grid-cols-2 gap-2 mb-4 py-10">
-                <img src="/images/bride-groom-serious-love.webp" />
-                <img src="/images/bride-groom-serious-love.webp" />
-                <img src="/images/bride-groom-serious-love.webp" />
-                <img src="/images/bride-groom-serious-love.webp" />
+                <img src="/images/bride-groom-serious-love.webp" alt="Bride and groom at their wedding in Maryland" width="472" height="472" loading="lazy" />
+                <img src="/images/bride-groom-serious-love.webp" alt="Happy couple on their wedding day" width="472" height="472" loading="lazy" />
+                <img src="/images/bride-groom-serious-love.webp" alt="Newlyweds celebrating their wedding" width="472" height="472" loading="lazy" />
+                <img src="/images/bride-groom-serious-love.webp" alt="Couple at their Maryland wedding ceremony" width="472" height="472" loading="lazy" />
               </div>
               <p className="text-xl italic mt-10 text-center max-w-xl mx-auto">
                 Book a 15-minute call with Monica and see how a day-of wedding

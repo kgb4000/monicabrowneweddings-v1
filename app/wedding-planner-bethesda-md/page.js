@@ -30,9 +30,63 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Wedding Planner Bethesda MD', item: 'https://monicabrowneweddings.com/wedding-planner-bethesda-md' },
+      ],
+    },
+    {
+      '@type': 'Service',
+      '@id': 'https://monicabrowneweddings.com/wedding-planner-bethesda-md#service',
+      name: 'Wedding Planner in Bethesda, Maryland',
+      serviceType: 'Wedding Planning',
+      description: 'Full-service wedding planning and day-of coordination for couples in Bethesda, MD.',
+      provider: { '@id': 'https://monicabrowneweddings.com' },
+      areaServed: { '@type': 'City', name: 'Bethesda', addressRegion: 'MD' },
+      offers: { '@type': 'Offer', priceRange: '$7,000–$25,000+', priceCurrency: 'USD' },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is the average cost of a wedding in Bethesda, MD?',
+          acceptedAnswer: { '@type': 'Answer', text: 'The cost of a wedding in Bethesda, MD, can vary widely depending on the size, style, and services required. On average, couples spend between $32,000 and $70,000, with more elaborate weddings exceeding $75,000. We can help you plan a beautiful wedding that fits within your budget while maximizing value and ensuring every detail is perfect.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'How far in advance should we book our wedding planner in Bethesda?',
+          acceptedAnswer: { '@type': 'Answer', text: 'We recommend booking our services as early as possible, ideally 12–18 months before your wedding date. This allows us to secure the best vendors and venues and plan every detail to perfection.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Can you accommodate cultural or religious wedding traditions?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Absolutely! We specialize in incorporating cultural and religious traditions into your wedding, ensuring every detail honors your heritage while creating a cohesive and beautiful celebration.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Are you familiar with wedding venues in Bethesda, MD?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we have extensive experience working with many popular venues in Bethesda, from elegant ballrooms to charming outdoor spaces. We can help you select a venue that suits your vision and works seamlessly with your plans.' },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you offer day-of coordination services in Bethesda?',
+          acceptedAnswer: { '@type': 'Answer', text: 'Yes, we specialize in day-of coordination to ensure your wedding day runs seamlessly. Our team handles all the details and logistics — creating and managing a detailed timeline, vendor communication, overseeing setup and breakdown, and troubleshooting any last-minute issues.' },
+        },
+      ],
+    },
+  ],
+}
+
 export default async function WeddingPlannerBethesdaMD() {
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Hero
         herotext="Wedding Planner in Bethesda for Elegant & Timeless Celebrations"
         heroSubText="We plan beautiful weddings in Bethesda for couples who want a perfect blend of sophistication, charm, and personalized details for a truly magical celebration"

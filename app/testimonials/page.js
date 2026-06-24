@@ -28,9 +28,23 @@ export const metadata = {
   },
 }
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://monicabrowneweddings.com' },
+        { '@type': 'ListItem', position: 2, name: 'Testimonials', item: 'https://monicabrowneweddings.com/testimonials' },
+      ],
+    },
+  ],
+}
+
 export default function Testimonials() {
   return (
     <div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <Hero
         herotext="Testimonials"
         heroSubText="Kind words from the many happy couples we've work with"

@@ -33,6 +33,7 @@ export default function Nav() {
           <div className="flex lg:hidden">
             <button
               type="button"
+              aria-label="Open main menu"
               onClick={() => setMobileMenuOpen(true)}
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black font-extrabold"
             >
@@ -54,11 +55,10 @@ export default function Nav() {
             <a
               href={calendly}
               target="_blank"
-              className="text-sm/6 font-semibold text-black no-underline"
+              rel="noopener noreferrer"
+              className="py-2 px-6 rounded-xl bg-purple-500 text-white text-sm/6 font-semibold no-underline"
             >
-              <button className="py-2 px-6 rounded-xl bg-purple-500 text-white border-0">
-                Book a Call With Monica
-              </button>
+              Book a Call With Monica
             </a>
           </div>
         </nav>
@@ -75,6 +75,7 @@ export default function Nav() {
               </Link>
               <button
                 type="button"
+                aria-label="Close menu"
                 onClick={() => setMobileMenuOpen(false)}
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
               >
@@ -98,11 +99,13 @@ export default function Nav() {
                 <div className="py-6">
                   <a
                     href={calendly}
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 no-underline"
                   >
-                    <button className="py-4 px-8 rounded-xl bg-purple-500 text-white border-0">
+                    <span className="inline-block py-4 px-8 rounded-xl bg-purple-500 text-white">
                       Book a Call With Monica
-                    </button>
+                    </span>
                   </a>
                 </div>
               </div>
