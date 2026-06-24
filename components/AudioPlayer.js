@@ -8,6 +8,7 @@ export default function AudioPlayer({ src }) {
   const [currentTime, setCurrentTime] = useState(0)
   const [duration, setDuration] = useState(0)
   const [speed, setSpeed] = useState(1)
+  const [muted, setMuted] = useState(false)
 
   const speeds = [1, 1.2, 1.5, 2]
 
@@ -19,17 +20,13 @@ export default function AudioPlayer({ src }) {
       if (isFinite(audio.duration)) setDuration(audio.duration)
     }
     const onEnded = () => setPlaying(false)
-
     audio.addEventListener('timeupdate', onTimeUpdate)
     audio.addEventListener('loadedmetadata', onDuration)
     audio.addEventListener('durationchange', onDuration)
     audio.addEventListener('ended', onEnded)
-
-    // Metadata may already be loaded (cached file)
     if (audio.readyState >= 1 && isFinite(audio.duration)) {
       setDuration(audio.duration)
     }
-
     return () => {
       audio.removeEventListener('timeupdate', onTimeUpdate)
       audio.removeEventListener('loadedmetadata', onDuration)
@@ -41,11 +38,7 @@ export default function AudioPlayer({ src }) {
   const togglePlay = () => {
     const audio = audioRef.current
     if (!audio) return
-    if (playing) {
-      audio.pause()
-    } else {
-      audio.play()
-    }
+    if (playing) { audio.pause() } else { audio.play() }
     setPlaying(!playing)
   }
 
@@ -59,7 +52,7 @@ export default function AudioPlayer({ src }) {
     const audio = audioRef.current
     if (!audio || !duration) return
     const rect = e.currentTarget.getBoundingClientRect()
-    const ratio = (e.clientX - rect.left) / rect.width
+    const ratio = Math.min(Math.max((e.clientX - rect.left) / rect.width, 0), 1)
     audio.currentTime = ratio * duration
   }
 
@@ -71,8 +64,15 @@ export default function AudioPlayer({ src }) {
     setSpeed(next)
   }
 
+  const toggleMute = () => {
+    const audio = audioRef.current
+    if (!audio) return
+    audio.muted = !muted
+    setMuted(!muted)
+  }
+
   const fmt = (s) => {
-    if (!isFinite(s)) return '0:00'
+    if (!isFinite(s) || s < 0) return '0:00'
     const m = Math.floor(s / 60)
     const sec = Math.floor(s % 60)
     return `${m}:${sec.toString().padStart(2, '0')}`
@@ -84,16 +84,18 @@ export default function AudioPlayer({ src }) {
     <div className="flex items-center gap-3 bg-gray-100 rounded-full px-5 py-3 my-8 select-none">
       <audio ref={audioRef} src={src} preload="metadata" />
 
-      {/* Skip back */}
+      {/* Skip back 15s */}
       <button
         type="button"
         onClick={() => skip(-15)}
         aria-label="Skip back 15 seconds"
-        className="flex-shrink-0 text-gray-600 hover:text-gray-900 bg-transparent border-0 cursor-pointer p-0"
+        className="flex-shrink-0 bg-transparent border-0 cursor-pointer p-0 text-gray-700 hover:text-gray-900"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-7">
-          <path d="M9.195 18.44c1.25.714 2.805-.189 2.805-1.629v-2.34l6.945 3.968c1.25.715 2.805-.188 2.805-1.628V8.69c0-1.44-1.555-2.343-2.805-1.628L12 11.029v-2.34c0-1.44-1.555-2.343-2.805-1.628l-7.108 4.061c-1.26.72-1.26 2.536 0 3.256l7.108 4.061Z" />
-          <text x="6" y="14" fontSize="5" fontWeight="bold" fill="white" textAnchor="middle">15</text>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="currentColor" className="size-6">
+          <path d="M18 4C10.268 4 4 10.268 4 18s6.268 14 14 14 14-6.268 14-14S25.732 4 18 4Zm0 2a12 12 0 1 1 0 24A12 12 0 0 1 18 6Z" opacity=".3"/>
+          <path d="M18 4C10.268 4 4 10.268 4 18h2a10 10 0 0 1 10-10V4Z"/>
+          <path d="M18 4v4l-4-4 4-4v4Z"/>
+          <text x="18" y="22" fontSize="9" fontWeight="700" textAnchor="middle" fill="currentColor">15</text>
         </svg>
       </button>
 
@@ -102,29 +104,31 @@ export default function AudioPlayer({ src }) {
         type="button"
         onClick={togglePlay}
         aria-label={playing ? 'Pause' : 'Play'}
-        className="flex-shrink-0 text-gray-800 hover:text-gray-900 bg-transparent border-0 cursor-pointer p-0"
+        className="flex-shrink-0 bg-transparent border-0 cursor-pointer p-0 text-gray-800 hover:text-gray-900"
       >
         {playing ? (
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-7">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
             <path fillRule="evenodd" d="M6.75 5.25a.75.75 0 0 1 .75-.75H9a.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75H7.5a.75.75 0 0 1-.75-.75V5.25Zm7.5 0A.75.75 0 0 1 15 4.5h1.5a.75.75 0 0 1 .75.75v13.5a.75.75 0 0 1-.75.75H15a.75.75 0 0 1-.75-.75V5.25Z" clipRule="evenodd" />
           </svg>
         ) : (
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-7">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
             <path fillRule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clipRule="evenodd" />
           </svg>
         )}
       </button>
 
-      {/* Skip forward */}
+      {/* Skip forward 15s */}
       <button
         type="button"
         onClick={() => skip(15)}
         aria-label="Skip forward 15 seconds"
-        className="flex-shrink-0 text-gray-600 hover:text-gray-900 bg-transparent border-0 cursor-pointer p-0"
+        className="flex-shrink-0 bg-transparent border-0 cursor-pointer p-0 text-gray-700 hover:text-gray-900"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-7">
-          <path d="M5.055 7.06C3.805 6.347 2.25 7.25 2.25 8.69v8.122c0 1.44 1.555 2.343 2.805 1.628L12 14.471v2.34c0 1.44 1.555 2.343 2.805 1.628l7.108-4.061c1.26-.72 1.26-2.536 0-3.256l-7.108-4.061C13.555 6.346 12 7.249 12 8.689v2.34L5.055 7.061Z" />
-          <text x="18" y="14" fontSize="5" fontWeight="bold" fill="white" textAnchor="middle">15</text>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="currentColor" className="size-6">
+          <path d="M18 4C10.268 4 4 10.268 4 18s6.268 14 14 14 14-6.268 14-14S25.732 4 18 4Zm0 2a12 12 0 1 1 0 24A12 12 0 0 1 18 6Z" opacity=".3"/>
+          <path d="M18 4C25.732 4 32 10.268 32 18h-2A10 10 0 0 0 18 8V4Z"/>
+          <path d="M18 4v4l4-4-4-4v4Z"/>
+          <text x="18" y="22" fontSize="9" fontWeight="700" textAnchor="middle" fill="currentColor">15</text>
         </svg>
       </button>
 
@@ -143,15 +147,30 @@ export default function AudioPlayer({ src }) {
         aria-valuemax={100}
         aria-valuenow={Math.round(progress)}
       >
+        <div className="h-full bg-gray-800 rounded-full" style={{ width: `${progress}%` }} />
         <div
-          className="h-full bg-gray-800 rounded-full"
-          style={{ width: `${progress}%` }}
-        />
-        <div
-          className="absolute top-1/2 -translate-y-1/2 size-3 bg-gray-800 rounded-full shadow"
+          className="absolute top-1/2 size-3 bg-gray-800 rounded-full shadow"
           style={{ left: `${progress}%`, transform: 'translate(-50%, -50%)' }}
         />
       </div>
+
+      {/* Volume */}
+      <button
+        type="button"
+        onClick={toggleMute}
+        aria-label={muted ? 'Unmute' : 'Mute'}
+        className="flex-shrink-0 bg-transparent border-0 cursor-pointer p-0 text-gray-600 hover:text-gray-900"
+      >
+        {muted ? (
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
+            <path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 0 0 1.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06ZM17.78 9.22a.75.75 0 1 0-1.06 1.06L18.44 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L19.5 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L20.56 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L19.5 10.94l-1.72-1.72Z" />
+          </svg>
+        ) : (
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
+            <path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 0 0 1.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06ZM18.584 5.106a.75.75 0 0 1 1.06 0c3.808 3.807 3.808 9.98 0 13.788a.75.75 0 0 1-1.06-1.06 8.25 8.25 0 0 0 0-11.668.75.75 0 0 1 0-1.06ZM15.932 7.757a.75.75 0 0 1 1.061 0 6 6 0 0 1 0 8.486.75.75 0 0 1-1.06-1.061 4.5 4.5 0 0 0 0-6.364.75.75 0 0 1 0-1.06Z" />
+          </svg>
+        )}
+      </button>
 
       {/* Speed */}
       <button
